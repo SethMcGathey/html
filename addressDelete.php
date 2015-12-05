@@ -51,6 +51,3 @@
     </div> <!-- /container -->
   </body>
 </html>
-
-
-//delete

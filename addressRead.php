@@ -94,6 +94,3 @@
     </div> <!-- /container -->
   </body>
 </html>
-
-
-//read
