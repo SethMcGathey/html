@@ -203,7 +203,15 @@
                             <?php endif;?>
                         </div>
                       </div>
-
+                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
+                        <label class="control-label">Username</label>
+                        <div class="controls">
+                            <input name="username" type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
+                            <?php if (!empty($usernameError)): ?>
+                                <span class="help-inline"><?php echo $usernameError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
