@@ -42,7 +42,7 @@
                                 echo ' ';
                                 echo '<a class="btn btn-success" href="imageUpdate.php?id='.$row['id'].'">Update</a>';
                                 echo ' ';
-                                echo '<a class="btn btn-danger" href="imageCreate.php?id='.$row['id'].'">Delete</a>';
+                                echo '<a class="btn btn-danger" href="imageDelete.php?id='.$row['id'].'">Delete</a>';
                                 echo '</td>';
                                 echo '</tr>';
                        }
