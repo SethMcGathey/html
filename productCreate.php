@@ -105,7 +105,7 @@
                        $pdo = Database::connect();
                        $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
                        foreach ($pdo->query($sql) as $row) {
-                                echo '<select><option value=$row['id']>$row['name']</option></select>';
+                                echo '<select><option value=' . $row['id'] . '>' . $row['name'] . '</option></select>';
                        }
                        Database::disconnect();
                       ?>
