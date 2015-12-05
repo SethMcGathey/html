@@ -22,7 +22,7 @@
                           <th>First Name</th>
                           <th>Last Name</th>
                           <th>Email Address</th>
-                          <th>Mobile Number</th>
+                          <th>Phone</th>
                           <th>Date of Birth</th>
                           <th>Gender</th>
                           <th>Password</th>

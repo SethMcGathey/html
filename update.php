@@ -103,8 +103,8 @@
         $data = $q->fetch(PDO::FETCH_ASSOC);
         $first_name = $data['first_name'];
         $last_name = $data['last_name'];
-        $phone = $data['phone'];
         $email = $data['email'];
+        $phone = $data['phone'];
         $dob = $data['dob'];
         $gender = $data['gender'];
         $password = $data['password'];
