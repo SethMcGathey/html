@@ -13,11 +13,11 @@
         // delete data
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "DELETE FROM tableName  WHERE id = ?";
+        $sql = "DELETE FROM tag  WHERE id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         Database::disconnect();
-        header("Location: index.php");
+        header("Location: tagIndex.php");
 
     }
 ?>
@@ -35,15 +35,15 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Delete a nameTable</h3>
+                        <h3>Delete a Tag</h3>
                     </div>
 
-                    <form class="form-horizontal" action="delete.php" method="post">
+                    <form class="form-horizontal" action="tagDelete.php" method="post">
                       <input type="hidden" name="id" value="<?php echo $id;?>"/>
                       <p class="alert alert-error">Are you sure to delete ?</p>
                       <div class="form-actions">
                           <button type="submit" class="btn btn-danger">Yes</button>
-                          <a class="btn" href="index.php">No</a>
+                          <a class="btn" href="tagIndex.php">No</a>
                         </div>
                     </form>
                 </div>

@@ -1,4 +1,3 @@
-
 <?php
     require 'database.php';
 
@@ -8,20 +7,20 @@
     }
 
     if ( null==$id ) {
-        header("Location: index.php");
+        header("Location: tagIndex.php");
     }
 
     if ( !empty($_POST)) {
         // keep track validation errors
-        $1column1Error = null;
+        $nameError = null;
 
         // keep track post values
-        $1column1 = $_POST['1column1'];
+        $name = $_POST['name'];
 
         // validate input
         $valid = true;
-        if (empty($1column1)) {
-            $1column1Error = 'Please enter visColumn1';
+        if (empty($name)) {
+            $nameError = 'Please enter Name';
             $valid = false;
         }
 
@@ -30,20 +29,20 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE tableName  set 1column1 = ? WHERE id = ?";
+            $sql = "UPDATE tag  set name = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($1column1,$id));
+            $q->execute(array($name,$id));
             Database::disconnect();
-            header("Location: index.php");
+            header("Location: tagIndex.php");
         }
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM tableName where id = ?";
+        $sql = "SELECT * FROM tag where id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
-        $1column1 = $data['1column1'];
+        $name = $data['name'];
         Database::disconnect();
     }
 ?>
@@ -61,23 +60,23 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Update a nameTable</h3>
+                        <h3>Update a Tag</h3>
                     </div>
 
-                    <form class="form-horizontal" action="update.php?id=<?php echo $id?>" method="post">
-                      <div class="control-group <?php echo !empty($1column1Error)?'error':'';?>">
-                        <label class="control-label">visColumn1</label>
+                    <form class="form-horizontal" action="tagUpdate.php?id=<?php echo $id?>" method="post">
+                      <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="control-label">Name</label>
                         <div class="controls">
-                            <input name="1column1" type="text"  placeholder="visColumn1" value="<?php echo !empty($1column1)?$1column1:'';?>">
-                            <?php if (!empty($1column1Error)): ?>
-                                <span class="help-inline"><?php echo $1column1Error;?></span>
+                            <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
+                            <?php if (!empty($nameError)): ?>
+                                <span class="help-inline"><?php echo $nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
-                          <a class="btn" href="index.php">Back</a>
+                          <a class="btn" href="tagIndex.php">Back</a>
                         </div>
                     </form>
                 </div>

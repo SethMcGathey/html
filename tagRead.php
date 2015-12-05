@@ -6,11 +6,11 @@
     }
 
     if ( null==$id ) {
-        header("Location: index.php");
+        header("Location: tagIndex.php");
     } else {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT * FROM tableName where id = ?";
+        $sql = "SELECT * FROM tag where id = ?";
         $q = $pdo->prepare($sql);
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
@@ -31,20 +31,20 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Read a nameTable</h3>
+                        <h3>Read a Tag</h3>
                     </div>
 
                     <div class="form-horizontal" >
                       <div class="control-group">
-                        <label class="control-label">visColumn1</label>
+                        <label class="control-label">Name</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['1column1'];?>
+                                <?php echo $data['name'];?>
                             </label>
                         </div>
                       </div>
                       <div class="form-actions">
-                          <a class="btn" href="index.php">Back</a>
+                          <a class="btn" href="tagIndex.php">Back</a>
                        </div>
 
 

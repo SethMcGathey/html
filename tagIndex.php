@@ -13,13 +13,13 @@
             </div>
             <div class="row">
                 <p>
-                    <a href="create.php" class="btn btn-success">Create</a>
+                    <a href="tagCreate.php" class="btn btn-success">Create</a>
                 </p>
 
                 <table class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>visColumn1</th>
+                          <th>Name</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -27,16 +27,16 @@
                       <?php
                        include 'database.php';
                        $pdo = Database::connect();
-                       $sql = 'SELECT * FROM tablename ORDER BY id DESC';
+                       $sql = 'SELECT * FROM tag ORDER BY id DESC';
                        foreach ($pdo->query($sql) as $row) {
                                 echo '<tr>';
-                                echo '<td>'. $row['1column1'] . '</td>';
+                                echo '<td>'. $row['name'] . '</td>';
                                 echo '<td width=250>';
-                                echo '<a class="btn" href="read.php?id='.$row['id'].'">Read</a>';
+                                echo '<a class="btn" href="tagRead.php?id='.$row['id'].'">Read</a>';
                                 echo ' ';
-                                echo '<a class="btn btn-success" href="update.php?id='.$row['id'].'">Update</a>';
+                                echo '<a class="btn btn-success" href="tagUpdate.php?id='.$row['id'].'">Update</a>';
                                 echo ' ';
-                                echo '<a class="btn btn-danger" href="delete.php?id='.$row['id'].'">Delete</a>';
+                                echo '<a class="btn btn-danger" href="tagDelete.php?id='.$row['id'].'">Delete</a>';
                                 echo '</td>';
                                 echo '</tr>';
                        }
