@@ -6,14 +6,14 @@
         // keep track validation errors
         $cartError = null;
         $timestampError = null;
-        $payment_IDError = null;
-        $customer_IDError = null;
+        $payment_idError = null;
+        $customer_idError = null;
 
         // keep track post values
         $cart = $_POST['cart'];
         $timestamp = $_POST['timestamp'];
-        $payment_ID = $_POST['payment_ID'];
-        $customer_ID = $_POST['customer_ID'];
+        $payment_id = $_POST['payment_id'];
+        $customer_id = $_POST['customer_id'];
 
         // validate input
         $valid = true;
@@ -27,13 +27,13 @@
             $valid = false;
         }
 
-        if (empty($payment_ID)) {
-            $payment_IDError = 'Please enter Payment Id';
+        if (empty($payment_id)) {
+            $payment_idError = 'Please enter Payment Id';
             $valid = false;
         }
 
-        if (empty($customer_ID)) {
-            $customer_IDError = 'Please enter Customer Id';
+        if (empty($customer_id)) {
+            $customer_idError = 'Please enter Customer Id';
             $valid = false;
         }
 
@@ -42,9 +42,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO transaction (cart,timestamp,payment_ID,customer_ID) values(?, ?, ?, ?)";
+            $sql = "INSERT INTO transaction (cart,timestamp,payment_id,customer_id) values(?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array($cart, $timestamp, $payment_ID,$customer_ID));
+            $q->execute(array($cart, $timestamp, $payment_id,$customer_id));
             Database::disconnect();
             header("Location: transactionIndex.php");
         }
@@ -86,21 +86,21 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($payment_IDError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($payment_idError)?'error':'';?>">
                         <label class="control-label">Payment Id</label>
                         <div class="controls">
-                            <input name="payment_ID" type="text" placeholder="Payment Id" value="<?php echo !empty($payment_ID)?$payment_ID:'';?>">
-                            <?php if (!empty($payment_IDError)): ?>
-                                <span class="help-inline"><?php echo $payment_IDError;?></span>
+                            <input name="payment_id" type="text" placeholder="Payment Id" value="<?php echo !empty($payment_id)?$payment_id:'';?>">
+                            <?php if (!empty($payment_idError)): ?>
+                                <span class="help-inline"><?php echo $payment_idError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($customer_IDError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($customer_idError)?'error':'';?>">
                         <label class="control-label">Customer Id</label>
                         <div class="controls">
-                            <input name="customer_ID" type="text"  placeholder="Customer Id" value="<?php echo !empty($customer_ID)?$customer_ID:'';?>">
-                            <?php if (!empty($customer_IDError)): ?>
-                                <span class="help-inline"><?php echo $customer_IDError;?></span>
+                            <input name="customer_id" type="text"  placeholder="Customer Id" value="<?php echo !empty($customer_id)?$customer_id:'';?>">
+                            <?php if (!empty($customer_idError)): ?>
+                                <span class="help-inline"><?php echo $customer_idError;?></span>
                             <?php endif;?>
                         </div>
                       </div>

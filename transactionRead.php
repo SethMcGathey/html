@@ -55,7 +55,7 @@
                         <label class="control-label">Payment Id</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['payment_ID'];?>
+                                <?php echo $data['payment_id'];?>
                             </label>
                         </div>
                       </div>
@@ -63,7 +63,7 @@
                         <label class="control-label">Customer Id</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['customer_ID'];?>
+                                <?php echo $data['customer_id'];?>
                             </label>
                         </div>
                       </div>
