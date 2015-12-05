@@ -39,7 +39,7 @@
                         <label class="control-label">First Name</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['firstname'];?>
+                                <?php echo $data['first_name'];?>
                             </label>
                         </div>
                       </div>
@@ -47,7 +47,7 @@
                         <label class="control-label">Last Name</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['lastname'];?>
+                                <?php echo $data['last_name'];?>
                             </label>
                         </div>
                       </div>
