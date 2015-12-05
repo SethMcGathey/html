@@ -14,13 +14,13 @@
         // keep track validation errors
         $nameError = null;
         $costError = null;
-        $descError = null;
+        $descriptionError = null;
         $subcategory_idError = null;
 
         // keep track post values
         $name = $_POST['name'];
         $cost = $_POST['cost'];
-        $desc = $_POST['desc'];
+        $description = $_POST['description'];
         $subcategory_id = $_POST['subcategory_id'];
 
         // validate input
@@ -35,8 +35,8 @@
             $valid = false;
         }
 
-        if (empty($desc)) {
-            $descError = 'Please enter Description';
+        if (empty($description)) {
+            $descriptionError = 'Please enter Description';
             $valid = false;
         }
 
@@ -50,9 +50,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE product  set name = ?, cost = ?, desc = ?, subcategory_id =? WHERE id = ?";
+            $sql = "UPDATE product  set name = ?, cost = ?, description = ?, subcategory_id =? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($name,$cost,$desc,$subcategory_id,$id));
+            $q->execute(array($name,$cost,$description,$subcategory_id,$id));
             Database::disconnect();
             header("Location: productIndex.php");
         }
@@ -65,7 +65,7 @@
         $data = $q->fetch(PDO::FETCH_ASSOC);
         $name = $data['name'];
         $cost = $data['cost'];
-        $desc = $data['desc'];
+        $description = $data['description'];
         $subcategory_id = $data['subcategory_id'];
         Database::disconnect();
     }
@@ -106,12 +106,12 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($descError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
                         <label class="control-label">Description</label>
                         <div class="controls">
-                            <input name="desc" type="text" placeholder="Description" value="<?php echo !empty($desc)?$desc:'';?>">
-                            <?php if (!empty($descError)): ?>
-                                <span class="help-inline"><?php echo $descError;?></span>
+                            <input name="description" type="text" placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
+                            <?php if (!empty($descriptionError)): ?>
+                                <span class="help-inline"><?php echo $descriptionError;?></span>
                             <?php endif;?>
                         </div>
                       </div>

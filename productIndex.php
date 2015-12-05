@@ -30,12 +30,12 @@
                       <?php
                        include 'database.php';
                        $pdo = Database::connect();
-                       $sql = 'SELECT * FROM product ORDER BY id DESC';
+                       $sql = 'SELECT * FROM product ORDER BY id description';
                        foreach ($pdo->query($sql) as $row) {
                                 echo '<tr>';
                                 echo '<td>'. $row['name'] . '</td>';
                                 echo '<td>'. $row['cost'] . '</td>';
-                                echo '<td>'. $row['desc'] . '</td>';
+                                echo '<td>'. $row['description'] . '</td>';
                                 echo '<td>'. $row['subcategory_id'] . '</td>';
                                 echo '<td width=250>';
                                 echo '<a class="btn" href="productRead.php?id='.$row['id'].'">Read</a>';

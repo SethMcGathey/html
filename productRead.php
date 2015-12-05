@@ -55,7 +55,7 @@
                         <label class="control-label">Description</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['desc'];?>
+                                <?php echo $data['description'];?>
                             </label>
                         </div>
                       </div>
