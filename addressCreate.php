@@ -34,9 +34,6 @@
         if (empty($state)) {
             $stateError = 'Please enter State';
             $valid = false;
-        } else if ( !filter_var($state,FILTER_VALIDATE_EMAIL) ) {
-            $stateError = 'Please enter a valid State';
-            $valid = false;
         }
 
         if (empty($street_one)) {
