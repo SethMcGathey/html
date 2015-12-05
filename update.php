@@ -158,8 +158,34 @@
                             <?php endif;?>
                         </div>
                       </div>
->
+                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
+                        <label class="control-label">Phone</label>
+                        <div class="controls">
+                            <input name="phone" type="text"  placeholder="Phone" value="<?php echo !empty($phone)?$phone:'';?>">
+                            <?php if (!empty($phoneError)): ?>
+                                <span class="help-inline"><?php echo $phoneError;?></span>
+                            <?php endif;?>
+                        </div>
                       </div>
+                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
+                        <label class="control-label">Date of Birth</label>
+                        <div class="controls">
+                            <input name="dob" type="text"  placeholder="Date Of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
+                            <?php if (!empty($dobError)): ?>
+                                <span class="help-inline"><?php echo $dobError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($genderError)?'error':'';?>">
+                        <label class="control-label">Gender</label>
+                        <div class="controls">
+                            <input name="gender" type="text"  placeholder="Gender" value="<?php echo !empty($gender)?$gender:'';?>">
+                            <?php if (!empty($genderError)): ?>
+                                <span class="help-inline"><?php echo $genderError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
