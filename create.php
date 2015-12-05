@@ -106,7 +106,7 @@
                     </div>
 
                     <form class="form-horizontal" action="create.php" method="post">
-                      <div class="control-group <?php echo !empty($fisrt_nameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($first_nameError)?'error':'';?>">
                         <label class="control-label">First Name</label>
                         <div class="controls">
                             <input name="first_name" type="text"  placeholder="First Name" value="<?php echo !empty($first_name)?$first_name:'';?>">
