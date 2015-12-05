@@ -38,8 +38,8 @@
                        $sql = 'SELECT * FROM customer ORDER BY id DESC';
                        foreach ($pdo->query($sql) as $row) {
                                 echo '<tr>';
-                                echo '<td>'. $row['firstname'] . '</td>';
-                                echo '<td>'. $row['lastname'] . '</td>';
+                                echo '<td>'. $row['first_name'] . '</td>';
+                                echo '<td>'. $row['last_name'] . '</td>';
                                 echo '<td>'. $row['email'] . '</td>';
                                 echo '<td>'. $row['phone'] . '</td>';
                                 echo '<td>'. $row['dob'] . '</td>';
