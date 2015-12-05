@@ -88,9 +88,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE customer  set name = ?, email = ?, phone =?, dob =?, gender =?, password =?, username =? WHERE id = ?";
+            $sql = "UPDATE customer  set firstname = ?, lastname = ?, email = ?, phone =?, dob =?, gender =?, password =?, permission =?, username =? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($name,$email,$phone,$dob,$gender,$password,$username,$id));
+            $q->execute(array($firstname,$lastname,$email,$phone,$dob,$gender,$password,$permission,$username,$id));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -104,6 +104,7 @@
         $firstname = $data['firstname'];
         $lastname = $data['lastname'];
         $phone = $data['phone'];
+        $email = $data['email'];
         $dob = $data['dob'];
         $gender = $data['gender'];
         $password = $data['password'];
@@ -157,15 +158,61 @@
                             <?php endif;?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($mobileError)?'error':'';?>">
-                        <label class="control-label">Mobile Number</label>
+                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
+                        <label class="control-label">Phone</label>
                         <div class="controls">
-                            <input name="mobile" type="text"  placeholder="Mobile Number" value="<?php echo !empty($mobile)?$mobile:'';?>">
-                            <?php if (!empty($mobileError)): ?>
-                                <span class="help-inline"><?php echo $mobileError;?></span>
+                            <input name="phone" type="text"  placeholder="Phone" value="<?php echo !empty($phone)?$phone:'';?>">
+                            <?php if (!empty($phoneError)): ?>
+                                <span class="help-inline"><?php echo $phoneError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
+                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
+                        <label class="control-label">Date of Birth</label>
+                        <div class="controls">
+                            <input name="dob" type="text"  placeholder="Date Of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
+                            <?php if (!empty($dobError)): ?>
+                                <span class="help-inline"><?php echo $dobError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($genderError)?'error':'';?>">
+                        <label class="control-label">Gender</label>
+                        <div class="controls">
+                            <input name="gender" type="text"  placeholder="Gender" value="<?php echo !empty($gender)?$gender:'';?>">
+                            <?php if (!empty($genderError)): ?>
+                                <span class="help-inline"><?php echo $genderError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
+                        <label class="control-label">Password</label>
+                        <div class="controls">
+                            <input name="password" type="text"  placeholder="Password" value="<?php echo !empty($password)?$password:'';?>">
+                            <?php if (!empty($passwordError)): ?>
+                                <span class="help-inline"><?php echo $passwordError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($permissionError)?'error':'';?>">
+                        <label class="control-label">Permission</label>
+                        <div class="controls">
+                            <input name="permission" type="text"  placeholder="Permission" value="<?php echo !empty($permission)?$permission:'';?>">
+                            <?php if (!empty($permissionError)): ?>
+                                <span class="help-inline"><?php echo $permissionError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
+                        <label class="control-label">Username</label>
+                        <div class="controls">
+                            <input name="username" type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
+                            <?php if (!empty($usernameError)): ?>
+                                <span class="help-inline"><?php echo $usernameError;?></span>
+                            <?php endif;?>
+                        </div>
+                      </div>
+
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Update</button>
                           <a class="btn" href="index.php">Back</a>
