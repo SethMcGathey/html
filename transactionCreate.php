@@ -42,7 +42,7 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO transaction (cart,timestamp,payment_ID,customer_ID) values(?, ?, ?, ?)";
+            $sql = "INSERT INTO transaction (cart,payment_ID,customer_ID) values(?, ?, ?)";
             $q = $pdo->prepare($sql);
             $q->execute(array($cart, $timestamp, $payment_ID,$customer_ID));
             Database::disconnect();
