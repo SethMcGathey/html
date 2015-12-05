@@ -31,7 +31,7 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Read a SubCategory</h3>
+                        <h3>Read a Subcategory</h3>
                     </div>
 
                     <div class="form-horizontal" >
@@ -47,7 +47,7 @@
                         <label class="control-label">Category Id</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['catefory_id'];?>
+                                <?php echo $data['category_id'];?>
                             </label>
                         </div>
                       </div>

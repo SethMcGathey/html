@@ -32,7 +32,7 @@
                        foreach ($pdo->query($sql) as $row) {
                                 echo '<tr>';
                                 echo '<td>'. $row['name'] . '</td>';
-                                echo '<td>'. $row['catefory_id'] . '</td>';
+                                echo '<td>'. $row['category_id'] . '</td>';
                                 echo '<td width=250>';
                                 echo '<a class="btn" href="subcategoryRead.php?id='.$row['id'].'">Read</a>';
                                 echo ' ';

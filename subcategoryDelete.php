@@ -35,7 +35,7 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Delete a SubCategory</h3>
+                        <h3>Delete a Subcategory</h3>
                     </div>
 
                     <form class="form-horizontal" action="subcategoryDelete.php" method="post">

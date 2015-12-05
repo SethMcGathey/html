@@ -13,11 +13,11 @@
     if ( !empty($_POST)) {
         // keep track validation errors
         $nameError = null;
-        $catefory_idError = null;
+        $category_idError = null;
 
         // keep track post values
         $name = $_POST['name'];
-        $catefory_id = $_POST['catefory_id'];
+        $category_id = $_POST['category_id'];
 
         // validate input
         $valid = true;
@@ -26,8 +26,8 @@
             $valid = false;
         }
 
-        if (empty($catefory_id)) {
-            $catefory_idError = 'Please enter Name';
+        if (empty($category_id)) {
+            $category_idError = 'Please enter Name';
             $valid = false;
         }
 
@@ -36,9 +36,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "UPDATE subcategory  set name = ?, catefory_id = ? WHERE id = ?";
+            $sql = "UPDATE subcategory  set name = ?, category_id = ? WHERE id = ?";
             $q = $pdo->prepare($sql);
-            $q->execute(array($name,$catefory_id,$id));
+            $q->execute(array($name,$category_id,$id));
             Database::disconnect();
             header("Location: subcategoryIndex.php");
         }
@@ -50,7 +50,7 @@
         $q->execute(array($id));
         $data = $q->fetch(PDO::FETCH_ASSOC);
         $name = $data['name'];
-        $catefory_id = $data['catefory_id'];
+        $category_id = $data['category_id'];
         Database::disconnect();
     }
 ?>
@@ -68,7 +68,7 @@
 
                 <div class="span10 offset1">
                     <div class="row">
-                        <h3>Update a SubCategory</h3>
+                        <h3>Update a Subcategory</h3>
                     </div>
 
                     <form class="form-horizontal" action="subcategoryUpdate.php?id=<?php echo $id?>" method="post">
@@ -81,12 +81,12 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($catefory_idError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($category_idError)?'error':'';?>">
                         <label class="control-label">Category Id</label>
                         <div class="controls">
-                            <input name="catefory_id" type="text"  placeholder="Category Id" value="<?php echo !empty($catefory_id)?$catefory_id:'';?>">
-                            <?php if (!empty($catefory_idError)): ?>
-                                <span class="help-inline"><?php echo $catefory_idError;?></span>
+                            <input name="category_id" type="text"  placeholder="Category Id" value="<?php echo !empty($category_id)?$category_id:'';?>">
+                            <?php if (!empty($category_idError)): ?>
+                                <span class="help-inline"><?php echo $category_idError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
