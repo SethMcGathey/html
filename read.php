@@ -36,15 +36,23 @@
 
                     <div class="form-horizontal" >
                       <div class="control-group">
-                        <label class="control-label">Name</label>
+                        <label class="control-label">First Name</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['name'];?>
+                                <?php echo $data['firstname'];?>
                             </label>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Email Address</label>
+                        <label class="control-label">Last Name</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['lastname'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Email</label>
                         <div class="controls">
                             <label class="checkbox">
                                 <?php echo $data['email'];?>
@@ -52,10 +60,50 @@
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">Mobile Number</label>
+                        <label class="control-label">Phone</label>
                         <div class="controls">
                             <label class="checkbox">
-                                <?php echo $data['mobile'];?>
+                                <?php echo $data['phone'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Date of Birth</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['dob'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Gender</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['gender'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Password</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['password'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Permission</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['permission'];?>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label">Username</label>
+                        <div class="controls">
+                            <label class="checkbox">
+                                <?php echo $data['username'];?>
                             </label>
                         </div>
                       </div>
