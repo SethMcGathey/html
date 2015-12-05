@@ -158,59 +158,7 @@
                             <?php endif;?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($phoneError)?'error':'';?>">
-                        <label class="control-label">Phone</label>
-                        <div class="controls">
-                            <input name="phone" type="text"  placeholder="Phone" value="<?php echo !empty($phone)?$phone:'';?>">
-                            <?php if (!empty($phoneError)): ?>
-                                <span class="help-inline"><?php echo $phoneError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-                      <div class="control-group <?php echo !empty($dobError)?'error':'';?>">
-                        <label class="control-label">Date of Birth</label>
-                        <div class="controls">
-                            <input name="dob" type="text"  placeholder="Date Of Birth" value="<?php echo !empty($dob)?$dob:'';?>">
-                            <?php if (!empty($dobError)): ?>
-                                <span class="help-inline"><?php echo $dobError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-                      <div class="control-group <?php echo !empty($genderError)?'error':'';?>">
-                        <label class="control-label">Gender</label>
-                        <div class="controls">
-                            <input name="gender" type="text"  placeholder="Gender" value="<?php echo !empty($gender)?$gender:'';?>">
-                            <?php if (!empty($genderError)): ?>
-                                <span class="help-inline"><?php echo $genderError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-                      <div class="control-group <?php echo !empty($passwordError)?'error':'';?>">
-                        <label class="control-label">Password</label>
-                        <div class="controls">
-                            <input name="password" type="text"  placeholder="Password" value="<?php echo !empty($password)?$password:'';?>">
-                            <?php if (!empty($passwordError)): ?>
-                                <span class="help-inline"><?php echo $passwordError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-                      <div class="control-group <?php echo !empty($permissionError)?'error':'';?>">
-                        <label class="control-label">Permission</label>
-                        <div class="controls">
-                            <input name="permission" type="text"  placeholder="Permission" value="<?php echo !empty($permission)?$permission:'';?>">
-                            <?php if (!empty($permissionError)): ?>
-                                <span class="help-inline"><?php echo $permissionError;?></span>
-                            <?php endif;?>
-                        </div>
-                      </div>
-                      <div class="control-group <?php echo !empty($usernameError)?'error':'';?>">
-                        <label class="control-label">Username</label>
-                        <div class="controls">
-                            <input name="username" type="text"  placeholder="Username" value="<?php echo !empty($username)?$username:'';?>">
-                            <?php if (!empty($usernameError)): ?>
-                                <span class="help-inline"><?php echo $usernameError;?></span>
-                            <?php endif;?>
-                        </div>
+>
                       </div>
 
                       <div class="form-actions">
