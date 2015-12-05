@@ -35,8 +35,8 @@
                                 echo '<tr>';
                                 echo '<td>'. $row['cart'] . '</td>';
                                 echo '<td>'. $row['timestamp'] . '</td>';
-                                echo '<td>'. $row['payment_ID'] . '</td>';
-                                echo '<td>'. $row['customer_ID'] . '</td>';
+                                echo '<td>'. $row['payment_id'] . '</td>';
+                                echo '<td>'. $row['customer_id'] . '</td>';
                                 echo '<td width=250>';
                                 echo '<a class="btn" href="transactionRead.php?id='.$row['id'].'">Read</a>';
                                 echo ' ';
