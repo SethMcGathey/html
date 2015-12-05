@@ -10,7 +10,7 @@
         header("Location: index.php");
     }
 
-    /*if ( !empty($_POST)) {
+    if ( !empty($_POST)) {
         // keep track validation errors
         $firstnameError = null;
         $lastnameError = null;
@@ -93,9 +93,9 @@
             $q->execute(array($firstname,$lastname,$email,$phone,$dob,$gender,$password,$permission,$username,$id));
             Database::disconnect();
             header("Location: index.php");
-        }*/
+        }
     } else {
-        $pdo = Database::connect();
+        /*$pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "SELECT * FROM customer where id = ?";
         $q = $pdo->prepare($sql);
@@ -110,7 +110,7 @@
         $password = $data['password'];
         $permission = $data['permission'];
         $username = $data['username'];
-        Database::disconnect();
+        Database::disconnect();*/
     }
 ?>
 
