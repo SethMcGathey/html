@@ -4,8 +4,8 @@
 
     if ( !empty($_POST)) {
         // keep track validation errors
-        $firstnameError = null;
-        $lastnameError = null;
+        $first_nameError = null;
+        $last_nameError = null;
         $emailError = null;
         $phoneError = null;
         $dobError = null;
@@ -15,8 +15,8 @@
         $usernameError = null;
 
         // keep track post values
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $dob = $_POST['dob'];
@@ -27,13 +27,13 @@
 
         // validate input
         $valid = true;
-        if (empty($firstname)) {
-            $firstnameError = 'Please enter First Name';
+        if (empty($first_name)) {
+            $first_nameError = 'Please enter First Name';
             $valid = false;
         }
 
-        if (empty($lastname)) {
-            $lastnameError = 'Please enter Last Name';
+        if (empty($last_name)) {
+            $last_nameError = 'Please enter Last Name';
             $valid = false;
         }
 
@@ -80,9 +80,9 @@
         if ($valid) {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO customer (firstname,lastname,email,phone,dob,gender,password,permission,username) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO customer (first_name,last_name,email,phone,dob,gender,password,permission,username) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $q = $pdo->prepare($sql);
-            $q->execute(array($firstname, $lastname, $email,$phone,$dob,$gender,$password,$permission,$username));
+            $q->execute(array($first_name, $last_name, $email,$phone,$dob,$gender,$password,$permission,$username));
             Database::disconnect();
             header("Location: index.php");
         }
@@ -115,7 +115,7 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($lastnameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($last_nameError)?'error':'';?>">
                         <label class="control-label">Last Name</label>
                         <div class="controls">
                             <input name="last_name" type="text"  placeholder="Last Name" value="<?php echo !empty($last_name)?$last_name:'';?>">
