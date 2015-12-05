@@ -106,21 +106,21 @@
                     </div>
 
                     <form class="form-horizontal" action="create.php" method="post">
-                      <div class="control-group <?php echo !empty($fisrtnameError)?'error':'';?>">
+                      <div class="control-group <?php echo !empty($fisrt_nameError)?'error':'';?>">
                         <label class="control-label">First Name</label>
                         <div class="controls">
-                            <input name="firstname" type="text"  placeholder="First Name" value="<?php echo !empty($firstname)?$firstsame:'';?>">
-                            <?php if (!empty($nameError)): ?>
-                                <span class="help-inline"><?php echo $nameError;?></span>
+                            <input name="first_name" type="text"  placeholder="First Name" value="<?php echo !empty($first_name)?$first_name:'';?>">
+                            <?php if (!empty($first_nameError)): ?>
+                                <span class="help-inline"><?php echo $first_nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
                       <div class="control-group <?php echo !empty($lastnameError)?'error':'';?>">
                         <label class="control-label">Last Name</label>
                         <div class="controls">
-                            <input name="lastname" type="text"  placeholder="Last Name" value="<?php echo !empty($lastname)?$lastname:'';?>">
-                            <?php if (!empty($lastnameError)): ?>
-                                <span class="help-inline"><?php echo $lastnameError;?></span>
+                            <input name="last_name" type="text"  placeholder="Last Name" value="<?php echo !empty($last_name)?$last_name:'';?>">
+                            <?php if (!empty($last_nameError)): ?>
+                                <span class="help-inline"><?php echo $last_nameError;?></span>
                             <?php endif; ?>
                         </div>
                       </div>
