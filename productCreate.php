@@ -106,9 +106,9 @@
                             <?php endif;?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                      
 
-                      <div>
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
                         <label>Subcategory</label>
                         <div>
                             <select name="subcategoryid">
