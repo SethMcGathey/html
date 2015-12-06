@@ -60,6 +60,15 @@
         $phone = $data['phone'];
         $address_id = $data['address_id'];
         Database::disconnect();
+
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id,name FROM subcategory ORDER BY name";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
+
     }
 ?>
 
@@ -101,10 +110,9 @@
                       <div class="control-group <?php echo !empty($address_idError)?'error':'';?>">
                         <label class="control-label">Address Id</label>
                         <div class="controls">
-                            <input name="address_id" type="text" placeholder="Address Id" value="<?php echo !empty($address_id)?$address_id:'';?>">
-                            <?php if (!empty($address_idError)): ?>
-                                <span class="help-inline"><?php echo $address_idError;?></span>
-                            <?php endif;?>
+                            <select name="address_id">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
