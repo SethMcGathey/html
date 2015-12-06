@@ -108,20 +108,18 @@
 
 
 
-                          <select>
+                          
                             <?php include 'database.php';
                                $pdo = Database::connect();
                                $sql = 'SELECT * FROM subcategory ORDER BY id desc';
                                foreach ($pdo->query($sql) as $row) {
-                                   echo '<option>bob</option>';
-                                   echo '<option>cat</option>';
-                                   echo '<option>' . $row['id'] . '</option>';
+                                   echo '<div>bob</div>';
+                                   echo '<div>cat</div>';
+                                   echo '<div>' . $row['id'] . '</div>';
                                 }
                                 $data = $pdo->query($sql));
-                               echo $data;
-                               console.log($data);
                                Database::disconnect(); ?>
-                          </select>
+                          
 
 
 
