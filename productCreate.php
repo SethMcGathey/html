@@ -106,22 +106,6 @@
                         </div>
                       </div>
 
-                          <select>
-                            <?php
-                               include 'database.php';
-                               $pdo = Database::connect();
-
-                               echo '<label class="control-label">' . $pdo . '</label>';
-                               $sql = 'SELECT * FROM subcategory ORDER BY id desc';
-                               foreach ($pdo->query($sql) as $row) {
-                                   echo '<option>bob</option>';
-                                   echo '<option>cat</option>';
-                                   echo '<option>' . $row['id'] . '</option>';
-                                }
-                                $data = $pdo->query($sql);
-                               Database::disconnect();
-                            ?>
-                          </select>
 
 
 
