@@ -51,6 +51,7 @@
     }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,22 +100,34 @@
                         <label class="control-label">Subcategory Id</label>
                         <div class="controls">
                             <input name="subcategory_id" type="text"  placeholder="Subcategory Id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
-                            
-                      <?php
-                       include 'database.php';
-                       $pdo = Database::connect();
-                       $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
-                       foreach ($pdo->query($sql) as $row) {
-                                echo '<select><option value=$row['id']>$row['name']</option></select>';
-                       }
-                       Database::disconnect();
-                      ?>
-
                             <?php if (!empty($subcategory_idError)): ?>
                                 <span class="help-inline"><?php echo $subcategory_idError;?></span>
                             <?php endif;?>
                         </div>
                       </div>
+
+
+
+
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label">Subcategory Id</label>
+                        <div class="controls">
+                            <input name="subcategory_id" type="text"  placeholder="Subcategory Id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
+                        </div>
+                      </div>
+
+
+                    <?php
+                       include 'database.php';
+                       $pdo = Database::connect();
+                       $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
+                       foreach ($pdo->query($sql) as $row) {
+                          echo '<option>'. $row['id'] . '</option>';
+                       }
+                       Database::disconnect();
+                      ?>
+
+
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
