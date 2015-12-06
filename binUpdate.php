@@ -96,7 +96,7 @@
                         <label class="control-label">Subcategory</label>
                         <div class="controls">
                             <select name="subcategoryid">
-                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                                <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"<?php if($row['id'] == $shipment_center_id) { ?> selected="selected"<?php } ?> ><?php echo $row['name'];?></option><?php }?>
                             </select>
                         </div>
                       </div>
