@@ -47,6 +47,15 @@
             $q->execute(array($name, $cost, $description,$subcategory_id));
             Database::disconnect();
             header("Location: productIndex.php");
+        }else
+        {
+            $pdo = Database::connect();
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "SELECT id,name FROM subcategory ORDER BY name";
+            $q = $pdo->prepare($sql);
+            $q->execute();
+            $data = $q->fetchAll();
+            Database::disconnect();
         }
     }
 ?>
@@ -104,6 +113,10 @@
                             <?php endif;?>
                         </div>
                       </div>
+
+                      <select name="subcategoryid">
+                          <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                      </select>
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
