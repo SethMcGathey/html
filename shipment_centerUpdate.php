@@ -111,7 +111,7 @@
                         <label class="control-label">Address Id</label>
                         <div class="controls">
                             <select name="address_id">
-                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                                <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['street_one'] . " " . $row['street_two'] . " " . $row['zipcode'] . " " . $row['city'] . " " . $row['country'];?></option><?php }?>
                             </select>
                         </div>
                       </div>
