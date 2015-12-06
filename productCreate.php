@@ -51,7 +51,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,13 +105,7 @@
                         </div>
                       </div>
 
-
-
-
-
-
-
-                        <div class="form-actions">
+                      <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
                           <a class="btn" href="productIndex.php">Back</a>
                         </div>
