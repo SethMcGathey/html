@@ -52,6 +52,14 @@
         $name = $data['name'];
         $shipment_center_id = $data['shipment_center_id'];
         Database::disconnect();
+
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id,name FROM subcategory ORDER BY name";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
     }
 ?>
 
@@ -81,13 +89,15 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($shipment_center_idError)?'error':'';?>">
-                        <label class="control-label">Shipment Center Id</label>
+
+
+
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label">Subcategory</label>
                         <div class="controls">
-                            <input name="shipment_center_id" type="text"  placeholder="Shipment Center Id" value="<?php echo !empty($shipment_center_id)?$shipment_center_id:'';?>">
-                            <?php if (!empty($shipment_center_idError)): ?>
-                                <span class="help-inline"><?php echo $shipment_center_idError;?></span>
-                            <?php endif; ?>
+                            <select name="subcategoryid">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
