@@ -110,6 +110,7 @@
                             <?php
                                include 'database.php';
                                $pdo = Database::connect();
+                               echo '<label class="control-label">' . $pdo . '</label>';
                                $sql = 'SELECT * FROM subcategory ORDER BY id desc';
                                foreach ($pdo->query($sql) as $row) {
                                    echo '<option>bob</option>';
