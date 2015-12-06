@@ -120,7 +120,7 @@
                     <?php
                        include 'database.php';
                        $pdo = Database::connect();
-                       $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
+                       $sql = 'SELECT id FROM subcategory ORDER BY id desc';
                        foreach ($pdo->query($sql) as $row) {
                           echo '<option>'. $row['id'] . '</option>';
                        }
