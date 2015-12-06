@@ -110,7 +110,7 @@
 
                       <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
                         <label class="control-label">Subcategory</label>
-                        <div>
+                        <div class="controls">
                             <select name="subcategoryid">
                                       <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
                             </select>
