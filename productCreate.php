@@ -117,21 +117,24 @@
                       </div>
 
 
-
-                      <select>
-                        <?php
-                           include 'database.php';
-                           $pdo = Database::connect();
-                           $sql = 'SELECT * FROM subcategory ORDER BY id desc';
-                           foreach ($pdo->query($sql) as $row) {
-                              echo '<option>bob</option>';
-                              echo '<option>cat</option>';
-                              echo '<option>'. $row['id'] . '</option>';
-                           }
-                           Database::disconnect();
-                          ?>
-                      </select>
-
+                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                        <label class="control-label">Subcategory Id</label>
+                        <div class="controls">
+                          <select>
+                            <?php
+                               include 'database.php';
+                               $pdo = Database::connect();
+                               $sql = 'SELECT * FROM subcategory ORDER BY id desc';
+                               foreach ($pdo->query($sql) as $row) {
+                                  echo '<option>bob</option>';
+                                  echo '<option>cat</option>';
+                                  echo '<option>'. $row['id'] . '</option>';
+                               }
+                               Database::disconnect();
+                            ?>
+                          </select>
+                        </div>
+                      </div>
 
 
                         <div class="form-actions">
