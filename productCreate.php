@@ -105,8 +105,18 @@
                         </div>
                       </div>
 
-                      <div>
-                       <?php
+<table class="table table-striped table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Cost</th>
+                          <th>Description</th>
+                          <th>Subcategory Id</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <?php
                        include 'database.php';
                        $pdo = Database::connect();
                        $sql = 'SELECT * FROM product ORDER BY id desc';
@@ -127,7 +137,8 @@
                        }
                        Database::disconnect();
                       ?>
-                      </div>
+                      </tbody>
+                </table>
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
