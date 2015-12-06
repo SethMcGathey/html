@@ -105,6 +105,15 @@
                         </div>
                       </div>
 
+                      <div>
+                        <?php include 'database.php'; ?>
+                        <?php $pdo = Database::connect(); ?>
+                        <?php $sql = 'SELECT * FROM product ORDER BY id desc'; ?>
+                        <?php foreach ($pdo->query($sql) as $row): ?>
+                            <span class="help-inline"><?php echo $id;?></span>
+                        <?php  Database::disconnect(); ?>
+                      </div>
+
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
                           <a class="btn" href="productIndex.php">Back</a>
