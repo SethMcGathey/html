@@ -8,7 +8,7 @@
 if( $name != null && $cost != null) {
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "INSERT INTO product (name,cost,subcategoryid) values(?, ?, ?)";
+        $sql = "INSERT INTO product (name,cost,subcategory_id) values(?, ?, ?)";
         $q = $pdo->prepare($sql);
         $q->execute(array($name,$cost,$subcategoryid));
         Database::disconnect();
