@@ -128,6 +128,17 @@
 
 
 
+<table class="table table-striped table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Cost</th>
+                          <th>Description</th>
+                          <th>Subcategory Id</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
                       <?php
                        include 'database.php';
                        $pdo = Database::connect();
@@ -149,6 +160,8 @@
                        }
                        Database::disconnect();
                       ?>
+                      </tbody>
+                </table>
 
 
                         <div class="form-actions">
