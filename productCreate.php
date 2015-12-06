@@ -114,7 +114,7 @@
                                foreach ($pdo->query($sql) as $row) { ?>
                                    <option>bob</option>
                                    <option>cat</option>
-                                   <option>'. $row['id'] . '</option>
+                                   <option><?php $row['id'] ?></option>
                                <?php }
                                Database::disconnect();
                             ?>
