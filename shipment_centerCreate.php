@@ -40,6 +40,15 @@
             Database::disconnect();
             header("Location: shipment_centerIndex.php");
         }
+    }else
+    {
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id,street_one,street_two,zipcode,city,state,country FROM address ORDER BY city";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
     }
 ?>
 
