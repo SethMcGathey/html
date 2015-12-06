@@ -122,9 +122,9 @@
                        $pdo = Database::connect();
                        $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
                        foreach ($pdo->query($sql) as $row) {
-                          echo <td>
+                          echo '<td>';
                           echo '<tr>'. $row['id'] . '</tr>';
-                          echo </td>
+                          echo '</td>';
                        }
                        Database::disconnect();
                       ?>
