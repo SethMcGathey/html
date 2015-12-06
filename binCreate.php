@@ -33,6 +33,15 @@
             Database::disconnect();
             header("Location: binIndex.php");
         }
+    }else
+    {
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id,name FROM shipment_center ORDER BY name";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
     }
 ?>
 
@@ -69,6 +78,16 @@
                             <?php if (!empty($shipment_center_idError)): ?>
                                 <span class="help-inline"><?php echo $shipment_center_idError;?></span>
                             <?php endif; ?>
+                        </div>
+                      </div>
+
+
+                      <div class="control-group <?php echo !empty($shipment_center_idError)?'error':'';?>">
+                        <label class="control-label">Shipment Center Id</label>
+                        <div class="controls">
+                            <select name="shipment_center_id">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
