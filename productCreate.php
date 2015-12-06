@@ -2,6 +2,14 @@
 
     require 'database.php';
 
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "SELECT id,name FROM subcategory ORDER BY name";
+    $q = $pdo->prepare($sql);
+    $q->execute();
+    $data = $q->fetchAll();
+    Database::disconnect();
+
     if ( !empty($_POST)) {
         // keep track validation errors
         $nameError = null;
@@ -36,13 +44,7 @@
             $subcategory_idError = 'Please enter Subcategory Id';
             $valid = false;
         }
-            $pdo = Database::connect();
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT id,name FROM subcategory ORDER BY name";
-            $q = $pdo->prepare($sql);
-            $q->execute();
-            $data = $q->fetchAll();
-            Database::disconnect();
+
 
         // insert data
         if ($valid) {
