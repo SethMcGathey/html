@@ -111,6 +111,7 @@
                                include 'database.php';
                                $pdo = Database::connect();
                                $sql = 'SELECT * FROM subcategory ORDER BY id desc';
+                               echo $pdo;
                                foreach ($pdo->query($sql) as $row) { ?>
                                    <option>bob</option>
                                    <option>cat</option>
