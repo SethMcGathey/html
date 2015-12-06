@@ -108,7 +108,7 @@
 
 
 
-                          <div>
+                          <select>
                             <?php 
                                include 'database.php';
                                $pdo = Database::connect();
@@ -122,7 +122,7 @@
                                Database::disconnect(); 
                             ?>
                           
-</div>
+                        </select>
 
 
 
