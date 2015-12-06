@@ -116,21 +116,25 @@
                         </div>
                       </div>
 
-                  <select>
-                    <?php
-                       include 'database.php';
-                       $pdo = Database::connect();
-                       $sql = 'SELECT * FROM product ORDER BY id desc';
-                       foreach ($pdo->query($sql) as $row) {
-                          echo '<option>'. $row['id'] . '</option>';
-                       }
-                       Database::disconnect();
-                      ?>
-                  </select>
+
+
+                      <select>
+                        <?php
+                           include 'database.php';
+                           $pdo = Database::connect();
+                           $sql = 'SELECT * FROM subcategory ORDER BY id desc';
+                           foreach ($pdo->query($sql) as $row) {
+                              echo '<option>bob</option>';
+                              echo '<option>cat</option>';
+                              echo '<option>'. $row['id'] . '</option>';
+                           }
+                           Database::disconnect();
+                          ?>
+                      </select>
 
 
 
-                      <div class="form-actions">
+                        <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
                           <a class="btn" href="productIndex.php">Back</a>
                         </div>
