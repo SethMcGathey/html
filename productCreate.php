@@ -111,12 +111,11 @@
                                include 'database.php';
                                $pdo = Database::connect();
                                $sql = 'SELECT * FROM subcategory ORDER BY id desc';
-                               echo $pdo;
-                               foreach ($pdo->query($sql) as $row) { ?>
-                                   <option>bob</option>
-                                   <option>cat</option>
-                                   <option><?php $row['id'] ?></option>
-                               <?php }
+                               foreach ($pdo->query($sql) as $row) {
+                                   echo '<option>bob</option>';
+                                   echo '<option>cat</option>';
+                                   echo '<option>' . $row['id'] . '</option>';
+                                }
                                Database::disconnect();
                             ?>
                           </select>
