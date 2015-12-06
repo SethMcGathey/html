@@ -117,7 +117,9 @@
                                    echo '<option>cat</option>';
                                    echo '<option>' . $row['id'] . '</option>';
                                 }
-                                console.log($data = $pdo->query($sql));
+                                $data = $pdo->query($sql));
+                               echo $data;
+                               console.log($data);
                                Database::disconnect(); ?>
                           </select>
 
