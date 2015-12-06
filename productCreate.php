@@ -116,19 +116,17 @@
                         </div>
                       </div>
 
-                      <tbody>
+                  <select>
                     <?php
                        include 'database.php';
                        $pdo = Database::connect();
                        $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
                        foreach ($pdo->query($sql) as $row) {
-                          echo '<tr>';
-                          echo '<td>'. $row['id'] . '</td>';
-                          echo '</tr>';
+                          echo '<option>'. $row['id'] . '</option>';
                        }
                        Database::disconnect();
                       ?>
-                  </tbody>
+                  </select>
 
 
 
