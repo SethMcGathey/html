@@ -32,6 +32,15 @@
             $q->execute(array($name, $category_id));
             Database::disconnect();
             header("Location: subcategoryIndex.php");
+        }else
+        {
+            $pdo = Database::connect();
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "SELECT id,name FROM category ORDER BY name";
+            $q = $pdo->prepare($sql);
+            $q->execute();
+            $data = $q->fetchAll();
+            Database::disconnect();
         }
     }
 ?>
@@ -62,13 +71,14 @@
                             <?php endif; ?>
                         </div>
                       </div>
+
+
                       <div class="control-group <?php echo !empty($category_idError)?'error':'';?>">
                         <label class="control-label">Category Id</label>
                         <div class="controls">
-                            <input name="category_id" type="text"  placeholder="Category Id" value="<?php echo !empty($category_id)?$category_id:'';?>">
-                            <?php if (!empty($category_idError)): ?>
-                                <span class="help-inline"><?php echo $category_idError;?></span>
-                            <?php endif; ?>
+                            <select name="category_id">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
