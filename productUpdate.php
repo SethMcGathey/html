@@ -68,6 +68,14 @@
         $description = $data['description'];
         $subcategory_id = $data['subcategory_id'];
         Database::disconnect();
+
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id,name FROM subcategory ORDER BY name";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
     }
 ?>
 
@@ -115,13 +123,13 @@
                             <?php endif;?>
                         </div>
                       </div>
+
                       <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
-                        <label class="control-label">Subcategory Id</label>
+                        <label class="control-label">Subcategory</label>
                         <div class="controls">
-                            <input name="subcategory_id" type="text"  placeholder="Subcategory Id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
-                            <?php if (!empty($subcategory_idError)): ?>
-                                <span class="help-inline"><?php echo $subcategory_idError;?></span>
-                            <?php endif;?>
+                            <select name="subcategoryid">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
