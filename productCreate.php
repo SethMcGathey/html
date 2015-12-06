@@ -109,16 +109,7 @@
 
 
                           
-                            <?php include 'database.php';
-                               $pdo = Database::connect();
-                               $sql = 'SELECT * FROM subcategory ORDER BY id desc';
-                               foreach ($pdo->query($sql) as $row) {
-                                   echo '<div>bob</div>';
-                                   echo '<div>cat</div>';
-                                   echo '<div>' . $row['id'] . '</div>';
-                                }
-                                $data = $pdo->query($sql));
-                               Database::disconnect(); ?>
+
                           
 
 
