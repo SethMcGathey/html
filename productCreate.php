@@ -36,7 +36,13 @@
             $subcategory_idError = 'Please enter Subcategory Id';
             $valid = false;
         }
-
+            $pdo = Database::connect();
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "SELECT id,name FROM subcategory ORDER BY name";
+            $q = $pdo->prepare($sql);
+            $q->execute();
+            $data = $q->fetchAll();
+            Database::disconnect();
 
         // insert data
         if ($valid) {
@@ -48,13 +54,7 @@
             Database::disconnect();
             header("Location: productIndex.php");
         }
-            $pdo = Database::connect();
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT id,name FROM subcategory ORDER BY name";
-            $q = $pdo->prepare($sql);
-            $q->execute();
-            $data = $q->fetchAll();
-            Database::disconnect();
+
 
     }
 ?>
