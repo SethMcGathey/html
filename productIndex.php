@@ -48,18 +48,6 @@
                        }
                        Database::disconnect();
                       ?>
-
-                      <select>
-                       <?php
-                       include 'database.php';
-                       $pdo = Database::connect();
-                       $sql = 'SELECT * FROM subcategory ORDER BY id desc';
-                       foreach ($pdo->query($sql) as $row) {
-                          echo '<option>'. $row['id'] . '</option>';
-                       }
-                       Database::disconnect();
-                      ?>
-                    </select>
                       </tbody>
                 </table>
         </div>
