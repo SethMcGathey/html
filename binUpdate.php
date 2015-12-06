@@ -55,7 +55,7 @@
 
         $pdo = Database::connect();
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT id,name FROM subcategory ORDER BY name";
+        $sql = "SELECT id,name FROM shipment_center ORDER BY name";
         $q = $pdo->prepare($sql);
         $q->execute();
         $data = $q->fetchAll();
@@ -92,10 +92,10 @@
 
 
 
-                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
-                        <label class="control-label">Subcategory</label>
+                      <div class="control-group <?php echo !empty($shipment_center_idError)?'error':'';?>">
+                        <label class="control-label">Shipment Center</label>
                         <div class="controls">
-                            <select name="subcategoryid">
+                            <select name="shipment_center_id">
                                 <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"<?php if($row['id'] == $shipment_center_id) { ?> selected="selected"<?php } ?> ><?php echo $row['name'];?></option><?php }?>
                             </select>
                         </div>
