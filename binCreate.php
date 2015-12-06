@@ -71,15 +71,6 @@
                             <?php endif; ?>
                         </div>
                       </div>
-                      <div class="control-group <?php echo !empty($shipment_center_idError)?'error':'';?>">
-                        <label class="control-label">Shipment Center Id</label>
-                        <div class="controls">
-                            <input name="shipment_center_id" type="text"  placeholder="Shipment Center Id" value="<?php echo !empty($shipment_center_id)?$shipment_center_id:'';?>">
-                            <?php if (!empty($shipment_center_idError)): ?>
-                                <span class="help-inline"><?php echo $shipment_center_idError;?></span>
-                            <?php endif; ?>
-                        </div>
-                      </div>
 
 
                       <div class="control-group <?php echo !empty($shipment_center_idError)?'error':'';?>">
