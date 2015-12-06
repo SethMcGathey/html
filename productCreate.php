@@ -47,7 +47,7 @@
             $q->execute(array($name, $cost, $description,$subcategory_id));
             Database::disconnect();
             header("Location: productIndex.php");
-        }else{
+        }
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "SELECT id,name FROM subcategory ORDER BY name";
@@ -55,7 +55,7 @@
             $q->execute();
             $data = $q->fetchAll();
             Database::disconnect();
-        }
+
     }
 ?>
 
