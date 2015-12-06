@@ -32,16 +32,16 @@
             $q->execute(array($name, $category_id));
             Database::disconnect();
             header("Location: subcategoryIndex.php");
-        }else
-        {
-            $pdo = Database::connect();
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT id, first_name, last_name FROM category ORDER BY first_name";
-            $q = $pdo->prepare($sql);
-            $q->execute();
-            $data = $q->fetchAll();
-            Database::disconnect();
         }
+    }else
+    {
+        $pdo = Database::connect();
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT id, name FROM category ORDER BY name";
+        $q = $pdo->prepare($sql);
+        $q->execute();
+        $data = $q->fetchAll();
+        Database::disconnect();
     }
 ?>
 
@@ -77,7 +77,7 @@
                         <label class="control-label">Category Id</label>
                         <div class="controls">
                             <select name="category_id">
-                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['first_name'] . $row['last_name'];?></option><?php }?>
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
                             </select>
                         </div>
                       </div>
