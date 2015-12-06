@@ -36,7 +36,7 @@
         {
             $pdo = Database::connect();
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT id,name FROM category ORDER BY name";
+            $sql = "SELECT id, first_name, last_name FROM category ORDER BY first_name";
             $q = $pdo->prepare($sql);
             $q->execute();
             $data = $q->fetchAll();
@@ -50,7 +50,7 @@
 <head>
     <meta charset="utf-8">
     <link   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -77,7 +77,7 @@
                         <label class="control-label">Category Id</label>
                         <div class="controls">
                             <select name="category_id">
-                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['first_name'] . $row['last_name'];?></option><?php }?>
                             </select>
                         </div>
                       </div>
