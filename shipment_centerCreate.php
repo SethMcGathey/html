@@ -40,15 +40,6 @@
             Database::disconnect();
             header("Location: shipment_centerIndex.php");
         }
-    }else
-    {
-        $pdo = Database::connect();
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "SELECT id,street_one,street_two,zipcode,city,state,country FROM address ORDER BY name";
-        $q = $pdo->prepare($sql);
-        $q->execute();
-        $data = $q->fetchAll();
-        Database::disconnect();
     }
 ?>
 
@@ -90,7 +81,9 @@
                       <div class="control-group <?php echo !empty($address_idError)?'error':'';?>">
                         <label class="control-label">Address Id</label>
                         <div class="controls">
-
+                            <select name="address_id">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['street_one'] . " " . $row['street_two'] . " " . $row['zipcode'] . " " . $row['city'] . " " . $row['country'];?></option><?php }?>
+                            </select>
                         </div>
                       </div>
 
