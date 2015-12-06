@@ -100,15 +100,14 @@
                         <div class="controls">
                             <input name="subcategory_id" type="text"  placeholder="Subcategory Id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
                             
-                      <?php
-                       include 'database.php';
-                       $pdo = Database::connect();
-                       $sql = 'SELECT id, name FROM subcategory ORDER BY id desc';
-                       foreach ($pdo->query($sql) as $row) {
-                                echo '<select><option value=' . $row['id'] . '>' . $row['name'] . '</option></select>';
-                       }
-                       Database::disconnect();
-                      ?>
+                      <?php include 'database.php'; ?>
+                      <?php $pdo = Database::connect(); ?>
+                      <?php $sql = 'SELECT id, name FROM subcategory ORDER BY id desc'; ?>
+                      <?php foreach ($pdo->query($sql) as $row) { ?>
+                      <?php          echo '<select><option value=' . $row['id'] . '>' . $row['name'] . '</option></select>'; ?>
+                      <?php } ?>
+                      <?php Database::disconnect(); ?>
+                      
 
                             <?php if (!empty($subcategory_idError)): ?>
                                 <span class="help-inline"><?php echo $subcategory_idError;?></span>
