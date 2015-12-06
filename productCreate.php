@@ -113,9 +113,14 @@
                         </div>
                       </div>
 
-                      <select name="subcategory_id">
-                          <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
-                      </select>
+                      <div>
+                        <label>Subcategory</label>
+                        <div>
+                            <select name="subcategoryid">
+                                      <?php foreach($data as $row) {?><option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option><?php }?>
+                            </select>
+                        </div>
+                      </div>
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Create</button>
