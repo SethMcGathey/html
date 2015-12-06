@@ -118,7 +118,7 @@
                                    echo '<div>cat</div>';
                                    echo '<div>' . $row['id'] . '</div>';
                                 }
-                                $data = $pdo->query($sql));
+                                
                                Database::disconnect(); 
                             ?>
                           
