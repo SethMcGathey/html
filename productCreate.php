@@ -107,7 +107,7 @@
                       </div>
 
 
-                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
+                      <div class="control-group">
                         <label class="control-label">Subcategory Id</label>
                         <div class="controls">
                           <select>
@@ -125,6 +125,30 @@
                           </select>
                         </div>
                       </div>
+
+
+
+                      <?php
+                       include 'database.php';
+                       $pdo = Database::connect();
+                       $sql = 'SELECT * FROM product ORDER BY id desc';
+                       foreach ($pdo->query($sql) as $row) {
+                          echo '<tr>';
+                          echo '<td>'. $row['name'] . '</td>';
+                          echo '<td>'. $row['cost'] . '</td>';
+                          echo '<td>'. $row['description'] . '</td>';
+                          echo '<td>'. $row['subcategory_id'] . '</td>';
+                          echo '<td width=250>';
+                          echo '<a class="btn" href="productRead.php?id='.$row['id'].'">Read</a>';
+                          echo ' ';
+                          echo '<a class="btn btn-success" href="productUpdate.php?id='.$row['id'].'">Update</a>';
+                          echo ' ';
+                          echo '<a class="btn btn-danger" href="productDelete.php?id='.$row['id'].'">Delete</a>';
+                          echo '</td>';
+                          echo '</tr>';
+                       }
+                       Database::disconnect();
+                      ?>
 
 
                         <div class="form-actions">
