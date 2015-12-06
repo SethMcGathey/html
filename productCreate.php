@@ -107,16 +107,6 @@
                       </div>
 
 
-
-
-                      <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
-                        <label class="control-label">Subcategory Id</label>
-                        <div class="controls">
-                            <input name="subcategory_id" type="text"  placeholder="Subcategory Id" value="<?php echo !empty($subcategory_id)?$subcategory_id:'';?>">
-                        </div>
-                      </div>
-
-
                       <div class="control-group <?php echo !empty($subcategory_idError)?'error':'';?>">
                         <label class="control-label">Subcategory Id</label>
                         <div class="controls">
