@@ -24,6 +24,9 @@
             <li><a href="addProducts.php">Add Products</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="manageUsers.php">Manage Users</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="manageUsers.php">Manage Users</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
