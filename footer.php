@@ -7,7 +7,7 @@
 	<h5>officialclashgames@gmail.com</h5></div>
 
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
