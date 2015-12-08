@@ -36,7 +36,6 @@
     </nav>
       
     <div class="container">
-      <h3>Collapsible Navbar</h3>
     </div>
 
   </body>
