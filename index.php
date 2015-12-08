@@ -2,6 +2,6 @@
 <html lang="en">
 <?php require 'navigation.php' ?>
 
-<p>Index.php</p>
+<h1>Index.php</h1>
 
 </html>
