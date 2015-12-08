@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <div class="panel-footer centerText">
 	<h5>Clash Games LLC</h5>		
 	<h5>Seth McGathey</h5>		
@@ -11,5 +11,5 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+</html>
 
