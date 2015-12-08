@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<div class="panel-footer centerText">
+<div class="panel-footer footerColor">
 	<h5 class="centerText">Clash Games LLC</h5>		
 	<h5>Seth McGathey</h5>		
 	<h5>708-297-0996</h5>		
