@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<?php require 'navigation.php' ?>
 
-<h1>footer.php</h1>
+<div class="panel-footer">Panel Footer</div>
 
-</html>
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="bootstrap.js"></script>
+  <script src="jquery.js"></script>
