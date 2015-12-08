@@ -1,6 +1,6 @@
 
 <?php
-    require 'database.php';
+    require '../../database.php';
     $id = 0;
 
     if ( !empty($_GET['id'])) {

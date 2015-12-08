@@ -33,7 +33,7 @@
                       </thead>
                       <tbody>
                       <?php
-                       include 'database.php';
+                       include '../../database.php';
                        $pdo = Database::connect();
                        $sql = 'SELECT * FROM customer ORDER BY id DESC';
                        foreach ($pdo->query($sql) as $row) {
