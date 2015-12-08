@@ -3,6 +3,6 @@
 <div class="panel-footer">Panel Footer</div>
 
 
-<link rel="stylesheet" href="css/bootstrap.css">
-<script src="js/bootstrap.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.js"></script>
