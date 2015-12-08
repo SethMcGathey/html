@@ -4,4 +4,6 @@
 
 <h1>addProducts.php</h1>
 
+
+<?php require 'footer.php' ?>
 </html>

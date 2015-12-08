@@ -4,4 +4,6 @@
 
 <h1>contact.php</h1>
 
+
+<?php require 'footer.php' ?>
 </html>
