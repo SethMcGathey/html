@@ -4,7 +4,6 @@
     <title>Clash Games LLC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
   </head>
   <body>
 
@@ -21,10 +20,10 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="products.php">Products</a></li>
             <li><a href="addProducts.php">Add Products</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="manageUsers.php">Manage Users</a></li>
-            <li><a href="products.php">Products</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
