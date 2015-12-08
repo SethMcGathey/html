@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<div class="panel-footer">Clash Games LLC		Seth McGathey		708-297-0996		officialclashgames@gmail.com</div>
+<div class="panel-footer"><h5>Clash Games LLC		Seth McGathey		708-297-0996		officialclashgames@gmail.com</h5></div>
 
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
