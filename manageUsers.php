@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require 'header.php' ?>
-<?php require 'navigation.php' ?>
+	<?php require 'header.php' ?>
+	<body>
+		<?php require 'navigation.php' ?>
 
-<h1>manageUsers.php</h1>
+		<h1>manageUsers.php</h1>
 
-
-<?php require 'footer.php' ?>
+	</body>
+	<?php require 'footer.php' ?>
 </html>
