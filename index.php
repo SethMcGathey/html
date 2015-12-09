@@ -14,7 +14,7 @@
                $pdo = Database::connect();
                $sql = 'SELECT * FROM category ORDER BY id';
                foreach ($pdo->query($sql) as $row) {
-	                echo '<a href=""><div class="col-4-lg" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
+	                echo '<a href=""><div class="col-4-lg" id=category"' . $row['id']. '">' . $row['name'] . '</div></a>';
                }
                Database::disconnect();
               ?>
