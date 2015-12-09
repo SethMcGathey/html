@@ -12,10 +12,9 @@
               <?php
                include 'database.php';
                $pdo = Database::connect();
-               $sql = 'SELECT * FROM category ORDER BY id DESC';
+               $sql = 'SELECT * FROM category ORDER BY id';
                foreach ($pdo->query($sql) as $row) {
 	                echo '<a href=""><div class="col-4-lg" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
-	                echo '<a href=""><div class="col-4-lg">' . $row['id']. '</div></a>';
                }
                Database::disconnect();
               ?>
