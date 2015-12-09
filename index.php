@@ -10,15 +10,15 @@
 			<div class="row">
 
 
-			<?php
-	           include '../../database.php';
-	           $pdo = Database::connect();
-	           $sql = 'SELECT * FROM category ORDER BY id DESC';
-	           foreach ($pdo->query($sql) as $row) {
-	           		echo '<a href=""><div class="col-4-lg" id='.$row['id'].'>'. $row['name'] . '</div></a>'
-	           }
-	           Database::disconnect();
-	        ?>
+				<?php
+		           include '../../database.php';
+		           $pdo = Database::connect();
+		           $sql = 'SELECT * FROM category ORDER BY id DESC';
+		           foreach ($pdo->query($sql) as $row) {
+		           		echo '<a href=""><div class="col-4-lg" id='.$row['id'].'>'. $row['name'] . '</div></a>'
+		           }
+		           Database::disconnect();
+		        ?>
 
 
 
