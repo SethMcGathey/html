@@ -12,6 +12,13 @@
 				<a href=""><div class="col-4-lg">Toys</div></a>
 				<a href=""><div class="col-4-lg">Puzzles</div></a>
 			</div>
+
+			<div>Content about category</div>
+			<div>
+				<div>image</div>
+				<div>content about subcategory</div>
+			</div>
+		
 		</div>
 
 	</body>
