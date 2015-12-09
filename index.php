@@ -12,7 +12,7 @@
               <?php
                $sql = 'SELECT id,name FROM category ORDER BY id';
                foreach ($pdo->query($sql) as $row) {
-	                echo '<a class="categories" href=""><div class="col-4-lg" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
+	                echo '<a href=""><div class="col-4-lg categories" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
                }
               ?>
 
