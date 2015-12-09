@@ -8,6 +8,20 @@
 		<div class="container-fluid">
 			<h1>Index.php</h1>
 			<div class="row">
+
+
+			<?php
+	           include '../../database.php';
+	           $pdo = Database::connect();
+	           $sql = 'SELECT * FROM category ORDER BY id DESC';
+	           foreach ($pdo->query($sql) as $row) {
+	           		echo '<a href=""><div class="col-4-lg" id='.$row['id'].'>'. $row['name'] . '</div></a>'
+	           }
+	           Database::disconnect();
+	        ?>
+
+
+
 				<a href=""><div class="col-4-lg">Games</div></a>
 				<a href=""><div class="col-4-lg">Toys</div></a>
 				<a href=""><div class="col-4-lg">Puzzles</div></a>
