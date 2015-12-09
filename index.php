@@ -8,9 +8,9 @@
 		<div class="container-fluid">
 			<h1>Index.php</h1>
 			<div class="row">
-				<div class="col-4-lg"><a href="">Games</a></div>
-				<div class="col-4-lg"><a href="">Toys</a></div>
-				<div class="col-4-lg"><a href="">Puzzles</a></div>
+				<a href=""><div class="col-4-lg">Games</div></a>
+				<a href=""><div class="col-4-lg">Toys</div></a>
+				<a href=""><div class="col-4-lg">Puzzles</div></a>
 			</div>
 		</div>
 
