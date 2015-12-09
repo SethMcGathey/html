@@ -12,3 +12,6 @@
 <script src="js/bootstrap.min.js"></script>
 
 
+<?php
+    Database::disconnect();
+?>
