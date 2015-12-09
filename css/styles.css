@@ -1,3 +1,7 @@
+.centerText{
+	text-align:center;
+}
+
 body{
 	/*background-image: url("../img/tileable_wood_texture.png");*/
 }
@@ -91,10 +95,6 @@ h5{
 	border-radius: 50%;
 }
 
-
-.centerText{
-	text-align:center;
-}
 
 .pagination{
 	border:1px;
