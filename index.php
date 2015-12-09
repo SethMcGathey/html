@@ -10,20 +10,20 @@
 			<div class="row">
 
               <?php
-               include '../../database.php';
+               include 'database.php';
                $pdo = Database::connect();
                $sql = 'SELECT * FROM category ORDER BY id DESC';
                foreach ($pdo->query($sql) as $row) {
-                        echo '<tr>';
-                        echo '<td>'. $row['name'] . '</td>';
-                        echo '<td width=250>';
-                        echo '<a class="btn" href="categoryRead.php?id='.$row['id'].'">Read</a>';
-                        echo ' ';
-                        echo '<a class="btn btn-success" href="categoryUpdate.php?id='.$row['id'].'">Update</a>';
-                        echo ' ';
-                        echo '<a class="btn btn-danger" href="categoryDelete.php?id='.$row['id'].'">Delete</a>';
-                        echo '</td>';
-                        echo '</tr>';
+	                echo '<tr>';
+	                echo '<td>'. $row['name'] . '</td>';
+	                echo '<td width=250>';
+	                echo '<a class="btn" href="categoryRead.php?id='.$row['id'].'">Read</a>';
+	                echo ' ';
+	                echo '<a class="btn btn-success" href="categoryUpdate.php?id='.$row['id'].'">Update</a>';
+	                echo ' ';
+	                echo '<a class="btn btn-danger" href="categoryDelete.php?id='.$row['id'].'">Delete</a>';
+	                echo '</td>';
+	                echo '</tr>';
                }
                Database::disconnect();
               ?>
