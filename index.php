@@ -6,9 +6,12 @@
 
 		<?php require 'navigation.php' ?> 
 		<div class="container-fluid">
-		
-		<h1>Index.php</h1>
-
+			<h1>Index.php</h1>
+			<div class="row">
+				<div class="col-4-lg">Games</div>
+				<div class="col-4-lg">Toys</div>
+				<div class="col-4-lg">Puzzles</div>
+			</div>
 
 		
 		</div>
