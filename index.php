@@ -48,9 +48,10 @@
 
 
 
-$(document).ready(function(event){
-	event.preventDefault();
-	$(".myCategories").on("click", function(){
+$(document).ready(function(){
+	$(".myCategories").on("click", function(event){
+		event.preventDefault();
+		return false
 		var clickedId = this.id;
 		//console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
