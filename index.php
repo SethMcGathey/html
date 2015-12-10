@@ -53,7 +53,7 @@
 $(document).ready(function(){
 	$("categories").click(function(){
 
-		$.get( "test.php?id=" + clickedID, function( data ) {
+		$.get( "selectSubcategory.php?id=" + clickedID, function( data ) {
   			alert( "Data Loaded: " + data );
   			print(data);
 		});
