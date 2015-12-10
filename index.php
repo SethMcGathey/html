@@ -36,10 +36,6 @@
 		
 		</div>
 
-	</body>
-
-	<?php require 'footer.php' ?>
-</html>
 
 
 <script>
@@ -50,7 +46,7 @@
 
 
 
-//$(document).ready(function(){
+$(document).ready(function(){
 	$(".categories").click(function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
@@ -60,8 +56,19 @@
   			$( "#ajax_Output" ).html( "hello" );
 		});
 	});
-//});
+});
 
 </script>
+
+
+		
+
+	</body>
+
+	<?php require 'footer.php' ?>
+</html>
+
+
+
 
 
