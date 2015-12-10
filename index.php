@@ -38,6 +38,8 @@
 
 
 <?php require 'footer.php' ?>
+
+
 <script>
  /*$(".categories").click(function() {
       var clickedId= $(this).attr("id");
@@ -61,7 +63,7 @@ $(document).ready(function(){
 </script>
 
 
-		
+
 
 	</body>
 
