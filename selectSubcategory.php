@@ -1,6 +1,5 @@
 <?php
 	include 'database.php';
-	echo "hi";
     $pdo = Database::connect();
 
 	$sql = 'SELECT id,name,category_id FROM subcategory WHERE category_id = ' . id;
