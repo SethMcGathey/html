@@ -55,9 +55,9 @@ $(document).ready(function(){
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			//console.log(data);
   			
-  			$( "#ajax_Output" ).html( data );
+  			
 		});
-			
+			$( "#ajax_Output" ).html( data );
 	});
 
 });
