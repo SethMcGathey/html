@@ -23,12 +23,7 @@
 
 
 
-              <?php
-               $sql = 'SELECT id,name,category_id FROM subcategory WHERE category_id = ';
-               foreach ($pdo->query($sql) as $row) {
-	                echo '<a href=""><div class="col-4-lg" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
-               }
-              ?>
+
 
 
 
@@ -49,8 +44,22 @@
 <script>
  $(".categories").click(function() {
       var clickedId= $(this).attr("id");
-      alert(clickedId);
+      window.location.href = "index.php?id=" + clickedId;
    });
+
+
+
+$(document).ready(function(){
+	$("categories").click(function(){
+
+		$.get( "test.php?id=" + clickedID, function( data ) {
+  			alert( "Data Loaded: " + data );
+  			print(data);
+		});
+		
+	});
+});
+
 </script>
 
 
