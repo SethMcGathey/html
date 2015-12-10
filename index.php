@@ -48,7 +48,7 @@
 
 
 
-//$(document).ready(function(){
+$(document).ready(function(){
 	$(".myCategories").on("click", function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
@@ -57,10 +57,10 @@
   			
   			
 		});
-		$( "#ajax_Output" ).html( data );
+		
 	});
-
-//});
+	$( "#ajax_Output" ).html( data );
+});
 
 </script>
 
