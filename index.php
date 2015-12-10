@@ -22,7 +22,8 @@
 			</div>
 
 
-
+			<div ng-bind-html="{data}">
+			</div>
 
 
 
