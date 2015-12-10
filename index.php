@@ -53,9 +53,9 @@
 $(document).ready(function(){
 	$(".categories").click(function(){
 		var clickedId = this.id;
-		console.log(clickedId);
+		//console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
-			console.log(data);
+			//console.log(data);
   			
   			$( "#ajax_Output" ).html( "hello" );
 		});
