@@ -52,9 +52,9 @@
 
 $(document).ready(function(){
 	$(".categories").click(function(){
-		var myClickedId = this.id;
+		var clickedId = this.id;
 		console.log("made it");
-		$.get( "selectSubcategory.php?id=" + clickedID, function( data ) {
+		$.get( "selectSubcategory.php?id=" + myClickedID, function( data ) {
   			alert( "Data Loaded: " + data );
   			document.getElementById("ajaxOutput").innerHTML = data
 		});
