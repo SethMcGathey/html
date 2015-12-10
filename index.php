@@ -49,7 +49,7 @@
 
 
 $(document).ready(function(){
-	$(".categories").click(function(){
+	$(".categories").on("click", function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
