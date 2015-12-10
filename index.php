@@ -50,7 +50,7 @@
 
 
 
-$(document).ready(function(){
+//$(document).ready(function(){
 	$(".categories").click(function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
@@ -60,7 +60,7 @@ $(document).ready(function(){
   			$( "#ajax_Output" ).html( "hello" );
 		});
 	});
-});
+//});
 
 </script>
 
