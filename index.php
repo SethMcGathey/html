@@ -51,9 +51,9 @@
 
 
 $(document).ready(function(){
-	console.log("made it");
 	$(".categories").click(function(){
 		var clickedId = $(this).id;
+		console.log("made it");
 		$.get( "selectSubcategory.php?id=" + clickedID, function( data ) {
   			alert( "Data Loaded: " + data );
   			document.getElementById("ajaxOutput").innerHTML = data
