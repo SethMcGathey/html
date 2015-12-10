@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			console.log(data);
   			
-  			$( "#ajaxOutput" ).html( data );
+  			$( "#ajaxOutput" ).text( data );
 		});
 	});
 });
