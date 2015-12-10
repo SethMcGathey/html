@@ -22,7 +22,7 @@
 			</div>
 
 
-			<div id="ajaxOutput">
+			<div id="ajax_Output">
 			</div>
 
 
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			console.log(data);
   			
-  			$( "#ajaxOutput" ).text( data );
+  			$( "#ajax_Output" ).text( data );
 		});
 	});
 });
