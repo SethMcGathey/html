@@ -53,7 +53,6 @@ $(document).ready(function(){
 
 		var clickedId = this.id;
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
-			console.log(clickedId);
   			
   			$( "#ajax_Output" ).html( data );
 		});
