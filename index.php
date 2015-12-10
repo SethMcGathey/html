@@ -48,7 +48,8 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function(e){
+	e.preventDefault();
 	$(".categories").click(function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
