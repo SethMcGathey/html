@@ -59,7 +59,7 @@
 		});
 
 	});
-	$( "#ajax_Output" ).html( "hello" );
+	$( "#ajax_Output" ).html( data );
 //});
 
 </script>
