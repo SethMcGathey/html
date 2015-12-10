@@ -48,16 +48,17 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function(event){
+	event.preventDefault();
 	$(".myCategories").on("click", function(){
 		var clickedId = this.id;
 		//console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			//console.log(data);
   			
-  			
+  			$( "#ajax_Output" ).html( data );
 		});
-			$( "#ajax_Output" ).html( data );
+			
 	});
 
 });
