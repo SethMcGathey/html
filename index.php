@@ -57,9 +57,9 @@
   			
   			
 		});
-
+		$( "#ajax_Output" ).html( data );
 	});
-	$( "#ajax_Output" ).html( data );
+
 //});
 
 </script>
