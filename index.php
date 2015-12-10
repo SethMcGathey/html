@@ -49,7 +49,7 @@
 
 
 $(document).ready(function(){
-	$(".myCategories").on("click", function(event){
+	$(".myCategories").on("click", function(){
 		event.preventDefault();
 
 		var clickedId = this.id;
