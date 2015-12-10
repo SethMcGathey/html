@@ -53,7 +53,7 @@ $(document).ready(function(){
 		event.preventDefault();
 
 		var clickedId = this.id;
-		//console.log(clickedId);
+		console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			//console.log(data);
   			
