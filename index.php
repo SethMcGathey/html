@@ -22,7 +22,7 @@
 			</div>
 
 
-			<div ng-bind-html="{data}">
+			<div ng-bind-html="data">
 			</div>
 
 
@@ -52,12 +52,10 @@
 
 $(document).ready(function(){
 	$("categories").click(function(){
-
 		$.get( "selectSubcategory.php?id=" + clickedID, function( data ) {
   			alert( "Data Loaded: " + data );
   			print(data);
 		});
-		
 	});
 });
 
