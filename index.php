@@ -53,7 +53,7 @@
 $(document).ready(function(){
 	$(".categories").click(function(){
 		var clickedId = this.id;
-		console.log("made it");
+		console.log(clickedId);
 		$.get( "selectSubcategory.php?id=" + clickedID, function( data ) {
   			alert( "Data Loaded: " + data );
   			document.getElementById("ajaxOutput").innerHTML = data
