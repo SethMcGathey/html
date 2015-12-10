@@ -4,7 +4,7 @@
 
 	<body>
 
-		
+		<?php require 'navigation.php' ?> 
 		<div class="container-fluid">
 			<h1>Index.php</h1>
 			<div class="row">
@@ -55,8 +55,9 @@
 		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
 			//console.log(data);
   			
-  			$( "#ajax_Output" ).html( "hello" );
+  			
 		});
+		$( "#ajax_Output" ).html( "hello" );
 	});
 //});
 
