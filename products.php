@@ -25,6 +25,9 @@
 
 			<div id="ajax_Output">a,sjdnbfkjwe
 			</div>
+			<div id="blue">a,sjdnbfkjwe
+			</div>
+
 
 			<div class="row"><div class="">testing</div><div></div></div>
 
