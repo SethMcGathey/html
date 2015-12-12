@@ -2,7 +2,7 @@
 <html lang="en">
 	<?php require 'header.php' ?>
 	<body>
-		<?php require 'navigationCrud.php' ?>
+		<?php require 'navigation.php' ?>
 		<div class="container-fluid">
 			<h1>products.php</h1>
 

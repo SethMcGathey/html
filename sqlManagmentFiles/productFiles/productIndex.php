@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <?php require '../../navigation.php' ?>
+  <?php require '../../navigationCrud.php' ?>
     <div class="container">
             <div class="row">
                 <h3>PHP CRUD Grid</h3>
