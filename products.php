@@ -16,7 +16,7 @@
 					}
 				}else
 				{
-					$sql = 'SELECT TOP 5 id,name,cost,description FROM product ORDER BY id';
+					$sql = 'SELECT id,name,cost,description FROM product ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
 					    echo '<a href="#"><div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . '</div></a>';
 					}
