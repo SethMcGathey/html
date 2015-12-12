@@ -12,13 +12,13 @@
 				{
 					$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id';
 					foreach ($pdo->query($sql) as $row) {
-					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . '<a>Add to Cart</a></div>';
+					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a>Add to Cart</a></div>';
 					}
 				}else
 				{
 					$sql = 'SELECT id,name,cost,description FROM product ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
-					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . '<a>Add to Cart</a></div>';
+					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a>Add to Cart</a></div>';
 					}
 				}
 			?>
