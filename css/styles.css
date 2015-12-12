@@ -2,10 +2,7 @@
 	text-align:center;
 }
 
-body{
-	/*background-image: url("../img/tileable_wood_texture.png");*/
-}
-
+/*
 h1{
 	font-family:'ABeeZee', serif;
 	color:#FFFFFF;
@@ -36,8 +33,6 @@ h5{
 
 	max-width: 100%;
   	display:block;
-  	/*margin-right: auto;
-  	margin-left: auto;*/
   	margin-top: 1%;
   	margin-bottom: 1%;
   	text-align: center;
@@ -88,7 +83,6 @@ h5{
 
 
 .blueColor{
-	/*background-color: #ABC8C7;*/
 	background-color: #FFFFFF;
 
 	padding:1%;
@@ -99,7 +93,6 @@ h5{
 .pagination{
 	border:1px;
 	border-style: solid;
-	/*border-color:#ED6639;*/
 	border-color:#4477BC;
 	padding:4px;
 	padding-left:8px; 
@@ -150,25 +143,20 @@ h5{
 }
 
 .boxedColor{
-	/*background-color: #88958D;*/
 	background-color: #333333;
 	display:block;
 }
 
 .profBorderBox{
-	/*background-color: #88958D;*/
-	/*background-color: #787878;*/
 	display:block;
 	padding:1%;
 	border-radius: 25px;
 }
 
 .profBoxes{
-	/*background-color: #DDD8C4;*/
 	background-color: #787878;
 	margin-bottom: 1%;
 	display:block;
-	/*padding:1%;*/
 	border-radius: 25px;
 
 	border:solid;
@@ -179,7 +167,6 @@ h5{
 }
 
 .profLonelyParagraph{
-	/*background-color: #DDD8C4;*/
 	background-color: #787878;
 	margin-bottom: 1%;
 	display:block;
@@ -189,7 +176,6 @@ h5{
 }
 
 .headerColor{
-	/*background-color: #DDD8C4;*/
 	background-color: #787878;
 	width: 50%;
 	display:block;
@@ -205,7 +191,6 @@ h5{
 .teamPortfolio{
 	margin-left: auto;
 	display:block;
-	/*margin-bottom: 1%;*/
 }
 
 .kitePortfolio{
@@ -269,7 +254,7 @@ h5{
     font-weight: 400;
 }
 
-
+*/
 
 
 
