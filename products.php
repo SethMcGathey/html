@@ -10,7 +10,7 @@
 			<?php
 				if(isset($_GET['id']))
 				{
-					$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id';
+					$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
 					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a>Add to Cart</a></div>';
 					}
