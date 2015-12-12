@@ -11,23 +11,23 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="sqlManagmentFiles/addressFiles/addressIndex.php">Alter Address</a></li>
-        <li><a href="sqlManagmentFiles/binFiles/binIndex.php">Alter Bin</a></li>
-        <li><a href="sqlManagmentFiles/categoryFiles/categoryIndex.php">Alter Category</a></li>
-        <li><a href="sqlManagmentFiles/customerFiles/customerIndex.php">Alter Customer</a></li>
-        <li><a href="sqlManagmentFiles/imageFiles/imageIndex.php">Alter Image</a></li>
-        <li><a href="sqlManagmentFiles/paymentFiles/paymentIndex.php">Alter Payment</a></li>
-        <li><a href="sqlManagmentFiles/product_binFiles/product_binIndex.php">Alter Product Bin</a></li>
-        <li><a href="sqlManagmentFiles/product_tagFiles/product_tagIndex.php">Alter Product Tag</a></li>
-        <li><a href="sqlManagmentFiles/productFiles/productIndex.php">Alter Product Files</a></li>
-        <li><a href="sqlManagmentFiles/shipment_centerFiles/shipment_centerIndex.php">Alter Shipment Center</a></li>
-        <li><a href="sqlManagmentFiles/subcategoryFiles/subcategoryIndex.php">Alter Subcategory</a></li>
-        <li><a href="sqlManagmentFiles/tagFiles/tagIndex.php">Alter Tag</a></li>
-        <li><a href="sqlManagmentFiles/transaction_addressFiles/transaction_addressIndex.php">Alter Transaction Address</a></li>
-        <li><a href="sqlManagmentFiles/transaction_productFiles/transaction_productIndex.php">Alter Transaction Product</a></li>
-        <li><a href="sqlManagmentFiles/transactionFiles/transactionIndex.php">Alter Transaction</a></li>
-        <li><a href="sqlManagmentFiles/Files/lkmerIndex.php">Alter </a></li>
-        <li><a href="sqlManagmentFiles/Files/lkermgIndex.php">Alter </a></li>
+        <li><a href="sqlManagmentFiles/addressFiles/addressIndex.php">Address</a></li>
+        <li><a href="sqlManagmentFiles/binFiles/binIndex.php">Bin</a></li>
+        <li><a href="sqlManagmentFiles/categoryFiles/categoryIndex.php">Category</a></li>
+        <li><a href="sqlManagmentFiles/customerFiles/customerIndex.php">Customer</a></li>
+        <li><a href="sqlManagmentFiles/imageFiles/imageIndex.php">Image</a></li>
+        <li><a href="sqlManagmentFiles/paymentFiles/paymentIndex.php">Payment</a></li>
+        <li><a href="sqlManagmentFiles/product_binFiles/product_binIndex.php">Product Bin</a></li>
+        <li><a href="sqlManagmentFiles/product_tagFiles/product_tagIndex.php">Product Tag</a></li>
+        <li><a href="sqlManagmentFiles/productFiles/productIndex.php">Product Files</a></li>
+        <li><a href="sqlManagmentFiles/shipment_centerFiles/shipment_centerIndex.php">Shipment Center</a></li>
+        <li><a href="sqlManagmentFiles/subcategoryFiles/subcategoryIndex.php">Subcategory</a></li>
+        <li><a href="sqlManagmentFiles/tagFiles/tagIndex.php">Tag</a></li>
+        <li><a href="sqlManagmentFiles/transaction_addressFiles/transaction_addressIndex.php">Transaction Address</a></li>
+        <li><a href="sqlManagmentFiles/transaction_productFiles/transaction_productIndex.php">Transaction Product</a></li>
+        <li><a href="sqlManagmentFiles/transactionFiles/transactionIndex.php">Transaction</a></li>
+        <li><a href="sqlManagmentFiles/Files/lkmerIndex.php"></a></li>
+        <li><a href="sqlManagmentFiles/Files/lkermgIndex.php"></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
