@@ -10,3 +10,11 @@ $(document).ready(function(){
 	});
 
 });
+
+$(document).ready(function(){
+		var clickedId = this.id;
+		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
+  			
+  			$( "#ajax_Output" ).html( data );
+		});
+});
