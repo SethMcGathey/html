@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	$(".myCategories").on("click", function(){
 
@@ -10,6 +11,16 @@ $(document).ready(function(){
 	});
 
 });
+
+
+$(document).ready(function(){
+	$("#srch-term").keypress(function(){
+		console.log("made it " + srch-term.text);
+		});	
+	});
+});
+
+
 
 $(document).ready(function(){
 		var clickedId = this.id;
