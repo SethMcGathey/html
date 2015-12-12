@@ -24,8 +24,7 @@
         <div class="col-sm-3 col-md-3 pull-right">
         <form class="navbar-form" role="search">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="searchField">
-
+            <input type="text" class="form-control" placeholder="Search" name="searchField" id="searchField">
         </div>
         </form>
         </div>
