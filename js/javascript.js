@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$("#searchField").keyUp(function(){
+	$("#searchField").keyup(function(){
 		console.log("made it " + searchField.value);
 	});
 });
