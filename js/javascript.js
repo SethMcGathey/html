@@ -16,7 +16,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#srch-term").keypress(function(){
 		console.log("made it " + srch-term.text);
-		});	
 	});
 });
 
