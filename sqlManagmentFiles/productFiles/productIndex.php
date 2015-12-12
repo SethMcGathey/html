@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<head>
+<head>
     <meta charset="utf-8">
     <link   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-</head>-->
-<?php require 'header.php' ?>
+</head>
 
-  <body>
-
-    <?php require 'navigation.php' ?> 
+<body>
     <div class="container">
             <div class="row">
                 <h3>PHP CRUD Grid</h3>
@@ -55,6 +52,5 @@
                 </table>
         </div>
     </div> <!-- /container -->
-    <?php require 'footer.php' ?>
   </body>
 </html>
