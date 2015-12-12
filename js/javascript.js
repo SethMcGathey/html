@@ -15,6 +15,7 @@ $(document).ready(function(){
 		var clickedId = this.id;
 		$.get( "searchProducts.php?id=" + searchField.value, function( data ) {	
   			$( "#ajax_Output" ).html( data );
+  			$( "#Not_Ajax_Output" ).hide();
 		});	
 	});
 });

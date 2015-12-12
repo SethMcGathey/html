@@ -3,7 +3,7 @@
 	<?php require 'header.php' ?>
 	<body>
 		<?php require 'navigation.php' ?>
-		<div class="container-fluid" id="ajax_Output">
+		<div class="container-fluid" id="Not_Ajax_Output">
 			<h1>products.php</h1>
 
 
@@ -28,6 +28,9 @@
 			<div class="row"><div class="">testing</div><div></div></div>
 
 		</div>
+		<div class="container-fluid" id="ajax_Output">
+
+		<div>
 	</body>
 
 	<?php require 'footer.php' ?>
