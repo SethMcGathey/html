@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#searchField").keypress(function(){
-		console.log("made it " + searchField.text);
+		console.log("made it " + searchField.value);
 	});
 });
 
