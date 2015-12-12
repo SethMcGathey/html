@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$("#searchField").keyup(function(){
 		console.log("made it " + searchField.value);
 		var clickedId = this.id;
-		$.get( "selectProducts.php?search=" + searchField.value, function( data ) {	
+		$.get( "selectProducts.php?id=" + searchField.value, function( data ) {	
   			$( "#ajax_Output" ).html( data );
 		});	
 	});
