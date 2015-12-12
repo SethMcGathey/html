@@ -23,6 +23,9 @@
 				}
 			?>
 
+			<div id="ajax_Output">
+			</div>
+
 			<div class="row"><div class="">testing</div><div></div></div>
 
 		</div>
