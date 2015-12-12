@@ -96,6 +96,7 @@
 </head>
 
 <body>
+    <?php require '../../navigationCrud.php' ?>
     <div class="container">
 
                 <div class="span10 offset1">

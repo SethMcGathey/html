@@ -31,6 +31,7 @@
 </head>
 
 <body>
+    <?php require '../../navigation.php' ?>
     <div class="container">
 
                 <div class="span10 offset1">
