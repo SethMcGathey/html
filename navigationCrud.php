@@ -14,7 +14,7 @@
         <li><a href="../addressFiles/addressIndex.php">Address</a></li>
         <li><a href="../binFiles/binIndex.php">Bin</a></li>
         <li><a href="../categoryFiles/categoryIndex.php">Category</a></li>
-        <li><a href="../customerFiles/customerIndex.php">Customer</a></li>
+        <li><a href="../customerFiles/Index.php">Customer</a></li>
         <li><a href="../imageFiles/imageIndex.php">Image</a></li>
         <li><a href="../paymentFiles/paymentIndex.php">Payment</a></li>
         <li><a href="../product_binFiles/product_binIndex.php">Product Bin</a></li>
