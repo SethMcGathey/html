@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$("#searchField").keyup(function(){
 		console.log("made it " + searchField.value);
 		var clickedId = this.id;
-		$.get( "selectSubcategory.php?id=" + searchField.value, function( data ) {	
+		$.get( "selectProduct.php?search=" + searchField.value, function( data ) {	
   			$( "#ajax_Output" ).html( data );
 		});	
 	});
@@ -21,10 +21,3 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-		var clickedId = this.id;
-		$.get( "selectSubcategory.php?id=" + clickedId, function( data ) {
-  			
-  			$( "#ajax_Output" ).html( data );
-		});
-});
