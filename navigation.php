@@ -15,7 +15,6 @@
         <li><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>
         <!--<li><a href="addProducts.php">Add Products</a></li>-->
         <li><a href="contact.php">Contact</a></li>
-        <li><a href="manageUsers.php">Manage Users</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
