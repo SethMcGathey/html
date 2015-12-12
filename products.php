@@ -23,7 +23,7 @@
 				}
 			?>
 
-			<div id="ajax_Output">
+			<div id="ajax_Output">a
 			</div>
 
 			<div class="row"><div class="">testing</div><div></div></div>
