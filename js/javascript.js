@@ -16,7 +16,7 @@ $(document).ready(function(){
 		var value=$.trim($("#searchField").val());
 		if(value.length)
 		{
-			$( "#ajax_Output" ).html( data ).hide();
+			$( "#ajax_Output" ).hide();
 	  		$( "#Not_Ajax_Output" ).show();
 		}else
 		{
