@@ -14,7 +14,7 @@ $(document).ready(function(){
 		console.log("made it " + searchField.value);
 		var clickedId = this.id;
 		var value=$.trim($("#searchField").val());
-		if(value.length)
+		if(value.length == 0)
 		{
 			$( "#ajax_Output" ).hide();
 	  		$( "#Not_Ajax_Output" ).show();
