@@ -10,14 +10,14 @@
 			<?php
 				if(isset($_GET['id']))
 				{
-					$sql = 'SELECT a.id,name,cost,a.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
+					$sql = 'SELECT a.id,name,cost,a.description,b.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 					//$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
 					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a href="#">Add to Cart</a></div>';
 					}
 				}else
 				{
-					$sql = 'SELECT a.id,name,cost,a.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id ORDER BY id LIMIT 5';
+					$sql = 'SELECT a.id,name,cost,a.description,b.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
 					    echo '<div class="col-4-lg product" id="' . $row['id'] . '">' . $row['image'] . ' ' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a href="#">Add to Cart</a></div>';
 					}
