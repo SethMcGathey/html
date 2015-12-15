@@ -5,7 +5,7 @@
 	<body>
 
 		<?php require 'navigation.php' ?> 
-		<div class="container-fluid">
+		<div class="container-fluid" id="Not_Ajax_Output">
 			<h1>Index.php</h1>
 			<div class="row">
 
