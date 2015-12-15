@@ -9,8 +9,9 @@
 
 
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/javascript.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+
 
 
 <?php

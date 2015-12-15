@@ -5,10 +5,11 @@
 		<?php require 'navigation.php' ?>
 		<div class="container" id="Not_Ajax_Output">
 			<h1>login.php</h1>
-
-			<p>User Name:</p><input type="text" class="form-control" placeholder="User Name" name="usernameInput" id="usernameInput">
-			<p>Password:</p><input type="text" class="form-control" placeholder="Password" name="passwordInput" id="passwordInput">
-			<button>Log In</button>
+			<form action="verify.php" method="post">
+				<p>User Name:</p><input type="text" class="form-control" placeholder="User Name" name="usernameInput" id="usernameInput">
+				<p>Password:</p><input type="text" class="form-control" placeholder="Password" name="passwordInput" id="passwordInput">
+				<button>Log In</button>
+			</form>
 
 		</div>
 
