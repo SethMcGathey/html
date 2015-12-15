@@ -21,7 +21,7 @@ $(document).ready(function(){
 		}else
 		{
 			$.get( "searchProducts.php?id=" + searchField.value, function( data ) {	
-	  			$( "#ajax_Output" ).html( data );
+	  			$( "#ajax_Output" ).html( data ).show();
 	  			$( "#Not_Ajax_Output" ).hide();
 			});	
 		}
