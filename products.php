@@ -16,7 +16,7 @@
 					}
 				}else
 				{
-					$sql = 'SELECT id,name,cost,description FROM product ORDER BY id LIMIT 5';
+					$sql = 'SELECT a.id,name,cost,a.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id ORDER BY id LIMIT 5';
 					foreach ($pdo->query($sql) as $row) {
 					    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' <a href="#">Add to Cart</a></div>';
 					}
