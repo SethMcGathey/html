@@ -20,9 +20,10 @@
 				{
 					$sql = 'SELECT a.id,a.name,a.cost,a.description,b.description,b.image FROM product a LEFT JOIN image b ON a.id = b.product_id ORDER BY a.id LIMIT 5';
 					
-					console.log($decoded_image);
+					
 					foreach ($pdo->query($sql) as $row) {
 						$decoded_image=base64_decode($row['b.image']);
+						console.log($decoded_image);
 					    //echo '<div class="col-4-lg product" id="' . $row['a.id'] . '">' . '<img src="data:image/jpeg;base64,' . base64_decode($row['b.image']) . '"width="100px"/> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';
 					    echo '<div class="col-4-lg product" id="' . $row['a.id'] . '"> <td align=\'center\' valign=\'middle\'>' . $decoded_image . '</td> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';
 					}
