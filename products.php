@@ -8,7 +8,7 @@
 
 
 			<?php
-				PDO::ATTR_FETCH_TABLE_NAMES
+				$PDO->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
 				if(isset($_GET['id']))
 				{
 					$sql = 'SELECT a.id,name,cost,a.description,b.description, image FROM product a LEFT JOIN image b ON a.id = b.product_id WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
