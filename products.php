@@ -30,7 +30,7 @@
 		</div>
 		<div class="container-fluid" id="ajax_Output">
 
-		<div>
+		</div>
 	</body>
 
 	<?php require 'footer.php' ?>

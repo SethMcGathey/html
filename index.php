@@ -23,9 +23,8 @@
 
 
 
-		<div id="inner_ajax_Output">
-
-		<div>
+			<div id="inner_ajax_Output">
+			<div>
 
 
 
@@ -39,7 +38,7 @@
 
 		<div class="container-fluid" id="ajax_Output">
 
-		<div>
+		</div>
 
 
 <?php require 'footer.php' ?>
