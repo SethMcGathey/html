@@ -1,4 +1,7 @@
 <?php
+	include 'database.php';
+    $pdo = Database::connect();
+
 	session_start();
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
@@ -11,4 +14,5 @@
 		echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['first_name'] . ' ' . $row['password'] . '</div>';
 	}
 	//echo 'first_name';
+	Database::disconnect();
 ?>
