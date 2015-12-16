@@ -5,10 +5,10 @@
 	$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	$mypassword=mysqli_real_escape_string($db, $_POST['password']);
 
-	$sql="SELECT id, first_name FROM customer WHERE username = $myusername";
+	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
 
 	foreach ($pdo->query($sql) as $row) {
-		echo '<div class="col-4-lg product" id="' . $row['a.id']. '">' . $row['first_name'] . '</div>';
+		echo '<div class="col-4-lg product" id="' . $row['a.id']. '">' . $row['first_name'] . ' ' . $row['first_name'] . '</div>';
 	}
 	//echo 'first_name';
 ?>
