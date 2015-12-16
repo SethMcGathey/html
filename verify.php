@@ -8,7 +8,7 @@
 	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
 
 	foreach ($pdo->query($sql) as $row) {
-		echo '<div class="col-4-lg product" id="' . $row['a.id']. '">' . $row['first_name'] . ' ' . $row['first_name'] . '</div>';
+		echo '<div class="col-4-lg product" id="' . $row['id']. '">' . $row['first_name'] . ' ' . $row['password'] . '</div>';
 	}
 	//echo 'first_name';
 ?>
