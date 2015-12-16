@@ -24,10 +24,12 @@
 					foreach ($pdo->query($sql) as $row) {
 						$decoded_image=base64_decode($row['b.image']);
 						console.log($decoded_image);
+						echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['b.image'] ).'"/>';
 					    //echo '<div class="col-4-lg product" id="' . $row['a.id'] . '">' . '<img src="data:image/jpeg;base64,' . base64_decode($row['b.image']) . '"width="100px"/> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';
-					    echo '<p><img src="getImage.php?imageID=<?php print ' . $row['b.image'] . ';?>" /></p>';
+					    /*echo '<p><img src="getImage.php?imageID=<?php print ' . $row['b.image'] . ';?>" /></p>';
+					    
 					    //echo imagecreatefromstring($row['b.image']);
-					    //echo '<div class="col-4-lg product" id="' . $row['a.id'] . '"> <img src=\'data:image/jpeg;base64,{$encoded_image}\' alt=\"$Ten\"> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';
+					    //echo '<div class="col-4-lg product" id="' . $row['a.id'] . '"> <img src=\'data:image/jpeg;base64,{$encoded_image}\' alt=\"$Ten\"> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';*/
 					}
 				}
 			?>
