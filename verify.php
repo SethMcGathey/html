@@ -7,5 +7,8 @@
 
 	$sql="SELECT id, first_name FROM customer WHERE username = $myusername";
 
-	echo 'first_name';
+	foreach ($pdo->query($sql) as $row) {
+		echo '<div class="col-4-lg product" id="' . $row['a.id']. '">' . $row['first_name'] . '</div>';
+	}
+	//echo 'first_name';
 ?>
