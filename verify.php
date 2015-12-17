@@ -28,9 +28,9 @@
 
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql="SELECT id, first_name, password FROM customer WHERE username = ?";
+	$sql="SELECT id, first_name, password FROM customer WHERE username = ? AND password = ?";
     $q = $pdo->prepare($sql);
-    $q->execute(array($myusername));
+    $q->execute(array($myusername, $mypassword));
     $data = $q->fetch(PDO::FETCH_ASSOC);
     echo $data[id];
     echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
