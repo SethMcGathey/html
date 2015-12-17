@@ -36,6 +36,8 @@
 
  	Database::disconnect();
 
+ 	header('Location: index.php');
+
 ?>
 
 
