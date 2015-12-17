@@ -5,8 +5,11 @@
 	session_start();
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
-	$myusername=mysqli_real_escape_string($db, $_POST['username']);
-	$mypassword=mysqli_real_escape_string($db, $_POST['password']);
+	$myusername = $_GET['username'];
+	$mypassword = $_GET['password'];
+
+	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
+	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
 	echo $myusername;
 	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
 
