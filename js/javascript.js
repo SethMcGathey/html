@@ -31,7 +31,4 @@ function saveValues(){
 	$.get( "verify.php?username=" + usernameInput.value + "&password=" + passwordInput.value, function( data ) {	
 		$( "#Not_Ajax_Output" ).show();
 	});	
-};
-
-
-
+}
