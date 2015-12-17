@@ -14,7 +14,9 @@
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
 	echo "<div>" . $myusername . "</div>";
 	echo "<div>" . $mypassword . "</div>";
+	/*
 	$sql="SELECT id, first_name, password FROM customer WHERE username = " . $myusername;
+
 
 	foreach ($pdo->query($sql) as $row) {
 		echo "<div>garbage</div>";
@@ -22,4 +24,18 @@
 	}
 	//echo 'first_name';
 	Database::disconnect();
+*/
+
+
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$sql="SELECT id, first_name, password FROM customer WHERE username = ?";
+        $q = $pdo->prepare($sql);
+        $q->execute(array($myusername));
+        $data = $q->fetch(PDO::FETCH_ASSOC);
+        echo $data[id];
+     	Database::disconnect();
+
 ?>
+
+
+
