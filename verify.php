@@ -11,6 +11,7 @@
 	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
 	echo $myusername;
+	echo "<div>garbage</div>"; 
 	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
 
 	foreach ($pdo->query($sql) as $row) {
