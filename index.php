@@ -22,10 +22,8 @@
 			</div>
 
 
-
 			<div id="inner_ajax_Output">
 			</div>
-
 
 
 			<div>Content about category</div>
@@ -33,11 +31,13 @@
 				<div>image</div>
 				<div>content about subcategory</div>
 			</div>
+
+			<div id='name'></div>
 		
 		</div>
 
 		<div class="container-fluid" id="ajax_Output">
-
+			<div id='name'></div>
 		</div>
 
 
