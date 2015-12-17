@@ -27,8 +27,11 @@ $(document).ready(function(){
 		}
 	});
 
+function saveValues(){
+	var password = $(#passwordInput);
+	$.get( "verify.php?username=" + usernameInput.value + "&password=" + passwordInput.value, function( data ) {	
 
-
+	});	
 });
 
 
