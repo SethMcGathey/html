@@ -5,8 +5,8 @@
 	session_start();
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
-	$myusername = $_GET['username'];
-	$mypassword = $_GET['password'];
+	$myusername = $_GET['usernameInput'];
+	$mypassword = $_GET['passwordInput'];
 
 	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
