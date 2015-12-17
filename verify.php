@@ -14,7 +14,7 @@
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
 	echo "<div>" . $myusername . "</div>";
 	echo "<div>" . $mypassword . "</div>";
-	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
+	$sql="SELECT id, first_name, password FROM customer WHERE username = " . $myusername;
 
 	foreach ($pdo->query($sql) as $row) {
 		echo "<div>garbage</div>";
