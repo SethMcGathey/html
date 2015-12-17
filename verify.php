@@ -10,7 +10,7 @@
 
 	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
-	echo $myusername;
+	echo "<div>" . $myusername . "</div>";
 	echo "<div>garbage</div>"; 
 	$sql="SELECT id, first_name, password FROM customer WHERE username = $myusername";
 
