@@ -26,7 +26,6 @@
 	Database::disconnect();
 */
 
-
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql="SELECT id, first_name, password FROM customer WHERE username = ? AND password = ?";
     $q = $pdo->prepare($sql);
