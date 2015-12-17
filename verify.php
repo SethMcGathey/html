@@ -3,6 +3,8 @@
     $pdo = Database::connect();
 
 	session_start();
+	$_SESSION['user'] = $user_id;
+	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$myusername = $_GET['usernameInput'];
