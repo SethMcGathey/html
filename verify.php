@@ -33,8 +33,13 @@
     $data = $q->fetch(PDO::FETCH_ASSOC);
     if(isset($data['id']))
     {
-    	echo $data['id'];
-    	echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
+    	//echo $data['id'];
+    	//echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
+    	
+    	$_SESSION['username'] = $data['username'];
+    	$_SESSION['customerid'] = $data['id'];
+    	$_SESSION['permission'] = $data['permission'];
+
     	header('Location: index.php');
     }else
     {
