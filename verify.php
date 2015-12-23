@@ -40,7 +40,7 @@
     	$_SESSION['customerid'] = $data['id'];
     	$_SESSION['permission'] = $data['permission'];
     	echo $_SESSION['permission'];
-    	//header('Location: index.php');
+    	header('Location: index.php');
     }else
     {
     	echo "Invalid Login";
