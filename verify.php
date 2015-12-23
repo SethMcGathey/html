@@ -33,7 +33,7 @@
     $data = $q->fetch(PDO::FETCH_ASSOC);
     if(isset($data['id'])
     {
-    	echo $data[id];
+    	echo $data['id'];
     	echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
     }else
     {
