@@ -25,11 +25,11 @@
               //changes login to logout when a person logs in and puts their name in the Navbar
               if(isset($_SESSION['username']))
               {
-                echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>';
+                echo '<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>';
                 echo '<li><a href="login.php">Welcome, ' . $_SESSION['username'] . '</a></li>';
               }else
               {
-                echo '<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>';
+                echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>';
               }
         ?>
         
