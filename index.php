@@ -11,7 +11,6 @@
 			<div class="row">
 
               <?php
-              	print_r($_SESSION);
                $sql = 'SELECT id,name FROM category ORDER BY id';
                foreach ($pdo->query($sql) as $row) {
 	                echo '<a href="#"><div class="col-4-lg myCategories" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
