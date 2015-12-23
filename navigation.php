@@ -20,7 +20,9 @@
         <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
         <li><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-        <?php if(isset($_SESSION['username']))
+        <?php 
+              echo $_SESSION['username'];
+              if(isset($_SESSION['username']))
               {
                 echo '<li><a href="login.php">' . $_SESSION['username'] . '</a></li>';
               }
