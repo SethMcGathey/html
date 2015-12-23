@@ -35,6 +35,7 @@
     {
     	echo $data['id'];
     	echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
+    	header('Location: index.php');
     }else
     {
     	echo "Invalid Login";
@@ -42,7 +43,7 @@
 
  	Database::disconnect();
 
- 	//header('Location: index.php');
+ 	
 
 ?>
 
