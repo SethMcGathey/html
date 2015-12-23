@@ -1,8 +1,8 @@
 <?php
+	include 'sessionStart.php'; 
 	include 'database.php';
     $pdo = Database::connect();
 
-	session_start();
 	$_SESSION['user'] = $user_id;
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
@@ -36,7 +36,7 @@
 
  	Database::disconnect();
 
- 	header('Location: index.php');
+ 	//header('Location: index.php');
 
 ?>
 

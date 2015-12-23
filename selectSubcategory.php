@@ -1,4 +1,5 @@
 <?php
+	include 'sessionStart.php'; 
 	include 'database.php';
     $pdo = Database::connect();
 	
