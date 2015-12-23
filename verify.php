@@ -31,8 +31,14 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($myusername, $mypassword));
     $data = $q->fetch(PDO::FETCH_ASSOC);
-    echo $data[id];
-    echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
+    if(mysql_num_rows($data))
+    {
+    	echo $data[id];
+    	echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
+    }else
+    {
+    	echo "Invalid Login";
+    }
 
  	Database::disconnect();
 
