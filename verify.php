@@ -45,7 +45,7 @@
     {
     	echo "Invalid Login";
     }
-
+print_r($_SESSION);
  	Database::disconnect();
 
  	
