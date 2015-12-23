@@ -3,12 +3,12 @@
 	include 'database.php';
     $pdo = Database::connect();
 
-	$_SESSION['user'] = $user_id;
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$myusername = $_POST['usernameInput'];
 	$mypassword = $_POST['passwordInput'];
+	$_SESSION['user'] = $myusername;
 
 	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
@@ -27,7 +27,7 @@
 */
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql="SELECT id, first_name, password FROM customer WHERE username = ? AND password = ?";
+	$sql="SELECT id, username, first_name, password, permission FROM customer WHERE username = ? AND password = ?";
     $q = $pdo->prepare($sql);
     $q->execute(array($myusername, $mypassword));
     $data = $q->fetch(PDO::FETCH_ASSOC);
