@@ -31,7 +31,7 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($myusername, $mypassword));
     $data = $q->fetch(PDO::FETCH_ASSOC);
-    if(isset($data['id'])
+    if(1)
     {
     	echo $data['id'];
     	echo '<div class="col-4-lg product" id="' . $data['id'] . '">' . $data['first_name'] . ' ' . $data['password'] . '</div>';
