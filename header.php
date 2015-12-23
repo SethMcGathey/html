@@ -5,4 +5,5 @@
 <?php
 	include 'database.php';
     $pdo = Database::connect();
+    session_start();
 ?>
