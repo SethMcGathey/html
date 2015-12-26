@@ -4,14 +4,19 @@
 	<body>
 		<?php require 'navigation.php' ?>
 
-		<h1>register.php</h1>
-
 		<div class="container" id="Not_Ajax_Output">
-			<h1>login.php</h1>
-			<form action="verify.php" method="POST">
-				<p>User Name:</p><input type="text" placeholder="User Name" name="usernameInput" id="usernameInput">
+			<h1>Register</h1>
+			<form action="registerUser.php" method="POST">
+				<p>First Name:</p><input type="text" placeholder="First Name" name="firstNameInput" id="usernameInput">
+				<p>Last Name:</p><input type="text" placeholder="Last Name" name="lastNameInput" id="usernameInput">
+				<p>User Name:</p><input type="text" placeholder="User Name" name="userNameInput" id="usernameInput">
 				<p>Password:</p><input type="password" placeholder="Password" name="passwordInput" id="passwordInput">
-				<p>Reenter Password:</p><input type="password" placeholder="Password" name="passwordInput" id="passwordInput">
+				<p>Reenter Password:</p><input type="password" placeholder="Password" name="reenteredPasswordInput" id="passwordInput">
+				<p>Phone Number:</p><input type="text" placeholder="Phone Number" name="phoneNumberInput" id="usernameInput">
+				<p>Date of Birth:</p><input type="text" placeholder="Date of Birth" name="dobInput" id="usernameInput">
+				<p>Gender:</p><input type="text" placeholder="Gender" name="usernameInput" id="genderInput">
+				<p>Email:</p><input type="text" placeholder="Email" name="usernameInput" id="emailInput">
+
 				<button>Log In</button>
 			</form>
 
