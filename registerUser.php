@@ -19,6 +19,9 @@
 		$email = $_POST['emailInput'];
 		$_SESSION['user'] = $myusername;
 	}
+	else{
+		echo "Passwords do not match";
+	}
 
 	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
 	{
@@ -28,10 +31,10 @@
 	    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
 	    $data = $q->fetch(PDO::FETCH_ASSOC);
 
-    	$_SESSION['username'] = $data['username'];
-    	$_SESSION['customerid'] = $data['id'];
-    	$_SESSION['permission'] = $data['permission'];
-    	echo $_SESSION['permission'];
+    	//$_SESSION['username'] = $data['username'];
+    	//$_SESSION['customerid'] = $data['id'];
+    	//$_SESSION['permission'] = $data['permission'];
+    	//echo $_SESSION['permission'];
     	header('Location: index.php');
 	}
 print_r($_SESSION);
