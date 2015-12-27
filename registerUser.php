@@ -20,7 +20,7 @@
 		$_SESSION['user'] = $myusername;
 	}
 	else{
-		echo "Passwords do not match";
+		echo "Passwords do not match.";
 	}
 
 	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
@@ -36,8 +36,11 @@
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
     	header('Location: index.php');
+	}else
+	{
+		echo "Fill in all required fields.";
 	}
-print_r($_SESSION);
+	print_r($_SESSION);
  	Database::disconnect();
 
  	
