@@ -4,7 +4,7 @@
     $pdo = Database::connect();
 
 	echo $_SESSION['user'];
-	if($_SERVER["REQUEST_METHOD"] == "POST")
+	//if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$password = $_POST['passwordInput'];
 	$reenterPassword = $_POST['reenteredPasswordInput'];
