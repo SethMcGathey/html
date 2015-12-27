@@ -3,7 +3,7 @@
 	include 'database.php';
     $pdo = Database::connect();
 
-	//echo $_SESSION['user'];
+	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$password = $_POST['passwordInput'];
