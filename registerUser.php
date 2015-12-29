@@ -18,6 +18,7 @@
 	$password = NULL;
 	echo $_POST['passwordInput'];
 	echo $_POST['reenteredPasswordInput'];
+
 	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] && $password != NULL)
 	{
 		$firstName = $_POST['firstNameInput'];
