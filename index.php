@@ -18,9 +18,9 @@
               ?>
           	</div>
 			<div class="row">
-				<div class="col-4-lg" style='background-color:blue'>Games</div>
-				<div class="col-4-lg" style='background-color:green'>Toys</div>
-				<div class="col-4-lg" style='background-color:yellow'>Puzzles</div>
+				<div class="col-lg-4" style='background-color:blue'>Games</div>
+				<div class="col-lg-4" style='background-color:green'>Toys</div>
+				<div class="col-lg-4" style='background-color:yellow'>Puzzles</div>
 			</div>
 
 
