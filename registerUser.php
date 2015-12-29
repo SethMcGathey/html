@@ -45,7 +45,7 @@
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	header('Location: index.php');
+    	header('Location: login.php');
 	}else
 	{
 		echo "Fill in all required fields.";
