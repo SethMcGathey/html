@@ -2,7 +2,7 @@
 	include 'sessionStart.php'; 
 	include 'database.php';
     $pdo = Database::connect();
-
+    echo 'here ';
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
