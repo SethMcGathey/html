@@ -18,6 +18,7 @@
 		$gender = $_POST['genderInput'];
 		$email = $_POST['emailInput'];
 		$_SESSION['user'] = $myusername;
+		echo "Got to the setting of variables";
 	}
 	else{
 		echo "Passwords do not match.";
@@ -25,12 +26,13 @@
 
 	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
 	{
+		echo "Got inside long if statement";
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="INSERT INTO customer (first_name, phone, dob, username, password, gender, permission, email, last_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
 	    $data = $q->fetch(PDO::FETCH_ASSOC);
-
+	    echo "Got past query";
     	//$_SESSION['username'] = $data['username'];
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
@@ -40,6 +42,7 @@
 	{
 		echo "Fill in all required fields.";
 	}
+	echo "made it through everything";
 	print_r($_SESSION);
  	Database::disconnect();
 
