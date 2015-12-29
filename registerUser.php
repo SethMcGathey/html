@@ -4,7 +4,7 @@
     $pdo = Database::connect();
 
 	echo $_SESSION['user'];
-	//if($_SERVER["REQUEST_METHOD"] == "POST")
+	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$password = $_POST['passwordInput'];
 	$reenterPassword = $_POST['reenteredPasswordInput'];
@@ -35,7 +35,7 @@
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	header('Location: index.php');
+    	//header('Location: index.php');
 	}else
 	{
 		echo "Fill in all required fields.";
