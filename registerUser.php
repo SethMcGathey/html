@@ -21,7 +21,7 @@
 		echo "Got to the setting of variables";
 	}
 	else{
-		echo "Passwords do not match.";
+		echo "Passwords do not match./n";
 	}
 	echo isset($firstName);
 	echo isset($lastName);
