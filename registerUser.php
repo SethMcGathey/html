@@ -24,7 +24,7 @@
 		echo "Passwords do not match.";
 	}
 	echo 'here ';
-	echo isset($_POST['firstNameInput']);
+	echo isset($firstName);
 	echo 'here';
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
