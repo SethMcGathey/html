@@ -23,7 +23,7 @@
 	else{
 		echo "Passwords do not match.";
 	}
-	echo isset($_POST['firstNameInput']);
+	echo $_POST['firstNameInput'];
 	echo isset($_POST['lastNameInput']);
 	echo isset($_POST['userNameInput']);
 	echo isset($_POST['phoneNumberInput']);
