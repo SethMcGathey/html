@@ -16,7 +16,7 @@
 	$email = NULL;
 	$_SESSION['user'] = NULL;
 	$password = NULL;
-
+    echo 'here ';
 	if($_POST['passwordInput']; == $_POST['reenteredPasswordInput'] && $password != NULL)
 	{
 		$firstName = $_POST['firstNameInput'];
