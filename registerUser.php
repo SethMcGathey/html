@@ -7,14 +7,14 @@
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 
-	$_POST['firstNameInput'] = NULL;
-	$_POST['lastNameInput'] = NULL;
-	$_POST['userNameInput'] = NULL;
-	$_POST['phoneNumberInput'] = NULL;
-	$_POST['dobInput'] = NULL;
-	$_POST['genderInput'] = NULL;
-	$_POST['emailInput'] = NULL;
-	$myusername = NULL;
+	$firstName = NULL;
+	$lastName = NULL;
+	$username = NULL;
+	$phoneNumber = NULL;
+	$dob = NULL;
+	$gender = NULL; 
+	$email = NULL;
+	$_SESSION['user'] = NULL;
 
 
 	$password = $_POST['passwordInput'];
@@ -28,7 +28,7 @@
 		$dob = $_POST['dobInput'];
 		$gender = $_POST['genderInput'];
 		$email = $_POST['emailInput'];
-		$_SESSION['user'] = $myusername;
+		//$_SESSION['user'] = $username;
 		echo "Got to the setting of variables";
 	}
 	else{
