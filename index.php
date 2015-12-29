@@ -16,7 +16,8 @@
 	                echo '<a href="#"><div class="col-4-lg myCategories" id="' . $row['id']. '">' . $row['name'] . '</div></a>';
                }
               ?>
-
+          	</div>
+			<div class="row">
 				<div class="col-4-lg" style='background-color:blue'>Games</div>
 				<div class="col-4-lg" style='background-color:green'>Toys</div>
 				<div class="col-4-lg" style='background-color:yellow'>Puzzles</div>
