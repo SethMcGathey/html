@@ -23,10 +23,10 @@
 	else{
 		echo "Passwords do not match.";
 	}
-	echo isset($firstName);
-	echo isset($lastName);
-	echo isset($username);
-	echo isset($phoneNumber);
+	echo isset($_POST['firstNameInput']);
+	echo isset($_POST['lastNameInput']);
+	echo isset($_POST['userNameInput']);
+	echo isset($_POST['phoneNumberInput']);
 	echo isset($dob);
 	echo isset($gender);
 	echo isset($email);
@@ -40,12 +40,11 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
 	    //$data = $q->fetch(PDO::FETCH_ASSOC);
-	    echo "Got past query";
     	//$_SESSION['username'] = $data['username'];
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	header('Location: login.php');
+    	//header('Location: login.php');
 	}else
 	{
 		echo "Fill in all required fields.";
