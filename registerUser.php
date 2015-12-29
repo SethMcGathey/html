@@ -23,14 +23,16 @@
 	else{
 		echo "Passwords do not match.";
 	}
+	echo 'here ';
 	echo $_POST['firstNameInput'];
-	echo isset($_POST['lastNameInput']);
-	echo isset($_POST['userNameInput']);
-	echo isset($_POST['phoneNumberInput']);
-	echo isset($dob);
-	echo isset($gender);
-	echo isset($email);
-	echo isset($password);
+	echo 'here';
+	//echo isset($_POST['lastNameInput']);
+	//echo isset($_POST['userNameInput']);
+	//echo isset($_POST['phoneNumberInput']);
+	//echo isset($dob);
+	//echo isset($gender);
+	//echo isset($email);
+	//echo isset($password);
 
 	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
 	{
