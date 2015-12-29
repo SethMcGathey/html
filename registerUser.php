@@ -2,7 +2,7 @@
 	include 'sessionStart.php'; 
 	include 'database.php';
     $pdo = Database::connect();
-    echo 'here ';
+    
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
@@ -16,7 +16,7 @@
 	$email = NULL;
 	$_SESSION['user'] = NULL;
 	$password = NULL;
-    echo 'here ';
+
 	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] && $password != NULL)
 	{
 		$firstName = $_POST['firstNameInput'];
