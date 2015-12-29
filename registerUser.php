@@ -6,6 +6,17 @@
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
+
+	$_POST['firstNameInput'] = NULL;
+	$_POST['lastNameInput'] = NULL;
+	$_POST['userNameInput'] = NULL;
+	$_POST['phoneNumberInput'] = NULL;
+	$_POST['dobInput'] = NULL;
+	$_POST['genderInput'] = NULL;
+	$_POST['emailInput'] = NULL;
+	$myusername = NULL;
+
+
 	$password = $_POST['passwordInput'];
 	$reenterPassword = $_POST['reenteredPasswordInput'];
 	if($password == $reenterPassword)
