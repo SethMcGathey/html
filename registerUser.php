@@ -21,7 +21,7 @@
 		echo "Got to the setting of variables";
 	}
 	else{
-		echo "Passwords do not match./n";
+		echo "Passwords do not match.";
 	}
 	echo isset($firstName);
 	echo isset($lastName);
@@ -39,13 +39,13 @@
 		$sql="INSERT INTO customer (first_name, phone, dob, username, password, gender, permission, email, last_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
-	    $data = $q->fetch(PDO::FETCH_ASSOC);
+	    //$data = $q->fetch(PDO::FETCH_ASSOC);
 	    echo "Got past query";
     	//$_SESSION['username'] = $data['username'];
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	//header('Location: index.php');
+    	header('Location: index.php');
 	}else
 	{
 		echo "Fill in all required fields.";
