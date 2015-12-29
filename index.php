@@ -17,7 +17,7 @@
                }
               ?>
 
-				<div class="col-4-lg">Games</div>
+				<div class="col-4-lg" style='background-color:blue'>Games</div>
 				<div class="col-4-lg">Toys</div>
 				<div class="col-4-lg">Puzzles</div>
 			</div>
