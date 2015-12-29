@@ -17,9 +17,9 @@
                }
               ?>
 
-				<a href=""><div class="col-4-lg">Games</div></a>
-				<a href=""><div class="col-4-lg">Toys</div></a>
-				<a href=""><div class="col-4-lg">Puzzles</div></a>
+				<div class="col-4-lg">Games</div>
+				<div class="col-4-lg">Toys</div>
+				<div class="col-4-lg">Puzzles</div>
 			</div>
 
 
