@@ -23,6 +23,14 @@
 	else{
 		echo "Passwords do not match.";
 	}
+	echo isset($firstName);
+	echo isset($lastName);
+	echo isset($username);
+	echo isset($phoneNumber);
+	echo isset($dob);
+	echo isset($gender);
+	echo isset($email);
+	echo isset($password);
 
 	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
 	{
