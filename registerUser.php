@@ -35,9 +35,9 @@
 	else{
 		echo "Passwords do not match.";
 	}
-	echo 'here ';
+	echo '<br> here <br>';
 	echo isset($firstName);
-	echo 'here';
+	echo '<br> here <br>';
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
