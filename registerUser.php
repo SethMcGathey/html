@@ -15,11 +15,9 @@
 	$gender = NULL; 
 	$email = NULL;
 	$_SESSION['user'] = NULL;
+	$password = NULL;
 
-
-	$password = $_POST['passwordInput'];
-	$reenterPassword = $_POST['reenteredPasswordInput'];
-	if($password == $reenterPassword)
+	if($_POST['passwordInput']; == $_POST['reenteredPasswordInput'] && $password != NULL)
 	{
 		$firstName = $_POST['firstNameInput'];
 		$lastName = $_POST['lastNameInput'];
