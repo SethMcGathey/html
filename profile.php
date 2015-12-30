@@ -4,7 +4,7 @@
 	<body>
 		<?php require 'navigation.php' ?>
 		<div class="container" id="Not_Ajax_Output">
-			<h1>Login</h1>
+			<h1>Address</h1>
 			<form action="address.php" method="POST">
 				<p>Street 1:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
 				<p>Street 2:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
@@ -15,6 +15,7 @@
 				<button>Update</button>
 			</form>
 
+			<h1>Card on record</h1>
 			<form action="payment.php" method="POST">
 				<p>Name on Card:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
 				<p>Card Number:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
