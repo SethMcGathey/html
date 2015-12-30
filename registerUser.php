@@ -50,9 +50,6 @@
 		//$_SESSION['user'] = $username;
 		echo "Got to the setting of variables <br>";
 	}
-	echo '<br> here <br>';
-	echo isset($firstName);
-	echo '<br> here <br>';
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
