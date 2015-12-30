@@ -6,7 +6,7 @@
 		<div class="container" id="Not_Ajax_Output">
 			<div class="row">
 				<div class="col-lg-3">
-					<h1>Address</h1>
+					<h2>Address</h2>
 					<form action="address.php" method="POST">
 						<p>Street 1:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
 						<p>Street 2:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
@@ -18,7 +18,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h1>Current Address</h1>
+					<h2>Current Address</h2>
 					<form action="address.php" method="POST">
 						<p name="street1" id="street1"></p>
 						<p name="street2" id="street2"></p>
@@ -29,7 +29,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h1>New Card</h1>
+					<h2>New Card</h2>
 					<form action="payment.php" method="POST">
 						<p>Name on Card:</p><input type="text" placeholder="Name on Card" name="nameOnCard" id="nameOnCard">
 						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
@@ -39,7 +39,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h1>Current Card on Record</h1>
+					<h2>Current Card on Record</h2>
 					<form action="address.php" method="POST">
 						<p name="nameOnCard" id="nameOnCard"></p>
 						<p name="cardNumber" id="cardNumber"></p>
