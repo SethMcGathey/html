@@ -54,16 +54,9 @@
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
-	echo isset($firstName);
-	echo isset($lastName);
-	echo isset($username);
-	echo isset($phoneNumber);
-	echo isset($dob);
-	echo isset($gender);
-	echo isset($email);
-	echo isset($password);
 
-	if(isset($firstName) && isset($lastName) && isset($username) && isset($phoneNumber) && isset($dob) && isset($gender) && isset($email) && isset($password))
+
+	if(trim($firstName) == "" && trim($lastName) == "" && trim($username) == "" && trim($phoneNumber) == "" && trim($dob) == "" && trim($gender) == "" && trim($email) == "" && trim($password))
 	{
 		echo "Got inside long if statement <br>";
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
