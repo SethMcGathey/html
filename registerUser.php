@@ -29,11 +29,11 @@
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}
 	else if(trim($_POST['passwordInput']) == ""){
 		$_SESSION['ErrorMessage'] = "Please fill out password fields.";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
