@@ -23,7 +23,7 @@
               if(isset($_SESSION['username']))
               {
                 echo '<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>';
-                echo '<li><a href="#">Welcome, ' . $_SESSION['username'] . '</a></li>';
+                echo '<li><a href="profile.php">Welcome, ' . $_SESSION['username'] . '</a></li>';
               }else
               {
                 echo '<li><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>';
