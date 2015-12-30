@@ -5,7 +5,7 @@
 
 	echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
-
+	$_SESSION['ErrorMessage'] = "";
 
 	$firstName = NULL;
 	$lastName = NULL;
