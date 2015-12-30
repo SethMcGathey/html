@@ -27,6 +27,7 @@
 	echo $_POST['reenteredPasswordInput'] . "<br>";
 	$password = $_POST['passwordInput'];*/
 	//echo trim($_POST['passwordInput']) . '<br>';
+
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
@@ -47,6 +48,7 @@
 		$gender = $_POST['genderInput'];
 		$email = $_POST['emailInput'];
 		$_SESSION['ErrorMessage'] = "";
+		$password = $_POST['passwordInput'];
 		//$_SESSION['user'] = $username;
 		echo "Got to the setting of variables <br>";
 	//echo isset($_POST['lastNameInput']);
