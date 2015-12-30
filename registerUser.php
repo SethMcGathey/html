@@ -49,29 +49,29 @@
 		$_SESSION['ErrorMessage'] = "";
 		//$_SESSION['user'] = $username;
 		echo "Got to the setting of variables <br>";
-	}
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
 
 
-	if(trim($firstName) == "" && trim($lastName) == "" && trim($username) == "" && trim($phoneNumber) == "" && trim($dob) == "" && trim($gender) == "" && trim($email) == "" && trim($password))
-	{
-		echo "Got inside long if statement <br>";
-	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="INSERT INTO customer (first_name, phone, dob, username, password, gender, permission, email, last_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-	    $q = $pdo->prepare($sql);
-	    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
-	    //$data = $q->fetch(PDO::FETCH_ASSOC);
-    	//$_SESSION['username'] = $data['username'];
-    	//$_SESSION['customerid'] = $data['id'];
-    	//$_SESSION['permission'] = $data['permission'];
-    	//echo $_SESSION['permission'];
-    	//header('Location: login.php');
-	}else
-	{
-		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-		//header('Location: register.php');
+		if(trim($firstName) == "" && trim($lastName) == "" && trim($username) == "" && trim($phoneNumber) == "" && trim($dob) == "" && trim($gender) == "" && trim($email) == "" && trim($password))
+		{
+			echo "Got inside long if statement <br>";
+		    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$sql="INSERT INTO customer (first_name, phone, dob, username, password, gender, permission, email, last_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		    $q = $pdo->prepare($sql);
+		    $q->execute(array($firstName, $phoneNumber, $dob, $username, $password, $gender, 1, $email, $lastName));
+		    //$data = $q->fetch(PDO::FETCH_ASSOC);
+	    	//$_SESSION['username'] = $data['username'];
+	    	//$_SESSION['customerid'] = $data['id'];
+	    	//$_SESSION['permission'] = $data['permission'];
+	    	//echo $_SESSION['permission'];
+	    	//header('Location: login.php');
+		}else
+		{
+			$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
+			//header('Location: register.php');
+		}
 	}
 
 	echo "made it through everything <br>";
