@@ -31,10 +31,12 @@
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
 		//header('Location: register.php');
+		echo "passwords equal";
 	}
 	else if(trim($_POST['passwordInput']) == ""){
 		$_SESSION['ErrorMessage'] = "Please fill out password fields.";
 		//header('Location: register.php');
+		echo "passwordInput";
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
