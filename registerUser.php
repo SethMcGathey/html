@@ -20,7 +20,7 @@
 	echo $_POST['reenteredPasswordInput'] . "<br>";
 	$password = $_POST['passwordInput'];*/
 	echo trim($_POST['passwordInput']) . '<br>';
-	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] AND trim($_POST['passwordInput']) == "")
+	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] AND trim($_POST['passwordInput']) != "")
 	{
 		$firstName = $_POST['firstNameInput'];
 		$lastName = $_POST['lastNameInput'];
