@@ -20,12 +20,12 @@
 	echo $_POST['reenteredPasswordInput'] . "<br>";
 	$password = $_POST['passwordInput'];*/
 	echo trim($_POST['passwordInput']) . '<br>';
-	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'] )
+	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		echo "Passwords do not match. <br>";
 	}
 	else if(trim($_POST['passwordInput']) == ""){
-		echo "Please fill out password fields."
+		echo "Please fill out password fields.";
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
