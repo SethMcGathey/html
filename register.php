@@ -7,7 +7,7 @@
 		<div class="container" id="Not_Ajax_Output">
 			<h1>Register</h1>
 			<?php
-				echo '<div>' +  $_SESSION['ErrorMessage'] + '</div>';
+				echo '<div>' .  $_SESSION['ErrorMessage'] . '</div>';
 			?>
 			<form action="registerUser.php" method="POST">
 				<p>First Name:</p><input type="text" placeholder="First Name" name="firstNameInput" id="firstNameInput">
