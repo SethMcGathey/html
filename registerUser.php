@@ -3,7 +3,7 @@
 	include 'database.php';
     $pdo = Database::connect();
 
-	echo $_SESSION['user'];
+	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 	$_SESSION['ErrorMessage'] = "";
 
@@ -14,20 +14,20 @@
 	$dob = NULL;
 	$gender = NULL; 
 	$email = NULL;
-	$_SESSION['user'] = NULL;
+	//$_SESSION['user'] = NULL;
 	$password = NULL;
 	/*echo $_POST['passwordInput'] . "<br>";
 	echo $_POST['reenteredPasswordInput'] . "<br>";
 	$password = $_POST['passwordInput'];*/
-	echo trim($_POST['passwordInput']) . '<br>';
+	//echo trim($_POST['passwordInput']) . '<br>';
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}
 	else if(trim($_POST['passwordInput']) == ""){
 		$_SESSION['ErrorMessage'] = "Please fill out password fields.";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
@@ -63,11 +63,11 @@
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	header('Location: login.php');
+    	//header('Location: login.php');
 	}else
 	{
 		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}
 	echo "made it through everything <br>";
 	print_r($_SESSION);
