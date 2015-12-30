@@ -54,7 +54,7 @@
 	//echo isset($_POST['phoneNumberInput']);
 
 
-		if(trim($firstName) == "" && trim($lastName) == "" && trim($username) == "" && trim($phoneNumber) == "" && trim($dob) == "" && trim($gender) == "" && trim($email) == "" && trim($password))
+		if(trim($firstName) != "" && trim($lastName) != "" && trim($username) != "" && trim($phoneNumber) != "" && trim($dob) != "" && trim($gender) != "" && trim($email) != "" && trim($password))
 		{
 			echo "Got inside long if statement <br>";
 		    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
