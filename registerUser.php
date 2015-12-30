@@ -30,7 +30,7 @@
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
-		//header('Location: register.php');
+		header('Location: register.php');
 		echo "passwords equal";
 	/*}
 	else if(trim($_POST['passwordInput']) == ""){
