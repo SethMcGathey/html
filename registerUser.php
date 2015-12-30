@@ -83,7 +83,7 @@
 
 	echo "made it through everything <br>";
 	echo $_SESSION['ErrorMessage'];
-	print_r($_SESSION);
+	//print_r($_SESSION);
  	Database::disconnect();
 
  	
