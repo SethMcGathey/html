@@ -7,6 +7,12 @@
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 	$_SESSION['ErrorMessage'] = "";
 
+	if (!empty($_POST)) {
+        foreach($_POST as $key => $value) {
+            $_SESSION['myForm'][$key] = $value;
+        }
+    }
+	
 	$firstName = NULL;
 	$lastName = NULL;
 	$username = NULL;
