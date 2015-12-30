@@ -74,8 +74,9 @@
 	}else
 	{
 		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}
+
 	echo "made it through everything <br>";
 	echo $_SESSION['ErrorMessage'];
 	print_r($_SESSION);
