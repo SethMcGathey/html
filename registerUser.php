@@ -31,13 +31,12 @@
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
 		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
-		//header('Location: register.php');
-		echo "passwords equal";
+		header('Location: register.php');
 	/*}
 	else if(trim($_POST['passwordInput']) == ""){
 		$_SESSION['ErrorMessage'] = "Please fill out password fields.";
-		//header('Location: register.php');
-		echo "passwordInput";*/
+		header('Location: register.php');
+		//echo "passwordInput";*/
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
@@ -54,23 +53,6 @@
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
-		echo "<br>";
-		echo trim($firstName);
-		echo "<br>";
-		echo trim($lastName);
-		echo "<br>";
-		echo trim($username);
-		echo "<br>";
-		echo trim($phoneNumber);
-		echo "<br>";
-		echo trim($dob);
-		echo "<br>";
-		echo trim($gender);
-		echo "<br>";
-		echo trim($email);
-		echo "<br>";
-		echo trim($password);
-		echo "<br>";
 
 
 		if(trim($firstName) != "" && trim($lastName) != "" && trim($username) != "" && trim($phoneNumber) != "" && trim($dob) != "" && trim($gender) != "" && trim($email) != "" && trim($password))
@@ -89,7 +71,7 @@
 		}else
 		{
 			$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-			//header('Location: register.php');
+			header('Location: register.php');
 		}
 	}
 
