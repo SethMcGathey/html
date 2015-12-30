@@ -39,7 +39,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Current Card on Record</h3>
+					<h3>Card on Record</h3>
 					<form action="address.php" method="POST">
 						<p name="nameOnCard" id="nameOnCard"></p>
 						<p name="cardNumber" id="cardNumber"></p>
