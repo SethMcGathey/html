@@ -52,9 +52,24 @@
 	//echo isset($_POST['lastNameInput']);
 	//echo isset($_POST['userNameInput']);
 	//echo isset($_POST['phoneNumberInput']);
+		echo "<br>";
 		echo trim($firstName);
+		echo "<br>";
 		echo trim($lastName);
+		echo "<br>";
 		echo trim($username);
+		echo "<br>";
+		echo trim($phoneNumber);
+		echo "<br>";
+		echo trim($dob);
+		echo "<br>";
+		echo trim($gender);
+		echo "<br>";
+		echo trim($email);
+		echo "<br>";
+		echo trim($password);
+		echo "<br>";
+
 
 		if(trim($firstName) != "" && trim($lastName) != "" && trim($username) != "" && trim($phoneNumber) != "" && trim($dob) != "" && trim($gender) != "" && trim($email) != "" && trim($password))
 		{
