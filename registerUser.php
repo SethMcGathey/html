@@ -11,6 +11,7 @@
         foreach($_POST as $key => $value) {
             $_SESSION['myForm'][$key] = $value;
         }
+        print_r($_SESSION['myForm']);
     }
 	
 	$firstName = NULL;
