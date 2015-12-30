@@ -5,7 +5,7 @@
 		<?php require 'navigation.php' ?>
 		<div class="container" id="Not_Ajax_Output">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-3">
 					<h1>Address</h1>
 					<form action="address.php" method="POST">
 						<p>Street 1:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
@@ -17,16 +17,34 @@
 						<button>Update</button>
 					</form>
 				</div>
-				<div class="col-lg-6">
-					<h1>Card on record</h1>
+				<div class="col-lg-3">
+					<h1>Current Address</h1>
+					<form action="address.php" method="POST">
+						<p name="street1" id="street1"></p>
+						<p name="street2" id="street2"></p>
+						<p name="zipcode" id="zipcode"></p>
+						<p name="city" id="city"></p>
+						<p name="state" id="state"></p>
+						<p name="country" id="country"></p>
+					</form>
+				</div>
+				<div class="col-lg-3">
+					<h1>New Card</h1>
 					<form action="payment.php" method="POST">
-						<p>Name on Card:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
-						<p>Card Number:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
-						<p>Security Code:</p><input type="text" placeholder="Zipcode" name="zipcode" id="zipcode">
-						<p>Expiration:</p><input type="text" placeholder="City" name="city" id="city">
-						<p>State:</p><input type="text" placeholder="State" name="state" id="state">
-						<p>Country:</p><input type="text" placeholder="Country" name="country" id="country">
+						<p>Name on Card:</p><input type="text" placeholder="Name on Card" name="nameOnCard" id="nameOnCard">
+						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
+						<p>Security Code:</p><input type="text" placeholder="Security Code" name="securityCode" id="securityCode">
+						<p>Expiration:</p><input type="text" placeholder="Expiration" name="expiration" id="expiration">
 						<button>Update</button>
+					</form>
+				</div>
+				<div class="col-lg-3">
+					<h1>Current Card on Record</h1>
+					<form action="address.php" method="POST">
+						<p name="nameOnCard" id="nameOnCard"></p>
+						<p name="cardNumber" id="cardNumber"></p>
+						<p name="securityCode" id="securityCode"></p>
+						<p name="expiration" id="expiration"></p>
 					</form>
 				</div>
 			</div>
