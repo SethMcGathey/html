@@ -22,10 +22,12 @@
 	echo trim($_POST['passwordInput']) . '<br>';
 	if($_POST['passwordInput'] != $_POST['reenteredPasswordInput'])
 	{
-		echo "Passwords do not match. <br>";
+		$_SESSION['ErrorMessage'] = "Passwords do not match. <br>";
+		header('Location: register.php');
 	}
 	else if(trim($_POST['passwordInput']) == ""){
-		echo "Please fill out password fields.";
+		$_SESSION['ErrorMessage'] = "Please fill out password fields.";
+		header('Location: register.php');
 	}else
 	{
 		$firstName = $_POST['firstNameInput'];
@@ -61,10 +63,11 @@
     	//$_SESSION['customerid'] = $data['id'];
     	//$_SESSION['permission'] = $data['permission'];
     	//echo $_SESSION['permission'];
-    	//header('Location: login.php');
+    	header('Location: login.php');
 	}else
 	{
-		echo "Fill in all required fields. <br>";
+		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
+		header('Location: register.php');
 	}
 	echo "made it through everything <br>";
 	print_r($_SESSION);
