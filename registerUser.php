@@ -19,8 +19,8 @@
 	/*echo $_POST['passwordInput'] . "<br>";
 	echo $_POST['reenteredPasswordInput'] . "<br>";
 	$password = $_POST['passwordInput'];*/
-	echo strlen($_POST['passwordInput']) . '<br>';
-	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] AND strlen(trim($_POST['passwordInput'])) <= 2)
+	echo trim($_POST['passwordInput']) . '<br>';
+	if($_POST['passwordInput'] == $_POST['reenteredPasswordInput'] AND trim($_POST['passwordInput']) == "")
 	{
 		$firstName = $_POST['firstNameInput'];
 		$lastName = $_POST['lastNameInput'];
