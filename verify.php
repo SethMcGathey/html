@@ -3,7 +3,7 @@
 	include 'database.php';
     $pdo = Database::connect();
 
-	echo $_SESSION['user'];
+	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$myusername = $_POST['usernameInput'];
@@ -12,8 +12,8 @@
 
 	//$myusername=mysqli_real_escape_string($db, $_POST['username']);
 	//$mypassword=mysqli_real_escape_string($db, $_POST['password']);
-	echo "<div>" . $myusername . "</div>";
-	echo "<div>" . $mypassword . "</div>";
+	//echo "<div>" . $myusername . "</div>";
+	//echo "<div>" . $mypassword . "</div>";
 	/*
 	$sql="SELECT id, first_name, password FROM customer WHERE username = " . $myusername;
 
@@ -39,13 +39,14 @@
     	$_SESSION['username'] = $data['username'];
     	$_SESSION['customerid'] = $data['id'];
     	$_SESSION['permission'] = $data['permission'];
+    	echo $_SESSION['customerid'];
     	echo $_SESSION['permission'];
     	//header('Location: index.php');
     }else
     {
     	echo "Invalid Login";
     }
-print_r($_SESSION);
+//print_r($_SESSION);
  	Database::disconnect();
 
  	
