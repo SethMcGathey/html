@@ -23,11 +23,11 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($pid, $_SESSION['customerid']));
 	    
-    	header('Location: profile.php');
+    	//header('Location: profile.php');
 	}else
 	{
 		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-		header('Location: register.php');
+		//header('Location: register.php');
 	}
 
 
