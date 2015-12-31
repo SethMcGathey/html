@@ -15,6 +15,7 @@
 						<p>State:</p><input type="text" placeholder="State" name="state" id="state">
 						<p>Country:</p><input type="text" placeholder="Country" name="country" id="country">
 						<button>Update</button>
+						<br>
 					</form>
 				</div>
 				<div class="col-lg-3">
@@ -52,6 +53,7 @@
 						<p name="cardNumber" id="cardNumber"></p>
 						<p name="securityCode" id="securityCode"></p>
 						<p name="expiration" id="expiration"></p>
+						<br>
 					</form>
 				</div>
 			</div>
