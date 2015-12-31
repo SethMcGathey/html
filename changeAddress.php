@@ -6,6 +6,7 @@
 	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
+	echo 'made it here';
 	/*$_POST['street1'];
 	$_POST['street2'];
 	$_POST['zipcode'];
@@ -15,6 +16,7 @@
 
 	if(trim($_POST['street1']) != "" && trim($_POST['zipcode']) != "" && trim($_POST['city']) != "" && trim($_POST['state']) != "" && trim($_POST['country']) != "")
 	{
+		echo 'made it inside if';
 		//echo "Got inside long if statement <br>";
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="INSERT INTO address (street_one, street_two, zipcode, city, state, country) VALUES (?, ?, ?, ?, ?, ?)";
