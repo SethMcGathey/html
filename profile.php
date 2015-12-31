@@ -19,7 +19,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Current Address</h3>
+					<h3>Stored Addresses</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
