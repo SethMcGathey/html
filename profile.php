@@ -23,7 +23,6 @@
 						//echo $_SESSION['customerid'];
 		               	$sql = "SELECT street_one, street_two, zipcode, city, state, country FROM customer_address c JOIN address a ON c.address_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
 		               	foreach ($pdo->query($sql) as $row) {
-		               		echo $row['street_one'];
 			               	echo '<p>Street 1:</p><p name="street1" id="street1">' . $row['street_one'] . '</p>
 								  <p>Street 2:</p><p name="street2" id="street2">' . $row['street_two'] . '</p>
 								  <p>Zipcode:</p><p name="zipcode" id="zipcode">' . $row['zipcode'] . '</p>
