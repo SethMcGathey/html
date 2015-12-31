@@ -14,7 +14,7 @@
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="INSERT INTO payment (card_full_name, card_number, card_security, expires_month, expires_year, payment_type_id) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_POST['nameOnCard'], $_POST['cardNumber'], $_POST['securityCode'], $monthYear[0], $monthYear[1], "Visa"));
+	    $q->execute(array($_POST['nameOnCard'], $_POST['cardNumber'], $_POST['securityCode'], $monthYear[0], $monthYear[1], 1));
 
 	    $pid = $pdo->lastInsertID();
 
