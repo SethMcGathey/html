@@ -9,7 +9,7 @@
 
 	if(trim($_POST['nameOnCard']) != "" && trim($_POST['cardNumber']) != "" && trim($_POST['securityCode']) != "" && trim($_POST['expiration']) != "")
 	{
-		$monthYear = explode("/", $_POST['expiration'])
+		$monthYear = explode("/", $_POST['expiration']);
 		echo 'made it inside if';
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="INSERT INTO payment (card_full_name, card_number, card_security, expires_month, expires_year, payment_type_id) VALUES (?, ?, ?, ?, ?, ?)";
