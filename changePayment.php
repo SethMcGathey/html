@@ -12,9 +12,9 @@
 		$monthYear = explode("/", $_POST['expiration']);
 		echo 'made it inside if';
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="INSERT INTO payment (card_full_name, card_number, card_security, expires_month, expires_year, payment_type_id) VALUES (?, ?, ?, ?, ?, ?)";
+		$sql="INSERT INTO payment (card_full_name, card_number, card_security, expires_month, expires_year, payment_type) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_POST['nameOnCard'], $_POST['cardNumber'], $_POST['securityCode'], $monthYear[0], $monthYear[1], 1));
+	    $q->execute(array($_POST['nameOnCard'], $_POST['cardNumber'], $_POST['securityCode'], $monthYear[0], $monthYear[1], "Visa"));
 
 	    $pid = $pdo->lastInsertID();
 
@@ -23,11 +23,11 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($pid, $_SESSION['customerid']));
 	    
-    	//header('Location: profile.php');
+    	header('Location: profile.php');
 	}else
 	{
 		$_SESSION['ErrorMessage'] =  "Fill in all required fields.";
-		//header('Location: register.php');
+		header('Location: register.php');
 	}
 
 
