@@ -20,6 +20,7 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_SESSION['customerid'], 1));
 	    echo $q;
+	    echo 'made it here too';
 
 
 
