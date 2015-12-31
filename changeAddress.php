@@ -17,7 +17,7 @@
 
 	    $sql="SELECT ID FROM address ORDER BY ID desc LIMIT 5";
 	    $data = $pdo->query($sql);
-	    echo $data;
+	    echo $data->fetch_assoc();
 
 	    /*$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 5";
