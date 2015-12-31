@@ -15,11 +15,15 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['street1'], $_POST['street2'], $_POST['zipcode'], $_POST['city'], $_POST['state'], $_POST['country']));*/
 
-	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	    $sql="SELECT ID FROM address ORDER BY ID desc LIMIT 5";
+	    $data = $pdo->query($sql);
+	    echo $data;
+
+	    /*$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 5";
 	    $q = $pdo->prepare($sql);
 	    $data = $q->execute(array($_SESSION['customerid'], 1));
-	    print_r($data);
+	    print_r($data);*/
 
 
 
