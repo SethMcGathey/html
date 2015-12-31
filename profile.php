@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<h3>Address</h3>
-					<form action="address.php" method="POST">
+					<form action="changeAddress.php" method="POST">
 						<p>Street 1:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
 						<p>Street 2:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
 						<p>Zipcode:</p><input type="text" placeholder="Zipcode" name="zipcode" id="zipcode">
@@ -18,19 +18,24 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Current Address</h3>
-					<form action="address.php" method="POST">
-						<p name="street1" id="street1"></p>
-						<p name="street2" id="street2"></p>
-						<p name="zipcode" id="zipcode"></p>
-						<p name="city" id="city"></p>
-						<p name="state" id="state"></p>
-						<p name="country" id="country"></p>
-					</form>
+					<?php
+		               $sql = 'SELECT street_one, street_two, zipcode, city, state, country FROM customer_address c JOIN address a ON c\.address_id = a\.id WHERE customer_id = ' . $_SESSION['customer_id'];
+		               foreach ($pdo->query($sql) as $row) {
+
+		               	echo '<h3>Current Address</h3>
+							  <p name="street1" id="street1">' . $row['street_one'] . '</p>
+							  <p name="street2" id="street2">' . $row['street_two'] . '</p>
+							  <p name="zipcode" id="zipcode">' . $row['zipcode'] . '</p>
+							  <p name="city" id="city">' . $row['city'] . '</p>
+							  <p name="state" id="state">' . $row['state'] . '</p>
+							  <p name="country" id="country">' . $row['country'] . '</p>';
+		               }
+		            ?>
+
 				</div>
 				<div class="col-lg-3">
 					<h3>New Card</h3>
-					<form action="payment.php" method="POST">
+					<form action="changePayment.php" method="POST">
 						<p>Name on Card:</p><input type="text" placeholder="Name on Card" name="nameOnCard" id="nameOnCard">
 						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
 						<p>Security Code:</p><input type="text" placeholder="Security Code" name="securityCode" id="securityCode">
