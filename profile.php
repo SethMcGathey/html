@@ -29,7 +29,8 @@
 								  <p name="zipcode" id="zipcode">Zipcode: ' . $row['zipcode'] . '</p>
 								  <p name="city" id="city">City: ' . $row['city'] . '</p>
 								  <p name="state" id="state">State: ' . $row['state'] . '</p>
-								  <p name="country" id="country">Country: ' . $row['country'] . '</p>';
+								  <p name="country" id="country">Country: ' . $row['country'] . '</p>
+								  <br>';
 		               }
 		            ?>
 		        	</div>
