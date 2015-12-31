@@ -56,7 +56,7 @@
 			               	echo '<p name="nameOnCard" id="nameOnCard">Name on Card: ' . $row['card_full_name'] . '</p>
 								  <p name="cardNumber" id="cardNumber">Card Number: ' . $row['card_number'] . '</p>
 								  <p name="securityCode" id="securityCode">Security Code: ' . $row['card_security'] . '</p>
-								  <p name="expiration" id="expiration">Expiration: ' . $row['expires_month'] . '/' . $row['expires_year'] . '</p>
+								  <p name="expiration" id="expiration">Expires: ' . $row['expires_month'] . '/' . $row['expires_year'] . '</p>
 								  <br>';
 		               }
 		            ?>
