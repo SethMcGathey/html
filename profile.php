@@ -43,7 +43,7 @@
 						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
 						<p>Security Code:</p><input type="text" placeholder="Security Code" name="securityCode" id="securityCode">
 						<p>Expiration:</p><input type="text" placeholder="Expiration" name="expiration" id="expiration">
-						<button>Add New Card</button>
+						<button>Add Card</button>
 					</form>
 				</div>
 				<div class="col-lg-3">
