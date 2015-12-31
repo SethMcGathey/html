@@ -58,7 +58,7 @@
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
-		               	$sql = "SELECT card_full_name, card_number, card_security, expires_month FROM customer_payment c JOIN payment a ON c.payment_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
+		               	$sql = "SELECT card_full_name, card_number, card_security, expires_month, expires_year FROM customer_payment c JOIN payment a ON c.payment_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
 		               	foreach ($pdo->query($sql) as $row) {
 			               	echo '<p name="nameOnCard" id="nameOnCard">Name on Card: ' . $row['card_full_name'] . '</p>
 								  <p name="cardNumber" id="cardNumber">Card Number: ' . $row['card_number'] . '</p>
