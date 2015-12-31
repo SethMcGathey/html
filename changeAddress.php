@@ -15,7 +15,7 @@
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['street1'], $_POST['street2'], $_POST['zipcode'], $_POST['city'], $_POST['state'], $_POST['country']));
 
-	    echo $pid = PDO::lastInsertID();
+	    echo $pid = $pdo->lastInsertID();
 	    /*$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 5";
 	    $data = $pdo->query($sql);
 
