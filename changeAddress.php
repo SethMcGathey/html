@@ -18,8 +18,8 @@
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 1";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_SESSION['customerid'], 1));
-	    print_r($q);
+	    $data = $q->execute(array($_SESSION['customerid'], 1));
+	    print_r($data);
 
 
 
