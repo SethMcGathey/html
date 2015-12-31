@@ -14,7 +14,7 @@
 						<p>City:</p><input type="text" placeholder="City" name="city" id="city">
 						<p>State:</p><input type="text" placeholder="State" name="state" id="state">
 						<p>Country:</p><input type="text" placeholder="Country" name="country" id="country">
-						<button>Update</button>
+						<button>Add Address</button>
 						<br>
 					</form>
 				</div>
@@ -43,7 +43,7 @@
 						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
 						<p>Security Code:</p><input type="text" placeholder="Security Code" name="securityCode" id="securityCode">
 						<p>Expiration:</p><input type="text" placeholder="Expiration" name="expiration" id="expiration">
-						<button>Update</button>
+						<button>Add New Card</button>
 					</form>
 				</div>
 				<div class="col-lg-3">
