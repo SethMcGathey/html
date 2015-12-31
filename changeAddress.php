@@ -22,11 +22,11 @@
 		$sql="INSERT INTO address (street_one, street_two, zipcode, city, state, country) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['street1'], $_POST['street2'], $_POST['zipcode'], $_POST['city'], $_POST['state'], $_POST['country']));
-	    echo mysql_insert_id();
-	   	/*$pdo2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	    //echo mysql_insert_id();
+	   	$pdo2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql2="INSERT INTO customer_address (customer_id, address_id) VALUES (?, ?)";
 	    $q2 = $pdo2->prepare($sql2);
-	    $q2->execute(array($_SESSION['customerid'], mysql_insert_id());*/
+	    $q2->execute(array($_SESSION['customerid'], 1);
 	    
     	//header('Location: profile.php');
 	}else
