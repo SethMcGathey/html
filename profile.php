@@ -20,6 +20,7 @@
 				<div class="col-lg-3">
 					<h3>Current Address</h3>
 					<?php
+					echo $_SESSION['customer_id'];
 		               $sql = 'SELECT street_one, street_two, zipcode, city, state, country FROM customer_address c JOIN address a ON c\.address_id = a\.id WHERE customer_id = ' . $_SESSION['customer_id'];
 		               foreach ($pdo->query($sql) as $row) {
 
