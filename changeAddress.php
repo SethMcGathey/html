@@ -6,14 +6,14 @@
 	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
-	$_POST['street1'];
+	/*$_POST['street1'];
 	$_POST['street2'];
 	$_POST['zipcode'];
 	$_POST['city'];
 	$_POST['state'];
-	$_POST['country'];
+	$_POST['country'];*/
 
-	if(trim($firstName) != "" && trim($lastName) != "" && trim($username) != "" && trim($phoneNumber) != "" && trim($dob) != "" && trim($gender) != "" && trim($email) != "" && trim($password))
+	if(trim($_POST['street1']) != "" && trim($_POST['zipcode']) != "" && trim($_POST['city']) != "" && trim($_POST['state']) != "" && trim($_POST['country']) != "")
 	{
 		//echo "Got inside long if statement <br>";
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
