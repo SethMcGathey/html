@@ -39,9 +39,9 @@
     	$_SESSION['username'] = $data['username'];
     	$_SESSION['customerid'] = $data['id'];
     	$_SESSION['permission'] = $data['permission'];
-    	echo $_SESSION['customerid'];
-    	echo $_SESSION['permission'];
-    	//header('Location: index.php');
+    	//echo $_SESSION['customerid'];
+    	//echo $_SESSION['permission'];
+    	header('Location: index.php');
     }else
     {
     	echo "Invalid Login";
