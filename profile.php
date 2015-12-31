@@ -24,12 +24,12 @@
 		               	$sql = "SELECT street_one, street_two, zipcode, city, state, country FROM customer_address c JOIN address a ON c.address_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
 		               	foreach ($pdo->query($sql) as $row) {
 		               		echo $row['street_one'];
-			               	echo '<p name="street1" id="street1">' . $row['street_one'] . '</p>
-								  <p name="street2" id="street2">' . $row['street_two'] . '</p>
-								  <p name="zipcode" id="zipcode">' . $row['zipcode'] . '</p>
-								  <p name="city" id="city">' . $row['city'] . '</p>
-								  <p name="state" id="state">' . $row['state'] . '</p>
-								  <p name="country" id="country">blue' . $row['country'] . '</p>';
+			               	echo '<p>Street 1:</p><p name="street1" id="street1">' . $row['street_one'] . '</p>
+								  <p>Street 2:</p><p name="street2" id="street2">' . $row['street_two'] . '</p>
+								  <p>Zipcode:</p><p name="zipcode" id="zipcode">' . $row['zipcode'] . '</p>
+								  <p>City:</p><p name="city" id="city">' . $row['city'] . '</p>
+								  <p>State:</p><p name="state" id="state">' . $row['state'] . '</p>
+								  <p>Country:</p><p name="country" id="country">' . $row['country'] . '</p>';
 		               }
 		            ?>
 
