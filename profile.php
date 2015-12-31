@@ -48,13 +48,6 @@
 				</div>
 				<div class="col-lg-3">
 					<h3>Card on Record</h3>
-					<form action="address.php" method="POST">
-						<p name="nameOnCard" id="nameOnCard"></p>
-						<p name="cardNumber" id="cardNumber"></p>
-						<p name="securityCode" id="securityCode"></p>
-						<p name="expiration" id="expiration"></p>
-						<br>
-					</form>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
