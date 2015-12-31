@@ -31,6 +31,7 @@
 								  <p name="state" id="state">' . $row['state'] . '</p>
 								  <p name="country" id="country">blue' . $row['country'] . '</p>';
 		               }
+		               echo '<p name="country" id="country">blue' . $row['country'] . '</p>';
 		            ?>
 
 				</div>
