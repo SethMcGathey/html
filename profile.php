@@ -47,7 +47,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Card on Record</h3>
+					<h3>Cards on Record</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
