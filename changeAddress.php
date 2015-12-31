@@ -14,6 +14,15 @@
 		$sql="INSERT INTO address (street_one, street_two, zipcode, city, state, country) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['street1'], $_POST['street2'], $_POST['zipcode'], $_POST['city'], $_POST['state'], $_POST['country']));
+
+	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 1";
+	    $q = $pdo->prepare($sql);
+	    $q->execute(array($_SESSION['customerid'], 1));
+	    echo $q;
+
+
+
 	    echo $pdo::db2_last_insert_id($sql);
 	    echo mysql_insert_id();
 	    //echo $_SESSION['customerid'];
