@@ -19,7 +19,7 @@
 		$sql="SELECT ID FROM address ORDER BY ID desc LIMIT 1";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_SESSION['customerid'], 1));
-	    echo $q;
+	    //echo $q;
 	    echo 'made it here too';
 
 
