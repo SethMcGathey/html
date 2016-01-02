@@ -7,8 +7,8 @@
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
 	$_SESSION['paymentIdForPurchase'] = $_GET['paymentid'];
-
-	header('Location: confirmPurchase.php');
+	echo $_GET['paymentid'];
+	//header('Location: confirmPurchase.php');
 
 	
 ?>
