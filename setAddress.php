@@ -5,7 +5,8 @@
 
 	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
-
+		$junk = 'set junk';
+	
 	$_SESSION['addressIdForPurchase'] = $_GET['addressid'];
 	//echo $_GET['addressid'];
 	echo $_SESSION['addressIdForPurchase'];
