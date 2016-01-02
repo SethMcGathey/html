@@ -8,7 +8,7 @@
 
 	$_SESSION['addressIdForPurchase'] = $_GET['addressid'];
 
-	header('Location: choosePayment.php');
+	header('Location: choosePurchasePayment.php');
 
 	
 ?>
