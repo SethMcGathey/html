@@ -9,7 +9,7 @@
 
 			<div class="row">
 				<div class="col-lg-4">
-					<p>Title</p>
+
 				</div>
 				<div class="col-lg-4">
 					<p>Price</p>
