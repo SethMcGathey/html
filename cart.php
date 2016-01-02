@@ -17,7 +17,7 @@
 				<div class="col-lg-4">
 					<p>Quantity</p>
 				</div>
-			<div>
+			</div>
 
 			<?php
 				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';

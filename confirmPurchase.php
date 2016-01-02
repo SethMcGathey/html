@@ -20,7 +20,6 @@
 		               }
 		            ?>
 		        	</div>
-		        	<button onclick="window.location.href='updateCartAfterPurchase.php'">Confirm Purchase</button>
 				</div>
 				<div class="col-lg-6">
 					<h3>Choosen Address</h3>
@@ -40,14 +39,17 @@
 		            ?>
 		        	</div>
 				</div>
+			</div>
+			<div class="row">
 				<?php
-				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';
+					$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';
 						//$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 						foreach ($pdo->query($sql) as $row) {
 						    echo '<div class="col-4-lg product" id="' . $row['p.id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> ' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' ' . $row['fullQuantity'] . '</div>';
 						}
 				?>
 			</div>
+			<button onclick="window.location.href='updateCartAfterPurchase.php'">Confirm Purchase</button>
 		</div>
 	</body>
 
