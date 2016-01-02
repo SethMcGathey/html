@@ -7,6 +7,7 @@
 		<div class="container" id="Not_Ajax_Output">
 			<h1>cart.php</h1>
 
+			<div><p>Title</p><p>Price</p><p>Quantity</p><div>
 
 			<?php
 				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';
