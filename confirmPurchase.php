@@ -6,7 +6,7 @@
 		<div class="container" id="Not_Ajax_Output">
 			<div class="row">
 				<div class="col-lg-6">
-					<h3>Choose Card</h3>
+					<h3>Choosen Card</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
@@ -22,7 +22,7 @@
 		        	</div>
 				</div>
 				<div class="col-lg-6">
-					<h3>Choose Address</h3>
+					<h3>Choosen Address</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
@@ -39,6 +39,7 @@
 		            ?>
 		        	</div>
 				</div>
+				<button>Confirm Purchase</button>
 			</div>
 		</div>
 	</body>
