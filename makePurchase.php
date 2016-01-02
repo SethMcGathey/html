@@ -6,7 +6,7 @@
 		<div class="container" id="Not_Ajax_Output">
 			<div class="row">
 				<div class="col-lg-3">
-					<h3>Address</h3>
+					<h3>Add New Address</h3>
 					<form action="changeAddress.php" method="POST">
 						<p>Street 1:</p><input type="text" placeholder="Street 1" name="street1" id="street1">
 						<p>Street 2:</p><input type="text" placeholder="Street 2" name="street2" id="street2">
@@ -19,7 +19,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Current Addresses</h3>
+					<h3>Choose Address</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
@@ -37,7 +37,7 @@
 		        	</div>
 				</div>
 				<div class="col-lg-3">
-					<h3>New Card</h3>
+					<h3>Add New Card</h3>
 					<form action="changePayment.php" method="POST">
 						<p>Name on Card:</p><input type="text" placeholder="Name on Card" name="nameOnCard" id="nameOnCard">
 						<p>Card Number:</p><input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
@@ -47,7 +47,7 @@
 					</form>
 				</div>
 				<div class="col-lg-3">
-					<h3>Cards on Record</h3>
+					<h3>Choose Card</h3>
 					<div class="scrollbox">
 					<?php
 						//echo $_SESSION['customerid'];
