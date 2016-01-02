@@ -6,9 +6,9 @@
 	//echo $_SESSION['user'];
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 
-	$_SESSION['addressIdForPurchase'] = $_GET['addressid'];
+	$_SESSION['paymentIdForPurchase'] = $_GET['paymentid'];
 
-	header('Location: choosePayment.php');
+	header('Location: confirmPurchase.php');
 
 	
 ?>
