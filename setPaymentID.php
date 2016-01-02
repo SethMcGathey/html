@@ -8,7 +8,8 @@
 
 	$_SESSION['paymentIdForPurchase'] = $_GET['paymentid'];
 	echo $_GET['paymentid'];
+	echo $_SESSION['paymentIdForPurchase'];
 	//header('Location: confirmPurchase.php');
 
-	
+	Database::disconnect();
 ?>
