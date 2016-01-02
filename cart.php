@@ -9,7 +9,7 @@
 
 			<div class="row">
 				<div class="col-12-lg">
-					<p>Title</p><p>Price</p><p>Quantity</p>
+					<p>Title Price Quantity</p>
 				</div>
 			<div>
 
