@@ -26,7 +26,7 @@
 						    echo '<div class="col-4-lg product" id="' . $row['p.id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> ' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' ' . $row['fullQuantity'] . '</div>';
 						}
 			?>
-			<button>Purchase</button>
+			<button href="makePurchase.php">Purchase</button>
 
 			<div class="row">
 				<div class="col-lg-3"></div>
