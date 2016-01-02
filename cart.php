@@ -9,10 +9,10 @@
 
 
 			<?php
-				$sql = 'SELECT name, cost, description, quantity FROM transaction t JOIN transaction_product tp ON tp\.transaction_id = t\.id JOIN product p ON p\.id = tp\.product_id WHERE cart = 1 AND customer_ID = ' . $_SESSION['customerid'] . ' ORDER BY id';
+				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity), i.image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id ';
 						//$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 						foreach ($pdo->query($sql) as $row) {
-						    echo '<div class="col-4-lg product" id="' . $row['a.id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['b.image']) . '"width="100px"/> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="addToCart.php?id=' . $row['a.id'] . '">Add to Cart</a></div>';
+						    echo '<div class="col-4-lg product" id="' . $row['p.id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['i.image']) . '"width="100px"/> ' . $row['name'] . ' ' . $row['p.description'] . ' ' . $row['cost'] . '</div>';
 						}
 			?>
 
