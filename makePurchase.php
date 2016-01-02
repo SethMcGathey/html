@@ -25,12 +25,14 @@
 						//echo $_SESSION['customerid'];
 		               	$sql = "SELECT street_one, street_two, zipcode, city, state, country FROM customer_address c JOIN address a ON c.address_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
 		               	foreach ($pdo->query($sql) as $row) {
-			               	echo '<p name="street1" id="street1">Street 1: ' . $row['street_one'] . '</p>
+			               	echo '<a>
+			               		  <p name="street1" id="street1">Street 1: ' . $row['street_one'] . '</p>
 								  <p name="street2" id="street2">Street 2: ' . $row['street_two'] . '</p>
 								  <p name="zipcode" id="zipcode">Zipcode: ' . $row['zipcode'] . '</p>
 								  <p name="city" id="city">City: ' . $row['city'] . '</p>
 								  <p name="state" id="state">State: ' . $row['state'] . '</p>
 								  <p name="country" id="country">Country: ' . $row['country'] . '</p>
+								  </a>
 								  <br>';
 		               }
 		            ?>
@@ -53,10 +55,12 @@
 						//echo $_SESSION['customerid'];
 		               	$sql = "SELECT card_full_name, card_number, card_security, expires_month, expires_year FROM customer_payment c JOIN payment a ON c.payment_id = a.id WHERE customer_id = " . $_SESSION['customerid'];
 		               	foreach ($pdo->query($sql) as $row) {
-			               	echo '<p name="nameOnCard" id="nameOnCard">Name on Card: ' . $row['card_full_name'] . '</p>
+			               	echo '<a>
+			               		  <p name="nameOnCard" id="nameOnCard">Name on Card: ' . $row['card_full_name'] . '</p>
 								  <p name="cardNumber" id="cardNumber">Card Number: ' . $row['card_number'] . '</p>
 								  <p name="securityCode" id="securityCode">Security Code: ' . $row['card_security'] . '</p>
 								  <p name="expiration" id="expiration">Expires: ' . $row['expires_month'] . '/' . $row['expires_year'] . '</p>
+								  </a>
 								  <br>';
 		               }
 		            ?>
