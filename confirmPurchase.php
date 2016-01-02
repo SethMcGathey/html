@@ -20,6 +20,7 @@
 		               }
 		            ?>
 		        	</div>
+		        	<button>Confirm Purchase</button>
 				</div>
 				<div class="col-lg-6">
 					<h3>Choosen Address</h3>
@@ -39,7 +40,6 @@
 		            ?>
 		        	</div>
 				</div>
-				<button>Confirm Purchase</button>
 			</div>
 		</div>
 	</body>
