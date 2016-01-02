@@ -11,6 +11,7 @@
 					<?php
 						//echo $_SESSION['customerid'];
 		               	$sql = "SELECT card_full_name, card_number, card_security, expires_month, expires_year FROM payment WHERE id = " . $_SESSION['paymentIdForPurchase'];
+		               	echo $_SESSION['paymentIdForPurchase'];
 		               	foreach ($pdo->query($sql) as $row) {
 			               	echo '<a href="setPayment.php?paymentid=' . $row['id'] . '">
 			               		  <p name="nameOnCard" id="nameOnCard">Name on Card: ' . $row['card_full_name'] . '</p>
@@ -29,6 +30,7 @@
 					<?php
 						//echo $_SESSION['customerid'];
 		               	$sql = "SELECT street_one, street_two, zipcode, city, state, country FROM address WHERE id = " . $_SESSION['addressIdForPurchase'];
+		               	echo $_SESSION['addressIdForPurchase'];
 		               	foreach ($pdo->query($sql) as $row) {
 			               	echo '<a href="setAddress.php?addressid=' . $row['id'] . '">
 			               		  <p name="street1" id="street1">Street 1: ' . $row['street_one'] . '</p>
