@@ -11,7 +11,7 @@
 	$sql="UPDATE transaction SET cart = 0 WHERE transaction_id = " . $_SESSION['transaction_id'];
     $q = $pdo->prepare($sql);
     $q->execute();
-
+    echo 'made it';
     header('Location: confirmPurchase.php');
 
 	Database::disconnect();
