@@ -24,7 +24,7 @@
 						//$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
 						foreach ($pdo->query($sql) as $row) {
 						    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> ' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' ' . $row['fullQuantity'] . '</div>
-						    	<button onclick="window.location.href="removeFromCart.php?productid="' . $row['id'] . '">Remove</button>';
+						    	<button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button>';
 
 						}
 			?>
