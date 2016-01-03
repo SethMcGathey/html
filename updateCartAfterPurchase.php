@@ -12,7 +12,7 @@
     $q = $pdo->prepare($sql);
     $q->execute(array($_SESSION['transaction_id']));
     echo 'made it 2';
-    header('Location: confirmPurchase.php');
+    header('Location: conformation.php');
 
 	Database::disconnect();
 
