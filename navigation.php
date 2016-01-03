@@ -11,8 +11,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <?php
-          $ifActive = array("index.php"=>"", "products.php"=>"", "sqlManagmentFiles/productFiles/productIndex.php"=>"", "contact.php"=>"", "cart.php"=>"", "logout.php"=>"", "profile.php"=>"", "register.php"=>"", "login.php"=>"");
-          echo $_SERVER['PHP_SELF'];
+          $ifActive = array("/index.php"=>"", "/products.php"=>"", "/sqlManagmentFiles/productFiles/productIndex.php"=>"", "/contact.php"=>"", "/cart.php"=>"", "/logout.php"=>"", "/profile.php"=>"", "/register.php"=>"", "/login.php"=>"");
+
+          $ifActive[$_SERVER['PHP_SELF']] = "active";
           echo '<li class="' . $ifActive[0] . '"><a href="index.php">Home</a></li>';
           echo '<li class="' . $ifActive[1] . '"><a href="products.php">Products</a></li>';
 
