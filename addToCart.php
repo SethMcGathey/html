@@ -10,7 +10,6 @@
    	$sql = "SELECT id, cart FROM transaction WHERE customer_id = " . $_SESSION['customerid'] . ' AND cart = 1';
 
 	foreach ($pdo->query($sql) as $row) {
-
 		echo $transactionid = $row['id'];
 		echo '<br>';
 	}
@@ -21,6 +20,7 @@
 
 		foreach ($pdo->query($sql) as $row) {
 			echo '<br>';
+			echo $row['id'];
 			echo $quantity = $row['quantity'];
 			echo 'made it ';
 		}
