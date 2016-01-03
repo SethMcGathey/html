@@ -17,7 +17,7 @@
 	if(trim($transactionid) > 0)
 	{
 		$sql = "SELECT id, quantity FROM transaction_product WHERE product_id = " . $_GET['id'] . ' AND transaction_id = ' . $transactionid;
-
+		echo 'made it ';
 		foreach ($pdo->query($sql) as $row) {
 			echo '<br>';
 			echo $row['id'];
