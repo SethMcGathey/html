@@ -32,7 +32,7 @@
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql="INSERT INTO transaction_product (quantity, transaction_id, product_id) VALUES (?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array(1, $pdo->lastInsertID(), $_GET["id"]));
+	    $q->execute(array(1, $transactionid, $_GET["id"]));
 	}
 
 /*
