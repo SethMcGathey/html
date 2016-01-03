@@ -11,7 +11,7 @@
 
 	foreach ($pdo->query($sql) as $row) {
 
-		$transactionid = $row['id'];
+		echo $transactionid = $row['id'];
 	}
 
 	if(trim($transactionid) > 0)
