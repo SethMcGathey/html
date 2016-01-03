@@ -10,8 +10,7 @@
    	$sql = "SELECT id, cart FROM transaction WHERE customer_id = " . $_SESSION['customerid'] . ' AND cart = 1';
 
 	foreach ($pdo->query($sql) as $row) {
-		echo $transactionid = $row['id'];
-		echo '<br>';
+		$transactionid = $row['id'];
 	}
 	Database::disconnect();
 
@@ -27,7 +26,7 @@
 		if($quantity > 0)
 		{
 			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$sql="UPDATE transaction_product SET quantity = (?)";
+			$sql="UPDATE transaction_product SET quantity = (?) WHERE transaction_id = " . $transactionid . " AND product_id = " . $_GET['id'];
 		    $q = $pdo->prepare($sql);
 		    $q->execute(array($quantity+1));
 		}
