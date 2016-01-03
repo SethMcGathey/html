@@ -14,6 +14,7 @@
 		echo $transactionid = $row['id'];
 		echo '<br>';
 	}
+	echo trim($transactionid) > 0;
 	if(trim($transactionid) > 0)
 	{
 		$innerSql = "SELECT id, quantity FROM transaction_product WHERE product_id = " . $_GET['id'] . ' AND transaction_id = ' . $transactionid;
