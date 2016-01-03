@@ -10,17 +10,17 @@
    	$sql = "SELECT id, cart FROM transaction WHERE customer_id = " . $_SESSION['customerid'] . ' AND cart = 1';
 
 	foreach ($pdo->query($sql) as $row) {
-
+		echo '<br>';
 		echo $transactionid = $row['id'];
 	}
-
+	echo '<br>';
 	if(trim($transactionid) > 0)
 	{
 		$innerSql = "SELECT id, quantity FROM transaction_product WHERE product_id = " . $_GET['id'] . ' AND transaction_id = ' . $transactionid;
 
 		foreach ($pdo->query($sql) as $row) {
-
-			$quantity = $row['quantity'];
+			echo '<br>';
+			echo $quantity = $row['quantity'];
 		}
 
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
