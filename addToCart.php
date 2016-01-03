@@ -10,10 +10,10 @@
    	$sql = "SELECT id, cart FROM transaction WHERE customer_id = " . $_SESSION['customerid'] . ' AND cart = 1';
 
 	foreach ($pdo->query($sql) as $row) {
-		echo '<br>';
+
 		echo $transactionid = $row['id'];
+		echo '<br>';
 	}
-	echo '<br>';
 	if(trim($transactionid) > 0)
 	{
 		$innerSql = "SELECT id, quantity FROM transaction_product WHERE product_id = " . $_GET['id'] . ' AND transaction_id = ' . $transactionid;
