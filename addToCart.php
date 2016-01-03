@@ -19,18 +19,18 @@
 	if(trim($transactionid) > 0)
 	{
 		$sql = "SELECT id, quantity FROM transaction_product WHERE product_id = " . $_GET['id'] . ' AND transaction_id = ' . $transactionid;
-		echo 'made it ';
-		foreach ($pdo->query($sql) as $row) {
-			echo '<br>';
-			echo $row['id'];
-			echo $quantity = $row['quantity'];
-			echo 'made it ';
-		}
 
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="UPDATE transaction_product SET quantity = (?)";
-	    $q = $pdo->prepare($sql);
-	    $q->execute(array($quantity+1));
+		foreach ($pdo->query($sql) as $row) {
+			$row['id'];
+			$quantity = $row['quantity'];
+		}
+		if($quantity > 0)
+		{
+			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$sql="UPDATE transaction_product SET quantity = (?)";
+		    $q = $pdo->prepare($sql);
+		    $q->execute(array($quantity+1));
+		}
 	}else
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
