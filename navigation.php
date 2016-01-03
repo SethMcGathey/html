@@ -12,7 +12,12 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
         <li><a href="products.php">Products</a></li>
-        <li><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>
+        <?php
+          if($_SESSION['permission'] == 1)
+          {
+            echo '<li><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>';
+          }
+        ?>
         <!--<li><a href="addProducts.php">Add Products</a></li>-->
         <li><a href="contact.php">Contact</a></li>
       </ul>
