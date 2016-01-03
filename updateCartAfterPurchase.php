@@ -8,9 +8,9 @@
 	echo 'made it';
 	echo $_SESSION['transaction_id'];
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql="UPDATE transaction SET cart = (?) WHERE transaction_id = " . $_SESSION['transaction_id'];
+	$sql="UPDATE transaction SET cart = 0 WHERE transaction_id = (?)";
     $q = $pdo->prepare($sql);
-    $q->execute(array(0));
+    $q->execute(array($_SESSION['transaction_id']));
     echo 'made it 2';
     header('Location: confirmPurchase.php');
 
