@@ -23,10 +23,10 @@
         
           //<li><a href="addProducts.php">Add Products</a></li>
           echo '<li class="' . $ifActive[3] . '"><a href="contact.php">Contact</a></li>';
-        ?>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <?php
+
+      echo '</ul>
+      <ul class="nav navbar-nav navbar-right">';
+
           echo '<li class="' . $ifActive[4] . '"><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>';
               //changes login to logout when a person logs in and puts their name in the Navbar
               if(isset($_SESSION['username']))
