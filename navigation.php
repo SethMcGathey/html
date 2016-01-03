@@ -19,25 +19,25 @@
 
           if($_SESSION['permission'] == 1)
           {
-            echo '<li class="' . $ifActive[2] . '"><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>';
+            echo '<li class="' . $ifActive["/sqlManagmentFiles/productFiles/productIndex.php"] . '"><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>';
           }
         
           //<li><a href="addProducts.php">Add Products</a></li>
-          echo '<li class="' . $ifActive[3] . '"><a href="contact.php">Contact</a></li>';
+          echo '<li class="' . $ifActive["/contact.php"] . '"><a href="contact.php">Contact</a></li>';
 
       echo '</ul>
       <ul class="nav navbar-nav navbar-right">';
 
-          echo '<li class="' . $ifActive[4] . '"><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>';
+          echo '<li class="' . $ifActive["/cart.php"] . '"><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>';
               //changes login to logout when a person logs in and puts their name in the Navbar
               if(isset($_SESSION['username']))
               {
-                echo '<li class="' . $ifActive[5] . '"><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>';
-                echo '<li class="' . $ifActive[6] . '"><a href="profile.php">Welcome, ' . $_SESSION['username'] . '</a></li>';
+                echo '<li class="' . $ifActive["/logout.php"] . '"><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>';
+                echo '<li class="' . $ifActive["/profile.php"] . '"><a href="profile.php">Welcome, ' . $_SESSION['username'] . '</a></li>';
               }else
               {
-                echo '<li class="' . $ifActive[7] . '"><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>';
-                echo '<li class="' . $ifActive[8] . '"><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>';
+                echo '<li class="' . $ifActive["/register.php"] . '"><a href="register.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>';
+                echo '<li class="' . $ifActive["/login.php"] . '"><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>';
               }
         ?>
         
