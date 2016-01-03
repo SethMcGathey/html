@@ -19,8 +19,5 @@
 
 
 
-	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql="UPDATE transaction_product SET quantity = (?) WHERE transaction_id = " . $_SESSION['transaction_id'] . " AND product_id = " . $_GET['id'];
-    $q = $pdo->prepare($sql);
-    $q->execute(array($quantity+1));
+
 ?>
