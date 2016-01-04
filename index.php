@@ -15,7 +15,7 @@
                $num = 0;
                foreach ($pdo->query($sql) as $row) {
 	                echo '<a href="#">
-	                		<div class="col-lg-4 myCategories mediumGrey' . $num . '" id="' . $row['id']. '">
+	                		<div class="col-lg-4 myCategories categoryBackgroundColor' . $num . '" id="' . $row['id']. '">
 	                			<img src="img/rrwggame.jpg" width="100px"/>' . $row['name'] . '
 	                		</div>
 	                	  </a>';
