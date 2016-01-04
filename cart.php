@@ -8,8 +8,11 @@
 			<h1>cart.php</h1>
 
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-3">
 
+				</div>
+				<div class="col-lg-3">
+					<p>Description</p>
 				</div>
 				<div class="col-lg-3">
 					<p>Price</p>
