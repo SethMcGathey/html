@@ -21,9 +21,9 @@
 
 			<?php
 				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';
-						//$sql = 'SELECT id,name,cost,description FROM product WHERE subcategory_id = ' . $_GET["id"] . ' ORDER BY id LIMIT 5';
+
 						foreach ($pdo->query($sql) as $row) {
-						    echo '<div class="col-4-lg product" id="' . $row['id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> ' . $row['name'] . ' ' . $row['description'] . ' ' . $row['cost'] . ' ' . $row['fullQuantity'] . '</div>
+						    echo '<div class="row product" id="' . $row['id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> <div class="col-lg-4">' . $row['name'] . ' ' . $row['description'] . '</div> <div class="col-lg-4">$' . $row['cost'] . '</div> <div class="col-lg-4">' . $row['fullQuantity'] . '</div></div>
 						    	<button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button>';
 
 						}
@@ -39,3 +39,20 @@
 	</body>
 	<?php require 'footer.php' ?>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
