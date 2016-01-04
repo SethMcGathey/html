@@ -23,6 +23,14 @@
 .categoryImage{
 	float: left;
 }
+
+.leftRight0{
+	float:left;
+}
+
+.leftRight1{
+	float:right;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
