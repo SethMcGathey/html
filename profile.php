@@ -64,6 +64,8 @@
 				</div>
 			</div>
 		</div>
+		<div id="inner_ajax_Output">
+		</div>
 	</body>
 
 	<?php require 'footer.php' ?>
