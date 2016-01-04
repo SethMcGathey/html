@@ -11,16 +11,18 @@
 .categoryBackgroundColor0{
 	background-color: #000033; 
 	color: white;
-	border-color: black;
+	
 	border: solid;
+	border-color: black;
 }
 
 .categoryBackgroundColor1{
 	/*background-color: #585858;*/
 	background-color: #000033; 
 	color: white;
-	border-color: black;
+	
 	border: solid;
+	border-color: black;
 }
 	
 .myCategories{
