@@ -7,7 +7,7 @@
 
 		<?php require 'navigation.php' ?> 
 		<div class="container-fluid" id="Not_Ajax_Output">
-			<h1>Home Page</h1>
+			<h1 class="centerText">Home Page</h1>
 			<div class="row">
 
               <?php
@@ -46,7 +46,6 @@
 				    	{
 				    		$num = 0;
 				    	}
-				    	
 					}
 				?>
 			</div>
