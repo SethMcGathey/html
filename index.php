@@ -15,8 +15,7 @@
                $num = 0;
                foreach ($pdo->query($sql) as $row) {
 	                echo '<a href="#">
-	                		<div class="col-lg-4 myCategories mediumGrey' . $num . '" id="' . $row['id']. '">
-	                			<img src="img/rrwggame.jpg" width="100px"/>' . $row['name'] . '
+	                		<div class="col-lg-4 myCategories mediumGrey' . $num . '" id="' . $row['id']. '"> <img src="data:image/jpeg;base64,' . base64_encode($row['b.image']) . ' $row['name'] . '
 	                		</div>
 	                	  </a>';
 	               	if($num < 1)
