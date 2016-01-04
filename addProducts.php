@@ -14,7 +14,7 @@
 				    unset($_SESSION['myForm']);
 				}
 			?>
-			<form action="registerUser.php" method="POST">
+			<form action="backendAddProduct.php" method="POST">
 				<p>Product Name:</p><input type="text" placeholder="Product Name" name="productNameInput" id="productNameInput" value="<?=$form_data['myForm']['productNameInput']?>">
 				<p>Cost:</p><input type="text" placeholder="Cost" name="costInput" id="costInput" value="<?=$form_data['myForm']['costInput']?>">
 				<p>Description:</p><input type="text" placeholder="Description" name="descriptionInput" id="descriptionInput" value="<?=$form_data['myForm']['descriptionInput']?>">
