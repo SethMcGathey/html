@@ -59,6 +59,16 @@
 	background-color: #FFFFFF ; 
 }
 
+.cartLine0{
+	background-color: #E8E8E8;
+	height:50px;
+}
+
+.cartLine1{
+	background-color: #FFFFFF ; 
+	height:50px;
+}
+
 
 .rightAlign{
 	float:right;
