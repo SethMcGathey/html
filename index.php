@@ -12,12 +12,20 @@
 
               <?php
                $sql = 'SELECT id,name FROM category ORDER BY id';
+               $num = 0;
                foreach ($pdo->query($sql) as $row) {
 	                echo '<a href="#">
-	                		<div class="col-lg-4 myCategories mediumGrey" id="' . $row['id']. '">
+	                		<div class="col-lg-4 myCategories mediumGrey' . $num . '" id="' . $row['id']. '">
 	                			<img src="img/rrwggame.jpg" width="100px"/>' . $row['name'] . '
 	                		</div>
 	                	  </a>';
+	               	if($num < 1)
+	               	{
+	                	$num++;
+	                }else
+	                {
+						$num = 0;
+	                }
                }
               ?>
           	</div>
