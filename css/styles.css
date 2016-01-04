@@ -29,11 +29,15 @@
 .leftRight0{
 	float:left;
 	font-size: 20px;
+
+	text-align:center;
 }
 
 .leftRight1{
 	float:right;
 	font-size: 20px;
+
+	text-align:center;
 }
 
 .subcategoryColor0{
