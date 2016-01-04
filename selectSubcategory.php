@@ -3,7 +3,7 @@
 	include 'database.php';
     $pdo = Database::connect();
 	
-    $sql = 'SELECT id,name,category_id FROM subcategory WHERE category_id = 1';
+    $sql = 'SELECT id,name,category_id FROM subcategory WHERE category_id = ' . $_GET["id"];
     $num = 0;
 	foreach ($pdo->query($sql) as $row) {
 		//echo 'hello';
