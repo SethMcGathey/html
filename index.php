@@ -21,24 +21,10 @@
                }
               ?>
           	</div>
-			<div class="row">
-				<div class="col-lg-4" style='background-color:blue'>Games</div>
-				<div class="col-lg-4" style='background-color:green'>Toys</div>
-				<div class="col-lg-4" style='background-color:yellow'>Puzzles</div>
-			</div>
 
 
 			<div id="inner_ajax_Output">
 			</div>
-
-
-			<div>Content about category</div>
-			<div>
-				<div>image</div>
-				<div>content about subcategory</div>
-			</div>
-
-			<div id='name'></div>
 		
 		</div>
 
