@@ -8,14 +8,17 @@
 	background-color: #e6e6e6;
 }
 
-.mediumGrey0{
+.categoryBackgroundColor0{
 	background-color: #707070; 
 		
 }
-.mediumGrey1{
+.categoryBackgroundColor1{
 	background-color: #585858; 
 }
 	
+.myCategories{
+	font-size: 30;
+}	
 /*
 h1{
 	font-family:'ABeeZee', serif;
