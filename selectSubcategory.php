@@ -7,7 +7,7 @@
     $num = 0;
 	foreach ($pdo->query($sql) as $row) {
 		//echo 'hello';
-    	echo '<a href="products.php?id=' . $row['id']. '"><div class="col-lg-12" id="' . $row['id']. '"><p class="leftRight' . $num . '"">' . $row['name'] . '</p></div></a>';
+    	echo '<a href="products.php?id=' . $row['id']. '"><div class="col-lg-12 subcategoryColor' . $num . '" id="' . $row['id']. '"><p class="leftRight' . $num . '"">' . $row['name'] . '</p></div></a>';
 
     	if($num < 1){
     		$num++;
