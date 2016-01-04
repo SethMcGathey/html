@@ -24,10 +24,10 @@
 						$num = 0;
 						foreach ($pdo->query($sql) as $row) {
 						    echo '<div class="row product" id="' . $row['id']. '">' . 
-						    		'<div class="col-lg-3 subcategoryColor' . $num . '"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
-						    		<div class="col-lg-3 subcategoryColor' . $num . '">' . $row['name'] . ' ' . $row['description'] . '</div> 
-						    		<div class="col-lg-3 subcategoryColor' . $num . '">$' . $row['cost'] . '</div> 
-						    		<div class="col-lg-3 subcategoryColor' . $num . '">' . $row['fullQuantity'] . '   
+						    		'<div class="col-lg-3 cartLine' . $num . '"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
+						    		<div class="col-lg-3 cartLine' . $num . '">' . $row['name'] . ' ' . $row['description'] . '</div> 
+						    		<div class="col-lg-3 cartLine' . $num . '">$' . $row['cost'] . '</div> 
+						    		<div class="col-lg-3 cartLine' . $num . '">' . $row['fullQuantity'] . '   
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
 						    	  </div>
