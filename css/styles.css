@@ -18,8 +18,11 @@
 	
 .myCategories{
 	font-size: 50px;
-	float:left;
 }	
+
+.categoryImage{
+	float: left;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
