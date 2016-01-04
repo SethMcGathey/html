@@ -27,7 +27,9 @@
 						    		'<div class="col-lg-3"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
 						    		<div class="col-lg-3">' . $row['name'] . ' ' . $row['description'] . '</div> 
 						    		<div class="col-lg-3">$' . $row['cost'] . '</div> 
-						    		<div class="col-lg-3">' . $row['fullQuantity'] . '   <button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
+						    		<div class="col-lg-3">' . $row['fullQuantity'] . '   
+						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
+						    		</div>
 						    	  </div>
 						    	';
 

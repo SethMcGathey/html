@@ -58,6 +58,11 @@
 .subcategoryColor1{
 	background-color: #FFFFFF ; 
 }
+
+
+.rightAlign{
+	float:right;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
