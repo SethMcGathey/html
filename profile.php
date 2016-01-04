@@ -63,8 +63,11 @@
 		        	</div>
 				</div>
 			</div>
+			<div id="inner_ajax_Output">
+			</div>
 		</div>
-		<div id="inner_ajax_Output">
+
+		<div class="container-fluid" id="ajax_Output">
 		</div>
 	</body>
 
