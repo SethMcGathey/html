@@ -21,18 +21,24 @@
 
 			<?php
 				$sql = 'SELECT p.id, name, cost, p.description, SUM(quantity) as fullQuantity, image FROM transaction t JOIN transaction_product tp ON tp.transaction_id = t.id JOIN product p ON p.id = tp.product_id JOIN image i ON i.product_id = p.id WHERE cart = 1 AND customer_ID = 3 GROUP BY id';
-
+						$num = 0;
 						foreach ($pdo->query($sql) as $row) {
 						    echo '<div class="row product" id="' . $row['id']. '">' . 
-						    		'<div class="col-lg-3"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
-						    		<div class="col-lg-3">' . $row['name'] . ' ' . $row['description'] . '</div> 
-						    		<div class="col-lg-3">$' . $row['cost'] . '</div> 
-						    		<div class="col-lg-3">' . $row['fullQuantity'] . '   
+						    		'<div class="col-lg-3 subcategoryColor' . $num . '"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
+						    		<div class="col-lg-3 subcategoryColor' . $num . '">' . $row['name'] . ' ' . $row['description'] . '</div> 
+						    		<div class="col-lg-3 subcategoryColor' . $num . '">$' . $row['cost'] . '</div> 
+						    		<div class="col-lg-3 subcategoryColor' . $num . '">' . $row['fullQuantity'] . '   
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
 						    	  </div>
 						    	';
-
+						    if($num < 1)
+			               	{
+			                	$num++;
+			                }else
+			                {
+								$num = 0;
+			                }
 						}
 			?>
 			<button onclick="window.location.href='choosePurchaseAddress.php'">Purchase</button>
