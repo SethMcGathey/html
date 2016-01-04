@@ -24,10 +24,10 @@
 
 						foreach ($pdo->query($sql) as $row) {
 						    echo '<div class="row product" id="' . $row['id']. '">' . 
-						    		'<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> 
-						    		<div class="col-lg-4">' . $row['name'] . ' ' . $row['description'] . '</div> 
-						    		<div class="col-lg-4">$' . $row['cost'] . '</div> 
-						    		<div class="col-lg-4">' . $row['fullQuantity'] . '</div>
+						    		'<div class="col-lg-3"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
+						    		<div class="col-lg-3">' . $row['name'] . ' ' . $row['description'] . '</div> 
+						    		<div class="col-lg-3">$' . $row['cost'] . '</div> 
+						    		<div class="col-lg-3">' . $row['fullQuantity'] . '</div>
 						    	  </div>
 						    	<button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button>';
 
