@@ -28,9 +28,6 @@
 			?>
 
 
-
-			<div class="row"><div class="">testing</div><div></div></div>
-
 		</div>
 		<div class="container-fluid" id="ajax_Output">
 
