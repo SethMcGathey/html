@@ -38,7 +38,7 @@
 				    $num = 0;
 					foreach ($pdo->query($sql) as $row) {
 						//echo 'hello';
-				    	echo '<a href="products.php?id=' . $row['id']. '"><div class="col-4-lg" id="' . $row['id']. '"><p class="leftRight"' . $num . '>' . $row['name'] . '</p></div></a>';
+				    	echo '<a href="products.php?id=' . $row['id']. '"><div class="col-4-lg" id="' . $row['id']. '"><p class="leftRight' . $num . '"">' . $row['name'] . '</p></div></a>';
 
 				    	if($num < 1){
 				    		$num++;
