@@ -23,7 +23,7 @@
             echo '<li class="' . $ifActive["/sqlManagmentFiles/productFiles/productIndex.php"] . '"><a href="sqlManagmentFiles/productFiles/productIndex.php">Admin</a></li>';
           }
         
-          echo '<li class="' . $ifActive["/contact.php"] . '"><a href="contact.php">Contact</a></li>';
+          //echo '<li class="' . $ifActive["/contact.php"] . '"><a href="contact.php">Contact</a></li>';
 
       echo '</ul>
       <ul class="nav navbar-nav navbar-right">';
@@ -35,8 +35,8 @@
                 $quantity = $row['fullQuantity'];
             }
 
-
           echo '<li class="' . $ifActive["/cart.php"] . '"><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>Cart ' . $quantity . '</a></li>';
+
               //changes login to logout when a person logs in and puts their name in the Navbar
               if(isset($_SESSION['username']))
               {
