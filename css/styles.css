@@ -85,6 +85,10 @@
 #Not_Ajax_Output{
 	padding: 0px;
 }
+
+#textboxWidth{
+	width:20px;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
