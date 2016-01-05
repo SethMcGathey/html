@@ -1,5 +1,5 @@
 .body{
-	background-color: #686868;
+	background-color: #E8E8E8;
 }
 
 .centerText{
@@ -79,11 +79,11 @@
 }
 
 #inner_ajax_Output{
-	margin: 0px;
+	padding: 0px;
 }
 
 #Not_Ajax_Output{
-	margin: 0px;
+	padding: 0px;
 }
 /*
 h1{
