@@ -77,6 +77,10 @@
 #inner_ajax_Output{
 	margin: 0;
 }
+
+#Not_Ajax_Output{
+	margin: 0;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
