@@ -73,6 +73,10 @@
 .rightAlign{
 	float:right;
 }
+
+.notAjaxOutput{
+	margin: 0;
+}
 /*
 h1{
 	font-family:'ABeeZee', serif;
