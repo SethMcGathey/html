@@ -29,7 +29,8 @@
 						    		'<div class="col-lg-3 cartLine' . $num . '"><img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"width="100px"/> </div>
 						    		<div class="col-lg-3 cartLine' . $num . '">' . $row['name'] . '<br> ' . $row['description'] . '</div> 
 						    		<div class="col-lg-3 cartLine' . $num . '">$' . $row['cost'] . '</div> 
-						    		<div class="col-lg-3 cartLine' . $num . '"><select><option>' . $row['fullQuantity'] . '</option> </select>  
+						    		<div class="col-lg-3 cartLine' . $num . '">
+						    			<input type="text" name="name1" value="'. $row['fullQuantity'] . '"> 
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
 						    	  </div>
