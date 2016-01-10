@@ -53,7 +53,7 @@ $(document).ready(function(){
 			console.log("made it 2");*/
 		}else
 		{
-			window.location = "updateQuantity.php?quantity=" + value;
+			//window.location = "updateQuantity.php?quantity=" + value;
 			/*$.get( "updateQuantity.php?quantity=" + value, function( data ) {	
 				console.log("made it 3");
 	  			//$( "#ajax_Output" ).html( data ).show();
