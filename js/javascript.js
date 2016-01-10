@@ -54,7 +54,7 @@ $(document).ready(function(){
 			$.get( "updateQuantity.php?quantity=" + value, function( data ) {	
 	  			//$( "#ajax_Output" ).html( data ).show();
 	  			//$( "#Not_Ajax_Output" ).hide();
-			//});	
+			});	
 		}
 	});
 });
