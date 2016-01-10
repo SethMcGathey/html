@@ -41,6 +41,7 @@ $(".stileone").on("click", function() {
 
 $(document).ready(function(){
 	$(".textboxWidth").keyup(function(){
+		console.log("made it");
 		var clickedId = this.id;
 		var value=$.trim($(".textboxWidth").val());
 		if(value.length != 0)
