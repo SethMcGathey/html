@@ -48,7 +48,7 @@ $(document).ready(function(){
 			$.get( "updateQuantity.php?quantity=" + textboxWidth.value, function( data ){});
 		}else
 		{
-			$.get( "updateQuantity.php?quantity=" + searchField.value, function( data ) {	
+			$.get( "updateQuantity.php?quantity=" + textboxWidth.value, function( data ) {	
 	  			//$( "#ajax_Output" ).html( data ).show();
 	  			//$( "#Not_Ajax_Output" ).hide();
 			});	
