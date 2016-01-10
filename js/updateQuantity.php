@@ -9,8 +9,8 @@
     $q = $pdo->prepare($sql);
     $q->execute();
 
-    echo "made it";
-    //header('Location: cart.php');
+    //echo "made it";
+    header('Location: cart.php');
 
 	Database::disconnect();
 
