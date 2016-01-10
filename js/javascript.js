@@ -46,12 +46,12 @@ $(document).ready(function(){
 		var value=$.trim($(".textboxWidth").val());
 		if(value.length != 0)
 		{
-			window.location = "updateQuantity.php?quantity=" + textboxWidth.value;
-			//$.get( "updateQuantity.php?quantity=" + textboxWidth.value, function( data ){});
+			//window.location = "updateQuantity.php?quantity=" + value;
+			$.get( "updateQuantity.php?quantity=" + value, function( data ){});
 		}else
 		{
-			window.location = "updateQuantity.php?quantity=" + textboxWidth.value;
-			//$.get( "updateQuantity.php?quantity=" + textboxWidth.value, function( data ) {	
+			//window.location = "updateQuantity.php?quantity=" + value;
+			$.get( "updateQuantity.php?quantity=" + value, function( data ) {	
 	  			//$( "#ajax_Output" ).html( data ).show();
 	  			//$( "#Not_Ajax_Output" ).hide();
 			//});	
