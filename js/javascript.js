@@ -44,7 +44,7 @@ $(document).ready(function(){
 		
 		var clickedId = this.id;
 		var value=$.trim($(".textboxWidth").val());
-		var productid=$.trim($(".textboxWidth").data-arbitraryName());
+		var productid=$.trim($(".textboxWidth").data("arbitraryName"));
 		console.log(productid);
 		if(value.length != 0)
 		{
