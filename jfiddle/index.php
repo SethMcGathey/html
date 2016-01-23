@@ -11,7 +11,6 @@ if (login_check($mysqli) == true) {
     $logged = 'out';
 }
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
