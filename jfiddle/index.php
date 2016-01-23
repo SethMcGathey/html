@@ -3,12 +3,12 @@ include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
  
 sec_session_start();
- 
+ /*
 if (login_check($mysqli) == true) {
     $logged = 'in';
 } else {
     $logged = 'out';
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html>
