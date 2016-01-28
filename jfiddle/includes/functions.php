@@ -1,4 +1,5 @@
-nclude_once 'psl-config.php';
+<?php
+include_once 'psl-config.php';
  
 function sec_session_start() {
     $session_name = 'sec_session_id';   // Set a custom session name
@@ -22,6 +23,7 @@ function sec_session_start() {
     session_start();            // Start the PHP session 
     session_regenerate_id(true);    // regenerated the session, delete the old one. 
 }
+
 function login($email, $password, $mysqli) {
     // Using prepared statements means that SQL injection is not possible. 
     if ($stmt = $mysqli->prepare("SELECT id, username, password, salt 
@@ -80,6 +82,7 @@ function login($email, $password, $mysqli) {
         }
     }
 }
+
 function checkbrute($user_id, $mysqli) {
     // Get timestamp of current time 
     $now = time();
@@ -105,6 +108,7 @@ function checkbrute($user_id, $mysqli) {
         }
     }
 }
+
 function login_check($mysqli) {
     // Check if all session variables are set 
     if (isset($_SESSION['user_id'], 
@@ -152,6 +156,7 @@ function login_check($mysqli) {
         return false;
     }
 }
+
 function esc_url($url) {
  
     if ('' == $url) {
