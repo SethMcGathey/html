@@ -1,5 +1,20 @@
+kip to content
+This repository  
+Search
+Pull requests
+Issues
+Gist
+ @Smcgath
+ Watch 1
+  Star 0
+ Fork 0 beckygahart/html
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathhtml/scheduling/index.php
+4ac4f4d  2 days ago
+ “beckygahart“ Add scheduling app
+0 contributors
+RawBlameHistory     49 lines (44 sloc)  1.56 KB
 <?php
-error_reporting(E_ALL);
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
  
@@ -15,7 +30,7 @@ if (login_check($mysqli) == true) {
 <html>
     <head>
         <title>Secure Login: Log In</title>
-        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
     </head>
