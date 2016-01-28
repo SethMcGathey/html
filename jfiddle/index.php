@@ -1,19 +1,3 @@
-kip to content
-This repository  
-Search
-Pull requests
-Issues
-Gist
- @Smcgath
- Watch 1
-  Star 0
- Fork 0 beckygahart/html
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathhtml/scheduling/index.php
-4ac4f4d  2 days ago
- “beckygahart“ Add scheduling app
-0 contributors
-RawBlameHistory     49 lines (44 sloc)  1.56 KB
 <?php
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
