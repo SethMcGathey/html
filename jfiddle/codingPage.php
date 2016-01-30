@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'sessionStart.php'; ?>
+	<?php include 'sessionStart.php' ?>
 	<?php require 'header.php' ?>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
