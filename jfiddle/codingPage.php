@@ -3,7 +3,7 @@
 	<?php include 'sessionStart.php' ?>
 	<?php require 'header.php' ?>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<!--<link rel="stylesheet" href="css/styles.css">-->
 
 	<body>
 		<div class="container-fluid">
