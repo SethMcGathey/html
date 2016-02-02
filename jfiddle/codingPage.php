@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+	<?php include 'sessionStart.php' ?>
+	<?php require 'header.php' ?>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 	<body>
 		<div class="container-fluid">
@@ -25,7 +27,7 @@
 						<div class="col-lg-6">
 							CSS
 						</div>
-						<div class="col-lg-6" id="htmlDiv" style="background-color:red; height:385px; overflow:scroll" contenteditable>
+						<div class="col-lg-6" id="htmlDiv" style=" height:385px; overflow:scroll" contenteditable>
 							
 						</div>
 						<div class="col-lg-6" id="cssDiv" style="background-color:green; height:385px; overflow:scroll" contenteditable>
