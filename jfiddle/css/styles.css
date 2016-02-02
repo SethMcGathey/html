@@ -14,6 +14,8 @@
 .sideBar{
 	background-color:#ffffff;
 	height:810px;
+	border:solid;
+	border-width: 1px;
 }
 
 
