@@ -4,6 +4,7 @@
 	overflow: scroll;
 	border:solid;
 	border-width: 1px;
+	outline-width: 0;
 }
 
 .titleDivs{
