@@ -40,10 +40,10 @@
 						<div class="col-lg-6">
 							RESULT
 						</div>
-						<div class="col-lg-6 squareDivs" id="javascriptDiv" style="background-color:blue; height:385px; overflow:scroll" contenteditable>
+						<div class="col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
 							
 						</div>
-						<div class="col-lg-6 squareDivs" id="resultsDiv" style="background-color:orange; height:385px; overflow:scroll" >
+						<div class="col-lg-6 squareDivs" id="resultsDiv">
 							
 							<iframe src="http://www.w3schools.com" style="height:100%;width:100%">
 									<p>Your browser does not support iframes.</p>
