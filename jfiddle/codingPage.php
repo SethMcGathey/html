@@ -8,7 +8,7 @@
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="col-lg-12" style="background-color:grey">
+				<div class="col-lg-12 header">
 					<a href="overwriteFile.php">Run</a>
 				</div>
 			</div>
