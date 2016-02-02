@@ -1,5 +1,7 @@
-.htmlDiv{
+#htmlDiv{
 	background-color:#DDDDDD;
+	height:385px;
+	overflow: scroll;
 }
 
 /****************************************************************************/
