@@ -15,7 +15,7 @@
 			
 			<div class="row">
 
-				<div class="col-lg-2" style="background-color:yellow; height:810px;">
+				<div class="col-lg-2 sideBar">
 					Sidebar
 				</div>
 				<div class="col-lg-10" >
