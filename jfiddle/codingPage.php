@@ -26,10 +26,10 @@
 						<div class="col-lg-6">
 							CSS
 						</div>
-						<div class="col-lg-6" id="htmlDiv" style="height:385px; overflow:scroll" contenteditable>
+						<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 							
 						</div>
-						<div class="col-lg-6" id="cssDiv" style="background-color:green; height:385px; overflow:scroll" contenteditable>
+						<div class="col-lg-6 squareDivs" id="cssDiv"  contenteditable>
 							
 						</div>
 					</div><!--row-->
@@ -40,10 +40,10 @@
 						<div class="col-lg-6">
 							RESULT
 						</div>
-						<div class="col-lg-6" id="javascriptDiv" style="background-color:blue; height:385px; overflow:scroll" contenteditable>
+						<div class="col-lg-6 squareDivs" id="javascriptDiv" style="background-color:blue; height:385px; overflow:scroll" contenteditable>
 							
 						</div>
-						<div class="col-lg-6" id="resultsDiv" style="background-color:orange; height:385px; overflow:scroll" >
+						<div class="col-lg-6 squareDivs" id="resultsDiv" style="background-color:orange; height:385px; overflow:scroll" >
 							
 							<iframe src="http://www.w3schools.com" style="height:100%;width:100%">
 									<p>Your browser does not support iframes.</p>
