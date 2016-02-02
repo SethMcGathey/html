@@ -3,20 +3,20 @@
 	height:385px;
 	overflow: scroll;
 	border:solid;
-	border-width: .5px;
+	border-width: 1px;
 	outline-width: 0;
 }
 
 .titleDivs{
 	border:solid;
-	border-width: .5px;
+	border-width: 1px;
 }
 
 .sideBar{
 	background-color:#ffffff;
 	height:810px;
 	border:solid;
-	border-width: .5px;
+	border-width: 1px;
 }
 
 
