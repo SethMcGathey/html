@@ -20,10 +20,10 @@
 				</div>
 				<div class="col-lg-10" >
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 titleDivs">
 							HTML
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
 						<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
@@ -34,10 +34,10 @@
 						</div>
 					</div><!--row-->
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 titleDivs">
 							JAVASCRIPT
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
 						<div class="col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
