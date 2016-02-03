@@ -32,7 +32,7 @@ function passStrings(){
 		console.log(javascriptString);
 		console.log(cssString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
-});
+};
 
 
 
