@@ -32,7 +32,7 @@ function passStrings(){
 		console.log(javascriptString);
 		console.log(cssString);
 
-		iFrame.contentWindow.document.write(htmlString);
+		myFrame.contentWindow.document.write(htmlString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
 
 		
