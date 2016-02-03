@@ -31,7 +31,11 @@ function passStrings(){
 		console.log(htmlString);
 		console.log(javascriptString);
 		console.log(cssString);
+
+		iFrame.contentWindow.document.write(htmlString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
+
+		
 };
 
 
