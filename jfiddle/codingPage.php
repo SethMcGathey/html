@@ -45,7 +45,7 @@
 						</div>
 						<div class="col-lg-6 squareDivs" id="resultsDiv">
 							
-							<iframe src="http://www.w3schools.com" id="myFrame">
+							<iframe id="myFrame">
 									<p>Your browser does not support iframes.</p>
 							</iframe>
 						</div>
