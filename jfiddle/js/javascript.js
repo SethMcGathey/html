@@ -24,9 +24,9 @@
 
 function passStrings(){
 
-		var htmlString = $('#htmlDiv').html(); 
-		var javascriptString = $('#javascriptDiv').html(); 
-		var cssString = $('#cssDiv').html(); 
+		var htmlString = $('#htmlDiv').text(); 
+		var javascriptString = $('#javascriptDiv').text(); 
+		var cssString = $('#cssDiv').text(); 
 
 		console.log(htmlString);
 		console.log(javascriptString);
