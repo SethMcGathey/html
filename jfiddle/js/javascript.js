@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 	var content = "";
 	var iframe = document.getElementById('iframe');
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	doc.open();
 	doc.writeln(result);
 	doc.close();
-});
+});*/
 
 
 
