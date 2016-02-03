@@ -32,7 +32,13 @@ function passStrings(){
 		console.log(javascriptString);
 		console.log(cssString);
 
-		$('myFrame').contentWindow.document.write(htmlString);
+
+		var doc = document.getElementById('myFrame').contentWindow.document;
+		doc.open();
+		doc.write(htmlString);
+		doc.close();
+
+		//$('myFrame').contentWindow.document.write(htmlString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
 
 		
