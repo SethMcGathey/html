@@ -33,7 +33,7 @@ function passStrings(){
 		console.log(cssString);
 
 
-		var doc = document.getElementById('myFrame').contentWindow.document;
+		var doc = document.getElementById('#myFrame').contentWindow.document;
 		doc.open();
 		doc.write(htmlString);
 		doc.close();
