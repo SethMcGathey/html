@@ -8,7 +8,7 @@ echo "garbage";
 ]);*/
 
 if (!isset($_GET['code'])) {
-
+echo "garbage2";
     // If we don't have an authorization code then get one
     $authUrl = $provider->getAuthorizationUrl();
     $_SESSION['oauth2state'] = $provider->getState();
@@ -17,12 +17,12 @@ if (!isset($_GET['code'])) {
 
 // Check given state against previously stored one to mitigate CSRF attack
 } elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
-
+echo "garbage3";
     unset($_SESSION['oauth2state']);
     exit('Invalid state');
 
 } else {
-
+echo "garbage4";
     // Try to get an access token (using the authorization code grant)
     $token = $provider->getAccessToken('authorization_code', [
         'code' => $_GET['code']
@@ -30,7 +30,7 @@ if (!isset($_GET['code'])) {
 
     // Optional: Now you have a token you can look up a users profile data
     try {
-
+echo "garbage5";
         // We got an access token, let's now get the user's details
         $user = $provider->getResourceOwner($token);
 
@@ -38,7 +38,7 @@ if (!isset($_GET['code'])) {
         printf('Hello %s!', $user->getNickname());
 
     } catch (Exception $e) {
-
+echo "garbage6";
         // Failed to get user details
         exit('Oh dear...');
     }
