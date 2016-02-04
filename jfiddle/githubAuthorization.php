@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 $provider = new League\OAuth2\Client\Provider\Github([
     'clientId'          => '{95a3734f1cec64f13af8}',
     'clientSecret'      => '{fa1f6166752cdf6ef743a09846303b4cc4b79747}',
-    'redirectUri'       => 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php'
+    'redirectUri'       => 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php',
 ]);
 //echo "garbage2";
 //echo "Made it here";
