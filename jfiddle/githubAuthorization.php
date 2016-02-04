@@ -1,6 +1,6 @@
 <?php
 echo "garbage";
-/*$provider = new League\OAuth2\Client\Provider\Github([
+$provider = new League\OAuth2\Client\Provider\Github([
     'clientId'          => '95a3734f1cec64f13af8',
     'clientSecret'      => 'fa1f6166752cdf6ef743a09846303b4cc4b79747',
     'redirectUri'       => 'codingPage.php',
@@ -47,4 +47,4 @@ if (!isset($_GET['code'])) {
 
     // Use this to interact with an API on the users behalf
     echo $token->getToken();
-}*/
+}
