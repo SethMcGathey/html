@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 echo "garbage";
 
-require_once "League\OAuth2\Client\Provider\Github.php";
-require_once "League\OAuth2\Client\Provider\GithubResourceOwner.php";
+require_once('League\OAuth2\Client\Provider\Github.php');
+require_once('League\OAuth2\Client\Provider\GithubResourceOwner.php');
 
 $provider = new League\OAuth2\Client\Provider\Github([]);
 echo $provider;
