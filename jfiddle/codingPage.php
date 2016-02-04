@@ -10,7 +10,7 @@
 			<div class="row">
 				<div class="col-lg-12 header">
 					<a href="javascript:void(0);" onclick="passStrings();">Run</a>
-					<a href="githubAuthorization.php">Authenticate</a>
+					<a href="githubAuthorization2.php">Authenticate</a>
 				</div>
 			</div>
 			
