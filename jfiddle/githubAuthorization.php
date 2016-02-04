@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 echo "garbage";
 $provider = new League\OAuth2\Client\Provider\Github([]);
 echo $provider;
+echo "garbage2";
 /*
 $provider = new League\OAuth2\Client\Provider\Github([
     'clientId'          => '{95a3734f1cec64f13af8}',
