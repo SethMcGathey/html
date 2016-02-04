@@ -6,6 +6,7 @@ $provider = new League\OAuth2\Client\Provider\Github([
     'clientSecret'      => 'fa1f6166752cdf6ef743a09846303b4cc4b79747',
     'redirectUri'       => 'codingPage.php',
 ]);
+echo "garbage2";
 //echo "Made it here";
 if (!isset($_GET['code'])) {
 
