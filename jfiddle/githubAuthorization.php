@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 echo "garbage";
 
-require_once(vendor/autoload.php)
+require_once "vendor/autoload.php";
 
 $provider = new \League\OAuth2\Client\Provider\GenericProvider([
     'clientId'                => 'demoapp',    // The client ID assigned to you by the provider
