@@ -3,54 +3,74 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 echo "garbage";
 
-require_once('vendor/league/oauth2-github/src/Provider/Github.php');
-require_once('vendor/league/oauth2-github/src/Provider/GithubResourceOwner.php');
 
-echo "garbage";
 
-$provider = new League\OAuth2\Client\Provider\Github([
-    'clientId'          => '{95a3734f1cec64f13af8}',
-    'clientSecret'      => '{fa1f6166752cdf6ef743a09846303b4cc4b79747}',
-    'redirectUri'       => 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php',
+$provider = new \League\OAuth2\Client\Provider\GenericProvider([
+    'clientId'                => 'demoapp',    // The client ID assigned to you by the provider
+    'clientSecret'            => 'demopass',   // The client password assigned to you by the provider
+    'redirectUri'             => 'http://example.com/your-redirect-url/',
+    'urlAuthorize'            => 'http://brentertainment.com/oauth2/lockdin/authorize',
+    'urlAccessToken'          => 'http://brentertainment.com/oauth2/lockdin/token',
+    'urlResourceOwnerDetails' => 'http://brentertainment.com/oauth2/lockdin/resource'
 ]);
 
-
+// If we don't have an authorization code then get one
 if (!isset($_GET['code'])) {
-echo "garbage2";
-    // If we don't have an authorization code then get one
-    $authUrl = $provider->getAuthorizationUrl();
+
+    // Fetch the authorization URL from the provider; this returns the
+    // urlAuthorize option and generates and applies any necessary parameters
+    // (e.g. state).
+    $authorizationUrl = $provider->getAuthorizationUrl();
+
+    // Get the state generated for you and store it to the session.
     $_SESSION['oauth2state'] = $provider->getState();
-    header('Location: '.$authUrl);
+
+    // Redirect the user to the authorization URL.
+    header('Location: ' . $authorizationUrl);
     exit;
 
 // Check given state against previously stored one to mitigate CSRF attack
 } elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
-echo "garbage3";
+
     unset($_SESSION['oauth2state']);
     exit('Invalid state');
 
 } else {
-echo "garbage4";
-    // Try to get an access token (using the authorization code grant)
-    $token = $provider->getAccessToken('authorization_code', [
-        'code' => $_GET['code']
-    ]);
 
-    // Optional: Now you have a token you can look up a users profile data
     try {
-echo "garbage5";
-        // We got an access token, let's now get the user's details
-        $user = $provider->getResourceOwner($token);
 
-        // Use these details to create a new profile
-        printf('Hello %s!', $user->getNickname());
+        // Try to get an access token using the authorization code grant.
+        $accessToken = $provider->getAccessToken('authorization_code', [
+            'code' => $_GET['code']
+        ]);
 
-    } catch (Exception $e) {
-echo "garbage6";
-        // Failed to get user details
-        exit('Oh dear...');
+        // We have an access token, which we may use in authenticated
+        // requests against the service provider's API.
+        echo $accessToken->getToken() . "\n";
+        echo $accessToken->getRefreshToken() . "\n";
+        echo $accessToken->getExpires() . "\n";
+        echo ($accessToken->hasExpired() ? 'expired' : 'not expired') . "\n";
+
+        // Using the access token, we may look up details about the
+        // resource owner.
+        $resourceOwner = $provider->getResourceOwner($accessToken);
+
+        var_export($resourceOwner->toArray());
+
+        // The provider provides a way to get an authenticated API request for
+        // the service, using the access token; it returns an object conforming
+        // to Psr\Http\Message\RequestInterface.
+        $request = $provider->getAuthenticatedRequest(
+            'GET',
+            'http://brentertainment.com/oauth2/lockdin/resource',
+            $accessToken
+        );
+
+    } catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
+
+        // Failed to get the access token or user details.
+        exit($e->getMessage());
+
     }
 
-    // Use this to interact with an API on the users behalf
-    echo $token->getToken();
 }
