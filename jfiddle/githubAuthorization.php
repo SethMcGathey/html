@@ -54,4 +54,3 @@ echo "garbage6";
     // Use this to interact with an API on the users behalf
     echo $token->getToken();
 }
-*/
