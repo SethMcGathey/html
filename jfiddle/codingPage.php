@@ -20,7 +20,7 @@
 				<div class="col-lg-2 sideBar">
 					Sidebar
 					<div>
-						<form>
+						<form action="action_page.php" method="post">
 							Enter Github Username:<br>
 							<input type="text" name="username"><br>
 							Enter Github Repo Name:<br>
