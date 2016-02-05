@@ -19,6 +19,14 @@
 
 				<div class="col-lg-2 sideBar">
 					Sidebar
+					<div>
+						<form>
+							Enter Github Username:
+							<input type="text" name="username">
+							Enter Github Repo Name:
+							<input type="text" name="reponame">
+						</form>
+					</div>
 				</div>
 				<div class="col-lg-10" >
 					<div class="row">
