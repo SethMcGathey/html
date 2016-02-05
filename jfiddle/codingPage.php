@@ -21,10 +21,10 @@
 					Sidebar
 					<div>
 						<form>
-							Enter Github Username:
-							<input type="text" name="username">
-							Enter Github Repo Name:
-							<input type="text" name="reponame">
+							Enter Github Username:<br>
+							<input type="text" name="username"><br>
+							Enter Github Repo Name:<br>
+							<input type="text" name="reponame"><br>
 						</form>
 					</div>
 				</div>
