@@ -5,7 +5,7 @@ echo "garbage";
 
 
 
-$provider = new \League\OAuth2\Client\Provider\GenericProvider([
+$provider = new \League\OAuth2-Client\Provider\GenericProvider([
     'clientId'                => 'demoapp',    // The client ID assigned to you by the provider
     'clientSecret'            => 'demopass',   // The client password assigned to you by the provider
     'redirectUri'             => 'http://example.com/your-redirect-url/',
