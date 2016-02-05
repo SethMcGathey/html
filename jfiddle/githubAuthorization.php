@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 echo "garbage";
 
+require_once(vendor/autoload.php)
 
-
-$provider = new \League\OAuth2-Client\Provider\GenericProvider([
+$provider = new \League\OAuth2\Client\Provider\GenericProvider([
     'clientId'                => 'demoapp',    // The client ID assigned to you by the provider
     'clientSecret'            => 'demopass',   // The client password assigned to you by the provider
     'redirectUri'             => 'http://example.com/your-redirect-url/',
