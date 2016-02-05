@@ -6,7 +6,7 @@ echo "garbage";
 include('League\OAuth2\Client\Provider\Github.php');
 include('League\OAuth2\Client\Provider\GithubResourceOwner.php');
 
-
+echo "garbage";
 
 $provider = new league\OAuth2\Client\Provider\Github([
     'clientId'          => '{95a3734f1cec64f13af8}',
