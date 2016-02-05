@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 echo "garbage";
 
-include('League\OAuth2\Client\Provider\Github.php');
-include('League\OAuth2\Client\Provider\GithubResourceOwner.php');
+require_once('League\OAuth2\Client\Provider\Github.php');
+require_once('League\OAuth2\Client\Provider\GithubResourceOwner.php');
 
 echo "garbage";
 
