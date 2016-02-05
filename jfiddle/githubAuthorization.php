@@ -6,9 +6,9 @@ echo "garbage";
 require_once "vendor/autoload.php";
 
 $provider = new League\OAuth2\Client\Provider\Github([
-    'clientId'          => '{github-client-id}',
-    'clientSecret'      => '{github-client-secret}',
-    'redirectUri'       => 'https://example.com/callback-url',
+    'clientId'          => '{95a3734f1cec64f13af8}',
+    'clientSecret'      => '{fa1f6166752cdf6ef743a09846303b4cc4b79747}',
+    'redirectUri'       => 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php',
 ]);
 
 if (!isset($_GET['code'])) {
