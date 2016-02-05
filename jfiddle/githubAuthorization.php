@@ -5,28 +5,18 @@ echo "garbage";
 
 require_once "vendor/autoload.php";
 
-$provider = new \League\OAuth2\Client\Provider\GenericProvider([
-    'clientId'                => 'demoapp',    // The client ID assigned to you by the provider
-    'clientSecret'            => 'demopass',   // The client password assigned to you by the provider
-    'redirectUri'             => 'http://example.com/your-redirect-url/',
-    'urlAuthorize'            => 'http://brentertainment.com/oauth2/lockdin/authorize',
-    'urlAccessToken'          => 'http://brentertainment.com/oauth2/lockdin/token',
-    'urlResourceOwnerDetails' => 'http://brentertainment.com/oauth2/lockdin/resource'
+$provider = new League\OAuth2\Client\Provider\Github([
+    'clientId'          => '{github-client-id}',
+    'clientSecret'      => '{github-client-secret}',
+    'redirectUri'       => 'https://example.com/callback-url',
 ]);
 
-// If we don't have an authorization code then get one
 if (!isset($_GET['code'])) {
 
-    // Fetch the authorization URL from the provider; this returns the
-    // urlAuthorize option and generates and applies any necessary parameters
-    // (e.g. state).
-    $authorizationUrl = $provider->getAuthorizationUrl();
-
-    // Get the state generated for you and store it to the session.
+    // If we don't have an authorization code then get one
+    $authUrl = $provider->getAuthorizationUrl();
     $_SESSION['oauth2state'] = $provider->getState();
-
-    // Redirect the user to the authorization URL.
-    header('Location: ' . $authorizationUrl);
+    header('Location: '.$authUrl);
     exit;
 
 // Check given state against previously stored one to mitigate CSRF attack
@@ -37,40 +27,26 @@ if (!isset($_GET['code'])) {
 
 } else {
 
+    // Try to get an access token (using the authorization code grant)
+    $token = $provider->getAccessToken('authorization_code', [
+        'code' => $_GET['code']
+    ]);
+
+    // Optional: Now you have a token you can look up a users profile data
     try {
 
-        // Try to get an access token using the authorization code grant.
-        $accessToken = $provider->getAccessToken('authorization_code', [
-            'code' => $_GET['code']
-        ]);
+        // We got an access token, let's now get the user's details
+        $user = $provider->getResourceOwner($token);
 
-        // We have an access token, which we may use in authenticated
-        // requests against the service provider's API.
-        echo $accessToken->getToken() . "\n";
-        echo $accessToken->getRefreshToken() . "\n";
-        echo $accessToken->getExpires() . "\n";
-        echo ($accessToken->hasExpired() ? 'expired' : 'not expired') . "\n";
+        // Use these details to create a new profile
+        printf('Hello %s!', $user->getNickname());
 
-        // Using the access token, we may look up details about the
-        // resource owner.
-        $resourceOwner = $provider->getResourceOwner($accessToken);
+    } catch (Exception $e) {
 
-        var_export($resourceOwner->toArray());
-
-        // The provider provides a way to get an authenticated API request for
-        // the service, using the access token; it returns an object conforming
-        // to Psr\Http\Message\RequestInterface.
-        $request = $provider->getAuthenticatedRequest(
-            'GET',
-            'http://brentertainment.com/oauth2/lockdin/resource',
-            $accessToken
-        );
-
-    } catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
-
-        // Failed to get the access token or user details.
-        exit($e->getMessage());
-
+        // Failed to get user details
+        exit('Oh dear...');
     }
 
+    // Use this to interact with an API on the users behalf
+    echo $token->getToken();
 }
