@@ -25,6 +25,7 @@
 							<input type="text" name="username"><br>
 							Enter Github Repo Name:<br>
 							<input type="text" name="reponame"><br>
+							<input type="submit" value="Submit">
 						</form>
 					</div>
 				</div>
