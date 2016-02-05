@@ -17,12 +17,14 @@ if (!isset($_GET['code'])) {
     $authUrl = $provider->getAuthorizationUrl();
     $_SESSION['oauth2state'] = $provider->getState();
     header('Location: '.$authUrl);
+    echo $_SESSION['oauth2state'];
     exit;
 
 // Check given state against previously stored one to mitigate CSRF attack
 } elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
 
     unset($_SESSION['oauth2state']);
+    echo $_SESSION['oauth2state'];
     exit('Invalid state');
 
 } else {
