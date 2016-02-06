@@ -70,7 +70,7 @@ function getGithubInstance(){
 
 	  var repo = github.getRepo(username, reponame);
 	  console.log(repo);
-});
+};
 
 
 /******************************** Github Connections ******************************/
