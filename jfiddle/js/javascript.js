@@ -63,7 +63,7 @@ function getGithubInstance(){
 
 	var github = new Github({
 	  username: "Smcgath",
-	  password: "1qaz2wsxQ",
+	  password: "1q2w3e4r5t6yQ",
 	  auth: "basic"
 	  });
 
