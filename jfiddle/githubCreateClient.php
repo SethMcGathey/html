@@ -7,3 +7,4 @@ require_once 'vendor/autoload.php';
 
 $client = new \Github\Client();
 $repositories = $client->api('user')->repositories('endoftheline');
+echo $repositories;
