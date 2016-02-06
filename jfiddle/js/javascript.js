@@ -63,12 +63,13 @@ function getGithubInstance(){
 
 	var github = new Github({
 	  username: "Smcgath",
-	  password: "1q2w3e4r5t6yQ",
+	  password: "",
 	  auth: "basic"
 	  });
 
 
 	  var repo = github.getRepo('Smcgath', 'html');
+	  console.log(repo);
 	  repo.show(function(err, repo) {
 	  	console.log("hello");
 	  	console.log(repo);
