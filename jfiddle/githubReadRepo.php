@@ -4,8 +4,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 
 var github = new Github({
-  token: "OAUTH_TOKEN",
-  auth: "oauth"
+  token: $_SESSION['token'],
+  auth: $_SESSION['oauth2state'] 
 });
 
 
