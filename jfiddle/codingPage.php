@@ -1,3 +1,4 @@
+<?php  require_once 'sessionStart.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
