@@ -69,8 +69,8 @@ function getGithubInstance(){
 
 
 	  var repo = github.getRepo('Smcgath', 'html');
-	  console.log(
-	  repo.listBranches(function(err, branches) {}));
+	 
+	  repo.listBranches(function(err, branches) { console.log(branches)});
 	  /*console.log(repo);
 	  repo.show(function(err, repo) {
 	  	console.log("hello");
