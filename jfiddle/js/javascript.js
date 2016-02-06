@@ -69,12 +69,14 @@ function getGithubInstance(){
 
 
 	  var repo = github.getRepo('Smcgath', 'html');
-	  console.log(repo);
+	  console.log(
+	  repo.listBranches(function(err, branches) {}));
+	  /*console.log(repo);
 	  repo.show(function(err, repo) {
 	  	console.log("hello");
 	  	console.log(repo);
 	  	
-	  });
+	  });*/
 
 	  //repo.read('master', 'endogtheline/index.js', function(err, data) {});
 };
