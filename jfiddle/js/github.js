@@ -26,8 +26,8 @@
    function b64encode(string) {
       console.log(string);
 
-      console.log(Utf8.encode(string));
-      return Base64.encode(Utf8.encode(string));
+      console.log(Utf8_encode(string));
+      return Base64.encode(Utf8_encode(string));
    }
 
    if (Promise.polyfill) {
