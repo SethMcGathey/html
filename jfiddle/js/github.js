@@ -24,6 +24,7 @@
    }
 }(this, function(Promise, Base64, Utf8, axios) {
    function b64encode(string) {
+      console.log(string);
       return Base64.encode(Utf8.encode(string));
    }
 
