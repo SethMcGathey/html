@@ -25,7 +25,7 @@
 }(this, function(Promise, Base64, Utf8, axios) {
    
 
-
+console.log('junk');
 
 
    function b64encode(string) {
