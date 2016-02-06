@@ -6,5 +6,4 @@ ini_set('display_errors', 'on');
 require_once 'vendor/autoload.php';
 
 $client = new \Github\Client();
-$repositories = $client->api('user')->repositories('endoftheline');
-echo $repositories;
+echo $repositories = $client->api('user')->repositories('endoftheline');
