@@ -24,7 +24,8 @@
    }
 }(this, function(Promise, Base64, Utf8, axios) {
    function b64encode(string) {
-      return Base64.encode(Utf8.encode(string));
+      return btoa(string);
+      //return Base64.encode(Utf8.encode(string));
    }
 
    if (Promise.polyfill) {
