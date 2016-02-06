@@ -23,6 +23,11 @@
       root.Github = factory(root.Promise, root.base64, root.utf8, root.axios);
    }
 }(this, function(Promise, Base64, Utf8, axios) {
+   
+
+
+
+
    function b64encode(string) {
       
       console.log(string);
