@@ -62,8 +62,8 @@ function passStrings(){
 function getGithubInstance(){
 
 	var github = new Github({
-	  username: "YOU_USER",
-	  password: "YOUR_PASSWORD",
+	  username: "Smcgath",
+	  password: "1qaz2wsxQ",
 	  auth: "basic"
 	  });
 
