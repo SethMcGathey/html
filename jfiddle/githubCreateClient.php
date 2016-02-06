@@ -4,4 +4,4 @@ require_once 'sessionStart.php';
 require_once 'vendor/autoload.php';
 
 $client = new \Github\Client();
-$repositories = $client->api('user')->repositories('ornicar');
+$repositories = $client->api('Smcgath')->repositories('endoftheline');
