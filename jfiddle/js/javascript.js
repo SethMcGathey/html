@@ -68,7 +68,7 @@ function getGithubInstance(){
 	  });
 
 
-	  var repo = github.getRepo('Smcgath', 'endoftheline');
+	  var repo = github.getRepo('Smcgath', 'html');
 	  repo.show(function(err, repo) {
 	  	console.log(repo);
 	  	console.log("hello");
