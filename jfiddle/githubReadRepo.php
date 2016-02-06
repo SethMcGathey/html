@@ -5,7 +5,7 @@ ini_set('display_errors', 'on');
 
 var github = new Github({
   token: $_SESSION['token'],
-  auth: $_SESSION['oauth2state'] 
+  auth: "oauth"
 });
 
 
