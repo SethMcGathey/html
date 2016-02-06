@@ -70,8 +70,9 @@ function getGithubInstance(){
 
 	  var repo = github.getRepo('Smcgath', 'html');
 	  repo.show(function(err, repo) {
-	  	console.log(repo);
 	  	console.log("hello");
+	  	console.log(repo);
+	  	
 	  });
 
 	  //repo.read('master', 'endogtheline/index.js', function(err, data) {});
