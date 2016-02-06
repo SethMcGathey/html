@@ -21,7 +21,7 @@
 				<div class="col-lg-2 sideBar">
 					Sidebar
 					<div>
-						<form onSubmit="return getGithubInstance()" method="post">
+						<form onSubmit="getGithubInstance()">
 							Enter Github Username:<br>
 							<input type="text" name="username"><br>
 							Enter Github Repo Name:<br>
