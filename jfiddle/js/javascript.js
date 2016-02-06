@@ -47,3 +47,36 @@ function passStrings(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/******************************** Github Connections ******************************/
+function getGithubInstance(){
+
+	var github = new Github({
+	  username: "Smcgath",
+	  password: "1qaz2wsxQ",
+	  auth: "basic"
+
+
+	  var repo = github.getRepo(username, reponame);
+	  console.log(repo);
+});
+
+
+/******************************** Github Connections ******************************/
+
+
+
+
+
+
+

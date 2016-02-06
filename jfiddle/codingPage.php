@@ -21,7 +21,7 @@
 				<div class="col-lg-2 sideBar">
 					Sidebar
 					<div>
-						<form action="githubReadRepo.php" method="post">
+						<form onSubmit="return getGithubInstance()" method="post">
 							Enter Github Username:<br>
 							<input type="text" name="username"><br>
 							Enter Github Repo Name:<br>
