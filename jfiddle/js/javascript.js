@@ -32,6 +32,13 @@ function passStrings(){
 		console.log(javascriptString);
 		console.log(cssString);
 
+		$.ajax({
+		   url: "saveScript.php",
+		   success: function(data){
+		     $("#responseArea").text(data);
+		   }
+		 });
+
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
 		doc.open();
