@@ -33,7 +33,7 @@ function passStrings(){
 		console.log(cssString);
 
 		$.ajax({
-		   url: "saveScript.php",
+		   url: "saveScripts.php",
 		   success: function(data){
 		     $("#responseArea").text(data);
 		   }
