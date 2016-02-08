@@ -13,7 +13,7 @@
 					<a href="javascript:void(0);" onclick="passStrings();">Run</a>
 					<a href="githubAuthorization.php">Authenticate</a>
 					<a href="githubCreateClient.php">Access Old File</a>
-					<a href="saveScript.php">Test PHP</a>
+					<a href="saveScripts.php">Test PHP</a>
 				</div>
 			</div>
 			
