@@ -76,7 +76,7 @@
 	</body>
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>
+<!--<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>-->
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/github.js" type="text/javascript" ></script>
 <script src="js/github.bundle.min.js" type="text/javascript" ></script>
