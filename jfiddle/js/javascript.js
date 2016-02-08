@@ -35,7 +35,7 @@ function passStrings(){
 		$.ajax({
 		   url: "saveScripts.php",
 		   success: function(data){
-		     $("#responseArea").text(data);
+		     //$("#responseArea").text(data);
 		   }
 		 });
 
