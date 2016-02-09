@@ -34,9 +34,8 @@ function passStrings(){
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		$.ajax({
 			url: "saveScripts.php",
-		   
-		   type: 'GET',
-		   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+		    type: 'GET',
+		   	data: { html: htmlString},
 		   success: function(data){
 		     //$("#responseArea").text(data);
 		   }
@@ -55,7 +54,15 @@ function passStrings(){
 };
 
 
-
+$.ajax({
+    url: 'http://localhost/test.php',
+    type: 'GET',
+     data: { var_PHP_data: var_data },
+     success: function(data) {
+         // do something;
+        $('#result').html(data)
+     }
+ });
 
 
 
