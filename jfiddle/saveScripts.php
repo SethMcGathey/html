@@ -6,7 +6,6 @@ ini_set('display_errors', 'on');
     $pdo = Database::connect();
 
     $_SESSION["memberId"] = 1;
-    $_GET['id'];
 	/*if($_SESSION['memberID'])
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
