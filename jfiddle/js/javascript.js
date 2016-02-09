@@ -25,8 +25,8 @@
 function passStrings(){
 
 		var htmlString = $('#htmlDiv').text(); 
-		var javascriptString = $('#javascriptDiv').text(); 
-		var cssString = $('#cssDiv').text(); 
+		var javascriptString = " <script>" + $('#javascriptDiv').text() + "</script>"; 
+		var cssString = " <styles>" + $('#cssDiv').text() + "</styles>"; 
 		var id = 15;
 		console.log(htmlString);
 		console.log(javascriptString);
@@ -47,7 +47,7 @@ function passStrings(){
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
 		doc.open();
-		doc.write(htmlString);
+		doc.write(htmlString + javascriptString + cssString);
 		doc.close();
 
 		//$('myFrame').contentWindow.document.write(htmlString);
