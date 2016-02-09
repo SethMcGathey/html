@@ -44,10 +44,16 @@ function passStrings(){
 		    }
 		 });
 
+		var string1 = "<html><head><style>";
+		var string2 = "</style></head><body>";
+		var string3 = "<script type=\"text/javascript\">";
+		var string4 = "</script></body></html>";
+
+
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
 		doc.open();
-		doc.write("<html>" + htmlString + javascriptString + cssString + "</html>");
+		doc.write(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
 		doc.close();
 
 		//$('myFrame').contentWindow.document.write(htmlString);
