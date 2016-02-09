@@ -33,7 +33,7 @@ function passStrings(){
 		console.log(cssString);
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
-		window.location = "saveScripts.php?id=" id;
+		window.location = "saveScripts.php?id=" + id;
 		/*$.ajax({
 			url: "saveScripts.php",
 		    method: 'POST',
