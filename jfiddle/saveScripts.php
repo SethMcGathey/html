@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
     $pdo = Database::connect();
 
     $_SESSION["memberId"] = 1;
-
+    $_GET['id'];
 	/*if($_SESSION['memberID'])
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -15,7 +15,7 @@ ini_set('display_errors', 'on');
 	    $q->execute($_POST['html'], $_POST['javascript'], $_POST['css']);
 	}else
 	{*/
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		/*$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
