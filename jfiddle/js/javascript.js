@@ -47,7 +47,7 @@ function passStrings(){
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
 		doc.open();
-		doc.write(htmlString + javascriptString + cssString);
+		doc.write("<html>" + htmlString + javascriptString + cssString + "</html>");
 		doc.close();
 
 		//$('myFrame').contentWindow.document.write(htmlString);
