@@ -18,7 +18,7 @@ ini_set('display_errors', 'on');
 		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_GET['html'], $_GET['javascript'], $_GET['css'], $_SESSION['memberId']));
+	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['memberId']));
 	//}
 
 
