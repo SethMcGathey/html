@@ -16,7 +16,7 @@ ini_set('display_errors', 'on');
 	}else
 	{*/
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $GET['html'] . ", " . $GET['javascript'] . ", " . $GET['css'] . ", " . $_SESSION['memberId'] . ")";
+		$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $q = $pdo->prepare($sql);
 	    $q->execute();
 	//}
