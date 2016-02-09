@@ -33,15 +33,15 @@ function passStrings(){
 		console.log(cssString);
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
-		window.location = "saveScripts.php?id=" + id;
-		/*$.ajax({
+		//window.location = "saveScripts.php?id=" + id;
+		$.ajax({
 			url: "saveScripts.php",
 		    method: 'POST',
 		   	data: { html: htmlString},
 		    success: function(data){
 		     //$("#responseArea").text(data);
 		    }
-		 });*/
+		 });
 
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
