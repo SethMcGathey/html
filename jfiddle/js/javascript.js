@@ -27,12 +27,13 @@ function passStrings(){
 		var htmlString = $('#htmlDiv').text(); 
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
-
+		var id = 15
 		console.log(htmlString);
 		console.log(javascriptString);
 		console.log(cssString);
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
-		window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
+		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
+		window.location = "saveScripts.php?id=" id;
 		/*$.ajax({
 			url: "saveScripts.php",
 		    method: 'POST',
