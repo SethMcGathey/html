@@ -39,6 +39,7 @@ function passStrings(){
 		    method: 'POST',
 		   	data: { html: htmlString},
 		    success: function(data){
+		    	console.log("made it");
 		     //$("#responseArea").text(data);
 		    }
 		 });
