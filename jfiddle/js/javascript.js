@@ -37,12 +37,12 @@ function passStrings(){
 		$.ajax({
 			url: "saveScripts.php",
 		    method: 'POST',
-		   	data: { html: htmlString},
+		   	data: { html: htmlString, javascript: javascriptString, css: cssString},
 		    success: function(data){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
 		    }
-		 });
+		 });*/
 
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
