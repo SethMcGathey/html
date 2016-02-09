@@ -31,10 +31,10 @@ function passStrings(){
 		console.log(htmlString);
 		console.log(javascriptString);
 		console.log(cssString);
-
+//url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		$.ajax({
 			url: "saveScripts.php",
-		   //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
+		   
 		   type: 'GET',
 		   	data: { html: htmlString, javascript: javascriptString, css: cssString},
 		   success: function(data){
