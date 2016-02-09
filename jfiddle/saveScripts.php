@@ -16,9 +16,10 @@ ini_set('display_errors', 'on');
 	}else
 	{*/
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
+		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
+	    $sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute();
+	    $q->execute(array($_GET['html'], $_GET['javascript'], $_GET['css'], $_SESSION['memberId']));
 	//}
 
 
