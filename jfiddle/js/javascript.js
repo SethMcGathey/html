@@ -53,7 +53,7 @@ function passStrings(){
 		
 };
 
-
+/*
 $.ajax({
     url: 'http://localhost/test.php',
     type: 'GET',
@@ -64,7 +64,7 @@ $.ajax({
      }
  });
 
-
+*/
 
 
 
