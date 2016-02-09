@@ -42,7 +42,7 @@ function passStrings(){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
 		    }
-		 });*/
+		 });
 
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
