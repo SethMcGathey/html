@@ -32,9 +32,9 @@ function passStrings(){
 		console.log(javascriptString);
 		console.log(cssString);
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
-		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
+		window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
 		//window.location = "saveScripts.php?id=" + id;
-		$.ajax({
+		/*$.ajax({
 			url: "saveScripts.php",
 		    method: 'POST',
 		   	data: { html: htmlString, javascript: javascriptString, css: cssString},
@@ -42,7 +42,7 @@ function passStrings(){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
 		    }
-		 });
+		 });*/
 
 
 		var doc = document.getElementById('myFrame').contentWindow.document;
