@@ -34,11 +34,11 @@ function passStrings(){
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		$.ajax({
 			url: "saveScripts.php",
-		    type: 'GET',
+		    method: 'POST',
 		   	data: { html: htmlString},
-		   success: function(data){
+		    success: function(data){
 		     //$("#responseArea").text(data);
-		   }
+		    }
 		 });
 
 
