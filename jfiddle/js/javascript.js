@@ -27,7 +27,7 @@ function passStrings(){
 		var htmlString = $('#htmlDiv').text(); 
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
-		var id = 15
+		var id = 15;
 		console.log(htmlString);
 		console.log(javascriptString);
 		console.log(cssString);
