@@ -43,14 +43,14 @@
 						
 							<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 								<pre class="prettyprint">
-									(function() { 
-   var jsSyntaxHighlighting = 'rocks';
-})();
+
 								</pre>
 							</div>
 						
-						<div class="col-lg-6 squareDivs" id="cssDiv"  contenteditable>
-							
+						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
+																(function() { 
+   var jsSyntaxHighlighting = 'rocks';
+})();
 						</div>
 					</div><!--row-->
 					<div class="row">
