@@ -47,7 +47,10 @@ function passStrings(){
 		var string1 = "<html> <head> <style> ";
 		var string2 = "</style> </head> <body> ";
 		var string3 = "<script type=\'text/javascript\'> ";
-		var string4 = "</script> </body> </html>";
+		var string4 = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script>";
+		var string5 = "<script src=\"js/bootstrap.min.js\" type=\"text/javascript\"></script>";
+		var string6 = "</script> </body> </html>";
+
 
 
 
@@ -55,7 +58,7 @@ function passStrings(){
 		doc.open();
 		doc.write(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
 		doc.close();
-		console.log(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
+		console.log(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4 + string5 + string6);
 
 		//$('myFrame').contentWindow.document.write(htmlString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
