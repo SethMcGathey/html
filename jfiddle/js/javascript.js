@@ -68,10 +68,7 @@ function passStrings(){
 		
 };
 
-$(".squareDivs").keyup(function(){
-	prettyPrint();
-	console.log("called function");
-});
+
 
 
 /*
