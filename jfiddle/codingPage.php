@@ -40,11 +40,12 @@
 						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
-						<pre class="prettyprint">
+						
 							<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-								
+								<pre class="prettyprint">
+								</pre>
 							</div>
-						</pre>
+						
 						<div class="col-lg-6 squareDivs" id="cssDiv"  contenteditable>
 							
 						</div>
