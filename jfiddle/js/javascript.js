@@ -68,6 +68,11 @@ function passStrings(){
 		
 };
 
+$(".squareDivs").keyup(function(){
+	prettyPrint();
+})
+
+
 /*
 $.ajax({
     url: 'http://localhost/test.php',

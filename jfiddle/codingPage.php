@@ -95,8 +95,6 @@
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
 
-
-<script>prettyPrint();</script>
 	</body>
 
 
