@@ -42,9 +42,9 @@
 						</div>
 						
 
-								<pre class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
+						<pre class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 
-								</pre>
+						</pre>
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
