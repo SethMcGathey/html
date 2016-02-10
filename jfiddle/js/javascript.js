@@ -55,6 +55,7 @@ function passStrings(){
 		doc.open();
 		doc.write(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
 		doc.close();
+		console.log(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
 
 		//$('myFrame').contentWindow.document.write(htmlString);
 		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
