@@ -4,6 +4,7 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="highlighter/prettify.css" />
 
 	<body>
 		<div class="container-fluid">
@@ -39,9 +40,11 @@
 						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
+						<pre class="prettyprint">
 						<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 							
 						</div>
+						</pre>
 						<div class="col-lg-6 squareDivs" id="cssDiv"  contenteditable>
 							
 						</div>
@@ -74,14 +77,23 @@
 	echo $_SESSION['oauth2state'];
 ?>
 
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+<script>prettyPrint();</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="js/jquery-1.12.0.js" type="text/javascript"> </script>
 <!--<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>-->
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/github.js" type="text/javascript" ></script>
 <script src="js/github.bundle.min.js" type="text/javascript" ></script>
 <script src="js/javascript.js" type="text/javascript"></script>
+<script src="highlighter/prettify.js"></script>
+
+	</body>
+
+
 
 </html>
 
