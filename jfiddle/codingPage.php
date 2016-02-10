@@ -41,9 +41,9 @@
 							CSS
 						</div>
 						<pre class="prettyprint">
-						<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-							
-						</div>
+							<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
+								
+							</div>
 						</pre>
 						<div class="col-lg-6 squareDivs" id="cssDiv"  contenteditable>
 							
@@ -79,7 +79,7 @@
 
 
 
-<script>prettyPrint();</script>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -91,6 +91,8 @@
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
 
+
+<script>prettyPrint();</script>
 	</body>
 
 
