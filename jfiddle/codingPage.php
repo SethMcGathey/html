@@ -41,11 +41,11 @@
 							CSS
 						</div>
 						
-							<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-								<pre class="prettyprint" contenteditable>
+
+								<pre class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 
 								</pre>
-							</div>
+
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
 																(function() { 
