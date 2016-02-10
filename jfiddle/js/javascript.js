@@ -46,7 +46,7 @@ function passStrings(){
 
 		var string1 = "<html><head><style>";
 		var string2 = "</style></head><body>";
-		var string3 = "<script type=\"text/javascript\">";
+		var string3 = "<script type=\'text/javascript\''>";
 		var string4 = "</script></body></html>";
 
 
