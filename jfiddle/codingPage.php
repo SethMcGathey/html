@@ -93,6 +93,7 @@
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
 <script>
+prettyPrint();
 $(".squareDivs").keyup(function(){
 	prettyPrint();
 	console.log("called function");
