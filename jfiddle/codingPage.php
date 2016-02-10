@@ -43,6 +43,9 @@
 						
 							<div class="col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 								<pre class="prettyprint">
+									(function() { 
+   var jsSyntaxHighlighting = 'rocks';
+})();
 								</pre>
 							</div>
 						
