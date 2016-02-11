@@ -70,7 +70,7 @@ function passStrings(){
 
 $(".squareDivs").keyup(function(){
 	var value = $('#htmlDiv').text(); 
-	hljs.highlightBlock(div);
+	hljs.highlightBlock('#htmlDiv');
 	//$('#htmlDiv').text() = hljs.highlightAuto(value, languageSubset).value;
   	/*block = $('#htmlDiv').text(); 
     hljs.highlightBlock('#htmlDiv');*/
