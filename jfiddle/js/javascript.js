@@ -68,7 +68,12 @@ function passStrings(){
 		
 };
 
-
+$(".squareDivs").keyup(function(){
+  $('pre code').each(function(i, block) {
+  	block = $('#htmlDiv').text(); 
+    hljs.highlightBlock(block);
+  });
+});
 
 
 /*
