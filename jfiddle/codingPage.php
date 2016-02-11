@@ -49,9 +49,7 @@
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
-																(function() { 
-   var jsSyntaxHighlighting = 'rocks';
-})();
+
 						</div>
 					</div><!--row-->
 					<div class="row">
