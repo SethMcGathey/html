@@ -44,7 +44,7 @@
 						
 
 						<pre class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-
+junk junk junk
 						</pre>
 
 						
