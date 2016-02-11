@@ -71,8 +71,8 @@ function passStrings(){
 $(".squareDivs").keyup(function(){
 	hljs.initHighlighting();
   	/*block = $('#htmlDiv').text(); 
-    hljs.highlightBlock('#htmlDiv');
-    console.log("made it in function");*/
+    hljs.highlightBlock('#htmlDiv');*/
+    console.log("made it in function");
 
 });
 
