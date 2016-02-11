@@ -70,8 +70,8 @@ function passStrings(){
 
 $(".squareDivs").keyup(function(){
 	var value = $('#htmlDiv').text(); 
-	
-	$('#htmlDiv').text() = hljs.highlightAuto(value, languageSubset).value;
+	highlightBlock(div);
+	//$('#htmlDiv').text() = hljs.highlightAuto(value, languageSubset).value;
   	/*block = $('#htmlDiv').text(); 
     hljs.highlightBlock('#htmlDiv');*/
     console.log("made it in function");
