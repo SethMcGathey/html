@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="highlighter/prettify.css" />
+	<link rel="stylesheet" href="/path/to/styles/default.css">
 
 	<body>
 		<div class="container-fluid">
@@ -43,16 +44,12 @@
 						
 
 						<pre class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-																(function() { 
-   var jsSyntaxHighlighting = 'rocks';
-})();
+
 						</pre>
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
-																(function() { 
-   var jsSyntaxHighlighting = 'rocks';
-})();
+
 						</div>
 					</div><!--row-->
 					<div class="row">
@@ -94,13 +91,17 @@
 <script src="js/github.bundle.min.js" type="text/javascript" ></script>
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
+
+
+<script src="/path/to/highlight.pack.js"></script>
+<!--
 <script>
 prettyPrint();
 $(".squareDivs").keyup(function(){
 	prettyPrint();
 	console.log("called function");
 });
-</script>
+</script>-->
 	</body>
 
 
@@ -109,6 +110,7 @@ $(".squareDivs").keyup(function(){
 
 	<!--<?php //include 'sessionStart.php' ?>
 	<?php //require 'header.php' ?>-->
+
 
 
 
