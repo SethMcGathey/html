@@ -69,7 +69,9 @@ function passStrings(){
 };
 
 $(".squareDivs").keyup(function(){
-	hljs.initHighlighting();
+	var value = $('#htmlDiv').text(); 
+	
+	$('#htmlDiv').text() = hljs.highlightAuto(value, languageSubset).value;
   	/*block = $('#htmlDiv').text(); 
     hljs.highlightBlock('#htmlDiv');*/
     console.log("made it in function");
