@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="highlighter/prettify.css" />
+	<link rel="stylesheet" href="/path/to/styles/default.css">
 
 	<body>
 		<div class="container-fluid">
@@ -94,6 +95,10 @@
 <script src="js/github.bundle.min.js" type="text/javascript" ></script>
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
+
+
+<script src="/path/to/highlight.pack.js"></script>
+
 <script>
 prettyPrint();
 $(".squareDivs").keyup(function(){
