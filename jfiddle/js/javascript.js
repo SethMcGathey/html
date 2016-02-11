@@ -69,10 +69,10 @@ function passStrings(){
 };
 
 $(".squareDivs").keyup(function(){
-
-  	block = $('#htmlDiv').text(); 
+initHighlighting();
+  	/*block = $('#htmlDiv').text(); 
     hljs.highlightBlock('#htmlDiv');
-    console.log("made it in function");
+    console.log("made it in function");*/
 
 });
 
