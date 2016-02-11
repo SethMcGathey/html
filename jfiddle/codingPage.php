@@ -96,14 +96,14 @@
 
 
 <script src="/path/to/highlight.pack.js"></script>
-
+<!--
 <script>
 prettyPrint();
 $(".squareDivs").keyup(function(){
 	prettyPrint();
 	console.log("called function");
 });
-</script>
+</script>-->
 	</body>
 
 
