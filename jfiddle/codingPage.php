@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="highlighter/prettify.css" />
-	<link rel="stylesheet" href="/path/to/styles/default.css">
+	<link rel="stylesheet" href="/highlight/styles/default.css">
 
 	<body>
 		<div class="container-fluid">
@@ -93,7 +93,7 @@ junk junk junk
 <script src="highlighter/prettify.js"></script>
 
 
-<script src="/path/to/highlight.pack.js"></script>
+<script src="/highlight/highlight.pack.js"></script>
 <!--
 <script>
 prettyPrint();
