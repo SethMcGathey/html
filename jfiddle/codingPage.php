@@ -101,7 +101,6 @@ window.onload = function() {
 
 
 <script src="codemirror/lib/codemirror.js"></script>
-<script type="text/javascript" src="../codemirror/mode/clike/clike.js"></script>
 <script src="codemirror/mode/javascript/javascript.js"></script>
 
 <script src="highlight/highlight.pack.js"></script>
