@@ -74,7 +74,7 @@
 				</div><!--col-lg-10-->
 
 			</div><!--row-->
-<textarea  id="myTextArea">
+<textarea class="squareDivs" id="myTextArea">
 
 </textarea>
 
