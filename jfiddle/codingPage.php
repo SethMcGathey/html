@@ -88,7 +88,8 @@ window.onload = function() {
 ?>
 
 
-
+<script src="codemirror/lib/codemirror.js"></script>
+<script src="codemirror/mode/javascript/javascript.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="js/jquery-1.12.0.js" type="text/javascript"> </script>
@@ -100,8 +101,7 @@ window.onload = function() {
 <script src="highlighter/prettify.js"></script>
 
 
-<script src="codemirror/lib/codemirror.js"></script>
-<script src="codemirror/mode/javascript/javascript.js"></script>
+
 
 <script src="highlight/highlight.pack.js"></script>
 <!--
