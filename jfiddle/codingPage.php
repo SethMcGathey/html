@@ -44,6 +44,7 @@
 							CSS
 						</div>
 						<textarea id='htmlDiv'>
+							content
 						</textarea>
 
 						<textarea class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
