@@ -61,9 +61,9 @@
 						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
-						<div class="col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
+						<textarea class="col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
 							
-						</div>
+						</textarea>
 						<div class="col-lg-6 squareDivs" id="resultsDiv">
 							
 							<iframe id="myFrame">
