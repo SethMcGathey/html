@@ -80,6 +80,10 @@ window.onload = function() {
 
 };
 
+var myTextArea = 'pre';
+var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+
+
 /*
 $.ajax({
     url: 'http://localhost/test.php',

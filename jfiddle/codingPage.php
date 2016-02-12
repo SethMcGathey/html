@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="highlighter/prettify.css" />
 	<link rel="stylesheet" href="highlight/styles/default.css">
 
+	<link rel="stylesheet" href="codemirror/codemirror.css">
+
 	<body>
 		<div class="container-fluid">
 
@@ -97,6 +99,9 @@ window.onload = function() {
 <script src="js/javascript.js" type="text/javascript"></script>
 <script src="highlighter/prettify.js"></script>
 
+
+<script src="codemirror/codemirror.js"></script>
+<script src="codemirror/mode/javascript/javascript.js"></script>
 
 <script src="highlight/highlight.pack.js"></script>
 <!--
