@@ -45,7 +45,7 @@
 						</div>
 
 
-						<textarea class="prettyprint col-lg-6 squareDivs" id="myTextArea"  contenteditable>
+						<textarea class="prettyprint col-lg-6 squareDivs" id="myTextArea">
 window.onload = function() {
     var aCodes = document.getElementsByTagName('pre');
     for (var i=0; i < aCodes.length; i++) {
