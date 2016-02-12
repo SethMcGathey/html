@@ -79,7 +79,7 @@ window.onload = function() {
 				</div><!--col-lg-10-->
 
 			</div><!--row-->
-			<textarea class="testing"></textarea>
+			<textarea class="myTextarea"></textarea>
 
 		</div> <!--container-fluid-->
 
