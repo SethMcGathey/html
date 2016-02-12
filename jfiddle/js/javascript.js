@@ -79,9 +79,9 @@ $(".squareDivs").keyup(function(){
 window.onload = function() {
 
 };
-
-var myTextArea = 'pre';
-var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+var myCodeMirror = CodeMirror(document.body);
+//var myTextArea = 'pre';
+//var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 
 
 /*
