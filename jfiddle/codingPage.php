@@ -45,7 +45,9 @@
 						</div>
 
 
-						
+						<div class="col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
+
+						</div>
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
