@@ -45,7 +45,7 @@
 						</div>
 
 
-						<textarea class="prettyprint col-lg-6 squareDivs" id="myTextArea">
+						<textarea  id="myTextArea">
 
 						</textarea>
 
