@@ -43,7 +43,8 @@
 						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
-						
+						<textarea id='htmlDiv'>
+						</textarea>
 
 						<textarea class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 window.onload = function() {
