@@ -45,9 +45,7 @@
 						</div>
 
 
-						<textarea  id="myTextArea">
-
-						</textarea>
+						
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
@@ -74,7 +72,9 @@
 				</div><!--col-lg-10-->
 
 			</div><!--row-->
+<textarea  id="myTextArea">
 
+						</textarea>
 
 		</div> <!--container-fluid-->
 
