@@ -80,7 +80,7 @@ window.onload = function() {
 
 };
 //var myCodeMirror = CodeMirror(document.body);
-var myTextArea = document.getElementById("myTextArea");
+var myTextArea = document.getElementsByClassName("squareDivs");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 
 

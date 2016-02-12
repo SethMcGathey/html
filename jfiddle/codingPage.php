@@ -45,14 +45,14 @@
 						</div>
 
 
-						<div class="col-lg-6 squareDivs prettyprint" id="htmlDi1v"  contenteditable>
+						<textarea class="col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
 
-						</div>
+						</textarea>
 
 						
-						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
+						<textarea class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
 
-						</div>
+						</textarea>
 					</div><!--row-->
 					<div class="row">
 						<div class="col-lg-6 titleDivs">
