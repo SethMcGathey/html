@@ -74,10 +74,13 @@
 				</div><!--col-lg-10-->
 
 			</div><!--row-->
-<textarea class="squareDivs" id="myTextArea">
+<div class="col-lg-6 squareDivs prettyprint" id="htmlDi1v"  contenteditable>
+
+				
+<textarea  id="myTextArea">
 
 </textarea>
-
+		</div>
 		</div> <!--container-fluid-->
 
 <?php
