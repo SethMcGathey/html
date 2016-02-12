@@ -35,7 +35,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-lg-10" >
+				<div class="col-lg-10">
 					<div class="row">
 						<div class="col-lg-6 titleDivs">
 							HTML
@@ -45,7 +45,7 @@
 						</div>
 
 
-						<div class="col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
+						<div class="col-lg-6 squareDivs prettyprint" id="htmlDi1v"  contenteditable>
 
 						</div>
 
@@ -76,7 +76,7 @@
 			</div><!--row-->
 <textarea  id="myTextArea">
 
-						</textarea>
+</textarea>
 
 		</div> <!--container-fluid-->
 
