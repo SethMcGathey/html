@@ -26,7 +26,7 @@
 }
 
 .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
-  /*background-color: white; /* The little square between H and V scrollbars */
+  background-color: white; /* The little square between H and V scrollbars */
 }
 
 /* GUTTER */
@@ -153,9 +153,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
    the editor. You probably shouldn't touch them. */
 
 .CodeMirror {
-  position: relative;
+  /*position: relative;
   overflow: hidden;
-  background: white;
+  background: white;*/
 }
 
 .CodeMirror-scroll {
