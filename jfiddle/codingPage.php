@@ -45,14 +45,14 @@
 						</div>
 
 
-						<!--<textarea class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
+						<textarea class="prettyprint col-lg-6 squareDivs" id="myTextArea"  contenteditable>
 window.onload = function() {
     var aCodes = document.getElementsByTagName('pre');
     for (var i=0; i < aCodes.length; i++) {
         hljs.highlightBlock(aCodes[i]);
     }
 };
-						</textarea>->
+						</textarea>
 
 						
 						<div class="col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
