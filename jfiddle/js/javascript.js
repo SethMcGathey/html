@@ -80,7 +80,7 @@ window.onload = function() {
 
 };
 //var myCodeMirror = CodeMirror(document.body);
-var myTextArea = document.getElementById("htmlDiv");
+var myTextArea = document.getElementById("myTextArea");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 
 

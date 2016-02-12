@@ -43,7 +43,7 @@
 						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
-						<textarea id='htmlDiv'>
+						<textarea id='textarea'>
 							content
 						</textarea>
 
