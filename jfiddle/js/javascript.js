@@ -81,7 +81,7 @@ window.onload = function() {
 };
 //var myCodeMirror = CodeMirror(document.body);
 var myTextArea = 'pre';
-var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+var myCodeMirror = CodeMirror.fromTextArea('pre');
 
 
 /*
