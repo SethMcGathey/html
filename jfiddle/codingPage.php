@@ -43,9 +43,7 @@
 						<div class="col-lg-6 titleDivs">
 							CSS
 						</div>
-						<textarea id='myTextArea'>
-							content
-						</textarea>
+
 
 						<!--<textarea class="prettyprint col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
 window.onload = function() {
@@ -82,6 +80,10 @@ window.onload = function() {
 
 			</div><!--row-->
 			<textarea id="myTextarea"></textarea>
+
+						<textarea id='myTextArea'>
+							content
+						</textarea>
 
 		</div> <!--container-fluid-->
 
