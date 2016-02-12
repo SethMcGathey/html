@@ -69,20 +69,15 @@ function passStrings(){
 };
 
 $(".squareDivs").keyup(function(){
-	var value = $('#htmlDiv').text(); 
-	hljs.highlightBlock('squareDivs');
-	//$('#htmlDiv').text() = hljs.highlightAuto(value, languageSubset).value;
-  	/*block = $('#htmlDiv').text(); 
-    hljs.highlightBlock('#htmlDiv');*/
-    console.log("made it in function");
-
-});
-
-window.onload = function() {
     var aCodes = document.getElementsByTagName('pre');
     for (var i=0; i < aCodes.length; i++) {
         hljs.highlightBlock(aCodes[i]);
     }
+
+});
+
+window.onload = function() {
+
 };
 
 /*
