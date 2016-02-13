@@ -1,7 +1,17 @@
 body {
+	/*************** Seth's Code /***************/
+	background-color:#DDDDDD;
+	height:385px;
+	overflow: scroll;
+	border:solid;
+	border-width: 1px;
+	outline-width: 0;
+	/*************** Seth's Code /***************/
+
+
 	/*margin-top:13px;
-	_margin-top:14px;
-	background:white;*/
+	_margin-top:14px;*/
+	background:white;
 	margin-left:32px;
 	font-family:monospace;
 	font-size:13px;
