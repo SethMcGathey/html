@@ -80,19 +80,15 @@ window.onload = function() {
 
 };
 //var myCodeMirror = CodeMirror(document.body);
-/*var myTextArea = document.getElementById("htmlDiv");
+var myTextArea = document.getElementById("htmlDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
-var myTextArea = document.getElementById("cssDiv");
+/*var myTextArea = document.getElementById("cssDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 var myTextArea = document.getElementById("javascriptDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);*/
+
+
 /*
-<script src="codemirror/lib/codemirror.js"></script>
-<script src="codemirror/addon/mode/multiplex.js"></script>
-<script src="codemirror/mode/htmlembedded/htmlembedded.js"></script>
-<script src="codemirror/mode/css/css.js"></script>
-<script src="codemirror/mode/javascript/javascript.js"></script>
-*/
 require([
   "cm/lib/codemirror", "cm/mode/htmlmixed/htmlmixed"
 ], function(CodeMirror) {
@@ -100,7 +96,7 @@ require([
     lineNumbers: true,
     mode: "htmlmixed"
   });
-});
+});*/
 /*
 var myCodeMirror = CodeMirror(document.getElementById("htmlDiv"), {
   value: "function myScript(){return 100;}\n",
