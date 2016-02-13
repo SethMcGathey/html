@@ -90,7 +90,7 @@
 
 <script src="codemirror/lib/codemirror.js"></script>
 <script src="codemirror/addon/mode/multiplex.js"></script>
-<script src="js/requireJS.js/prettify.js"></script>
+<script src="js/requireJs.js/prettify.js"></script>
 <!--<script src="codemirror/mode/htmlembedded/htmlembedded.js"></script>
 <script src="codemirror/mode/css/css.js"></script>
 <script src="codemirror/mode/javascript/javascript.js"></script>
