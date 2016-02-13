@@ -50,7 +50,7 @@
 						</textarea>
 
 						
-						<textarea class="codepress css linenumbers-on col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
+						<textarea class="codepress css linenumbers-on col-lg-6 squareDivs" id="cssDiv"  contenteditable>
 
 						</textarea>
 					</div><!--row-->
@@ -90,14 +90,7 @@
 
 <script src="codepress/codepress.js" type="text/javascript"></script>
 
-<!--
-<script src="codemirror/lib/codemirror.js"></script>
-<script src="codemirror/addon/mode/multiplex.js"></script>-->
-<!--<script src="js/requireJs.js"></script>
-<script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
-<script src="codemirror/mode/css/css.js"></script>
-<script src="codemirror/mode/javascript/javascript.js"></script>
--->
+
 
 <!--<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>-->
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
@@ -107,17 +100,6 @@
 <script src="highlighter/prettify.js"></script>
 
 
-
-
-<script src="highlight/highlight.pack.js"></script>
-<!--
-<script>
-prettyPrint();
-$(".squareDivs").keyup(function(){
-	prettyPrint();
-	console.log("called function");
-});
-</script>-->
 	</body>
 
 
