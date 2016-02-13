@@ -67,12 +67,12 @@
 								
 							</textarea>
 
-						
+						<div class="squareDivs" id="resultsDiv">
 							
-							<iframe class="squareDivs" id="myFrame">
+							<iframe id="myFrame">
 									<p>Your browser does not support iframes.</p>
 							</iframe>
-						
+						</div>
 					</div><!--row-->
 				</div><!--col-lg-10-->
 
