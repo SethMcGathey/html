@@ -80,14 +80,26 @@ window.onload = function() {
 
 };
 //var myCodeMirror = CodeMirror(document.body);
-var myTextArea = document.getElementById("htmlDiv");
+/*var myTextArea = document.getElementById("htmlDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 var myTextArea = document.getElementById("cssDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 var myTextArea = document.getElementById("javascriptDiv");
-var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
+var myCodeMirror = CodeMirror.fromTextArea(myTextArea);*/
 
 
+var myCodeMirror = CodeMirror(document.getElementById("htmlDiv"), {
+  value: "function myScript(){return 100;}\n",
+  mode:  "htmlembedded"
+});
+var myCodeMirror = CodeMirror(document.getElementById("cssDiv"), {
+  value: "function myScript(){return 100;}\n",
+  mode:  "css"
+});
+var myCodeMirror = CodeMirror(document.getElementById("javascriptDiv"), {
+  value: "function myScript(){return 100;}\n",
+  mode:  "javascript"
+});
 /*
 $.ajax({
     url: 'http://localhost/test.php',
