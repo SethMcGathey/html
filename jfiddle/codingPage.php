@@ -62,15 +62,17 @@
 						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
-						<div id="resultsDiv">
-							
-							<iframe id="myFrame">
-									<p>Your browser does not support iframes.</p>
-							</iframe>
+						<div>
+							<textarea class="codepress javascript linenumbers-on squareDivs" id="javascriptDiv" contenteditable>
+								
+							</textarea>
+							<div id="resultsDiv">
+								
+								<iframe id="myFrame">
+										<p>Your browser does not support iframes.</p>
+								</iframe>
+							</div>
 						</div>
-						<textarea class="codepress javascript linenumbers-on squareDivs" id="javascriptDiv" contenteditable>
-							
-						</textarea>
 
 
 					</div><!--row-->
