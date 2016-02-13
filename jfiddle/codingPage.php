@@ -45,7 +45,7 @@
 						</div>
 
 
-						<textarea class="codepress col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
+						<textarea class="codepress javascript linenumbers-on col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
 	var 
 						</textarea>
 
