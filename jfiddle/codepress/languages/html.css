@@ -1,7 +1,7 @@
 /*
  * CodePress color styles for HTML syntax highlighting
  */
-b {color:#FF2B6F}
+b {color:#D6283B}
 /*b {color:#000080;} /* tags */
 ins, ins b, ins s, ins em {color:gray;} /* comments */
 s, s b {color:#7777e4;} /* attribute values */
