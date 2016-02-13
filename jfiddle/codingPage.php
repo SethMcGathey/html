@@ -63,7 +63,7 @@
 							RESULT
 						</div>
 						<div class="col-lg-6 squareDivs">
-							<textarea class="codepress javascript linenumbers-on " id="javascriptDiv" contenteditable>
+							<textarea class="codepress javascript linenumbers-on" id="javascriptDiv" contenteditable>
 								
 							</textarea>
 						</div>
