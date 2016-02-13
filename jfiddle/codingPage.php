@@ -46,7 +46,7 @@
 
 
 						<textarea class="col-lg-6 squareDivs prettyprint" id="htmlDiv"  contenteditable>
-
+	var 
 						</textarea>
 
 						
