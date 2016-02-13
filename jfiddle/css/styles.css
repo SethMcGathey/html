@@ -23,6 +23,7 @@
 	height:810px;
 	border:solid;
 	border-width: 1px;
+	border-color: #DDDDDD;
 }
 
 .header{
@@ -40,6 +41,7 @@
 	overflow: scroll;
 	border:solid;
 	border-width: 1px;
+	border-color: #DDDDDD;
 	outline-width: 0;
 	width:587px;
 	float:right;
@@ -89,7 +91,7 @@
 
 	border: solid;
 	border-width: 1px;
-	border-color: black;
+	border-color: #DDDDDD;
 }
 
 .categoryBackgroundColor1{
@@ -100,7 +102,7 @@
 
 	border: solid;
 	border-width: 1px;
-	border-color: black;
+	border-color: #DDDDDD;
 }
 	
 .myCategories{
