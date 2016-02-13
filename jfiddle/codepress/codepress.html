@@ -15,6 +15,7 @@
 	else if(ua.match('KHTML')) engine = 'khtml'; 
 	else if(ua.match('Opera')) engine = 'opera'; 
 	else if(ua.match('Gecko')) engine = 'gecko';
+	else if(ua.match('Chrome')) engine = 'opera';
 
 	if(lh.match('language=')) language = lh.replace(/.*language=(.*?)(&.*)?$/,'$1');
 
