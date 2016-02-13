@@ -67,7 +67,7 @@
 								
 							</textarea>
 
-						<div class="squareDivs" id="resultsDiv">
+						<div id="resultsDiv">
 							
 							<iframe id="myFrame">
 									<p>Your browser does not support iframes.</p>
