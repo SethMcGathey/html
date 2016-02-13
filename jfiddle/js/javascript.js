@@ -23,10 +23,15 @@
 
 
 function passStrings(){
-
+		
 		var htmlString = $('#htmlDiv').text(); 
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
+
+		var htmlString = $('#htmlDiv').getCode();
+		var javascriptString = $('#javascriptDiv').getCode(); 
+		var cssString = $('#cssDiv').getCode(); 
+
 		var id = 15;
 		console.log(htmlString);
 		console.log(javascriptString);
