@@ -44,15 +44,16 @@
 							CSS
 						</div>
 
+						<div class="col-lg-6 squareDivs">
+							<textarea class="codepress html linenumbers-on" id="htmlDiv"  contenteditable>
+		var 
+							</textarea>
+						</div>
+						<div class="col-lg-6 squareDivs">
+							<textarea class="codepress css linenumbers-on" id="cssDiv"  contenteditable>
 
-						<textarea class="codepress html linenumbers-on col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
-	var 
-						</textarea>
-
-						
-						<textarea class="codepress css linenumbers-on col-lg-6 squareDivs" id="cssDiv"  contenteditable>
-
-						</textarea>
+							</textarea>
+						</div>
 					</div><!--row-->
 					<div class="row">
 						<div class="col-lg-6 titleDivs">
