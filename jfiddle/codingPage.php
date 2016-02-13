@@ -45,12 +45,12 @@
 						</div>
 
 
-							<textarea class="codepress html linenumbers-on col-lg-6 squareDivs" id="htmlDiv"  contenteditable>
+							<textarea class="codepress html linenumbers-on squareDivs" id="htmlDiv"  contenteditable>
 		var 
 							</textarea>
 
 
-							<textarea class="codepress css linenumbers-on col-lg-6 squareDivs" id="cssDiv"  contenteditable>
+							<textarea class="codepress css linenumbers-on squareDivs" id="cssDiv"  contenteditable>
 
 							</textarea>
 
@@ -63,11 +63,11 @@
 							RESULT
 						</div>
 
-							<textarea class="codepress javascript linenumbers-on col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
+							<textarea class="codepress javascript linenumbers-on squareDivs" id="javascriptDiv" contenteditable>
 								
 							</textarea>
 
-						<div class="col-lg-6 squareDivs" id="resultsDiv">
+						<div class="squareDivs" id="resultsDiv">
 							
 							<iframe id="myFrame">
 									<p>Your browser does not support iframes.</p>
