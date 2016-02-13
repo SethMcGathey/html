@@ -45,12 +45,12 @@
 						</div>
 
 						<div class="col-lg-6 squareDivs">
-							<textarea class="codepress html linenumbers-on" id="htmlDiv"  contenteditable>
+							<textarea class="codepress html linenumbers-on squareDivs" id="htmlDiv"  contenteditable>
 		var 
 							</textarea>
 						</div>
 						<div class="col-lg-6 squareDivs">
-							<textarea class="codepress css linenumbers-on" id="cssDiv"  contenteditable>
+							<textarea class="codepress css linenumbers-on squareDivs" id="cssDiv"  contenteditable>
 
 							</textarea>
 						</div>
@@ -63,7 +63,7 @@
 							RESULT
 						</div>
 						<div class="col-lg-6 squareDivs">
-							<textarea class="codepress javascript linenumbers-on" id="javascriptDiv" contenteditable>
+							<textarea class="codepress javascript linenumbers-on squareDivs" id="javascriptDiv" contenteditable>
 								
 							</textarea>
 						</div>
