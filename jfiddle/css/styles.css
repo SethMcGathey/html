@@ -10,6 +10,8 @@
 }
 
 .titleDivs{
+	border-top: solid;
+	
 	/*border:solid;
 	border-width: 1px;*/
 }
