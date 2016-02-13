@@ -61,9 +61,11 @@
 						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
-						<textarea class="codepress javascript linenumbers-on col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
-							
-						</textarea>
+						<div class="col-lg-6 squareDivs">
+							<textarea class="codepress javascript linenumbers-on " id="javascriptDiv" contenteditable>
+								
+							</textarea>
+						</div>
 						<div class="col-lg-6 squareDivs" id="resultsDiv">
 							
 							<iframe id="myFrame">
