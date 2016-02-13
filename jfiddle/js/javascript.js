@@ -86,8 +86,22 @@ var myTextArea = document.getElementById("cssDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 var myTextArea = document.getElementById("javascriptDiv");
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea);*/
-
-
+/*
+<script src="codemirror/lib/codemirror.js"></script>
+<script src="codemirror/addon/mode/multiplex.js"></script>
+<script src="codemirror/mode/htmlembedded/htmlembedded.js"></script>
+<script src="codemirror/mode/css/css.js"></script>
+<script src="codemirror/mode/javascript/javascript.js"></script>
+*/
+require([
+  "cm/lib/codemirror", "cm/mode/htmlmixed/htmlmixed"
+], function(CodeMirror) {
+  CodeMirror.fromTextArea(document.getElementById("code"), {
+    lineNumbers: true,
+    mode: "htmlmixed"
+  });
+});
+/*
 var myCodeMirror = CodeMirror(document.getElementById("htmlDiv"), {
   value: "function myScript(){return 100;}\n",
   mode:  "htmlembedded"
@@ -99,7 +113,7 @@ var myCodeMirror = CodeMirror(document.getElementById("cssDiv"), {
 var myCodeMirror = CodeMirror(document.getElementById("javascriptDiv"), {
   value: "function myScript(){return 100;}\n",
   mode:  "javascript"
-});
+});*/
 /*
 $.ajax({
     url: 'http://localhost/test.php',
