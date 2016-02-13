@@ -44,16 +44,16 @@
 							CSS
 						</div>
 
-						<div class="col-lg-6 squareDivs">
+
 							<textarea class="codepress html linenumbers-on squareDivs" id="htmlDiv"  contenteditable>
 		var 
 							</textarea>
-						</div>
-						<div class="col-lg-6 squareDivs">
+
+
 							<textarea class="codepress css linenumbers-on squareDivs" id="cssDiv"  contenteditable>
 
 							</textarea>
-						</div>
+
 					</div><!--row-->
 					<div class="row">
 						<div class="col-lg-6 titleDivs">
@@ -62,11 +62,11 @@
 						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
-						<div class="col-lg-6 squareDivs">
+
 							<textarea class="codepress javascript linenumbers-on squareDivs" id="javascriptDiv" contenteditable>
 								
 							</textarea>
-						</div>
+
 						<div class="col-lg-6 squareDivs" id="resultsDiv">
 							
 							<iframe id="myFrame">
