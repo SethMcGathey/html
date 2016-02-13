@@ -50,7 +50,7 @@
 						</textarea>
 
 						
-						<textarea class="codepress css linenumbers-off col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
+						<textarea class="codepress css linenumbers-on col-lg-6 squareDivs prettyprint" id="cssDiv"  contenteditable>
 
 						</textarea>
 					</div><!--row-->
@@ -61,7 +61,7 @@
 						<div class="col-lg-6 titleDivs">
 							RESULT
 						</div>
-						<textarea class="codepress javascript linenumbers-off col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
+						<textarea class="codepress javascript linenumbers-on col-lg-6 squareDivs" id="javascriptDiv" contenteditable>
 							
 						</textarea>
 						<div class="col-lg-6 squareDivs" id="resultsDiv">
