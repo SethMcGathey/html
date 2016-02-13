@@ -1,8 +1,8 @@
 body {
-	margin-top:13px;
+	/*margin-top:13px;
 	_margin-top:14px;
 	background:white;
-	margin-left:32px;
+	margin-left:32px;*/
 	font-family:monospace;
 	font-size:13px;
 	white-space:pre;
@@ -10,7 +10,7 @@ body {
 	background-repeat:repeat-y;
 	background-position:0 3px;
 	line-height:16px;
-	height:100%;
+	/*height:100%;*/
 }
 pre {margin:0;}
 html>body{background-position:0 2px;}
