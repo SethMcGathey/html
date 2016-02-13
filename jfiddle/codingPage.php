@@ -90,9 +90,9 @@
 
 <script src="codepress/codepress.js" type="text/javascript"></script>
 
-
+<!--
 <script src="codemirror/lib/codemirror.js"></script>
-<script src="codemirror/addon/mode/multiplex.js"></script>
+<script src="codemirror/addon/mode/multiplex.js"></script>-->
 <!--<script src="js/requireJs.js"></script>
 <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
 <script src="codemirror/mode/css/css.js"></script>
