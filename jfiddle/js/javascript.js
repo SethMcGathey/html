@@ -23,7 +23,7 @@ function saveStrings(){
 	var htmlString = htmlDiv.getCode();
 	var javascriptString = javascriptDiv.getCode(); 
 	var cssString = cssDiv.getCode();
-	
+
 	$.ajax({
 		url: "saveScripts.php",
 	    method: 'POST',
@@ -49,7 +49,7 @@ function forkBranch(){
 }
 
 
-function passStrings(){
+function runCode(){
 		/*
 		var htmlString = $('#htmlDiv').text(); 
 		var javascriptString = $('#javascriptDiv').text(); 

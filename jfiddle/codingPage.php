@@ -14,7 +14,7 @@
 
 			<div class="row">
 				<div class="col-lg-12 header">
-					<a href="javascript:void(0);" onclick="passStrings();">Run</a>
+					<a href="javascript:void(0);" onclick="runCode();">Run</a>
 					<a href="githubAuthorization.php">Authenticate</a>
 					<a href="githubCreateClient.php">Access Old File</a>
 					<a href="saveScripts.php">Test PHP</a>
