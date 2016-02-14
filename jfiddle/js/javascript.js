@@ -36,6 +36,9 @@ function saveStrings(){
 }
 
 function forkBranch(){
+	var htmlString = htmlDiv.getCode();
+	var javascriptString = javascriptDiv.getCode(); 
+	var cssString = cssDiv.getCode();
 
 	$.ajax({
 		url: "forkBranch.php",
