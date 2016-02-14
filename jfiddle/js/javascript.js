@@ -20,6 +20,10 @@
 	doc.close();
 });*/
 function saveStrings(){
+	var htmlString = htmlDiv.getCode();
+	var javascriptString = javascriptDiv.getCode(); 
+	var cssString = cssDiv.getCode();
+	
 	$.ajax({
 		url: "saveScripts.php",
 	    method: 'POST',
@@ -32,10 +36,11 @@ function saveStrings(){
 }
 
 function forkBranch(){
+
 	$.ajax({
-		url: "saveScripts.php",
+		url: "forkBranch.php",
 	    method: 'POST',
-	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString, pId: projectId, bId: branchId, cId: commitId},
 	    success: function(data){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
