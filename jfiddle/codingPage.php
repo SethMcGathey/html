@@ -20,6 +20,7 @@
 					<a href="saveScripts.php">Test PHP</a>
 					<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
 					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
+					<a href="forkBranch.php">Fork</a>
 				</div>
 			</div>
 			
