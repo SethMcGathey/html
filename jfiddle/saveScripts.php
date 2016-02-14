@@ -5,6 +5,9 @@ ini_set('display_errors', 'on');
 	require_once 'database.php';
     $pdo = Database::connect();
 
+    $_SESSION['html'] = 'test';
+    $_SESSION['javascript'] = 'test';
+    $_SESSION['css'] = 'test';
     //$_SESSION["memberId"] = 1;
 	/*if($_SESSION['memberID'])
 	{
@@ -19,6 +22,7 @@ ini_set('display_errors', 'on');
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'], $_SESSION['commitId']));
+		$q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'], $_SESSION['commitId']));
 	//}
 
 
