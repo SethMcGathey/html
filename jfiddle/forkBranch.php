@@ -1,4 +1,6 @@
-3<?php
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 	include 'sessionStart.php'; 
 	include 'database.php';
     $pdo = Database::connect();
