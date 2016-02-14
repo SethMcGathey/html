@@ -18,6 +18,8 @@
 					<a href="githubAuthorization.php">Authenticate</a>
 					<a href="githubCreateClient.php">Access Old File</a>
 					<a href="saveScripts.php">Test PHP</a>
+					<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
+					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
 				</div>
 			</div>
 			
@@ -84,8 +86,14 @@
 		</div> <!--container-fluid-->
 
 <?php
-
+	
 	echo $_SESSION['oauth2state'];
+	$_SESSION['productId'] = $_GET['productId'];
+	$_SESSION['branchId'] = $_GET['branchId'];
+	$_SESSION['commitId'] = $_GET['commitId'];
+	echo $_SESSION['productId'];
+	echo $_SESSION['branchId'];
+	echo $_SESSION['commitId'];
 ?>
 
 

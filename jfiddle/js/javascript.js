@@ -19,7 +19,29 @@
 	doc.writeln(result);
 	doc.close();
 });*/
+function saveStrings(){
+	$.ajax({
+		url: "saveScripts.php",
+	    method: 'POST',
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+	    success: function(data){
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+	    }
+	 });
+}
 
+function forkBranch(){
+	$.ajax({
+		url: "saveScripts.php",
+	    method: 'POST',
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+	    success: function(data){
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+	    }
+	 });
+}
 
 
 function passStrings(){
@@ -39,15 +61,7 @@ function passStrings(){
 //url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
 		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
 		//window.location = "saveScripts.php?id=" + id;
-		$.ajax({
-			url: "saveScripts.php",
-		    method: 'POST',
-		   	data: { html: htmlString, javascript: javascriptString, css: cssString},
-		    success: function(data){
-		    	console.log("made it");
-		     //$("#responseArea").text(data);
-		    }
-		 });
+
 
 		var string1 = "<html> <head> <style> ";
 		var string2 = "</style> </head> <body> ";
