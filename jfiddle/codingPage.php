@@ -19,7 +19,6 @@
 					<a href="githubCreateClient.php">Access Old File</a>
 					<a href="saveScripts.php">Test PHP</a>
 					<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
-					<a href="saveScripts.php">Save Test</a>
 					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
 				</div>
 			</div>

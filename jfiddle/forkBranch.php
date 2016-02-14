@@ -4,21 +4,18 @@
     $pdo = Database::connect();
 
     	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
-
-		$sql = 'SELECT a.id,a.name,a.cost,a.description,b.image FROM codeString a LEFT JOIN image b ON a.id = b.product_id WHERE a.name LIKE \'%' . $_GET["id"] . '%\' OR a.description LIKE \'%' . $_GET["id"] . '%\' OR a.cost LIKE \'%' . $_GET["id"] . '%\' ORDER BY a.id LIMIT 5';
-		$num = 0;
+    	$sql = 'SELECT branchId from codeStrings where projectId = ' + $_SESSION['projectId'] + ' ORDER BY branchID DESC LIMIT 1';
 		foreach ($pdo->query($sql) as $row) {
-		    echo '<div class="col-4-lg subcategoryColor' . $num . ' product" id="' . $row['a.id']. '">' . '<img src="data:image/jpeg;base64,' . base64_encode($row['b.image']) . '"width="100px"/> ' . $row['a.name'] . ' ' . $row['a.description'] . ' ' . $row['a.cost'] . ' <a href="#">Add to Cart</a></div>';
-		    if($num < 1){
-	    		$num++;
-	    	}else
-	    	{
-	    		$num = 0;
-	    	}
+			$topBranchId =  $row['branchId'] 
 		}
+
+		$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+    	$sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
+	    $q = $pdo->prepare($sql);
+	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'] + 1, 1));
 
 	Database::disconnect();
 ?>
 <!--
-SELECT branchId FROM `codeStrings` WHERE projectId = 1
+SELECT branchId FROM `codeStrings` WHERE projectId = 1 
 -->
