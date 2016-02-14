@@ -43,7 +43,7 @@ function forkBranch(){
 	$.ajax({
 		url: "forkBranch.php",
 	    method: 'POST',
-	   	data: { html: htmlString, javascript: javascriptString, css: cssString, pId: projectId, bId: branchId, cId: commitId},
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
 	    success: function(data){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
