@@ -1,0 +1,10 @@
+<div class="blueColor">
+content
+</div>
+<div class="blueColor">
+content2
+</div>
+
+.blueColor{
+    background-color:blue;
+}
