@@ -10,6 +10,8 @@ ini_set('display_errors', 'on');
 	
 
 
+/**/
+
 
 	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
 	$javascript = $_POST['javascriptString'];
