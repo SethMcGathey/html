@@ -4,9 +4,9 @@ ini_set('display_errors', 'on');
 	include 'sessionStart.php'; 
 	include 'database.php';
 
-if(function_exists('exec')) {
+/*if(function_exists('exec')) {
     echo "exec is enabled";
-}
+}*/
 	
 
 
@@ -41,9 +41,9 @@ if(function_exists('exec')) {
 	$zip->close();
 
 	///Then download the zipped file.
-	/*header('Content-Type: application/zip');
+	header('Content-Type: application/zip');
 	header('Content-disposition: attachment; filename=' . $zipname);
-	header('Content-Length: ' . filesize($zipname));*/
+	header('Content-Length: ' . filesize($zipname));
 	
 	readfile($zipname);
 	
