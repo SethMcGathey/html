@@ -60,8 +60,8 @@ ini_set('display_errors', 'on');
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
-	require_once 'sessionStart.php'; 
-	require_once 'database.php';
+	include 'sessionStart.php'; 
+	include 'database.php';
     $pdo = Database::connect();
 
     //$_SESSION["memberId"] = 1;
