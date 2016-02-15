@@ -4,9 +4,9 @@ ini_set('display_errors', 'on');
 	include 'sessionStart.php'; 
 	include 'database.php';
 
-if(function_exists('exec')) {
+/*if(function_exists('exec')) {
     echo "exec is enabled";
-}
+}*/
 	
 
 
