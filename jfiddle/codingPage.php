@@ -4,10 +4,10 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="highlighter/prettify.css" />
+	<!--<link rel="stylesheet" href="highlighter/prettify.css" />
 	<link rel="stylesheet" href="highlight/styles/default.css">
 
-	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="codemirror/lib/codemirror.css">-->
 
 	<body>
 		<div class="container-fluid">
