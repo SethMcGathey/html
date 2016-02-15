@@ -47,7 +47,7 @@ ini_set('display_errors', 'on');
 	header('Content-Length: ' . filesize($zipname));
 	
 	readfile($zipname);
-	unlink($zipname);
+	//unlink($zipname);
 
 
 ?>
