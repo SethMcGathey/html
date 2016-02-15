@@ -94,14 +94,23 @@
 	if(isset($_GET['projectId']))
 	{
 		$_SESSION['projectId'] = $_GET['projectId'];
+	}else
+	{
+		$_SESSION['projectId'] = 0;
 	}
 	if(isset($_GET['branchId']))
 	{
 		$_SESSION['branchId'] = $_GET['branchId'];
+	}else
+	{
+		$_SESSION['branchId'] = 0;
 	}
 	if(isset($_GET['commitId']))
 	{
 		$_SESSION['commitId'] = $_GET['commitId'];
+	}else
+	{
+		$_SESSION['commitId'] = 0;
 	}
 	echo $_SESSION['projectId'];
 	echo $_SESSION['branchId'];
