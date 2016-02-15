@@ -1,10 +1,13 @@
-3<?php
-	include 'sessionStart.php'; 
-	include 'database.php';
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
+	require_once 'sessionStart.php'; 
+	require_once 'database.php';
+	
     $pdo = Database::connect();
 
     	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
-    	$sql = 'SELECT branchId from codeStrings where projectId = ' + $_SESSION['projectId'] + ' ORDER BY branchID DESC LIMIT 1';
+    	$sql = 'SELECT branchId from codeStrings where projectId = ' . $_SESSION['projectId'] . ' ORDER BY branchId DESC LIMIT 1';
 		foreach ($pdo->query($sql) as $row) {
 			$topBranchId =  $row['branchId'] 
 		}
