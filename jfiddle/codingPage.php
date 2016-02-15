@@ -91,9 +91,18 @@
 <?php
 	
 	echo $_SESSION['oauth2state'];
-	$_SESSION['projectId'] = $_GET['projectId'];
-	$_SESSION['branchId'] = $_GET['branchId'];
-	$_SESSION['commitId'] = $_GET['commitId'];
+	if(isset($_GET['projectId']))
+	{
+		$_SESSION['projectId'] = $_GET['projectId'];
+	}
+	if(isset($_GET['branchId']))
+	{
+		$_SESSION['branchId'] = $_GET['branchId'];
+	}
+	if(isset($_GET['commitId']))
+	{
+		$_SESSION['commitId'] = $_GET['commitId'];
+	}
 	echo $_SESSION['projectId'];
 	echo $_SESSION['branchId'];
 	echo $_SESSION['commitId'];
