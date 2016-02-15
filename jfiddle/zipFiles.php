@@ -32,13 +32,13 @@ ini_set('display_errors', 'on');
 	fclose($cssFile);
 	
 	
-	/*$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
+	$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
 	$zipname = 'jFiddleFiles.zip';
 	$zip = new ZipArchive;
 	$zip->open($zipname, ZipArchive::CREATE);
 	foreach ($files as $file) {
 	  $zip->addFile($file);
-	}*/
+	}
 	$zip->close();
 
 	///Then download the zipped file.
