@@ -40,10 +40,6 @@ function forkBranch(){
 	var javascriptString = javascriptDiv.getCode(); 
 	var cssString = cssDiv.getCode();
 
-if(function_exists('exec')) {
-    echo "exec is enabled";
-}
-
 
 	$.ajax({
 		url: "forkBranch.php",

@@ -4,6 +4,10 @@ ini_set('display_errors', 'on');
 	include 'sessionStart.php'; 
 	include 'database.php';
 
+if(function_exists('exec')) {
+    echo "exec is enabled";
+}
+
 	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
 	$javascript = $_POST['javascriptString'];
 	fwrite($javascriptFile, $javascript);
