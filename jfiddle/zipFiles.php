@@ -4,12 +4,18 @@ ini_set('display_errors', 'on');
 	include 'sessionStart.php'; 
 	include 'database.php';
 
-	$myfile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
-	$txt = "John Doe\n";
-	fwrite($myfile, $txt);
-	$txt = "Jane Doe\n";
-	fwrite($myfile, $txt);
-	fclose($myfile);
+	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
+	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
+	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
+	$javascript = $_POST['javascriptString'];
+	$html = $_POST['htmlString'];
+	$css = $_POST['cssString'];
+	fwrite($javascriptFile, $javascript);
+	fwrite($htmlFile, $html);
+	fwrite($cssFile, $css);
+	fclose($javascriptFile);
+	fclose($htmlFile);
+	fclose($cssFile);
 
 	$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
 	$zipname = 'jFiddleFiles.zip';
