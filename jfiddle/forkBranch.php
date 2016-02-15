@@ -5,11 +5,11 @@ ini_set('display_errors', 'on');
 	include 'database.php';
     $pdo = Database::connect();
 
-    	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+    	/*$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
     	$sql = 'SELECT branchId from codeStrings where projectId = ' + $_SESSION['projectId'] + ' ORDER BY branchID DESC LIMIT 1';
 		foreach ($pdo->query($sql) as $row) {
 			$topBranchId =  $row['branchId'] 
-		}
+		}*/
 /*
 		$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
     	$sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
