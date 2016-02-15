@@ -21,6 +21,7 @@
 					<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
 					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
 					<a href="forkBranch.php">Fork</a>
+					<a href="zipFiles.php">Zip</a>
 				</div>
 			</div>
 			
