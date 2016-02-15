@@ -30,21 +30,21 @@ ini_set('display_errors', 'on');
 	fclose($cssFile);
 	
 	
-
-	$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
+	unlink($zipname);
+	/*$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
 	$zipname = 'jFiddleFiles.zip';
 	$zip = new ZipArchive;
 	$zip->open($zipname, ZipArchive::CREATE);
 	foreach ($files as $file) {
 	  $zip->addFile($file);
-	}
+	}*/
 	$zip->close();
 
 	///Then download the zipped file.
 	header('Content-Type: application/zip');
 	header('Content-disposition: attachment; filename=' . $zipname);
 	header('Content-Length: ' . filesize($zipname));
-	
+	unlink($zipname);
 	readfile($zipname);
 	
 
