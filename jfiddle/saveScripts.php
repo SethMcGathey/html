@@ -15,6 +15,25 @@ ini_set('display_errors', 'on');
 	}else
 	{*/
 
+		//http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php
+
+		if($_SESSION['projectId'] == 0)
+		{
+
+			$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+	    	$sql = 'SELECT projectId from codeStrings ORDER BY projectId DESC LIMIT 1';
+			foreach ($pdo->query($sql) as $row) {
+				$topBranchId =  $row['branchId'] 
+			}
+
+
+			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
+		    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
+		    $q = $pdo->prepare($sql);
+		    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId']+1));
+		}
+
 
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
