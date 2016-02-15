@@ -32,7 +32,6 @@ ini_set('display_errors', 'on');
 	fclose($cssFile);
 	
 	
-	unlink($zipname);
 	/*$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
 	$zipname = 'jFiddleFiles.zip';
 	$zip = new ZipArchive;
@@ -46,9 +45,9 @@ ini_set('display_errors', 'on');
 	header('Content-Type: application/zip');
 	header('Content-disposition: attachment; filename=' . $zipname);
 	header('Content-Length: ' . filesize($zipname));
-	unlink($zipname);
-	readfile($zipname);
 	
+	readfile($zipname);
+	unlink($zipname);
 
 
 ?>
