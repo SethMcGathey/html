@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
-	include 'sessionStart.php'; 
-	include 'database.php';
+	require_once 'sessionStart.php'; 
+	require_once 'database.php';
 
 /*if(function_exists('exec')) {
     echo "exec is enabled";
