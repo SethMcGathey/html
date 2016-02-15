@@ -1,0 +1,5 @@
+prefix internet
+
+test-dns                          : PASS,FLAKY
+
+[$system==solaris]
