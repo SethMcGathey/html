@@ -91,10 +91,10 @@
 <?php
 	
 	echo $_SESSION['oauth2state'];
-	$_SESSION['productId'] = $_GET['productId'];
+	$_SESSION['projectId'] = $_GET['projectId'];
 	$_SESSION['branchId'] = $_GET['branchId'];
 	$_SESSION['commitId'] = $_GET['commitId'];
-	echo $_SESSION['productId'];
+	echo $_SESSION['projectId'];
 	echo $_SESSION['branchId'];
 	echo $_SESSION['commitId'];
 ?>
