@@ -123,14 +123,14 @@ $_SESSION['commitId'] = $_GET['commitId'];
 
 
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"> </script>-->
 <script src="codepress/codepress.js" type="text/javascript"></script>
 
 
 
-<!--<script src="js/jquery-1.12.0.js" type="text/javascript"> </script>-->
+<script src="js/jquery-1.12.0.js" type="text/javascript"> </script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/github.js" type="text/javascript" ></script>
 <script src="js/github.bundle.min.js" type="text/javascript" ></script>
