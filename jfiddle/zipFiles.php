@@ -7,19 +7,25 @@ ini_set('display_errors', 'on');
 if(function_exists('exec')) {
     echo "exec is enabled";
 }
+	
+
+
 
 	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
-	$javascript = $_POST['javascriptString'];
+	//$javascript = $_POST['javascriptString'];
+	$javascript = 'junk';
 	fwrite($javascriptFile, $javascript);
 	fclose($javascriptFile);
 
 	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
-	$html = $_POST['htmlString'];
+	//$html = $_POST['htmlString'];
+	$html = 'htmljunk';
 	fwrite($htmlFile, $html);
 	fclose($htmlFile);
 
 	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
-	$css = $_POST['cssString'];
+	//$css = $_POST['cssString'];
+	$css = 'cssjunk';
 	fwrite($cssFile, $css);
 	fclose($cssFile);
 	

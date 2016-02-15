@@ -22,6 +22,7 @@
 					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
 					<a href="forkBranch.php">Fork</a>
 					<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
+					<a href="zipFiles.php">Zip</a>
 				</div>
 			</div>
 			
