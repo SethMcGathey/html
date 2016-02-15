@@ -51,6 +51,23 @@ function forkBranch(){
 	 });
 }
 
+function zipFiles(){
+	var htmlString = htmlDiv.getCode();
+	var javascriptString = javascriptDiv.getCode(); 
+	var cssString = cssDiv.getCode();
+
+	$.ajax({
+		url: "zipFiles.php",
+	    method: 'POST',
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+	    success: function(data){
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+	    }
+	 });
+}
+
+
 
 function runCode(){
 		/*

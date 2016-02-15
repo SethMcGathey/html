@@ -5,17 +5,21 @@ ini_set('display_errors', 'on');
 	include 'database.php';
 
 	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
-	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
-	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
 	$javascript = $_POST['javascriptString'];
-	$html = $_POST['htmlString'];
-	$css = $_POST['cssString'];
 	fwrite($javascriptFile, $javascript);
-	fwrite($htmlFile, $html);
-	fwrite($cssFile, $css);
 	fclose($javascriptFile);
+
+	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
+	$html = $_POST['htmlString'];
+	fwrite($htmlFile, $html);
 	fclose($htmlFile);
+
+	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
+	$css = $_POST['cssString'];
+	fwrite($cssFile, $css);
 	fclose($cssFile);
+	
+	
 
 	$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
 	$zipname = 'jFiddleFiles.zip';
@@ -31,11 +35,8 @@ ini_set('display_errors', 'on');
 	header('Content-disposition: attachment; filename=' . $zipname);
 	header('Content-Length: ' . filesize($zipname));
 	
-	ob_clean();
-	flush();
-	
 	readfile($zipname);
 	
-	unlink($filename);
+
 
 ?>
