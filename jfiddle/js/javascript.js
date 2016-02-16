@@ -66,7 +66,7 @@ function zipFiles(){
 	    }
 	 });
 */
-	window.location = 'zipFiles.php?htmlString' + htmlString + '&javascriptString=' + javascriptString + '&cssString=' + cssString;
+	window.location = 'zipFiles.php?htmlString=' + htmlString + '&javascriptString=' + javascriptString + '&cssString=' + cssString;
 /*
 	$.get('zipFiles.php?html=' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString, function(data) {
                alert('Load was performed.');
