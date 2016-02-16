@@ -8,7 +8,15 @@
 	<link rel="stylesheet" href="highlight/styles/default.css">
 
 	<link rel="stylesheet" href="codemirror/lib/codemirror.css">-->
-
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
 	<body>
 		<div class="container-fluid">
 			<form action='zipFiles.php' method="Post">
