@@ -15,19 +15,22 @@ ini_set('display_errors', 'on');
 
 	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
 	//$javascript = $_POST['javascriptString'];
-	$javascript = 'junk';
+	$javascript = $_GET['javascriptString'];
+	//$javascript = 'junk';
 	fwrite($javascriptFile, $javascript);
 	fclose($javascriptFile);
 
 	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
 	//$html = $_POST['htmlString'];
-	$html = 'htmljunk';
+	$html = $_GET['htmlString'];
+	//$html = 'htmljunk';
 	fwrite($htmlFile, $html);
 	fclose($htmlFile);
 
 	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
 	//$css = $_POST['cssString'];
-	$css = 'cssjunk';
+	$css = $_GET['cssString'];
+	//$css = 'cssjunk';
 	fwrite($cssFile, $css);
 	fclose($cssFile);
 	
