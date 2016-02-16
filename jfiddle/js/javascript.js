@@ -55,7 +55,7 @@ function zipFiles(){
 	var htmlString = htmlDiv.getCode();
 	var javascriptString = javascriptDiv.getCode(); 
 	var cssString = cssDiv.getCode();
-
+/*
 	$.ajax({
 		url: "zipFiles.php",
 	    method: 'POST',
@@ -65,11 +65,11 @@ function zipFiles(){
 	     //$("#responseArea").text(data);
 	    }
 	 });
-
+*/
 	$.get('zipFiles.php?html=' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString, function(data) {
-               alert('Load was performed.');
+               /*alert('Load was performed.');
                alert(data);
-               eval(data);
+               eval(data);*/
             });
 }
 
