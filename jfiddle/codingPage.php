@@ -11,80 +11,82 @@
 
 	<body>
 		<div class="container-fluid">
-
-			<div class="row">
-				<div class="col-lg-12 header">
-					<a href="javascript:void(0);" onclick="runCode();">Run</a>
-					<a href="githubAuthorization.php">Authenticate</a>
-					<a href="githubCreateClient.php">Access Old File</a>
-					<a href="saveScripts.php">Test PHP</a>
-					<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
-					<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
-					<a href="forkBranch.php">Fork</a>
-					<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
-					<a href="zipFiles.php">Zip</a>
-				</div>
-			</div>
-			
-			<div class="row">
-
-				<div class="col-lg-2 sideBar">
-					Sidebar
-					<div>
-						<form onSubmit="getGithubInstance()">
-							Enter Github Username:<br>
-							<input type="text" name="username"><br>
-							Enter Github Repo Name:<br>
-							<input type="text" name="reponame"><br>
-							<input type="submit" value="Submit">
-						</form>
+			<form action='zipFiles.php' method="Post">
+				<div class="row">
+					<div class="col-lg-12 header">
+						<a href="javascript:void(0);" onclick="runCode();">Run</a>
+						<a href="githubAuthorization.php">Authenticate</a>
+						<a href="githubCreateClient.php">Access Old File</a>
+						<a href="saveScripts.php">Test PHP</a>
+						<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
+						<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
+						<a href="forkBranch.php">Fork</a>
+						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
+						<a href="zipFiles.php">Zip</a>
+						<input type = "submit" />Zip
 					</div>
 				</div>
-				<div class="col-lg-10">
-					<div class="row">
-						<div class="col-lg-6 titleDivs">
-							HTML
-						</div>
-						<div class="col-lg-6 titleDivs">
-							CSS
-						</div>
+				
+				<div class="row">
 
-
-							<textarea class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv"  contenteditable>
-		var 
-							</textarea>
-
-
-							<textarea class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv"  contenteditable>
-
-							</textarea>
-
-					</div><!--row-->
-					<div class="row">
-						<div class="col-lg-6 titleDivs">
-							JAVASCRIPT
-						</div>
-						<div class="col-lg-6 titleDivs">
-							RESULT
-						</div>
+					<div class="col-lg-2 sideBar">
+						Sidebar
 						<div>
-							<textarea class="codepress javascript linenumbers-on autocomplete-on squareDivs" id="javascriptDiv" contenteditable>
-								
-							</textarea>
-
-							<div id="resultsDiv">
-								
-								<iframe id="myFrame">
-										<p>Your browser does not support iframes.</p>
-								</iframe>
-							</div>
+							<form onSubmit="getGithubInstance()">
+								Enter Github Username:<br>
+								<input type="text" name="username"><br>
+								Enter Github Repo Name:<br>
+								<input type="text" name="reponame"><br>
+								<input type="submit" value="Submit">
+							</form>
 						</div>
+					</div>
+					<div class="col-lg-10">
+						<div class="row">
+							<div class="col-lg-6 titleDivs">
+								HTML
+							</div>
+							<div class="col-lg-6 titleDivs">
+								CSS
+							</div>
 
 
-					</div><!--row-->
-				</div><!--col-lg-10-->
+								<textarea class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv"  contenteditable>
+			var 
+								</textarea>
 
-			</div><!--row-->
+
+								<textarea class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv"  contenteditable>
+
+								</textarea>
+
+						</div><!--row-->
+						<div class="row">
+							<div class="col-lg-6 titleDivs">
+								JAVASCRIPT
+							</div>
+							<div class="col-lg-6 titleDivs">
+								RESULT
+							</div>
+							<div>
+								<textarea class="codepress javascript linenumbers-on autocomplete-on squareDivs" id="javascriptDiv" contenteditable>
+									
+								</textarea>
+
+								<div id="resultsDiv">
+									
+									<iframe id="myFrame">
+											<p>Your browser does not support iframes.</p>
+									</iframe>
+								</div>
+							</div>
+
+
+						</div><!--row-->
+					</div><!--col-lg-10-->
+
+				</div><!--row-->
+			</form>
 
 		</div> <!--container-fluid-->
 
