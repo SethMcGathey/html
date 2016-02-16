@@ -66,11 +66,13 @@ function zipFiles(){
 	    }
 	 });
 */
+	window.location = 'zipFiles.php' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString;
+/*
 	$.get('zipFiles.php?html=' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString, function(data) {
-               /*alert('Load was performed.');
+               alert('Load was performed.');
                alert(data);
-               eval(data);*/
-            });
+               eval(data);
+            });*/
 }
 
 
