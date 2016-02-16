@@ -27,7 +27,7 @@ function saveStrings(){
 	$.ajax({
 		url: "saveScripts.php",
 	    method: 'POST',
-	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	    success: function(data){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
@@ -65,6 +65,12 @@ function zipFiles(){
 	     //$("#responseArea").text(data);
 	    }
 	 });
+
+	$.get('zipFiles.php?html=' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString, function(data) {
+               alert('Load was performed.');
+               alert(data);
+               eval(data);
+            });
 }
 
 
