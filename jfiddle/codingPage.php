@@ -123,7 +123,7 @@ $_SESSION['commitId'] = $_GET['commitId'];
 ?>
 
 
-<script src="ace-builds-master/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
