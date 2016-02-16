@@ -75,6 +75,11 @@ function zipFiles(){
             });*/
 }
 
+$( document ).ready(function() {
+    var editor = ace.edit("htmlDiv");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+}
 
 
 function runCode(){
