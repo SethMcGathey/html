@@ -83,7 +83,10 @@
 
 				</div><!--row-->
 			</form>
-
+<div id="editor">function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+}</div>
 		</div> <!--container-fluid-->
 
 <?php
@@ -120,7 +123,12 @@ $_SESSION['commitId'] = $_GET['commitId'];
 ?>
 
 
-
+<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
