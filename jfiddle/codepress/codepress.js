@@ -22,6 +22,7 @@ CodePress = function(obj) {
 	self.style.visibility = 'hidden';
 	self.style.position = 'absolute';
 	self.options = self.textarea.className;
+	self.form = 'zipForm';
 	
 	self.initialize = function() {
 		self.editor = self.contentWindow.CodePress;
