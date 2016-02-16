@@ -49,6 +49,3 @@ ini_set('display_errors', 'on');
 	
 	readfile($zipname);
 	//unlink($zipname);
-
-
-?>
