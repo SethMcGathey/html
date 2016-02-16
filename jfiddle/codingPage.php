@@ -23,7 +23,7 @@
 						<a href="forkBranch.php">Fork</a>
 						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
 						<a href="zipFiles.php">Zip</a>
-						<input type = "submit" />Zip
+						<input type = "submit" />
 					</div>
 				</div>
 				
@@ -51,7 +51,7 @@
 							</div>
 
 
-								<input type="text" class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv">
+								<input type="text" name="javascriptString" class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv">
 
 
 								<textarea class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv"  contenteditable>
