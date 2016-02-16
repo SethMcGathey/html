@@ -118,6 +118,7 @@ $_SESSION['commitId'] = $_GET['commitId'];
 	echo $_SESSION['projectId'];
 	echo $_SESSION['branchId'];
 	echo $_SESSION['commitId'];
+	echo $_SESSION['javascriptCode'];
 ?>
 
 
