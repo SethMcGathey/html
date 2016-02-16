@@ -51,9 +51,7 @@
 							</div>
 
 
-								<textarea class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv"  contenteditable>
-			var 
-								</textarea>
+								<input type="text" class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv">
 
 
 								<textarea class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv"  contenteditable>
