@@ -146,15 +146,7 @@ $_SESSION['commitId'] = $_GET['commitId'];
 <script src="js/javascript.js" type="text/javascript"></script>
 <!--<script src="highlighter/prettify.js"></script>-->
 
-<style type="text/css" media="screen">
-    #editor { 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-</style>
+
 	</body>
 
 
