@@ -23,7 +23,7 @@
 						<a href="forkBranch.php">Fork</a>
 						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
 						<a href="zipFiles.php">Zip</a>
-						<input type="submit" id="zipForm" />
+						<input type="submit" id="zipForm" placeholder="Zip" />
 					</div>
 				</div>
 				
