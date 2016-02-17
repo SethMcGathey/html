@@ -12,10 +12,12 @@ ini_set('display_errors', 'on');
 	$q->execute();
 	$data = $q->fetch(PDO::FETCH_ASSOC);
 	//print_r($pdo);
-	foreach ($pdo->query($sql) as $row) {
+	$topBranchId = $data['branchId'];
+	echo $topBranchId;
+	/*foreach ($pdo->query($sql) as $row) {
 		$topBranchId =  $row['branchId'];
 		echo $topBranchId;
-	}
+	}*/
 
 /*
 		$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
