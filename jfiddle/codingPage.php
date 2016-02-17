@@ -81,10 +81,6 @@
 
 				</div><!--row-->
 			</form>
-<div id="editor">function foo(items) {
-    var x = "All this is syntax highlighted";
-    return x;
-}</div>
 		</div> <!--container-fluid-->
 
 <?php
