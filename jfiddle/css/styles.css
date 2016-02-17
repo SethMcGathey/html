@@ -30,8 +30,7 @@
 }
 #myFrame{
 	height:100%;
-	width:100%;
-
+	width:100%; 
 }
 
 #resultsDiv{
@@ -50,7 +49,7 @@
 	float:left;
 }
 
-
+/*
 #editor { 
 	background-color:black;
 	height:810px;
@@ -58,7 +57,7 @@
 	border-width: 1px;
 	border-color: #DDDDDD;
 	width:50%;
-}
+}*/
 /*style="height:100%;width:100%"
 
 /****************************************************************************/
