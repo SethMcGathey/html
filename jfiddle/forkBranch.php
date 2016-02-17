@@ -6,12 +6,12 @@ ini_set('display_errors', 'on');
 
     $pdo = Database::connect();
 
-    	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
-    	$sql = 'SELECT branchId from codeStrings where projectId = ' . $_SESSION['projectId'] . ' ORDER BY branchId DESC LIMIT 1';
-		foreach ($pdo->query($sql) as $row) {
-			$topBranchId =  $row['branchId'];
-			echo $topBranchId;
-		}
+	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+	$sql = 'SELECT branchId from codeStrings where projectId = ' . $_SESSION['projectId'] . ' ORDER BY branchId DESC LIMIT 1';
+	foreach ($row as $pdo->query($sql) ) {
+		$topBranchId =  $row['branchId'];
+		echo $topBranchId;
+	}
 
 /*
 		$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
