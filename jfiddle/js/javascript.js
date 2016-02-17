@@ -20,9 +20,9 @@
 	doc.close();
 });*/
 function saveStrings(){
-	var htmlString = htmlDiv.getCode();
-	var javascriptString = javascriptDiv.getCode(); 
-	var cssString = cssDiv.getCode();
+	var htmlString = htmlDiv.text();
+	var javascriptString = javascriptDiv.text(); 
+	var cssString = cssDiv.text();
 
 	$.ajax({
 		url: "saveScripts.php",
@@ -36,9 +36,9 @@ function saveStrings(){
 }
 
 function forkBranch(){
-	var htmlString = htmlDiv.getCode();
-	var javascriptString = javascriptDiv.getCode(); 
-	var cssString = cssDiv.getCode();
+	var htmlString = htmlDiv.text();
+	var javascriptString = javascriptDiv.text(); 
+	var cssString = cssDiv.text();
 
 	$.ajax({
 		url: "forkBranch.php",
@@ -124,9 +124,9 @@ function runCode(){
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
 */
-		var htmlString = htmlDiv.getCode();
-		var javascriptString = javascriptDiv.getCode(); 
-		var cssString = cssDiv.getCode(); 
+		var htmlString = htmlDiv.text();
+		var javascriptString = javascriptDiv.text(); 
+		var cssString = cssDiv.text(); 
 
 		var id = 15;
 		console.log(htmlString);
@@ -173,7 +173,7 @@ function runCode(){
 
 
 /*
-textarea_id.getCode()
+textarea_id.text()
 */
 
 
