@@ -20,9 +20,13 @@
 	doc.close();
 });*/
 function saveStrings(){
-	var htmlString = $('#textHtmlDiv').text();
-	var javascriptString = $('#textJavascriptDiv').text(); 
-	var cssString = $('#textCssDiv').text();
+	var htmlEditor = ace.edit("htmlDiv");
+	var javascriptEditor = ace.edit("javascriptDiv");
+	var cssEditor = ace.edit("cssDiv");
+
+	var htmlString = htmlEditor.getSession().getValue();
+	var javascriptString = javascriptEditor.getSession().getValue();
+	var cssString = cssEditor.getSession().getValue();
 
 	$.ajax({
 		url: "saveScripts.php",
@@ -36,9 +40,13 @@ function saveStrings(){
 }
 
 function forkBranch(){
-	var htmlString = $('#textHtmlDiv').text();
-	var javascriptString = $('#textJavascriptDiv').text(); 
-	var cssString = $('#textCssDiv').text();
+	var htmlEditor = ace.edit("htmlDiv");
+	var javascriptEditor = ace.edit("javascriptDiv");
+	var cssEditor = ace.edit("cssDiv");
+
+	var htmlString = htmlEditor.getSession().getValue();
+	var javascriptString = javascriptEditor.getSession().getValue();
+	var cssString = cssEditor.getSession().getValue();
 
 	$.ajax({
 		url: "forkBranch.php",
@@ -52,9 +60,13 @@ function forkBranch(){
 }
 
 function zipFiles(){
-	var htmlString = $('#textHtmlDiv').text();
-	var javascriptString = $('#textJavascriptDiv').text(); 
-	var cssString = $('#textCssDiv').text();
+	var htmlEditor = ace.edit("htmlDiv");
+	var javascriptEditor = ace.edit("javascriptDiv");
+	var cssEditor = ace.edit("cssDiv");
+
+	var htmlString = htmlEditor.getSession().getValue();
+	var javascriptString = javascriptEditor.getSession().getValue();
+	var cssString = cssEditor.getSession().getValue();
 
 	$.ajax({
 		url: "zipFiles.php",
