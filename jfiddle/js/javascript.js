@@ -81,7 +81,7 @@ $( document ).ready(function() {
     htmlEditor.getSession().setMode("ace/mode/javascript");
     
     var htmlTextarea = $('#textHtmlDiv').hide();
-    htmlEditor.getSession().setValue(textarea.val());
+    htmlEditor.getSession().setValue(htmlTextarea.val());
 	htmlEditor.getSession().on('change', function(){
 	  htmlTextarea.val(htmlEditor.getSession().getValue());
 	});
@@ -92,7 +92,7 @@ $( document ).ready(function() {
     javascriptEditor.getSession().setMode("ace/mode/javascript");
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
-    javascriptEditor.getSession().setValue(textarea.val());
+    javascriptEditor.getSession().setValue(javascriptTextarea.val());
 	javascriptEditor.getSession().on('change', function(){
 	  javascriptTextarea.val(javascriptEditor.getSession().getValue());
 	});
@@ -103,7 +103,7 @@ $( document ).ready(function() {
     cssEditor.getSession().setMode("ace/mode/javascript");
     
     var cssTextarea = $('#textCssDiv').hide();
-    cssEditor.getSession().setValue(textarea.val());
+    cssEditor.getSession().setValue(cssTextarea.val());
 	cssEditor.getSession().on('change', function(){
 	  cssTextarea.val(cssEditor.getSession().getValue());
 	});
