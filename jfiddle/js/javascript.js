@@ -20,9 +20,9 @@
 	doc.close();
 });*/
 function saveStrings(){
-	var htmlString = htmlDiv.text();
-	var javascriptString = javascriptDiv.text(); 
-	var cssString = cssDiv.text();
+	var htmlString = $('#textHtmlDiv').text();
+	var javascriptString = $('#textJavascriptDiv').text(); 
+	var cssString = $('#textCssDiv').text();
 
 	$.ajax({
 		url: "saveScripts.php",
@@ -36,9 +36,9 @@ function saveStrings(){
 }
 
 function forkBranch(){
-	var htmlString = htmlDiv.text();
-	var javascriptString = javascriptDiv.text(); 
-	var cssString = cssDiv.text();
+	var htmlString = $('#textHtmlDiv').text();
+	var javascriptString = $('#textJavascriptDiv').text(); 
+	var cssString = $('#textCssDiv').text();
 
 	$.ajax({
 		url: "forkBranch.php",
@@ -52,9 +52,9 @@ function forkBranch(){
 }
 
 function zipFiles(){
-	var htmlString = htmlDiv.text();
-	var javascriptString = javascriptDiv.text(); 
-	var cssString = cssDiv.text();
+	var htmlString = $('#textHtmlDiv').text();
+	var javascriptString = $('#textJavascriptDiv').text(); 
+	var cssString = $('#textCssDiv').text();
 
 	$.ajax({
 		url: "zipFiles.php",
