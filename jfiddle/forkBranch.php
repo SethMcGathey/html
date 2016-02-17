@@ -12,6 +12,7 @@ ini_set('display_errors', 'on');
 	$q->execute();
 	$data = $q->fetch(PDO::FETCH_ASSOC);
 	//print_r($pdo);
+	echo $data['branchId'];
 	$topBranchId = $data['branchId'];
 	echo $topBranchId;
 	/*foreach ($pdo->query($sql) as $row) {
