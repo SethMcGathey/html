@@ -124,9 +124,9 @@ function runCode(){
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
 */
-		var htmlString = htmlDiv.text();
-		var javascriptString = javascriptDiv.text(); 
-		var cssString = cssDiv.text(); 
+		var htmlString = $('#textHtmlDiv').text();
+		var javascriptString = $('#textJavascriptDiv').text(); 
+		var cssString = $('#textCssDiv').text();
 
 		var id = 15;
 		console.log(htmlString);
