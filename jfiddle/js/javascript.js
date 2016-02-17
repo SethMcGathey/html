@@ -52,9 +52,9 @@ function forkBranch(){
 }
 
 function zipFiles(){
-	var htmlString = htmlDiv.getCode();
-	var javascriptString = javascriptDiv.getCode(); 
-	var cssString = cssDiv.getCode();
+	var htmlString = htmlDiv.text();
+	var javascriptString = javascriptDiv.text(); 
+	var cssString = cssDiv.text();
 
 	$.ajax({
 		url: "zipFiles.php",

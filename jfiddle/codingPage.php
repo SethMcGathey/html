@@ -32,13 +32,13 @@
 					<div class="col-lg-2 sideBar">
 						Sidebar
 						<div>
-							<form onSubmit="getGithubInstance()">
+							<!--<form onSubmit="getGithubInstance()">
 								Enter Github Username:<br>
 								<input type="text" name="username"><br>
 								Enter Github Repo Name:<br>
 								<input type="text" name="reponame"><br>
 								<input type="submit" value="Submit">
-							</form>
+							</form>-->
 						</div>
 					</div>
 					<div class="col-lg-10">
