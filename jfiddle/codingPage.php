@@ -49,9 +49,10 @@
 							<div class="col-lg-6 titleDivs">
 								CSS
 							</div>
-
-								<textarea type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
-								</textarea>
+								<textarea name="textHtmlString" id="textHtmlDiv"></textarea>
+								<div type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
+								</div>
+								<textarea name="textCssString" id="textCssDiv"></textarea>
 								<div type="text" name="cssString" form="zipForm" class="col-lg-6 squareDivs" id="cssDiv">
 								</div>
 
@@ -64,6 +65,7 @@
 								RESULT
 							</div>
 							<div>
+								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
 								<div type="text" name="javascriptString" form="zipForm" class="col-lg-6 squareDivs" id="javascriptDiv">
 								</div>
 

@@ -79,19 +79,44 @@ $( document ).ready(function() {
     var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
+    
+    var textarea = $('#textHtmlDiv').hide();
+    htmlEditor.getSession().setValue(textarea.val());
+	htmlEditor.getSession().on('change', function(){
+	  htmlTextarea.val(htmlEditor.getSession().getValue());
+	});
+
 
     var javascriptEditor = ace.edit("javascriptDiv");
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
+    
+    var textarea = $('#textJavascriptDiv').hide();
+    javascriptEditor.getSession().setValue(textarea.val());
+	javascriptEditor.getSession().on('change', function(){
+	  javascriptTextarea.val(javascriptEditor.getSession().getValue());
+	});
+
 
     var cssEditor = ace.edit("cssDiv");
     cssEditor.setTheme("ace/theme/monokai");
     cssEditor.getSession().setMode("ace/mode/javascript");
+    
+    var cssTextarea = $('#textCssDiv').hide();
+    cssEditor.getSession().setValue(textarea.val());
+	cssEditor.getSession().on('change', function(){
+	  textarea.val(cssEditor.getSession().getValue());
+	});
 });
-
-function resizeAce() {
-  return $('#editor').height($(window).height());
-};
+/*
+$( document ).ready(function() {
+	var editor = ace.edit("description");
+	var textarea = $('textarea[name="description"]').hide();
+	editor.getSession().setValue(textarea.val());
+	editor.getSession().on('change', function(){
+	  textarea.val(editor.getSession().getValue());
+	});
+});*/
 
 function runCode(){
 		/*
