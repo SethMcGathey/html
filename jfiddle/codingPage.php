@@ -50,9 +50,9 @@
 								CSS
 							</div>
 
-								<div type="text" name="htmlString" form="zipForm" class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv">
+								<div type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
 								</div>
-								<div type="text" name="cssString" form="zipForm" class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv">
+								<div type="text" name="cssString" form="zipForm" class="col-lg-6 squareDivs" id="cssDiv">
 								</div>
 
 						</div><!--row-->
