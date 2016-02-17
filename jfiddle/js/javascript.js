@@ -80,7 +80,7 @@ $( document ).ready(function() {
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
     
-    var textarea = $('#textHtmlDiv').hide();
+    var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(textarea.val());
 	htmlEditor.getSession().on('change', function(){
 	  htmlTextarea.val(htmlEditor.getSession().getValue());
@@ -91,7 +91,7 @@ $( document ).ready(function() {
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
     
-    var textarea = $('#textJavascriptDiv').hide();
+    var javascriptTextarea = $('#textJavascriptDiv').hide();
     javascriptEditor.getSession().setValue(textarea.val());
 	javascriptEditor.getSession().on('change', function(){
 	  javascriptTextarea.val(javascriptEditor.getSession().getValue());
@@ -105,7 +105,7 @@ $( document ).ready(function() {
     var cssTextarea = $('#textCssDiv').hide();
     cssEditor.getSession().setValue(textarea.val());
 	cssEditor.getSession().on('change', function(){
-	  textarea.val(cssEditor.getSession().getValue());
+	  cssTextarea.val(cssEditor.getSession().getValue());
 	});
 });
 /*
