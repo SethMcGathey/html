@@ -20,7 +20,8 @@ ini_set('display_errors', 'on');
 
 	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
 	//$html = $_POST['htmlString'];
-	$html = $_POST['javascriptString'];
+	$html = $_POST['htmlString'];
+	echo $html;
 	//$html = $_GET['htmlString'];
 	//$html = 'htmljunk';
 	fwrite($htmlFile, $html);
@@ -28,7 +29,8 @@ ini_set('display_errors', 'on');
 
 	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
 	//$css = $_POST['cssString'];
-	$css = $_POST['javascriptString'];
+	$css = $_POST['cssString'];
+	echo $css;
 	//$css = $_GET['cssString'];
 	//$css = 'cssjunk';
 	fwrite($cssFile, $css);
@@ -45,9 +47,9 @@ ini_set('display_errors', 'on');
 	$zip->close();
 
 	///Then download the zipped file.
-	header('Content-Type: application/zip');
+	/*header('Content-Type: application/zip');
 	header('Content-disposition: attachment; filename=' . $zipname);
 	header('Content-Length: ' . filesize($zipname));
 	
-	readfile($zipname);
+	readfile($zipname);*/
 	//unlink($zipname);
