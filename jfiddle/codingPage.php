@@ -50,8 +50,8 @@
 								CSS
 							</div>
 
-								<div type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
-								</div>
+								<textarea type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
+								</textarea>
 								<div type="text" name="cssString" form="zipForm" class="col-lg-6 squareDivs" id="cssDiv">
 								</div>
 
