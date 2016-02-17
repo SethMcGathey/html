@@ -64,10 +64,10 @@
 								RESULT
 							</div>
 							<div>
-								<div type="text" name="javascriptString" form="zipForm" class="codepress javascript linenumbers-on autocomplete-on squareDivs" id="javascriptDiv">
+								<div type="text" name="javascriptString" form="zipForm" class="col-lg-6 squareDivs" id="javascriptDiv">
 								</div>
 
-								<div id="resultsDiv">
+								<div id="resultsDiv" class="col-lg-6">
 									
 									<iframe id="myFrame">
 											<p>Your browser does not support iframes.</p>
