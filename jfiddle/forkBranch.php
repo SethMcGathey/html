@@ -8,7 +8,7 @@ ini_set('display_errors', 'on');
 
 	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
 	$sql = 'SELECT branchId from codeStrings where projectId = ' . $_SESSION['projectId'] . ' ORDER BY branchId DESC LIMIT 1';
-	echo $pdo;
+	print_r($pdo);
 	/*foreach ($pdo->query($sql) as $row) {
 		$topBranchId =  $row['branchId'];
 		echo $topBranchId;
