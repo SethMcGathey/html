@@ -124,10 +124,12 @@ function runCode(){
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
 */
+		var htmlEditor = ace.edit("htmlDiv");
+		var javascriptEditor = ace.edit("javascriptDiv");
 		var cssEditor = ace.edit("cssDiv");
 
-		var htmlString = $('textHtmlDiv').text();
-		var javascriptString = $('#JavascriptDiv').text(); 
+		var htmlString = htmlEditor.getSession().getValue();
+		var javascriptString = javascriptEditor.getSession().getValue();
 		var cssString = cssEditor.getSession().getValue();
 
 		var id = 15;
