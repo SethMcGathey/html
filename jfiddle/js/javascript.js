@@ -124,7 +124,7 @@ function runCode(){
 		var javascriptString = $('#javascriptDiv').text(); 
 		var cssString = $('#cssDiv').text(); 
 */
-		var htmlString = $('#htmlDiv').text();
+		var htmlString = $('textHtmlDiv').text();
 		var javascriptString = $('#JavascriptDiv').text(); 
 		var cssString = $('#CssDiv').text();
 
