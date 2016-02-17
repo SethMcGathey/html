@@ -76,9 +76,17 @@ function zipFiles(){
 }
 
 $( document ).ready(function() {
-    var editor = ace.edit("htmlDiv");
-    editor.setTheme("ace/theme/monokai");
-    editor.getSession().setMode("ace/mode/javascript");
+    var htmlEditor = ace.edit("htmlDiv");
+    htmlEditor.setTheme("ace/theme/monokai");
+    htmlEditor.getSession().setMode("ace/mode/javascript");
+
+    var javascriptEditor = ace.edit("javascriptDiv");
+    javascriptEditor.setTheme("ace/theme/monokai");
+    javascriptEditor.getSession().setMode("ace/mode/javascript");
+
+    var cssEditor = ace.edit("cssDiv");
+    cssEditor.setTheme("ace/theme/monokai");
+    cssEditor.getSession().setMode("ace/mode/javascript");
 });
 
 function resizeAce() {

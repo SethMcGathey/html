@@ -52,8 +52,8 @@
 
 								<div type="text" name="htmlString" form="zipForm" class="codepress html linenumbers-on autocomplete-on squareDivs" id="htmlDiv">
 								</div>
-								<textarea type="text" name="cssString" form="zipForm" class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv">
-								</textarea>
+								<div type="text" name="cssString" form="zipForm" class="codepress css linenumbers-on autocomplete-on squareDivs" id="cssDiv">
+								</div>
 
 						</div><!--row-->
 						<div class="row">
@@ -64,8 +64,8 @@
 								RESULT
 							</div>
 							<div>
-								<textarea type="text" name="javascriptString" form="zipForm" class="codepress javascript linenumbers-on autocomplete-on squareDivs" id="javascriptDiv">
-								</textarea>
+								<div type="text" name="javascriptString" form="zipForm" class="codepress javascript linenumbers-on autocomplete-on squareDivs" id="javascriptDiv">
+								</div>
 
 								<div id="resultsDiv">
 									
