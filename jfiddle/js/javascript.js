@@ -60,7 +60,7 @@ function saveStrings(){
 	 		alert("error");
 	 	}
 	 });
-
+	console.log(projectId);
  	if (url.indexOf('?') > -1 && projectId != 0){
 	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	   window.location.href = url;
