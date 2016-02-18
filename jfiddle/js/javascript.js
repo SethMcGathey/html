@@ -68,6 +68,7 @@ function saveStrings(){
 	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	   window.location.href = url;
 	}
+	window.location.href = url;
 }
 
 function forkBranch(){
