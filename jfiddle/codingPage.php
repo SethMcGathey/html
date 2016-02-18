@@ -23,6 +23,7 @@
 						<a href="forkBranch.php">Fork</a>
 						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
 						<a href="zipFiles.php">Zip</a>
+						<a href="getURLSessionVars.php">Zip</a>
 						<input type="submit" id="zipForm" text="Zip" />
 					</div>
 				</div>
