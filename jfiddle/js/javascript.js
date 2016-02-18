@@ -137,7 +137,7 @@ $( document ).ready(function() {
 	    	commitId = result['commitId'];
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
- 	}
+ 	});
 
  	if (url.indexOf('?') > -1 && projectId != 0){
 	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
