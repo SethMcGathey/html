@@ -10,7 +10,7 @@ ini_set('display_errors', 'on');
 		'branchId' = $_SESSION['branchId'],
 		'commitId' = $_SESSION['commitId']
 	);
-	echo $_SESSION['projectId'];
-	echo $URLVariables;
+	//echo json_encode($_SESSION['projectId']);
+	echo json_encode($URLVariables);
 
 ?>
