@@ -12,3 +12,5 @@ ini_set('display_errors', 'on');
 	);
 	echo $_SESSION['projectId'];
 	echo $URLVariables;
+
+?>
