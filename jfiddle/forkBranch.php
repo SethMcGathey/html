@@ -5,8 +5,8 @@ ini_set('display_errors', 'on');
 	require_once 'database.php';
 
     $pdo = Database::connect();
-/*
-	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+
+/*	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
 	$sql = 'SELECT branchId from codeStrings where projectId = ' . $_SESSION['projectId'] . ' ORDER BY branchId DESC LIMIT 1';
 	$q = $pdo->prepare($sql);
 	$q->execute();
@@ -25,7 +25,7 @@ ini_set('display_errors', 'on');
     $q = $pdo->prepare($sql);
     $q->execute();
     $data = $q->fetch(PDO::FETCH_ASSOC);
-    echo $data['branchId'];
+    $topBranchId = $data['branchId'];
 
 
 
@@ -36,12 +36,12 @@ ini_set('display_errors', 'on');
 		echo $topBranchId;
 	}*/
 
-/*
-		$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
-    	$sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
-	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'] + 1, 1));
-*/
+
+	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
+	$sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'] + 1, 1));
+
 	Database::disconnect();
 ?>
 <!--
