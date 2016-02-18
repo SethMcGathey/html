@@ -123,9 +123,9 @@ $( document ).ready(function() {
 
 
 	var url = window.location.href; 
-	var projectId;
-	var branchId;
-	var commitId;
+	var projectId = 0;
+	var branchId = 0;
+	var commitId = 0;
 
 	$.ajax({
 		url: "getURLSessionVars.php",
