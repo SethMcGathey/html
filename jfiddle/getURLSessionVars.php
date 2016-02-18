@@ -5,10 +5,6 @@ ini_set('display_errors', 'on');
 	include 'database.php';
 
 
-	echo $_SESSION['projectId'];
-	echo $_SESSION['branchId'];
-	echo $_SESSION['commitId'];
-
 	$URLVariables = array(
 		'projectId' = $_SESSION['projectId'],
 		'branchId' = $_SESSION['branchId'],
