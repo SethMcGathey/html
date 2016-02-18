@@ -38,6 +38,36 @@ function saveStrings(){
 	     //$("#responseArea").text(data);
 	    }
 	 });
+
+	var url = window.location.href; 
+	var projectId = 0;
+	var branchId = 0;
+	var commitId = 0;
+
+	$.ajax({
+		url: "getURLSessionVars.php",
+	    type: 'POST',
+	   	data: "nothing",
+	   	dataType : 'json',
+	    success: function(result){
+	    	projectId = result['projectId'];
+	    	branchId = result['branchId'];
+	    	commitId = result['commitId'];
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+	 	},
+	 	error : function() {
+	 		alert("error");
+	 	}
+	 });
+
+ 	if (url.indexOf('?') > -1 && projectId != 0){
+	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+	   window.location.href = url;
+	}else if(projectId != 0){
+	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+	   window.location.href = url;
+	}
 }
 
 function forkBranch(){
@@ -120,37 +150,6 @@ $( document ).ready(function() {
 	cssEditor.getSession().on('change', function(){
 	  cssTextarea.val(cssEditor.getSession().getValue());
 	});
-
-
-	var url = window.location.href; 
-	var projectId = 0;
-	var branchId = 0;
-	var commitId = 0;
-
-	$.ajax({
-		url: "getURLSessionVars.php",
-	    type: 'POST',
-	   	data: "nothing",
-	   	dataType : 'json',
-	    success: function(result){
-	    	projectId = result['projectId'];
-	    	branchId = result['branchId'];
-	    	commitId = result['commitId'];
-	    	console.log("made it");
-	     //$("#responseArea").text(data);
-	 	},
-	 	error : function() {
-	 		alert("error");
-	 	}
-	 });
-
- 	if (url.indexOf('?') > -1 && projectId != 0){
-	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-	   window.location.href = url;
-	}else if(projectId != 0){
-	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-	   window.location.href = url;
-	}
 
 });
 /*
