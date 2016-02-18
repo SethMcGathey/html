@@ -10,5 +10,5 @@ ini_set('display_errors', 'on');
 		'branchId' = $_SESSION['branchId'],
 		'commitId' = $_SESSION['commitId']
 	);
-
+	echo $_SESSION['projectId'];
 	echo $URLVariables;
