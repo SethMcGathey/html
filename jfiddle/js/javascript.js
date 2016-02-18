@@ -124,9 +124,9 @@ $( document ).ready(function() {
 
 	var url = window.location.href;    
 	if (url.indexOf('?') > -1){
-	   url += '&projectId=' + '<%= $_SESSION[\'ptojectId\'] %>'
+	   url += '&projectId=' + '<%= $_SESSION[\'ptojectId\'] %>';
 	}else{
-	   url += '?param=1'
+	   url += '?param=1';
 	}
 });
 /*
