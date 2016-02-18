@@ -6,9 +6,9 @@ ini_set('display_errors', 'on');
 
 
 	$URLVariables = array(
-		'projectId' = $_SESSION['projectId'],
-		'branchId' = $_SESSION['branchId'],
-		'commitId' = $_SESSION['commitId']
+		'projectId' => $_SESSION['projectId'],
+		'branchId' => $_SESSION['branchId'],
+		'commitId' => $_SESSION['commitId']
 	);
 	//echo json_encode($_SESSION['projectId']);
 	echo json_encode($URLVariables);
