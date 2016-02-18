@@ -29,21 +29,32 @@ function saveStrings(){
 	var cssString = cssEditor.getSession().getValue();
 
 
-	$.ajax({
-		url: "saveScripts.php",
-	    method: 'POST',
-	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
-	    success: function(data){
-	    	console.log("made it");
-	     //$("#responseArea").text(data);
-	    }
-	 });
 
 	var url = window.location.href; 
 	var projectId = 0;
 	var branchId = 0;
 	var commitId = 0;
 
+
+	$.ajax({
+		url: "saveScripts.php",
+	    type: 'POST',
+	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
+	   	dataType : 'json',
+	    success: function(data){
+	    	projectId = result['projectId'];
+	    	branchId = result['branchId'];
+	    	commitId = result['commitId'];
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+	    },
+	    	error : function() {
+	 		alert("error");
+	 	}
+	 });
+
+
+/*
 	$.ajax({
 		url: "getURLSessionVars.php",
 	    type: 'POST',
@@ -59,7 +70,7 @@ function saveStrings(){
 	 	error : function() {
 	 		alert("error");
 	 	}
-	 });
+	 });*/
 	console.log(projectId);
  	if (url.indexOf('?') > -1 && projectId != 0){
 	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
