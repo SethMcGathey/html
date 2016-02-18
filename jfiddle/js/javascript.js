@@ -144,6 +144,7 @@ $( document ).ready(function() {
 	   window.location.href = url;
 	}else if(projectId != 0){
 	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+	   window.location.href = url;
 	}
 
 });
