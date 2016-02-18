@@ -137,6 +137,9 @@ $( document ).ready(function() {
 	    	commitId = result['commitId'];
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
+	 	},
+	 	error : function() {
+	 		alert("error");
 	 	}
 	 });
 
