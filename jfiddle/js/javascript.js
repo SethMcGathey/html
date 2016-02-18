@@ -128,6 +128,7 @@ $( document ).ready(function() {
 	}else{
 	   url += '?param=1';
 	}
+	window.location.href = url;
 });
 /*
 $( document ).ready(function() {
