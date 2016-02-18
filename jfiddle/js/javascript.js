@@ -129,7 +129,7 @@ $( document ).ready(function() {
 
 	$.ajax({
 		url: "getURLSessionVars.php",
-	    method: 'POST',
+	    type: 'POST',
 	   	data: {},
 	   	dataType : 'json',
 	    success: function(result){
