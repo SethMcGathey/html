@@ -130,7 +130,7 @@ $( document ).ready(function() {
 	$.ajax({
 		url: "getURLSessionVars.php",
 	    type: 'POST',
-	   	data: {},
+	   	data: "nothing",
 	   	dataType : 'json',
 	    success: function(result){
 	    	projectId = result['projectId'];
