@@ -131,6 +131,7 @@ $( document ).ready(function() {
 		url: "getURLSessionVars.php",
 	    method: 'POST',
 	   	data: {},
+	   	dataType : 'json',
 	    success: function(result){
 	    	projectId = result['projectId'];
 	    	branchId = result['branchId'];
