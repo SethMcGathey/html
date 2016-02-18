@@ -125,10 +125,11 @@ $( document ).ready(function() {
 	var url = window.location.href;    
 	if (url.indexOf('?') > -1){
 	   url += '&projectId=' + '<%= $_SESSION[\'ptojectId\'] %>';
+	   window.location.href = url;
 	}else{
 	   url += '?param=1';
 	}
-	window.location.href = url;
+
 });
 /*
 $( document ).ready(function() {
