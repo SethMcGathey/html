@@ -28,6 +28,7 @@ function saveStrings(){
 	var javascriptString = javascriptEditor.getSession().getValue();
 	var cssString = cssEditor.getSession().getValue();
 
+
 	$.ajax({
 		url: "saveScripts.php",
 	    method: 'POST',

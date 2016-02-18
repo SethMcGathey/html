@@ -73,11 +73,31 @@ ini_set('display_errors', 'on');
 	    $q->execute($_POST['html'], $_POST['javascript'], $_POST['css']);
 	}else
 	{*/
+
+
+	if($_SESSION['projectId'] != 0){
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId']));
+	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId'] + 1));
+	}else
+	{
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$sql = 'SELECT projectId from codeStrings ORDER BY branchId DESC LIMIT 1';
+	    $q = $pdo->prepare($sql);
+	    $q->execute();
+	    $data = $q->fetch(PDO::FETCH_ASSOC);
+	    $topProjectId = $data['projectId'];
+
+
+	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
+	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
+	    $q = $pdo->prepare($sql);
+	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'] + 1, 1, 1));
+	
+	}
 	//}
 
 

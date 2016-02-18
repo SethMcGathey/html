@@ -88,7 +88,7 @@
 <?php
 	
 	echo $_SESSION['oauth2state'];
-	/*if(isset($_GET['projectId']))
+	if(isset($_GET['projectId']))
 	{
 		$_SESSION['projectId'] = $_GET['projectId'];
 	}else
@@ -108,10 +108,11 @@
 	}else
 	{
 		$_SESSION['commitId'] = 0;
-	}*/
+	}
+	/*
 $_SESSION['projectId'] = $_GET['projectId'];
 $_SESSION['branchId'] = $_GET['branchId'];
-$_SESSION['commitId'] = $_GET['commitId'];
+$_SESSION['commitId'] = $_GET['commitId'];*/
 	echo $_SESSION['projectId'];
 	echo $_SESSION['branchId'];
 	echo $_SESSION['commitId'];
