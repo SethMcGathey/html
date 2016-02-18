@@ -84,7 +84,7 @@ ini_set('display_errors', 'on');
 	}else
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql = 'SELECT projectId from codeStrings ORDER BY branchId DESC LIMIT 1';
+		$sql = 'SELECT projectId from codeStrings ORDER BY projectId DESC LIMIT 1';
 	    $q = $pdo->prepare($sql);
 	    $q->execute();
 	    $data = $q->fetch(PDO::FETCH_ASSOC);
@@ -112,8 +112,5 @@ ini_set('display_errors', 'on');
 
 		SELECT * FROM product;
 	*/
-
 ?>
-
-
 
