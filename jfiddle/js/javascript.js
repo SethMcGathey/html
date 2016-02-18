@@ -120,6 +120,14 @@ $( document ).ready(function() {
 	cssEditor.getSession().on('change', function(){
 	  cssTextarea.val(cssEditor.getSession().getValue());
 	});
+
+
+	var url = window.location.href;    
+	if (url.indexOf('?') > -1){
+	   url += '&projectId=' + '<%= $_SESSION[\'ptojectId\'] %>'
+	}else{
+	   url += '?param=1'
+	}
 });
 /*
 $( document ).ready(function() {
