@@ -122,12 +122,28 @@ $( document ).ready(function() {
 	});
 
 
-	var url = window.location.href;    
-	if (url.indexOf('?') > -1){
-	   url += '&projectId=' + '<%= $_SESSION[\'ptojectId\'] %>';
+	var url = window.location.href; 
+	var projectId;
+	var branchId;
+	var commitId;
+
+	$.ajax({
+		url: "getURLSessionVars.php",
+	    method: 'POST',
+	   	data: data,
+	    success: function(result){
+	    	projectId = result['projectId'];
+	    	branchId = result['branchId'];
+	    	commitId = result['commitId'];
+	    	console.log("made it");
+	     //$("#responseArea").text(data);
+ 	}
+
+ 	if (url.indexOf('?') > -1 && projectId != 0){
+	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	   window.location.href = url;
-	}else{
-	   url += '?param=1';
+	}else if(projectId != 0){
+	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	}
 
 });
