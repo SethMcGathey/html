@@ -31,8 +31,8 @@
 						    		<div class="col-lg-3 cartLine' . $num . '">' . $row['name'] . '<br> ' . $row['description'] . '</div> 
 						    		<div class="col-lg-3 cartLine' . $num . '">$' . $row['cost'] . '</div> 
 						    		<div class="col-lg-3 cartLine' . $num . '">
-						    			<input type="text" class="textboxWidth" onkeyup="" data-arbitraryName=' . $row['id'] . ' value="'. $row['fullQuantity'] . '"> 
-						    			<div class="rightAlign"><button onclick="changeQuantity()">Update</button></div>
+						    			<input type="text" class="textboxWidth" data-arbitraryName=' . $row['id'] . ' value="'. $row['fullQuantity'] . '"> 
+						    			<div class="rightAlign"><button onclick="changeQuantity('. $row['fullQuantity'] . ', '. $row['id'] . ')">Update</button></div>
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
 						    	  </div>';
