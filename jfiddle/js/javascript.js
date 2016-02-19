@@ -267,9 +267,9 @@ $( document ).ready(function() {
 		    success: function(data){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
-		     htmlEditor.setValue(data['html']);
+		     /*htmlEditor.setValue(data['html']);
 		     javascriptEditor.setValue(data['javascript']);
-		     cssEditor.setValue(data['css']);
+		     cssEditor.setValue(data['css']);*/
 		    },
 		    error : function() {
 			 		alert("error");
