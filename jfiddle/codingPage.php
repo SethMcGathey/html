@@ -15,16 +15,16 @@
 				<div class="row">
 					<div class="col-lg-12 header">
 						<a href="javascript:void(0);" onclick="runCode();">Run</a>
-						<a href="githubAuthorization.php">Authenticate</a>
+						<!--<a href="githubAuthorization.php">Authenticate</a>
 						<a href="githubCreateClient.php">Access Old File</a>
-						<a href="saveScripts.php">Test PHP</a>
+						<a href="saveScripts.php">Test PHP</a>-->
 						<a href="javascript:void(0);" onclick="saveStrings();">Save</a>
 						<a href="javascript:void(0);" onclick="forkBranch();">Fork</a>
-						<a href="forkBranch.php">Fork</a>
+						<!--<a href="forkBranch.php">Fork</a>
 						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
 						<a href="zipFiles.php">Zip</a>
 						<a href="getURLSessionVars.php">CheckSessions</a>
-						<a href="javascript:void(0);" onclick="newProject();">Fork</a>
+						<a href="javascript:void(0);" onclick="newProject();">Fork</a>-->
 						<input type="submit" id="zipForm" text="Zip" />
 					</div>
 				</div>
@@ -111,6 +111,9 @@
 	{
 		$_SESSION['commitId'] = 0;
 	}
+
+
+
 	/*
 $_SESSION['projectId'] = $_GET['projectId'];
 $_SESSION['branchId'] = $_GET['branchId'];
