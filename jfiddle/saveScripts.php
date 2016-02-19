@@ -111,12 +111,13 @@ ini_set('display_errors', 'on');
 		'commitId' => $_SESSION['commitId']
 	);
 	//echo json_encode($_SESSION['projectId']);
+	Database::disconnect();
 	echo json_encode($URLVariables);
 
 
 
 	//header('Location: products.php');
-	Database::disconnect();
+
 
 	/*
 		SELECT id, cart, timestamp, payment_id, customer_id FROM transaction WHERE customer_id = 3;
