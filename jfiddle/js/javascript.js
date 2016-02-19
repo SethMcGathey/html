@@ -202,9 +202,9 @@ function zipFiles(){
 	    success: function(data){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
-	     htmlEditor.setValue(htmlString);
+	     /*htmlEditor.setValue(htmlString);
 	     javascriptEditor.setValue(javascriptString);
-	     cssEditor.setValue(cssString);
+	     cssEditor.setValue(cssString);*/
 	    },
 	    error : function() {
 			 		alert("error");
