@@ -43,7 +43,7 @@
 							</form>-->
 					<!--	</div>
 					</div>-->
-					<div class="col-lg-10">
+					<div class="col-lg-12">
 						<div class="row">
 							<div class="col-lg-6 titleDivs">
 								HTML
