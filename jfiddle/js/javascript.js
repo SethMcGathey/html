@@ -307,7 +307,7 @@ $( document ).ready(function() {
 		    success: function(data){
 		    	console.log(data);
 		    	console.log(data.html);
-		    	console.log(data['html']);
+		    	console.log(data["html"]);
 		    	htmlEditor.setValue(data.html);
 		    	result = data;
 		     //$("#responseArea").text(data);
