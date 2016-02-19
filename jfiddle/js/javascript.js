@@ -282,12 +282,16 @@ $( document ).ready(function() {
 
 function setCodeBoxes(data){
 	var htmlEditor = ace.edit("htmlDiv");
-	var javascriptEditor = ace.edit("javascriptDiv");
-	var cssEditor = ace.edit("cssDiv");
-
 	htmlEditor.setValue(data['html']);
+	
+	var javascriptEditor = ace.edit("javascriptDiv");
 	javascriptEditor.setValue(data['javascript']);
+	
+	var cssEditor = ace.edit("cssDiv");
 	cssEditor.setValue(data['css']);
+	
+	
+	
 }
 /*
 $( document ).ready(function() {
