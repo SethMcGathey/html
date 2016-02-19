@@ -19,7 +19,7 @@ ini_set('display_errors', 'on');
 
 
 	$codeStrings = array(
-		[0] => $htmlCode,
+		'html' => $htmlCode,
 		'javascript' => $javascriptCode,
 		'css' => $cssCode
 	);
