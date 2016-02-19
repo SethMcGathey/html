@@ -20,6 +20,46 @@
 	doc.close();
 });*/
 
+var htmlEditor = ace.edit("htmlDiv");
+    htmlEditor.setTheme("ace/theme/monokai");
+    htmlEditor.getSession().setMode("ace/mode/javascript");
+    htmlEditor.$blockScrolling = 'Infinity';
+
+    
+    var htmlTextarea = $('#textHtmlDiv').hide();
+    htmlEditor.getSession().setValue(htmlTextarea.val());
+	htmlEditor.getSession().on('change', function(){
+		htmlTextarea.val(htmlEditor.getSession().getValue());
+	});
+
+
+    var javascriptEditor = ace.edit("javascriptDiv");
+    javascriptEditor.setTheme("ace/theme/monokai");
+    javascriptEditor.getSession().setMode("ace/mode/javascript");
+    javascriptEditor.$blockScrolling = 'Infinity';
+
+    
+    var javascriptTextarea = $('#textJavascriptDiv').hide();
+    javascriptEditor.getSession().setValue(javascriptTextarea.val());
+	javascriptEditor.getSession().on('change', function(){
+		javascriptTextarea.val(javascriptEditor.getSession().getValue());
+	});
+
+
+    var cssEditor = ace.edit("cssDiv");
+    cssEditor.setTheme("ace/theme/monokai");
+    cssEditor.getSession().setMode("ace/mode/javascript");
+    cssEditor.$blockScrolling = 'Infinity';
+    
+    var cssTextarea = $('#textCssDiv').hide();
+    cssEditor.getSession().setValue(cssTextarea.val());
+	cssEditor.getSession().on('change', function(){
+		cssTextarea.val(cssEditor.getSession().getValue());
+	});
+
+
+
+
 function newProject(){
  	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php';
  	window.location.href = url;
@@ -283,7 +323,8 @@ $( document ).ready(function() {
 
 function setCodeBoxes(data){
 	console.log(data);
-	var htmlEditor = ace.edit("htmlDiv");
+	htmlEditor.setValue('full of content');
+	/*var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
     htmlEditor.$blockScrolling = 'Infinity';
@@ -326,7 +367,7 @@ function setCodeBoxes(data){
     cssEditor.getSession().setValue(cssTextarea.val());
 	cssEditor.getSession().on('change', function(){
 		cssTextarea.val(cssEditor.getSession().getValue());
-	});
+	});*/
 
 
 /*
