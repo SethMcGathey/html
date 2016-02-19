@@ -205,7 +205,7 @@ function zipFiles(){
 	     htmlEditor.setValue(htmlString);
 	     javascriptEditor.setValue(javascriptString);
 	     cssEditor.setValue(cssString);
-	    }
+	    },
 	    error : function() {
 			 		alert("error");
 			 	}
@@ -270,7 +270,7 @@ $( document ).ready(function() {
 		     htmlEditor.setValue(data['html']);
 		     javascriptEditor.setValue(data['javascript']);
 		     cssEditor.setValue(data['css']);
-		    }
+		    },
 		    error : function() {
 			 		alert("error");
 			 	}
