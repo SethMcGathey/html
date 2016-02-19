@@ -31,9 +31,9 @@
 				
 				<div class="row">
 
-					<div class="col-lg-2 sideBar">
+					<!--<div class="col-lg-2 sideBar">
 						Sidebar
-						<div>
+						<div>-->
 							<!--<form onSubmit="getGithubInstance()">
 								Enter Github Username:<br>
 								<input type="text" name="username"><br>
@@ -41,8 +41,8 @@
 								<input type="text" name="reponame"><br>
 								<input type="submit" value="Submit">
 							</form>-->
-						</div>
-					</div>
+					<!--	</div>
+					</div>-->
 					<div class="col-lg-10">
 						<div class="row">
 							<div class="col-lg-6 titleDivs">
