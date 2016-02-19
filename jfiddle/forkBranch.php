@@ -40,9 +40,9 @@ ini_set('display_errors', 'on');
 	$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
 	$sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
     $q = $pdo->prepare($sql);
-    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $_SESSION['branchId'] + 1, 1));
+    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['productId'], $topBranchId, 1));
 
-	$_SESSION['branchId'] = ['branchId'] + 1;
+	$_SESSION['branchId'] = $topBranchId;
 	$_SESSION['commitId'] = 1;
 
 	Database::disconnect();
