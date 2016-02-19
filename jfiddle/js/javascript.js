@@ -304,6 +304,7 @@ function setCodeBoxes(data){
     console.log(data['javascript']);
     //javascriptEditor.setValue(data['javascript']);
     javascriptEditor.setValue('hello');
+    javascriptEditor.renderer.updateFull();
 
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
