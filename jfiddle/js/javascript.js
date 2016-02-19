@@ -74,21 +74,25 @@ function saveStrings(){
 	    	console.log(result);
 	    	console.log(projectId);
 	     //$("#responseArea").text(data);
+
+
+
+	     	console.log(projectId);
+		 	if (url.indexOf('?') > -1 && projectId != 0){
+			   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+			   window.location.href = url;
+			}else if(projectId != 0){
+			   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+			   window.location.href = url;
+			}else{
+				window.location.href = url;
+			}
 	 	},
 	 	error : function() {
 	 		alert("error");
 	 	}
 	 });
-	console.log(projectId);
- 	if (url.indexOf('?') > -1 && projectId != 0){
-	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-	   window.location.href = url;
-	}else if(projectId != 0){
-	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-	   window.location.href = url;
-	}else{
-		window.location.href = url;
-	}
+
 }
 
 function forkBranch(){
