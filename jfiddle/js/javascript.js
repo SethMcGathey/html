@@ -305,7 +305,7 @@ $( document ).ready(function() {
 		    method: 'GET',
 		   	data: {},
 		    success: function(data){
-		    	console.log("made it");
+		    	console.log(data);
 		    	console.log(data.html);
 		    	htmlEditor.setValue(data.html);
 		    	result = data;
