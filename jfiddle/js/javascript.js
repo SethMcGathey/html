@@ -59,7 +59,9 @@ function saveStrings(){
 	    	branchId = result["branchId"];
 	    	commitId = result["commitId"];*/
 	    	console.log("made it");
-	    	
+	    	htmlEditor.setValue(htmlString);
+	     	javascriptEditor.setValue(javascriptString);
+	     	cssEditor.setValue(cssString);
 			/*console.log(branchId);
 			console.log(commitId);
 			console.log(result)*/
@@ -200,6 +202,9 @@ function zipFiles(){
 	    success: function(data){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
+	     htmlEditor.setValue(htmlString);
+	     javascriptEditor.setValue(javascriptString);
+	     cssEditor.setValue(cssString);
 	    }
 	 });
 
