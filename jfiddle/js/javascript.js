@@ -285,8 +285,8 @@ function setCodeBoxes(data){
 	var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
-    htmlEditor.$blockScrolling = 'Infinity';
-    //htmlEditor.setValue(data['html']);
+    //htmlEditor.$blockScrolling = 'Infinity';
+    htmlEditor.setValue(data['html']);
     
     var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(htmlTextarea.val());
@@ -298,8 +298,8 @@ function setCodeBoxes(data){
     var javascriptEditor = ace.edit("javascriptDiv");
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
-    javascriptEditor.$blockScrolling = 'Infinity';
-    //javascriptEditor.setValue(data['javascript']);
+    //javascriptEditor.$blockScrolling = 'Infinity';
+    javascriptEditor.setValue(data['javascript']);
 
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
@@ -311,8 +311,8 @@ function setCodeBoxes(data){
 	var cssEditor = ace.edit("cssDiv");
     cssEditor.setTheme("ace/theme/monokai");
     cssEditor.getSession().setMode("ace/mode/javascript");
-    cssEditor.$blockScrolling = 'Infinity';
-    //cssEditor.setValue(data['css']);
+    //cssEditor.$blockScrolling = 'Infinity';
+    cssEditor.setValue(data['css']);
 
     var cssTextarea = $('#textCssDiv').hide();
     cssEditor.getSession().setValue(cssTextarea.val());
