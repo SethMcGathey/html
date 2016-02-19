@@ -41,10 +41,10 @@ function saveStrings(){
 	    type: 'POST',
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'text',
-	    success: function(data){
-	    	projectId = data['projectId'];
-	    	branchId = data['branchId'];
-	    	commitId = data['commitId'];
+	    success: function(result){
+	    	projectId = result['projectId'];
+	    	branchId = result['branchId'];
+	    	commitId = result['commitId'];
 	    	console.log("made it");
 	    	console.log(projectId);
 			console.log(branchId);

@@ -81,6 +81,8 @@ ini_set('display_errors', 'on');
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId'] + 1));
+
+		$_SESSION['commitId'] = $_SESSION['commitId'] + 1;
 	}else
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
