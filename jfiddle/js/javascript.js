@@ -182,7 +182,7 @@ function forkBranch(){
 	    }
 	 });
 }
-
+/*
 function zipFiles(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
@@ -205,11 +205,11 @@ function zipFiles(){
 	     /*htmlEditor.setValue(htmlString);
 	     javascriptEditor.setValue(javascriptString);
 	     cssEditor.setValue(cssString);*/
-	    },
+	    /*},
 	    error : function() {
 			 		alert("error");
 			 	}
-	 });
+	 });*/
 
 	//window.location = 'zipFiles.php?htmlString=' + htmlString + '&javascriptString=' + javascriptString + '&cssString=' + cssString;
 /*
