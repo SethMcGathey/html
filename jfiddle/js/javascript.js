@@ -304,11 +304,11 @@ $( document ).ready(function() {
 			url: "getBoxValues.php",
 		    method: 'GET',
 		   	data: {},
-		   	async:false,
 		    success: function(data){
 		    	console.log("made it");
 		    	result = data;
 		     //$("#responseArea").text(data);
+		     htmlEditor.setValue(data["html"]);
 		     setCodeBoxes(result);
 
 		    },
