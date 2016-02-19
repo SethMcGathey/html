@@ -267,9 +267,8 @@ $( document ).ready(function() {
 		    success: function(data){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
-		     htmlEditor.setValue(data['html']);
-		     javascriptEditor.setValue(data['javascript']);
-		     cssEditor.setValue(data['css']);
+		     setCodeBoxes();
+
 		    },
 		    error : function() {
 			 		alert("error");
@@ -280,6 +279,16 @@ $( document ).ready(function() {
 	}
 
 });
+
+function runCode(){
+	var htmlEditor = ace.edit("htmlDiv");
+	var javascriptEditor = ace.edit("javascriptDiv");
+	var cssEditor = ace.edit("cssDiv");
+	
+	htmlEditor.setValue(data['html']);
+	javascriptEditor.setValue(data['javascript']);
+	cssEditor.setValue(data['css']);
+}
 /*
 $( document ).ready(function() {
 	var editor = ace.edit("description");
