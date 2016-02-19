@@ -78,7 +78,7 @@ function saveStrings(){
 
 
 	     	console.log(projectId);
-		 	if (url.indexOf('?') > -1 && projectId != 0){
+		 	if (url.indexOf('?') > -1){
 			   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 			   window.location.href = url;
 			}else if(projectId != 0){
