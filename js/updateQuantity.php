@@ -10,7 +10,7 @@
     $q->execute();
 
     //echo "made it";
-    header('Location: cart.php');
+    //header('Location: cart.php');
 
 	Database::disconnect();
 
