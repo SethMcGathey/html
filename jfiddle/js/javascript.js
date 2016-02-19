@@ -306,9 +306,11 @@ $( document ).ready(function() {
 		   	data: {},
 		    success: function(data){
 		    	console.log("made it");
+		    	console.log(data.html);
+		    	htmlEditor.setValue(data.html);
 		    	result = data;
 		     //$("#responseArea").text(data);
-		     htmlEditor.setValue(data.html);
+		     
 		     setCodeBoxes(result);
 
 		    },
