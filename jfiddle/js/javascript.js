@@ -54,14 +54,17 @@ function saveStrings(){
 			console.log(result)*/
 			//console.log(result["projectId"]);
 	     //$("#responseArea").text(data);
-	    },
-	    error : function() {
-	 		alert("error");
-	 	}
-	 });
 
 
-	$.ajax({
+
+
+
+
+
+
+
+
+	     $.ajax({
 		url: "getURLSessionVars.php",
 	    type: 'POST',
 	   	data: "nothing",
@@ -96,6 +99,14 @@ function saveStrings(){
 	 		alert("error");
 	 	}
 	 });
+	    },
+	    error : function() {
+	 		alert("error");
+	 	}
+	 });
+
+
+	
 
 }
 
