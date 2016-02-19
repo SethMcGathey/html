@@ -113,3 +113,4 @@ ini_set('display_errors', 'on');
 	//echo json_encode($_SESSION['projectId']);
 	Database::disconnect();
 	echo json_encode($URLVariables);
+	?>
