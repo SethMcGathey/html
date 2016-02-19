@@ -218,7 +218,7 @@ function zipFiles(){
                alert(data);
                eval(data);
             });*/
-}
+//}
 
 $( document ).ready(function() {
     /*var htmlEditor = ace.edit("htmlDiv");
