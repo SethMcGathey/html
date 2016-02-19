@@ -74,6 +74,7 @@ function changeQuantity(){
 		    dataType:"json",
 		   	data: {},
 		    success: function(dataVar){
+		    	console.log('madeit');
 		    	/*console.log(dataVar);
 		    	console.log(dataVar.html);
 		    	console.log(dataVar[2]);
