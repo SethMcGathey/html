@@ -302,7 +302,7 @@ $( document ).ready(function() {
 		console.log('true ?');
 		$.ajax({
 			url: "getBoxValues.php",
-		    method: 'POST',
+		    method: 'GET',
 		   	data: {},
 		    success: function(data){
 		    	console.log("made it");
