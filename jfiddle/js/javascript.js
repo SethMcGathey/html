@@ -303,6 +303,7 @@ $( document ).ready(function() {
 		$.ajax({
 			url: "getBoxValues.php",
 		    method: 'GET',
+		    dataType:"json",
 		   	data: {},
 		    success: function(dataVar){
 		    	console.log(dataVar);
