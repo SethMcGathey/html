@@ -42,9 +42,9 @@ function saveStrings(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'text',
 	    success: function(result){
-	    	projectId = result['projectId'];
-	    	branchId = result['branchId'];
-	    	commitId = result['commitId'];
+	    	projectId = result["projectId"];
+	    	branchId = result["branchId"];
+	    	commitId = result["commitId"];
 	    	console.log("made it");
 	    	console.log(projectId);
 			console.log(branchId);
