@@ -43,15 +43,15 @@ function saveStrings(){
 	   	dataType : 'text',
 	    success: function(result){
 	    	//alert(result["projectId"]);
-	    	console.log(result["projectId"]);
+	    	/*console.log(result["projectId"]);
 	    	projectId = result["projectId"];
 	    	branchId = result["branchId"];
-	    	commitId = result["commitId"];
-	    	/*console.log("made it");*/
+	    	commitId = result["commitId"];*/
+	    	console.log("made it");
 	    	
-			console.log(branchId);
+			/*console.log(branchId);
 			console.log(commitId);
-			console.log(result)
+			console.log(result)*/
 			//console.log(result["projectId"]);
 	     //$("#responseArea").text(data);
 	    },
@@ -60,8 +60,7 @@ function saveStrings(){
 	 	}
 	 });
 
-console.log(result);
-/*
+
 	$.ajax({
 		url: "getURLSessionVars.php",
 	    type: 'POST',
@@ -77,7 +76,7 @@ console.log(result);
 	 	error : function() {
 	 		alert("error");
 	 	}
-	 });*/
+	 });
 	/*console.log(projectId);
  	if (url.indexOf('?') > -1 && projectId != 0){
 	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
