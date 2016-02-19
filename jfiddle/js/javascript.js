@@ -308,7 +308,7 @@ $( document ).ready(function() {
 		    	console.log("made it");
 		    	result = data;
 		     //$("#responseArea").text(data);
-		     htmlEditor.setValue(data["html"]);
+		     htmlEditor.setValue(data.html);
 		     setCodeBoxes(result);
 
 		    },
