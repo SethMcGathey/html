@@ -303,6 +303,7 @@ function setCodeBoxes(data){
     javascriptEditor.$blockScrolling = 'Infinity';
     console.log(data['javascript']);
     //javascriptEditor.setValue(data['javascript']);
+    javascriptEditor.setValue('hello');
 
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
