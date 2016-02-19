@@ -230,7 +230,7 @@ $( document ).ready(function() {
     var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(htmlTextarea.val());
 	htmlEditor.getSession().on('change', function(){
-	  htmlTextarea.val(htmlEditor.getSession().getValue());
+		htmlTextarea.val(htmlEditor.getSession().getValue());
 	});
 
 
@@ -243,7 +243,7 @@ $( document ).ready(function() {
     var javascriptTextarea = $('#textJavascriptDiv').hide();
     javascriptEditor.getSession().setValue(javascriptTextarea.val());
 	javascriptEditor.getSession().on('change', function(){
-	  javascriptTextarea.val(javascriptEditor.getSession().getValue());
+		javascriptTextarea.val(javascriptEditor.getSession().getValue());
 	});
 
 
@@ -255,7 +255,7 @@ $( document ).ready(function() {
     var cssTextarea = $('#textCssDiv').hide();
     cssEditor.getSession().setValue(cssTextarea.val());
 	cssEditor.getSession().on('change', function(){
-	  cssTextarea.val(cssEditor.getSession().getValue());
+		cssTextarea.val(cssEditor.getSession().getValue());
 	});
 
 	if(window.location.search.indexOf('?') > -1){
@@ -267,9 +267,9 @@ $( document ).ready(function() {
 		    success: function(data){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
-		     /*htmlEditor.setValue(data['html']);
+		     htmlEditor.setValue(data['html']);
 		     javascriptEditor.setValue(data['javascript']);
-		     cssEditor.setValue(data['css']);*/
+		     cssEditor.setValue(data['css']);
 		    },
 		    error : function() {
 			 		alert("error");
