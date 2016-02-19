@@ -310,6 +310,8 @@ $( document ).ready(function() {
 		    	console.log(dataVar.html);
 		    	console.log(dataVar[2]);
 		    	htmlEditor.setValue(dataVar.html);
+		    	javascriptEditor.setValue(dataVar.javascript);
+		    	cssEditor.setValue(dataVar.css);
 		    	result = dataVar;
 		     //$("#responseArea").text(data);
 		     
