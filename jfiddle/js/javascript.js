@@ -282,10 +282,11 @@ $( document ).ready(function() {
 });
 
 function setCodeBoxes(data){
+	console.log(data);
 	var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
-    //htmlEditor.$blockScrolling = 'Infinity';
+    htmlEditor.$blockScrolling = 'Infinity';
     console.log(data['html']);
     //htmlEditor.setValue(data['html']);
     
@@ -299,7 +300,7 @@ function setCodeBoxes(data){
     var javascriptEditor = ace.edit("javascriptDiv");
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
-    //javascriptEditor.$blockScrolling = 'Infinity';
+    javascriptEditor.$blockScrolling = 'Infinity';
     console.log(data['javascript']);
     //javascriptEditor.setValue(data['javascript']);
 
@@ -313,7 +314,7 @@ function setCodeBoxes(data){
 	var cssEditor = ace.edit("cssDiv");
     cssEditor.setTheme("ace/theme/monokai");
     cssEditor.getSession().setMode("ace/mode/javascript");
-    //cssEditor.$blockScrolling = 'Infinity';
+    cssEditor.$blockScrolling = 'Infinity';
     console.log(data['css']);
     //cssEditor.setValue(data['css']);
 
