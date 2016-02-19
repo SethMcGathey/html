@@ -38,7 +38,7 @@ $(".stileone").on("click", function() {
     $(this).css("background", "red");
 })
 
-
+/*
 $(document).ready(function(){
 	$(".textboxWidth").keyup(function(){
 		
@@ -53,7 +53,7 @@ $(document).ready(function(){
 				console.log("made it 1");
 			});
 			console.log("made it 2");*/
-		}else
+		/*}else
 		{
 			//window.location = "updateQuantity.php?quantity=" + value;
 			/*$.get( "updateQuantity.php?quantity=" + value, function( data ) {	
@@ -62,9 +62,9 @@ $(document).ready(function(){
 	  			//$( "#Not_Ajax_Output" ).hide();
 			});	
 			console.log("made it 4");*/
-		}
+		/*}
 	});
-});
+});*/
 
 function changeQuantity(){
 
