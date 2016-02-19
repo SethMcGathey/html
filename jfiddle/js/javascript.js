@@ -50,7 +50,7 @@ function saveStrings(){
 	    	console.log(result["projectId"]);
 			console.log(branchId);
 			console.log(commitId);
-			console.log(result);
+			console.log(result)
 			//console.log(result["projectId"]);
 	     //$("#responseArea").text(data);
 	    },
