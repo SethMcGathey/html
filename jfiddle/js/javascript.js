@@ -266,8 +266,9 @@ $( document ).ready(function() {
 		   	data: {},
 		    success: function(data){
 		    	console.log("made it");
+		    	result = data;
 		     //$("#responseArea").text(data);
-		     setCodeBoxes(data);
+		     setCodeBoxes(result);
 
 		    },
 		    error : function() {
