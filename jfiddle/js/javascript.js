@@ -64,7 +64,7 @@ function saveStrings(){
 
 
 
-	     $.ajax({
+	    $.ajax({
 		url: "getURLSessionVars.php",
 	    type: 'POST',
 	   	data: "nothing",
@@ -125,6 +125,42 @@ function forkBranch(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
 	    success: function(data){
 	    	console.log("made it");
+
+	    	$.ajax({
+				url: "getURLSessionVars.php",
+			    type: 'POST',
+			   	data: "nothing",
+			   	dataType : 'json',
+			    success: function(result){
+			    	projectId = result['projectId'];
+			    	branchId = result['branchId'];
+			    	commitId = result['commitId'];
+			    	//console.log("made it");
+			    	console.log(result);
+			    	//console.log(projectId);
+			     //$("#responseArea").text(data);
+
+
+
+			     	/*console.log(projectId);
+			     	console.log(url.indexOf('?') > -1);
+			     	console.log(projectId != 0);*/
+			     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+				 	window.location.href = url;
+				 	/*if (url.indexOf('?') > -1){
+					   url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+					   window.location.href = url;
+					}else if(projectId != 0){
+					   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+					   window.location.href = url;
+					}else{
+						window.location.href = url;
+					}*/
+			 	},
+			 	error : function() {
+			 		alert("error");
+			 	}
+			 });
 	     //$("#responseArea").text(data);
 	    }
 	 });
