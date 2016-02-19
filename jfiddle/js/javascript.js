@@ -31,6 +31,9 @@ function saveStrings(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
 	var cssEditor = ace.edit("cssDiv");
+	htmlEditor.$blockScrolling = 'Infinity';
+	javascriptEditor.$blockScrolling = 'Infinity';
+	cssEditor.$blockScrolling = 'Infinity';
 
 	var htmlString = htmlEditor.getSession().getValue();
 	var javascriptString = javascriptEditor.getSession().getValue();
@@ -123,6 +126,9 @@ function forkBranch(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
 	var cssEditor = ace.edit("cssDiv");
+	htmlEditor.$blockScrolling = 'Infinity';
+	javascriptEditor.$blockScrolling = 'Infinity';
+	cssEditor.$blockScrolling = 'Infinity';
 
 	var htmlString = htmlEditor.getSession().getValue();
 	var javascriptString = javascriptEditor.getSession().getValue();
@@ -179,6 +185,9 @@ function zipFiles(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
 	var cssEditor = ace.edit("cssDiv");
+	htmlEditor.$blockScrolling = 'Infinity';
+	javascriptEditor.$blockScrolling = 'Infinity';
+	cssEditor.$blockScrolling = 'Infinity';
 
 	var htmlString = htmlEditor.getSession().getValue();
 	var javascriptString = javascriptEditor.getSession().getValue();
@@ -207,6 +216,8 @@ $( document ).ready(function() {
     var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
+    htmlEditor.$blockScrolling = 'Infinity';
+
     
     var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(htmlTextarea.val());
@@ -218,6 +229,8 @@ $( document ).ready(function() {
     var javascriptEditor = ace.edit("javascriptDiv");
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
+    javascriptEditor.$blockScrolling = 'Infinity';
+
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
     javascriptEditor.getSession().setValue(javascriptTextarea.val());
@@ -229,6 +242,7 @@ $( document ).ready(function() {
     var cssEditor = ace.edit("cssDiv");
     cssEditor.setTheme("ace/theme/monokai");
     cssEditor.getSession().setMode("ace/mode/javascript");
+    cssEditor.$blockScrolling = 'Infinity';
     
     var cssTextarea = $('#textCssDiv').hide();
     cssEditor.getSession().setValue(cssTextarea.val());
@@ -256,6 +270,9 @@ function runCode(){
 		var htmlEditor = ace.edit("htmlDiv");
 		var javascriptEditor = ace.edit("javascriptDiv");
 		var cssEditor = ace.edit("cssDiv");
+		htmlEditor.$blockScrolling = 'Infinity';
+		javascriptEditor.$blockScrolling = 'Infinity';
+		cssEditor.$blockScrolling = 'Infinity';
 
 		var htmlString = htmlEditor.getSession().getValue();
 		var javascriptString = javascriptEditor.getSession().getValue();
