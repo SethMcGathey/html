@@ -46,6 +46,10 @@ function saveStrings(){
 	    	branchId = data['branchId'];
 	    	commitId = data['commitId'];
 	    	console.log("made it");
+	    	console.log(projectId);
+			console.log(branchId);
+			console.log(commitId);
+			console.log(data);
 	     //$("#responseArea").text(data);
 	    },
 	    error : function() {
