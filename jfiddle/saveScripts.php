@@ -96,7 +96,10 @@ ini_set('display_errors', 'on');
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $topProjectId + 1, 1, 1));
-	
+
+		$_SESSION['projectId'] = $topProjectId + 1;
+		$_SESSION['branchId'] = 1;
+		$_SESSION['commitId'] = 1;
 	}
 	//}
 
