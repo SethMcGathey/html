@@ -72,6 +72,7 @@ function saveStrings(){
 	    	commitId = result['commitId'];
 	    	console.log("made it");
 	    	console.log(result);
+	    	console.log(projectId);
 	     //$("#responseArea").text(data);
 	 	},
 	 	error : function() {
