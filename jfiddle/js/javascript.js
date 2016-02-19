@@ -49,7 +49,7 @@ function saveStrings(){
 	    	console.log(projectId);
 			console.log(branchId);
 			console.log(commitId);
-			console.log(data);
+			console.log(result);
 	     //$("#responseArea").text(data);
 	    },
 	    error : function() {
