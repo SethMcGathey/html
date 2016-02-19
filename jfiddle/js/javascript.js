@@ -42,15 +42,15 @@ function saveStrings(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'json',
 	    success: function(result){
-	    	alert(result["projectId"]);
+	    	/*alert(result["projectId"]);
 	    	projectId = result["projectId"];
 	    	branchId = result["branchId"];
 	    	commitId = result["commitId"];
 	    	/*console.log("made it");*/
-	    	console.log(projectId);
+	    	/*console.log(projectId);
 			console.log(branchId);
 			console.log(commitId);
-			console.log(result);
+			console.log(result);*/
 			//console.log(result["projectId"]);
 	     //$("#responseArea").text(data);
 	    },
