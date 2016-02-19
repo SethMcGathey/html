@@ -67,7 +67,7 @@ $(document).ready(function(){
 });*/
 
 function changeQuantity(){
-
+console.log('madeit to function');
 	$.ajax({
 			url: "updateQuantity.php",
 		    method: 'GET',
