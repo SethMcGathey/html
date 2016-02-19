@@ -280,11 +280,11 @@ $( document ).ready(function() {
 
 });
 
-function runCode(){
+function setCodeBoxes(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
 	var cssEditor = ace.edit("cssDiv");
-	
+
 	htmlEditor.setValue(data['html']);
 	javascriptEditor.setValue(data['javascript']);
 	cssEditor.setValue(data['css']);
