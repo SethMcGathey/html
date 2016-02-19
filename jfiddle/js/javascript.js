@@ -323,7 +323,7 @@ $( document ).ready(function() {
 
 function setCodeBoxes(data){
 	console.log(data);
-	htmlEditor.setValue('full of content');
+	htmlEditor.setValue(data['html']);
 	/*var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
