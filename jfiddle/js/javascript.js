@@ -48,9 +48,9 @@ function saveStrings(){
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
 	    },
-	    /*error : function() {
+	    error : function() {
 	 		alert("error");
-	 	}*/
+	 	}
 	 });
 
 
