@@ -60,7 +60,7 @@ function saveStrings(){
 	 	}
 	 });
 
-
+console.log(result);
 /*
 	$.ajax({
 		url: "getURLSessionVars.php",
