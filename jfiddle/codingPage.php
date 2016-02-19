@@ -71,12 +71,12 @@
 								<div type="text" name="javascriptString" form="zipForm" class="col-lg-6 squareDivs" id="javascriptDiv">
 								</div>
 
-								<div id="resultsDiv" class="col-lg-6">
+								<!--<div id="resultsDiv" class="col-lg-6">-->
 									
-									<iframe id="myFrame">
+									<iframe id="myFrame" class="col-lg-6">
 											<p>Your browser does not support iframes.</p>
 									</iframe>
-								</div>
+								<!--</div>-->
 							</div>
 
 
