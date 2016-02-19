@@ -43,11 +43,12 @@ function saveStrings(){
 	   	dataType : 'text',
 	    success: function(result){
 	    	//alert(result["projectId"]);
+	    	console.log(result["projectId"]);
 	    	projectId = result["projectId"];
 	    	branchId = result["branchId"];
 	    	commitId = result["commitId"];
 	    	/*console.log("made it");*/
-	    	console.log(result["projectId"]);
+	    	
 			console.log(branchId);
 			console.log(commitId);
 			console.log(result)
