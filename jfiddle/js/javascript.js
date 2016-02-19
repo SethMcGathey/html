@@ -221,7 +221,7 @@ function zipFiles(){
 }
 
 $( document ).ready(function() {
-    var htmlEditor = ace.edit("htmlDiv");
+    /*var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
     htmlEditor.$blockScrolling = 'Infinity';
@@ -256,7 +256,7 @@ $( document ).ready(function() {
     cssEditor.getSession().setValue(cssTextarea.val());
 	cssEditor.getSession().on('change', function(){
 		cssTextarea.val(cssEditor.getSession().getValue());
-	});
+	});*/
 
 	if(window.location.search.indexOf('?') > -1){
 		console.log('true ?');
@@ -283,6 +283,46 @@ $( document ).ready(function() {
 
 function setCodeBoxes(data){
 	var htmlEditor = ace.edit("htmlDiv");
+    htmlEditor.setTheme("ace/theme/monokai");
+    htmlEditor.getSession().setMode("ace/mode/javascript");
+    htmlEditor.$blockScrolling = 'Infinity';
+    htmlEditor.setValue(data['html']);
+    
+    var htmlTextarea = $('#textHtmlDiv').hide();
+    htmlEditor.getSession().setValue(htmlTextarea.val());
+	htmlEditor.getSession().on('change', function(){
+		htmlTextarea.val(htmlEditor.getSession().getValue());
+	});
+
+
+    var javascriptEditor = ace.edit("javascriptDiv");
+    javascriptEditor.setTheme("ace/theme/monokai");
+    javascriptEditor.getSession().setMode("ace/mode/javascript");
+    javascriptEditor.$blockScrolling = 'Infinity';
+    javascriptEditor.setValue(data['javascript']);
+
+    
+    var javascriptTextarea = $('#textJavascriptDiv').hide();
+    javascriptEditor.getSession().setValue(javascriptTextarea.val());
+	javascriptEditor.getSession().on('change', function(){
+		javascriptTextarea.val(javascriptEditor.getSession().getValue());
+	});
+
+	var cssEditor = ace.edit("cssDiv");
+    cssEditor.setTheme("ace/theme/monokai");
+    cssEditor.getSession().setMode("ace/mode/javascript");
+    cssEditor.$blockScrolling = 'Infinity';
+    cssEditor.setValue(data['css']);
+    
+    var cssTextarea = $('#textCssDiv').hide();
+    cssEditor.getSession().setValue(cssTextarea.val());
+	cssEditor.getSession().on('change', function(){
+		cssTextarea.val(cssEditor.getSession().getValue());
+	});
+
+
+/*
+	var htmlEditor = ace.edit("htmlDiv");
 	htmlEditor.setValue(data['html']);
 	
 	var javascriptEditor = ace.edit("javascriptDiv");
@@ -290,7 +330,7 @@ function setCodeBoxes(data){
 	
 	var cssEditor = ace.edit("cssDiv");
 	cssEditor.setValue(data['css']);
-	
+	*/
 	
 	
 }
