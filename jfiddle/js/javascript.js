@@ -206,6 +206,9 @@ function zipFiles(){
 	     javascriptEditor.setValue(javascriptString);
 	     cssEditor.setValue(cssString);
 	    }
+	    error : function() {
+			 		alert("error");
+			 	}
 	 });
 
 	//window.location = 'zipFiles.php?htmlString=' + htmlString + '&javascriptString=' + javascriptString + '&cssString=' + cssString;
@@ -254,6 +257,27 @@ $( document ).ready(function() {
 	cssEditor.getSession().on('change', function(){
 	  cssTextarea.val(cssEditor.getSession().getValue());
 	});
+
+	if(window.location.search.indexOf('?') > -1){
+		console.log('true ?');
+		$.ajax({
+			url: "getBoxValues.php",
+		    method: 'POST',
+		   	data: {},
+		    success: function(data){
+		    	console.log("made it");
+		     //$("#responseArea").text(data);
+		     htmlEditor.setValue(data['html']);
+		     javascriptEditor.setValue(data['javascript']);
+		     cssEditor.setValue(data['css']);
+		    }
+		    error : function() {
+			 		alert("error");
+			 	}
+		 });
+	}else{
+		console.log("false ?");
+	}
 
 });
 /*
