@@ -324,7 +324,8 @@ $( document ).ready(function() {
 
 function setCodeBoxes(data){
 	console.log(data);
-	htmlEditor.setValue(data.html);
+	console.log(data.html);
+	//htmlEditor.setValue(data.html);
 	/*var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
