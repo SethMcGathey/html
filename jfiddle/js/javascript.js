@@ -19,6 +19,14 @@
 	doc.writeln(result);
 	doc.close();
 });*/
+
+function newProject(){
+ 	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php';
+ 	window.location.href = url;
+ }
+
+
+
 function saveStrings(){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
@@ -109,6 +117,7 @@ function saveStrings(){
 	
 
 }
+
 
 function forkBranch(){
 	var htmlEditor = ace.edit("htmlDiv");

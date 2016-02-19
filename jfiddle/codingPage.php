@@ -24,6 +24,7 @@
 						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
 						<a href="zipFiles.php">Zip</a>
 						<a href="getURLSessionVars.php">CheckSessions</a>
+						<a href="javascript:void(0);" onclick="newProject();">Fork</a>
 						<input type="submit" id="zipForm" text="Zip" />
 					</div>
 				</div>
