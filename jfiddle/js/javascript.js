@@ -286,7 +286,7 @@ function setCodeBoxes(data){
     htmlEditor.setTheme("ace/theme/monokai");
     htmlEditor.getSession().setMode("ace/mode/javascript");
     htmlEditor.$blockScrolling = 'Infinity';
-    htmlEditor.setValue(data['html']);
+    //htmlEditor.setValue(data['html']);
     
     var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(htmlTextarea.val());
@@ -299,7 +299,7 @@ function setCodeBoxes(data){
     javascriptEditor.setTheme("ace/theme/monokai");
     javascriptEditor.getSession().setMode("ace/mode/javascript");
     javascriptEditor.$blockScrolling = 'Infinity';
-    javascriptEditor.setValue(data['javascript']);
+    //javascriptEditor.setValue(data['javascript']);
 
     
     var javascriptTextarea = $('#textJavascriptDiv').hide();
@@ -312,8 +312,8 @@ function setCodeBoxes(data){
     cssEditor.setTheme("ace/theme/monokai");
     cssEditor.getSession().setMode("ace/mode/javascript");
     cssEditor.$blockScrolling = 'Infinity';
-    cssEditor.setValue(data['css']);
-    
+    //cssEditor.setValue(data['css']);
+
     var cssTextarea = $('#textCssDiv').hide();
     cssEditor.getSession().setValue(cssTextarea.val());
 	cssEditor.getSession().on('change', function(){
