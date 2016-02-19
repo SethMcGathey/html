@@ -42,15 +42,15 @@ function saveStrings(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'json',
 	    success: function(data){
-	    	projectId = result['projectId'];
-	    	branchId = result['branchId'];
-	    	commitId = result['commitId'];
+	    	projectId = data['projectId'];
+	    	branchId = data['branchId'];
+	    	commitId = data['commitId'];
 	    	console.log("made it");
 	     //$("#responseArea").text(data);
 	    },
-	    	error : function() {
+	    /*error : function() {
 	 		alert("error");
-	 	}
+	 	}*/
 	 });
 
 
@@ -78,8 +78,9 @@ function saveStrings(){
 	}else if(projectId != 0){
 	   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	   window.location.href = url;
+	}else{
+		window.location.href = url;
 	}
-	window.location.href = url;
 }
 
 function forkBranch(){
