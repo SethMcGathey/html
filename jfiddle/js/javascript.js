@@ -40,7 +40,7 @@ function saveStrings(){
 		url: "saveScripts.php",
 	    type: 'POST',
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
-	   	dataType : 'text',
+	   	dataType : 'json',
 	    success: function(result){
 	    	alert(result["projectId"]);
 	    	projectId = result["projectId"];
