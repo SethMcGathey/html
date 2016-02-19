@@ -289,6 +289,7 @@ function setCodeBoxes(data){
     htmlEditor.$blockScrolling = 'Infinity';
     console.log(data['html']);
     //htmlEditor.setValue(data['html']);
+    htmlEditor.setValue('full of content');
     
     var htmlTextarea = $('#textHtmlDiv').hide();
     htmlEditor.getSession().setValue(htmlTextarea.val());
