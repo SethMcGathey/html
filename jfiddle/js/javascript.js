@@ -267,7 +267,7 @@ $( document ).ready(function() {
 		    success: function(data){
 		    	console.log("made it");
 		     //$("#responseArea").text(data);
-		     setCodeBoxes();
+		     setCodeBoxes(data);
 
 		    },
 		    error : function() {
@@ -280,7 +280,7 @@ $( document ).ready(function() {
 
 });
 
-function setCodeBoxes(){
+function setCodeBoxes(data){
 	var htmlEditor = ace.edit("htmlDiv");
 	var javascriptEditor = ace.edit("javascriptDiv");
 	var cssEditor = ace.edit("cssDiv");
