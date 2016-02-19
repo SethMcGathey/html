@@ -113,18 +113,3 @@ ini_set('display_errors', 'on');
 	//echo json_encode($_SESSION['projectId']);
 	Database::disconnect();
 	echo json_encode($URLVariables);
-
-
-
-	//header('Location: products.php');
-
-
-	/*
-		SELECT id, cart, timestamp, payment_id, customer_id FROM transaction WHERE customer_id = 3;
-
-		SELECT * FROM transaction_product;
-
-		SELECT * FROM product;
-	*/
-?>
-
