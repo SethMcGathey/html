@@ -304,12 +304,12 @@ $( document ).ready(function() {
 			url: "getBoxValues.php",
 		    method: 'GET',
 		   	data: {},
-		    success: function(data){
-		    	console.log(data);
-		    	console.log(data.html);
-		    	console.log(data[0]['html']);
-		    	htmlEditor.setValue(data.html);
-		    	result = data;
+		    success: function(dataVar){
+		    	console.log(dataVar);
+		    	console.log(dataVar.html);
+		    	console.log(dataVar[0]['html']);
+		    	htmlEditor.setValue(dataVar.html);
+		    	result = dataVar;
 		     //$("#responseArea").text(data);
 		     
 		     setCodeBoxes(result);
