@@ -78,7 +78,7 @@ function saveStrings(){
 	 		alert("error");
 	 	}
 	 });
-	/*console.log(projectId);
+	console.log(projectId);
  	if (url.indexOf('?') > -1 && projectId != 0){
 	   url += '&projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 	   window.location.href = url;
@@ -87,7 +87,7 @@ function saveStrings(){
 	   window.location.href = url;
 	}else{
 		window.location.href = url;
-	}*/
+	}
 }
 
 function forkBranch(){
