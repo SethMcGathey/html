@@ -42,6 +42,7 @@ function saveStrings(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'text',
 	    success: function(result){
+	    	alert(result["projectId"]);
 	    	projectId = result["projectId"];
 	    	branchId = result["branchId"];
 	    	commitId = result["commitId"];
