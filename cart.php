@@ -36,7 +36,7 @@
 						    			<div class="rightAlign"><button href="updateQuantity.php">Update</button></div>
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
-						    	  </div>';
+						    	  </div> ' . $_SESSION['transaction_id'];
 						    if($num < 1)
 			               	{
 			                	$num++;
