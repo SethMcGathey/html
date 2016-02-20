@@ -33,6 +33,7 @@
 						    		<div class="col-lg-3 cartLine' . $num . '">
 						    			<input type="text" class="textboxWidth" data-arbitraryName=' . $row['id'] . ' value="'. $row['fullQuantity'] . '"> 
 						    			<div class="rightAlign"><button onclick="changeQuantity('. $row['fullQuantity'] . ', '. $row['id'] . ')">Update</button></div>
+						    			<div class="rightAlign"><button onclick="updateQuantity.php">Update</button></div>
 						    			<div class="rightAlign"><button onclick="window.location.href=\'removeFromCart.php?productid=' . $row['id'] . '\'">Remove</button></div>
 						    		</div>
 						    	  </div>';
