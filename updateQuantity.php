@@ -10,7 +10,7 @@ ini_set('display_errors', 'on');
     $q = $pdo->prepare($sql);
     $q->execute();
 
-    //echo "made it";
+    echo "made it";
     //header('Location: cart.php');
 
 	Database::disconnect();

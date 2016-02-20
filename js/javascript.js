@@ -67,7 +67,7 @@ $(document).ready(function(){
 });*/
 
 function changeQuantity(quantity, id, transaction_id){
-console.log('madeit to function');
+	console.log('made it to function');
 	$.ajax({
 			url: "updateQuantity.php",
 		    method: 'GET',
