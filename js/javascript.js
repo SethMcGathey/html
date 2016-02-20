@@ -73,7 +73,7 @@ console.log('madeit to function');
 		    method: 'GET',
 		    dataType:"json",
 		   	data: {quantity, id},
-		    success: function(dataVar){
+		    success: function(){
 		    	console.log('madeit');
 		    	/*console.log(dataVar);
 		    	console.log(dataVar.html);
