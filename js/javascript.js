@@ -72,7 +72,7 @@ console.log('madeit to function');
 			url: "updateQuantity.php",
 		    method: 'GET',
 		    dataType:"json",
-		   	data: {quantity, productid},
+		   	data: {quantity, id},
 		    success: function(dataVar){
 		    	console.log('madeit');
 		    	/*console.log(dataVar);
