@@ -71,7 +71,7 @@ console.log('madeit to function');
 	$.ajax({
 			url: "updateQuantity.php",
 		    method: 'GET',
-		    dataType:"json",
+		    //dataType:"json",
 		   	data: {quantity, id},
 		    success: function(){
 		    	console.log('madeit');
