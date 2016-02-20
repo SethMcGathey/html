@@ -45,6 +45,7 @@
 								$num = 0;
 			                }
 						}
+						echo $_SESSION['transaction_id'];
 			?>
 			<button onclick="window.location.href='choosePurchaseAddress.php'">Purchase</button>
 
