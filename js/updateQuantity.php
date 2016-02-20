@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
     $pdo = Database::connect();
 
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql="UPDATE transaction_product SET quantity = " . $_GET['quantity'] . " WHERE transaction_id = " . $_SESSION['transaction_id'] . " AND product_id = " . $_GET['productid'];
+	$sql="UPDATE transaction_product SET quantity = " . $_GET['quantity'] . " WHERE transaction_id = " . $_GET['transaction_id'] . " AND product_id = " . $_GET['productid'];
     $q = $pdo->prepare($sql);
     $q->execute();
 

@@ -66,15 +66,16 @@ $(document).ready(function(){
 	});
 });*/
 
-function changeQuantity(quantity, id){
+function changeQuantity(quantity, id, transaction_id){
 console.log('madeit to function');
 	$.ajax({
 			url: "updateQuantity.php",
 		    method: 'GET',
 		    //dataType:"json",
-		   	data: {quantity, id},
+		   	data: {quantity, id, transaction_id},
 		    success: function(){
 		    	console.log('madeit');
+		    	//14 transaction_id
 		    	/*console.log(dataVar);
 		    	console.log(dataVar.html);
 		    	console.log(dataVar[2]);
