@@ -26,6 +26,8 @@
 						<a href="getURLSessionVars.php">CheckSessions</a>
 						<a href="javascript:void(0);" onclick="newProject();">Fork</a>-->
 						<input type="submit" id="zipForm" value="Zip" />
+						<a href="javascript:void(0);" onclick="getOauth();">OAuth </a>
+
 					</div>
 				</div>
 				
