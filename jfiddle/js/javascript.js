@@ -9,6 +9,7 @@ var provider = 'facebook';
 
 OAuth.popup(provider)
 .done(function(result) {
+	console.log('made it inside done');
     result.me()
     .done(function (response) {
         console.log('Firstname: ', response.firstname);
