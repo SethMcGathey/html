@@ -1,24 +1,58 @@
+/************************************ OAUTH ************************************/
+OAuth.initialize('your_app_public_key');
 
-/*$(document).ready(function(){
-	var content = "";
-	var iframe = document.getElementById('iframe');
+//Using popup
+OAuth.popup('facebook')
+    .done(function(result) {
+      //use result.access_token in your API request 
+      //or use result.get|post|put|del|patch|me methods (see below)
+    })
+    .fail(function (err) {
+      //handle error with err
+});
 
-	if(iframe.contentDocument)
-	{
-		doc = iframe.contentDocument;
-	}
-	else if(iframe.contentWindow)
-	{
-		doc = iframe.contentWindow.document;
-	}else 
-	{
-		doc = iframe.document;
-	}
+//Let's say the /me endpoint on the provider API returns a JSON object
+//with the field "name" containing the name "John Doe"
+OAuth.popup(provider)
+.done(function(result) {
+    result.get('/me')
+    .done(function (response) {
+        //this will display "John Doe" in the console
+        console.log(response.name);
+    })
+    .fail(function (err) {
+        //handle error with err
+    });
+})
+.fail(function (err) {
+    //handle error with err
+});
 
-	doc.open();
-	doc.writeln(result);
-	doc.close();
-});*/
+
+//provider can be 'facebook', 'twitter', 'github', or any supported
+//provider that contain the fields 'firstname' and 'lastname' 
+//or an equivalent (e.g. "FirstName" or "first-name")
+var provider = 'facebook';
+
+OAuth.popup(provider)
+.done(function(result) {
+    result.me()
+    .done(function (response) {
+        console.log('Firstname: ', response.firstname);
+        console.log('Lastname: ', response.lastname);
+    })
+    .fail(function (err) {
+        //handle error with err
+    });
+})
+.fail(function (err) {
+    //handle error with err
+});
+
+
+
+/************************************ OAUTH ************************************/
+
 
 var htmlEditor = ace.edit("htmlDiv");
     htmlEditor.setTheme("ace/theme/monokai");
@@ -93,24 +127,10 @@ function saveStrings(){
 	   	data: { html: htmlString, javascript: javascriptString, css: cssString },
 	   	dataType : 'text',
 	    success: function(result){
-	    	//alert(result["projectId"]);
-	    	/*console.log(result["projectId"]);
-	    	projectId = result["projectId"];
-	    	branchId = result["branchId"];
-	    	commitId = result["commitId"];*/
 	    	console.log("made it");
 	    	htmlEditor.setValue(htmlString);
 	     	javascriptEditor.setValue(javascriptString);
 	     	cssEditor.setValue(cssString);
-			/*console.log(branchId);
-			console.log(commitId);
-			console.log(result)*/
-			//console.log(result["projectId"]);
-	     //$("#responseArea").text(data);
-
-
-
-
 
 
 
@@ -126,27 +146,11 @@ function saveStrings(){
 	    	projectId = result['projectId'];
 	    	branchId = result['branchId'];
 	    	commitId = result['commitId'];
-	    	//console.log("made it");
 	    	console.log(result);
-	    	//console.log(projectId);
-	     //$("#responseArea").text(data);
 
-
-
-	     	/*console.log(projectId);
-	     	console.log(url.indexOf('?') > -1);
-	     	console.log(projectId != 0);*/
 	     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 		 	window.location.href = url;
-		 	/*if (url.indexOf('?') > -1){
-			   url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-			   window.location.href = url;
-			}else if(projectId != 0){
-			   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-			   window.location.href = url;
-			}else{
-				window.location.href = url;
-			}*/
+
 	 	},
 	 	error : function() {
 	 		alert("error");
@@ -192,111 +196,24 @@ function forkBranch(){
 			    	projectId = result['projectId'];
 			    	branchId = result['branchId'];
 			    	commitId = result['commitId'];
-			    	//console.log("made it");
 			    	console.log(result);
-			    	//console.log(projectId);
-			     //$("#responseArea").text(data);
 
-
-
-			     	/*console.log(projectId);
-			     	console.log(url.indexOf('?') > -1);
-			     	console.log(projectId != 0);*/
 			     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 				 	window.location.href = url;
-				 	/*if (url.indexOf('?') > -1){
-					   url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-					   window.location.href = url;
-					}else if(projectId != 0){
-					   url += '?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
-					   window.location.href = url;
-					}else{
-						window.location.href = url;
-					}*/
+
 			 	},
 			 	error : function() {
 			 		alert("error");
 			 	}
 			 });
-	     //$("#responseArea").text(data);
+
 	    }
 	 });
 }
-/*
-function zipFiles(){
-	var htmlEditor = ace.edit("htmlDiv");
-	var javascriptEditor = ace.edit("javascriptDiv");
-	var cssEditor = ace.edit("cssDiv");
-	htmlEditor.$blockScrolling = 'Infinity';
-	javascriptEditor.$blockScrolling = 'Infinity';
-	cssEditor.$blockScrolling = 'Infinity';
 
-	var htmlString = htmlEditor.getSession().getValue();
-	var javascriptString = javascriptEditor.getSession().getValue();
-	var cssString = cssEditor.getSession().getValue();
-
-	$.ajax({
-		url: "zipFiles.php",
-	    method: 'POST',
-	   	data: { html: htmlString, javascript: javascriptString, css: cssString},
-	    success: function(data){
-	    	console.log("made it");
-	     //$("#responseArea").text(data);
-	     /*htmlEditor.setValue(htmlString);
-	     javascriptEditor.setValue(javascriptString);
-	     cssEditor.setValue(cssString);*/
-	    /*},
-	    error : function() {
-			 		alert("error");
-			 	}
-	 });*/
-
-	//window.location = 'zipFiles.php?htmlString=' + htmlString + '&javascriptString=' + javascriptString + '&cssString=' + cssString;
-/*
-	$.get('zipFiles.php?html=' + htmlString + '&javascript=' + javascriptString + '&css=' + cssString, function(data) {
-               alert('Load was performed.');
-               alert(data);
-               eval(data);
-            });*/
-//}
 
 $( document ).ready(function() {
-    /*var htmlEditor = ace.edit("htmlDiv");
-    htmlEditor.setTheme("ace/theme/monokai");
-    htmlEditor.getSession().setMode("ace/mode/javascript");
-    htmlEditor.$blockScrolling = 'Infinity';
 
-    
-    var htmlTextarea = $('#textHtmlDiv').hide();
-    htmlEditor.getSession().setValue(htmlTextarea.val());
-	htmlEditor.getSession().on('change', function(){
-		htmlTextarea.val(htmlEditor.getSession().getValue());
-	});
-
-
-    var javascriptEditor = ace.edit("javascriptDiv");
-    javascriptEditor.setTheme("ace/theme/monokai");
-    javascriptEditor.getSession().setMode("ace/mode/javascript");
-    javascriptEditor.$blockScrolling = 'Infinity';
-
-    
-    var javascriptTextarea = $('#textJavascriptDiv').hide();
-    javascriptEditor.getSession().setValue(javascriptTextarea.val());
-	javascriptEditor.getSession().on('change', function(){
-		javascriptTextarea.val(javascriptEditor.getSession().getValue());
-	});
-
-
-    var cssEditor = ace.edit("cssDiv");
-    cssEditor.setTheme("ace/theme/monokai");
-    cssEditor.getSession().setMode("ace/mode/javascript");
-    cssEditor.$blockScrolling = 'Infinity';
-    
-    var cssTextarea = $('#textCssDiv').hide();
-    cssEditor.getSession().setValue(cssTextarea.val());
-	cssEditor.getSession().on('change', function(){
-		cssTextarea.val(cssEditor.getSession().getValue());
-	});*/
 
 	if(window.location.search.indexOf('?') > -1){
 		console.log('true ?');
@@ -313,7 +230,7 @@ $( document ).ready(function() {
 		    	javascriptEditor.setValue(dataVar.javascript);
 		    	cssEditor.setValue(dataVar.css);
 		    	result = dataVar;
-		     //$("#responseArea").text(data);
+
 		     
 		     setCodeBoxes(result);
 
@@ -328,85 +245,11 @@ $( document ).ready(function() {
 
 });
 
-function setCodeBoxes(data){
-	console.log(data);
-	console.log(data.html);
-	//htmlEditor.setValue(data.html);
-	/*var htmlEditor = ace.edit("htmlDiv");
-    htmlEditor.setTheme("ace/theme/monokai");
-    htmlEditor.getSession().setMode("ace/mode/javascript");
-    htmlEditor.$blockScrolling = 'Infinity';
-    console.log(data['html']);
-    //htmlEditor.setValue(data['html']);
-    htmlEditor.$blockScrolling = 'Infinity';
-    htmlEditor.setValue('full of content');
-    
-    var htmlTextarea = $('#textHtmlDiv').hide();
-    htmlEditor.getSession().setValue(htmlTextarea.val());
-	htmlEditor.getSession().on('change', function(){
-		htmlTextarea.val(htmlEditor.getSession().getValue());
-	});
 
 
-    var javascriptEditor = ace.edit("javascriptDiv");
-    javascriptEditor.setTheme("ace/theme/monokai");
-    javascriptEditor.getSession().setMode("ace/mode/javascript");
-    javascriptEditor.$blockScrolling = 'Infinity';
-    console.log(data['javascript']);
-    //javascriptEditor.setValue(data['javascript']);
-    javascriptEditor.setValue('hello');
-    javascriptEditor.renderer.updateFull();
-
-    
-    var javascriptTextarea = $('#textJavascriptDiv').hide();
-    javascriptEditor.getSession().setValue(javascriptTextarea.val());
-	javascriptEditor.getSession().on('change', function(){
-		javascriptTextarea.val(javascriptEditor.getSession().getValue());
-	});
-
-	var cssEditor = ace.edit("cssDiv");
-    cssEditor.setTheme("ace/theme/monokai");
-    cssEditor.getSession().setMode("ace/mode/javascript");
-    cssEditor.$blockScrolling = 'Infinity';
-    console.log(data['css']);
-    //cssEditor.setValue(data['css']);
-
-    var cssTextarea = $('#textCssDiv').hide();
-    cssEditor.getSession().setValue(cssTextarea.val());
-	cssEditor.getSession().on('change', function(){
-		cssTextarea.val(cssEditor.getSession().getValue());
-	});*/
-
-
-/*
-	var htmlEditor = ace.edit("htmlDiv");
-	htmlEditor.setValue(data['html']);
-	
-	var javascriptEditor = ace.edit("javascriptDiv");
-	javascriptEditor.setValue(data['javascript']);
-	
-	var cssEditor = ace.edit("cssDiv");
-	cssEditor.setValue(data['css']);
-	*/
-	
-	
-}
-/*
-$( document ).ready(function() {
-	var editor = ace.edit("description");
-	var textarea = $('textarea[name="description"]').hide();
-	editor.getSession().setValue(textarea.val());
-	editor.getSession().on('change', function(){
-	  textarea.val(editor.getSession().getValue());
-	});
-});*/
 
 function runCode(){
-		/*
-		var htmlString = $('#htmlDiv').text(); 
-		var javascriptString = $('#javascriptDiv').text(); 
-		var cssString = $('#cssDiv').text(); 
-*/
+
 		var htmlEditor = ace.edit("htmlDiv");
 		var javascriptEditor = ace.edit("javascriptDiv");
 		var cssEditor = ace.edit("cssDiv");
@@ -422,9 +265,6 @@ function runCode(){
 		console.log(htmlString);
 		console.log(javascriptString);
 		console.log(cssString);
-//url: "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=cssString",
-		//window.location = "saveScripts.php?html=" + htmlString + "&javascript=" + javascriptString + "&css=" + cssString;
-		//window.location = "saveScripts.php?id=" + id;
 
 
 		var string1 = "<html> <head> <style> ";
@@ -444,27 +284,96 @@ function runCode(){
 		doc.write(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4);
 		doc.close();
 		console.log(string1 + cssString + string2 + htmlString + string3 + javascriptString + string4 + string5 + string6);
-
-		//$('myFrame').contentWindow.document.write(htmlString);
-		//window.location = "overwriteFile.php?htmlString=" + htmlString + "javascriptString=" + javascriptString + "cssString=" + cssString;
-
 		
 };
 
-/*$(".squareDivs").keyup(function(){
-    var aCodes = document.getElementsByTagName('pre');
-    for (var i=0; i < aCodes.length; i++) {
-        hljs.highlightBlock(aCodes[i]);
-    }
-
-});*/
 
 
 
 
-/*
-textarea_id.text()
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -488,14 +397,7 @@ function getGithubInstance(){
 	  var repo = github.getRepo('Smcgath', 'html');
 	 
 	  repo.listBranches(function(err, branches) { console.log(branches)});
-	  /*console.log(repo);
-	  repo.show(function(err, repo) {
-	  	console.log("hello");
-	  	console.log(repo);
-	  	
-	  });*/
 
-	  //repo.read('master', 'endogtheline/index.js', function(err, data) {});
 };
 
 
