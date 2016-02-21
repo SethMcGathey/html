@@ -42,7 +42,7 @@ function getOauth(){
 /************************************ OAUTH ************************************/
 OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
 
-
+/*
 //provider can be 'facebook', 'twitter', 'github', or any supported
 //provider that contain the fields 'firstname' and 'lastname' 
 //or an equivalent (e.g. "FirstName" or "first-name")
@@ -63,8 +63,17 @@ OAuth.popup(provider)
 .fail(function (err) {
     //handle error with err
 });
+*/
 
 
+//Example with Google
+OAuth.redirect('google', 'http://localhost/callback');
+//in your callback page (can be the same page)
+OAuth.callback('google').done(function(google) {
+  //make API calls with `google`
+}).fail(function(err) {
+  //todo when the OAuth flow failed
+})
 
 /************************************ OAUTH ************************************/
 }
