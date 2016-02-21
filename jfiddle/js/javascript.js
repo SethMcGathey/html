@@ -205,7 +205,7 @@ $( document ).ready(function() {
 		    	result = dataVar;
 
 		     
-		     setCodeBoxes(result);
+		     //setCodeBoxes(result);
 
 		    },
 		    error : function() {
