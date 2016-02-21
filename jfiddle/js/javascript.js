@@ -1,5 +1,5 @@
 /************************************ OAUTH ************************************/
-OAuth.initialize('your_app_public_key');
+OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
 
 //Using popup
 OAuth.popup('facebook')
