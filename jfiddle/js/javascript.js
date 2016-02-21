@@ -40,7 +40,7 @@ var htmlEditor = ace.edit("htmlDiv");
 
 function getOauth(){
 /************************************ OAUTH ************************************/
-OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z');
+OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
 
 
 //provider can be 'facebook', 'twitter', 'github', or any supported
