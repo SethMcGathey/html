@@ -1,6 +1,6 @@
 /************************************ OAUTH ************************************/
 OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
-/*
+
 //Using popup
 OAuth.popup('facebook')
     .done(function(result) {
@@ -10,7 +10,7 @@ OAuth.popup('facebook')
     .fail(function (err) {
       //handle error with err
 });
-
+/*
 //Let's say the /me endpoint on the provider API returns a JSON object
 //with the field "name" containing the name "John Doe"
 OAuth.popup(provider)
