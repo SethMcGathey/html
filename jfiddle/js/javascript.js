@@ -67,7 +67,7 @@ OAuth.popup(provider)
 
 
 //Example with Google
-OAuth.redirect('google', 'http://localhost/callback');
+OAuth.redirect('google', window.location.href);
 //in your callback page (can be the same page)
 OAuth.callback('google').done(function(google) {
   //make API calls with `google`
