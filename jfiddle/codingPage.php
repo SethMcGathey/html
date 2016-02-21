@@ -135,7 +135,7 @@ $_SESSION['commitId'] = $_GET['commitId'];*/
 <!--<script src="js/jquery-1.12.0.js" type="text/javascript"> </script>-->
 <script src="codepress/codepress.js" type="text/javascript"></script>
 
-<script src="/path/to/oauth.js"></script>
+<script src="/oauth.js"></script>
 
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
