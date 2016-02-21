@@ -21,7 +21,7 @@ OAuth.popup(provider)
 .fail(function (err) {
     //handle error with err
 });
-*/
+
 
 
 /************************************ OAUTH ************************************/
