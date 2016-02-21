@@ -1,31 +1,4 @@
-/************************************ OAUTH ************************************/
-OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z');
 
-
-//provider can be 'facebook', 'twitter', 'github', or any supported
-//provider that contain the fields 'firstname' and 'lastname' 
-//or an equivalent (e.g. "FirstName" or "first-name")
-var provider = 'facebook';
-
-OAuth.popup(provider)
-.done(function(result) {
-	console.log('made it inside done');
-    result.me()
-    .done(function (response) {
-        console.log('Firstname: ', response.firstname);
-        console.log('Lastname: ', response.lastname);
-    })
-    .fail(function (err) {
-        //handle error with err
-    });
-})
-.fail(function (err) {
-    //handle error with err
-});
-
-
-
-/************************************ OAUTH ************************************/
 
 
 var htmlEditor = ace.edit("htmlDiv");
@@ -216,6 +189,36 @@ $( document ).ready(function() {
 	}else{
 		console.log("false ?");
 	}
+
+
+	/************************************ OAUTH ************************************/
+OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z');
+
+
+//provider can be 'facebook', 'twitter', 'github', or any supported
+//provider that contain the fields 'firstname' and 'lastname' 
+//or an equivalent (e.g. "FirstName" or "first-name")
+var provider = 'facebook';
+
+OAuth.popup(provider)
+.done(function(result) {
+	console.log('made it inside done');
+    result.me()
+    .done(function (response) {
+        console.log('Firstname: ', response.firstname);
+        console.log('Lastname: ', response.lastname);
+    })
+    .fail(function (err) {
+        //handle error with err
+    });
+})
+.fail(function (err) {
+    //handle error with err
+});
+
+
+
+/************************************ OAUTH ************************************/
 
 });
 
