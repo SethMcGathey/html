@@ -1,6 +1,6 @@
 /************************************ OAUTH ************************************/
 OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
-
+/*
 //Using popup
 OAuth.popup('facebook')
     .done(function(result) {
@@ -48,7 +48,7 @@ OAuth.popup(provider)
 .fail(function (err) {
     //handle error with err
 });
-
+*/
 
 
 /************************************ OAUTH ************************************/
