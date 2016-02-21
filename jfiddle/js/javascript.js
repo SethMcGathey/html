@@ -1,5 +1,5 @@
 /************************************ OAUTH ************************************/
-OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
+OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z');
 
 //Using popup
 OAuth.popup('facebook')
