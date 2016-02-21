@@ -1,33 +1,6 @@
 /************************************ OAUTH ************************************/
 OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z');
 
-//Using popup
-OAuth.popup('facebook')
-    .done(function(result) {
-      //use result.access_token in your API request 
-      //or use result.get|post|put|del|patch|me methods (see below)
-    })
-    .fail(function (err) {
-      //handle error with err
-});
-/*
-//Let's say the /me endpoint on the provider API returns a JSON object
-//with the field "name" containing the name "John Doe"
-OAuth.popup(provider)
-.done(function(result) {
-    result.get('/me')
-    .done(function (response) {
-        //this will display "John Doe" in the console
-        console.log(response.name);
-    })
-    .fail(function (err) {
-        //handle error with err
-    });
-})
-.fail(function (err) {
-    //handle error with err
-});
-
 
 //provider can be 'facebook', 'twitter', 'github', or any supported
 //provider that contain the fields 'firstname' and 'lastname' 
