@@ -9,6 +9,24 @@
 
 	<link rel="stylesheet" href="codemirror/lib/codemirror.css">-->
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1513482842291431',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 	<body>
 		<div class="container-fluid">
 			<form action='zipFiles.php' method="Post">
@@ -27,6 +45,13 @@
 						<a href="javascript:void(0);" onclick="newProject();">Fork</a>-->
 						<input type="submit" id="zipForm" value="Zip" />
 						<a href="javascript:void(0);" onclick="getOauth();">OAuth </a>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 
 					</div>
 				</div>
