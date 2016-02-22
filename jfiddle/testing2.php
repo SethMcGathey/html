@@ -34,7 +34,7 @@ OAuth.popup(provider)
 });
 </script>
     <script src="js/oAuth.js" type="text/javascript"></script>
-    //<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <!--<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>-->
     <div id="content"></div>
     <p>Retrieves your profile name using the Google Plus API.</p>
   </body>
