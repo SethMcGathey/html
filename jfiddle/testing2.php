@@ -7,7 +7,7 @@
     <!--Add a button for the user to click to initiate auth sequence -->
     <button id="authorize-button" style="visibility: hidden">Authorize</button>
 
-
+<script src="js/oAuth.js" type="text/javascript"></script>
 <script type="text/javascript">
 OAuth.initialize('emXpUvmYMhg1zAMJNPcC8E3Z-rs');
 
@@ -33,7 +33,7 @@ OAuth.popup(provider)
     //handle error with err
 });
 </script>
-    <script src="js/oAuth.js" type="text/javascript"></script>
+    
     <!--<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>-->
     <div id="content"></div>
     <p>Retrieves your profile name using the Google Plus API.</p>
