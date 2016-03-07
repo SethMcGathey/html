@@ -1,4 +1,9 @@
-
+$(function(){
+  $('.squareDivs').css({ height: $(window).innerHeight() });
+  $(window).resize(function(){
+    $('.squareDivs').css({ height: $(window).innerHeight() });
+  });
+});
 
 
 var htmlEditor = ace.edit("htmlDiv");
