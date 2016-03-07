@@ -1,7 +1,6 @@
 .squareDivs{
 	background-color:#DDDDDD;
-	/*height:385px;*/
-	height:49%;
+	height:385px;
 	overflow: scroll;
 	/*border:solid;
 	border-width: 1px;*/
