@@ -10,10 +10,10 @@
 }
 
 .titleDivs{
-	border-top: solid;
+	/*border-top: solid;
 	border-left: solid;
 	border-width: .5px;
-	border-color: #DDDDDD;
+	border-color: #DDDDDD;*/
 	width:50%;
 	float: left;
 	background-color: #202020;
