@@ -33,7 +33,7 @@ javascriptEditor.getSession().on('change', function(){
 
 
 var cssEditor = ace.edit("cssDiv");
-cssEditor.setTheme("ace/theme/idle_ginfers");
+cssEditor.setTheme("ace/theme/idle_fingers");
 cssEditor.getSession().setMode("ace/mode/javascript");
 cssEditor.$blockScrolling = 'Infinity';
 
