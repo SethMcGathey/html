@@ -27,7 +27,7 @@
       // https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
       // In your Developer Console project, add a JavaScript origin that corresponds to the domain
       // where you will be running the script.
-      var clientId = '837050751313';
+      var clientId = '599051150116-l3pt0mhutidgk08k0kj71keiur05re2v.apps.googleusercontent.com';
       // Enter the API key from the Google Develoepr Console - to handle any unauthenticated
       // requests in the code.
       // The provided key works for this sample only when run from
