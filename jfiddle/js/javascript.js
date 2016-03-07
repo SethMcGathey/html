@@ -8,7 +8,7 @@ $(function(){
 
 var htmlEditor = ace.edit("htmlDiv");
 htmlEditor.setTheme("ace/theme/xcode");
-htmlEditor.getSession().setMode("ace/mode/tomorrow_night");
+htmlEditor.getSession().setMode("ace/mode/tomorrow_night_eighties");
 htmlEditor.$blockScrolling = 'Infinity';
 
 
@@ -20,7 +20,7 @@ htmlEditor.getSession().on('change', function(){
 
 
 var javascriptEditor = ace.edit("javascriptDiv");
-javascriptEditor.setTheme("ace/theme/tomorrow_night_bright");
+javascriptEditor.setTheme("ace/theme/tomorrow");
 javascriptEditor.getSession().setMode("ace/mode/javascript");
 javascriptEditor.$blockScrolling = 'Infinity';
 
