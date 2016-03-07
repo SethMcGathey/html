@@ -8,7 +8,7 @@ $(function(){
 
 var htmlEditor = ace.edit("htmlDiv");
 htmlEditor.setTheme("ace/theme/chrome");
-htmlEditor.getSession().setMode("ace/mode/javascript");
+htmlEditor.getSession().setMode("ace/mode/html");
 htmlEditor.$blockScrolling = 'Infinity';
 
 
@@ -34,7 +34,7 @@ javascriptEditor.getSession().on('change', function(){
 
 var cssEditor = ace.edit("cssDiv");
 cssEditor.setTheme("ace/theme/chrome");
-cssEditor.getSession().setMode("ace/mode/javascript");
+cssEditor.getSession().setMode("ace/mode/css");
 cssEditor.$blockScrolling = 'Infinity';
 
 var cssTextarea = $('#textCssDiv').hide();
