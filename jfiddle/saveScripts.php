@@ -1,62 +1,3 @@
-<!--<?php
-/*error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-	require_once 'sessionStart.php'; 
-	require_once 'database.php';
-    $pdo = Database::connect();
-
-    //$_SESSION["memberId"] = 1;
-	/*if($_SESSION['memberID'])
-	{
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="UPDATE codeStrings SET html = (?), javascript = (?), css = (?) WHERE  memberId = " . $_SESSION['memberID'];
-	    $q = $pdo->prepare($sql);
-	    $q->execute($_POST['html'], $_POST['javascript'], $_POST['css']);
-	}else
-	{*/
-
-		//http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php
-
-/*		if($_SESSION['projectId'] == 0)
-		{
-
-			$pdo->setAttribute(PDO::ATTR_FETCH_TABLE_NAMES, true);
-	    	$sql = 'SELECT projectId from codeStrings ORDER BY projectId DESC LIMIT 1';
-			foreach ($pdo->query($sql) as $row) {
-				$topBranchId =  $row['branchId'] 
-			}
-
-
-			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
-		    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
-		    $q = $pdo->prepare($sql);
-		    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId']+1));
-		}
-*/
-
-/*		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
-	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
-	    $q = $pdo->prepare($sql);
-	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId']+1));
-	//}
-
-
-
-	//header('Location: products.php');
-	Database::disconnect();
-
-	/*
-		SELECT id, cart, timestamp, payment_id, customer_id FROM transaction WHERE customer_id = 3;
-
-		SELECT * FROM transaction_product;
-
-		SELECT * FROM product;
-	*/
-
-?>-->
-
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
@@ -64,20 +5,9 @@ ini_set('display_errors', 'on');
 	include 'database.php';
     $pdo = Database::connect();
 
-    //$_SESSION["memberId"] = 1;
-	/*if($_SESSION['memberID'])
-	{
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql="UPDATE codeStrings SET html = (?), javascript = (?), css = (?) WHERE  memberId = " . $_SESSION['memberID'];
-	    $q = $pdo->prepare($sql);
-	    $q->execute($_POST['html'], $_POST['javascript'], $_POST['css']);
-	}else
-	{*/
-
 
 	if($_SESSION['projectId'] != 0){
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $_SESSION['projectId'], $_SESSION['branchId'], $_SESSION['commitId'] + 1));
@@ -94,7 +24,6 @@ ini_set('display_errors', 'on');
 
 
 	    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		//$sql="INSERT INTO codeStrings (html, javascript, css, memberId) VALUES (" . $_GET['html'] . ", " . $_GET['javascript'] . ", " . $_GET['css'] . ", " . $_SESSION['memberId'] . ")";
 	    $sql="INSERT INTO codeStrings (html, javascript, css, projectId, branchId, commitId) VALUES (?, ?, ?, ?, ?, ?)";
 	    $q = $pdo->prepare($sql);
 	    $q->execute(array($_POST['html'], $_POST['javascript'], $_POST['css'], $topProjectId + 1, 1, 1));
@@ -103,14 +32,12 @@ ini_set('display_errors', 'on');
 		$_SESSION['branchId'] = 1;
 		$_SESSION['commitId'] = 1;
 	}
-	//}
 
 	$URLVariables = array(
 		'projectId' => $_SESSION['projectId'],
 		'branchId' => $_SESSION['branchId'],
 		'commitId' => $_SESSION['commitId']
 	);
-	//echo json_encode($_SESSION['projectId']);
 	Database::disconnect();
 	echo json_encode($URLVariables);
 	?>
