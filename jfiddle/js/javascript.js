@@ -1,7 +1,7 @@
 $(function(){
-  $('.squareDivs').css({ height: $(window).innerHeight()/2 });
+  $('.squareDivs').css({ height: $(window).innerHeight()/2 - 30});
   $(window).resize(function(){
-    $('.squareDivs').css({ height: $(window).innerHeight()/2 });
+    $('.squareDivs').css({ height: $(window).innerHeight()/2 - 30});
   });
 });
 
