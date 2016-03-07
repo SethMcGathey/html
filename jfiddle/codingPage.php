@@ -55,9 +55,9 @@
 
 
 						<!--</div>row-->
-					</div><!--col-lg-10-->
+					<!--</divcol-lg-10-->
 
-				</div><!--row-->
+				<!--</divrow-->
 			</form>
 		</div> <!--container-fluid-->
 
