@@ -7,7 +7,7 @@ $(function(){
 
 
 var htmlEditor = ace.edit("htmlDiv");
-htmlEditor.setTheme("ace/theme/kuroir");
+htmlEditor.setTheme("ace/theme/mono_industrial");
 htmlEditor.getSession().setMode("ace/mode/javascript");
 htmlEditor.$blockScrolling = 'Infinity';
 
@@ -20,7 +20,7 @@ htmlEditor.getSession().on('change', function(){
 
 
 var javascriptEditor = ace.edit("javascriptDiv");
-javascriptEditor.setTheme("ace/theme/merbivore_soft");
+javascriptEditor.setTheme("ace/theme/monokai");
 javascriptEditor.getSession().setMode("ace/mode/javascript");
 javascriptEditor.$blockScrolling = 'Infinity';
 
@@ -33,7 +33,7 @@ javascriptEditor.getSession().on('change', function(){
 
 
 var cssEditor = ace.edit("cssDiv");
-cssEditor.setTheme("ace/theme/merbivore");
+cssEditor.setTheme("ace/theme/pastel_on_dark");
 cssEditor.getSession().setMode("ace/mode/javascript");
 cssEditor.$blockScrolling = 'Infinity';
 
