@@ -35,10 +35,10 @@
 						<!--</div>row-->
 						<!--<div class="row">-->
 							<div class=" titleDivs">
-								 JAVASCRIPT
+								JAVASCRIPT
 							</div>
 							<div class=" titleDivs">
-								 RESULT
+								RESULT
 							</div>
 							<div>
 								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
