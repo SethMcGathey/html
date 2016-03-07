@@ -8,7 +8,7 @@ $(function(){
 
 var htmlEditor = ace.edit("htmlDiv");
 htmlEditor.setTheme("ace/theme/xcode");
-htmlEditor.getSession().setMode("ace/mode/tomorrow_night_eighties");
+htmlEditor.getSession().setMode("ace/mode/pastel_on_dark");
 htmlEditor.$blockScrolling = 'Infinity';
 
 
@@ -20,7 +20,7 @@ htmlEditor.getSession().on('change', function(){
 
 
 var javascriptEditor = ace.edit("javascriptDiv");
-javascriptEditor.setTheme("ace/theme/tomorrow");
+javascriptEditor.setTheme("ace/theme/merbivore");
 javascriptEditor.getSession().setMode("ace/mode/javascript");
 javascriptEditor.$blockScrolling = 'Infinity';
 
@@ -33,7 +33,7 @@ javascriptEditor.getSession().on('change', function(){
 
 
 var cssEditor = ace.edit("cssDiv");
-cssEditor.setTheme("ace/theme/tomorrow_night_blue");
+cssEditor.setTheme("ace/theme/merbivore_soft");
 cssEditor.getSession().setMode("ace/mode/javascript");
 cssEditor.$blockScrolling = 'Infinity';
 
