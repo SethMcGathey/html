@@ -42,7 +42,7 @@
 							</div>
 							<div>
 								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
-								<div type="text" name="javascriptString" form="zipForm" class="col-lg-6 squareDivs" id="javascriptDiv">
+								<div type="text" name="javascriptString" form="zipForm" class="col-lg-8 squareDivs" id="javascriptDiv">
 								</div>
 
 								<div id="resultsDiv" class="col-lg-6">
