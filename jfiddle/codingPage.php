@@ -4,72 +4,19 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<!--<link rel="stylesheet" href="highlighter/prettify.css" />
-	<link rel="stylesheet" href="highlight/styles/default.css">
-
-	<link rel="stylesheet" href="codemirror/lib/codemirror.css">-->
-
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1513482842291431',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 	<body>
 		<div class="container-fluid">
 			<form action='zipFiles.php' method="Post">
 				<div class="row">
 					<div class="col-lg-12 header">
 						<a href="javascript:void(0);" onclick="runCode();">Run </a>
-						<a href="githubAuthorization.php">Authenticate</a>
-						<!--<a href="githubCreateClient.php">Access Old File</a>
-						<a href="saveScripts.php">Test PHP</a>-->
 						<a href="javascript:void(0);" onclick="saveStrings();">Save </a>
 						<a href="javascript:void(0);" onclick="forkBranch();">Fork </a>
-						<!--<a href="forkBranch.php">Fork</a>
-						<a href="javascript:void(0);" onclick="zipFiles();">Zip</a>
-						<a href="zipFiles.php">Zip</a>
-						<a href="getURLSessionVars.php">CheckSessions</a>
-						<a href="javascript:void(0);" onclick="newProject();">Fork</a>-->
 						<input type="submit" id="zipForm" value="Zip" />
-						<a href="javascript:void(0);" onclick="getOauth();">OAuth </a>
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-
 					</div>
 				</div>
 				
 				<div class="row">
-
-					<!--<div class="col-lg-2 sideBar">
-						Sidebar
-						<div>-->
-							<!--<form onSubmit="getGithubInstance()">
-								Enter Github Username:<br>
-								<input type="text" name="username"><br>
-								Enter Github Repo Name:<br>
-								<input type="text" name="reponame"><br>
-								<input type="submit" value="Submit">
-							</form>-->
-					<!--	</div>
-					</div>-->
 					<div class="col-lg-12">
 						<div class="row">
 							<div class="col-lg-6 titleDivs">
