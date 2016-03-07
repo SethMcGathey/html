@@ -7,7 +7,7 @@ $(function(){
 
 
 var htmlEditor = ace.edit("htmlDiv");
-htmlEditor.setTheme("ace/theme/ambiance");
+htmlEditor.setTheme("ace/theme/chrome");
 htmlEditor.getSession().setMode("ace/mode/javascript");
 htmlEditor.$blockScrolling = 'Infinity';
 
