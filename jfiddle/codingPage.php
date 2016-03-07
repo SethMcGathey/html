@@ -16,36 +16,36 @@
 					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="row">
-							<div class="col-lg-6 titleDivs">
+				<!--<div class="row">
+					<div class="col-lg-12">-->
+						<!--<div class="row">-->
+							<div class=" titleDivs">
 								HTML
 							</div>
-							<div class="col-lg-6 titleDivs">
+							<div class=" titleDivs">
 								CSS
 							</div>
 								<textarea name="textHtmlString" id="textHtmlDiv"></textarea>
-								<div type="text" name="htmlString" form="zipForm" class="col-lg-6 squareDivs" id="htmlDiv">
+								<div type="text" name="htmlString" form="zipForm" class=" squareDivs" id="htmlDiv">
 								</div>
 								<textarea name="textCssString" id="textCssDiv"></textarea>
-								<div type="text" name="cssString" form="zipForm" class="col-lg-6 squareDivs" id="cssDiv">
+								<div type="text" name="cssString" form="zipForm" class=" squareDivs" id="cssDiv">
 								</div>
 
-						</div><!--row-->
-						<div class="row">
-							<div class="col-lg-6 titleDivs">
+						<!--</div>row-->
+						<!--<div class="row">-->
+							<div class=" titleDivs">
 								JAVASCRIPT
 							</div>
-							<div class="col-lg-6 titleDivs">
+							<div class=" titleDivs">
 								RESULT
 							</div>
 							<div>
 								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
-								<div type="text" name="javascriptString" form="zipForm" class="col-lg-6 squareDivs" id="javascriptDiv">
+								<div type="text" name="javascriptString" form="zipForm" class=" squareDivs" id="javascriptDiv">
 								</div>
 
-								<div id="resultsDiv" class="col-lg-6">
+								<div id="resultsDiv" class="">
 									
 									<iframe id="myFrame">
 											<p>Your browser does not support iframes.</p>
@@ -54,7 +54,7 @@
 							</div>
 
 
-						</div><!--row-->
+						<!--</div>row-->
 					</div><!--col-lg-10-->
 
 				</div><!--row-->
