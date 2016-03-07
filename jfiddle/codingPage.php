@@ -42,10 +42,10 @@
 							</div>
 							<div>
 								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
-								<div type="text" name="javascriptString" form="zipForm" class=" squareDivs" id="javascriptDiv">
+								<div type="text" name="javascriptString" form="zipForm" class="squareDivs" id="javascriptDiv">
 								</div>
 
-								<div id="resultsDiv" class="">
+								<div id="resultsDiv" class="squareDivs">
 									
 									<iframe id="myFrame">
 											<p>Your browser does not support iframes.</p>
