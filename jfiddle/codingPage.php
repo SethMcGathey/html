@@ -5,61 +5,48 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<body>
-		<div class="container-fluid">
-			<form action='zipFiles.php' method="Post">
-				<div class="row">
-					<div class="col-lg-12 header">
-						<a href="javascript:void(0);" onclick="runCode();">Run </a>
-						<a href="javascript:void(0);" onclick="saveStrings();">Save </a>
-						<a href="javascript:void(0);" onclick="forkBranch();">Fork </a>
-						<input type="submit" id="zipForm" value="Zip" />
-					</div>
-				</div>
+	<form action='zipFiles.php' method="Post">
+
+		<div class="header">
+			<a href="javascript:void(0);" onclick="runCode();">Run </a>
+			<a href="javascript:void(0);" onclick="saveStrings();">Save </a>
+			<a href="javascript:void(0);" onclick="forkBranch();">Fork </a>
+			<input type="submit" id="zipForm" value="Zip" />
+		</div>
+
+
+		<div class=" titleDivs">
+			HTML
+		</div>
+		<div class=" titleDivs">
+			CSS
+		</div>
+			<textarea name="textHtmlString" id="textHtmlDiv"></textarea>
+			<div type="text" name="htmlString" form="zipForm" class=" squareDivs" id="htmlDiv">
+			</div>
+			<textarea name="textCssString" id="textCssDiv"></textarea>
+			<div type="text" name="cssString" form="zipForm" class=" squareDivs" id="cssDiv">
+			</div>
+
+		<div class=" titleDivs">
+			JAVASCRIPT
+		</div>
+		<div class=" titleDivs">
+			RESULT
+		</div>
+		<div>
+			<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
+			<div type="text" name="javascriptString" form="zipForm" class="squareDivs" id="javascriptDiv">
+			</div>
+
+			<div id="resultsDiv" class="squareDivs">
 				
-				<!--<div class="row">
-					<div class="col-lg-12">-->
-						<!--<div class="row">-->
-							<div class=" titleDivs">
-								HTML
-							</div>
-							<div class=" titleDivs">
-								CSS
-							</div>
-								<textarea name="textHtmlString" id="textHtmlDiv"></textarea>
-								<div type="text" name="htmlString" form="zipForm" class=" squareDivs" id="htmlDiv">
-								</div>
-								<textarea name="textCssString" id="textCssDiv"></textarea>
-								<div type="text" name="cssString" form="zipForm" class=" squareDivs" id="cssDiv">
-								</div>
-
-						<!--</div>row-->
-						<!--<div class="row">-->
-							<div class=" titleDivs">
-								JAVASCRIPT
-							</div>
-							<div class=" titleDivs">
-								RESULT
-							</div>
-							<div>
-								<textarea name="textJavascriptString" id="textJavascriptDiv"></textarea>
-								<div type="text" name="javascriptString" form="zipForm" class="squareDivs" id="javascriptDiv">
-								</div>
-
-								<div id="resultsDiv" class="squareDivs">
-									
-									<iframe id="myFrame">
-											<p>Your browser does not support iframes.</p>
-									</iframe>
-								</div>
-							</div>
-
-
-						<!--</div>row-->
-					<!--</divcol-lg-10-->
-
-				<!--</divrow-->
-			</form>
-		</div> <!--container-fluid-->
+				<iframe id="myFrame">
+						<p>Your browser does not support iframes.</p>
+				</iframe>
+			</div>
+		</div>
+	</form>
 
 <?php
 	
