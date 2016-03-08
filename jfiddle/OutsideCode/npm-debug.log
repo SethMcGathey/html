@@ -1,0 +1,40 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'karma', '--save-dev' ]
+info using npm@1.1.0-2
+info using node@v0.6.8
+verbose config file /home/ec2-user/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'karma', null ]
+silly cache add: name, spec, args [ undefined, 'karma', [ 'karma', null ] ]
+verbose parsed url { pathname: 'karma', path: 'karma', href: 'karma' }
+verbose addNamed [ 'karma', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'karma', '', false ]
+verbose raw, before any munging karma
+verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+verbose url resolved https://registry.npmjs.org/karma
+http GET https://registry.npmjs.org/karma
+ERR! Error: failed to fetch from registry: karma
+ERR!     at /usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:32:9)
+ERR!     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:137:18)
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:109:22)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:198:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:356:14)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.onIncoming (http.js:1238:11)
+ERR!     at HTTPParser.onHeadersComplete (http.js:102:31)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 4.1.10-17.31.amzn1.x86_64
+ERR! command "node" "/usr/local/bin/npm" "install" "karma" "--save-dev"
+ERR! cwd /var/www/html/jfiddle
+ERR! node -v v0.6.8
+ERR! npm -v 1.1.0-2
+ERR! message failed to fetch from registry: karma
+verbose exit [ 1, true ]
