@@ -17,7 +17,7 @@ body{
 .titleDivs{
 	border-top: solid;
 	border-left: solid;
-	border-width: .5px;
+	border-width: 1px;
 	border-color: black;
 	width:50%;
 	float: left;
