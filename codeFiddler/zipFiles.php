@@ -10,7 +10,7 @@ ini_set('display_errors', 'on');
 	
 
 
-	$javascriptFile = fopen("jFiddleJavascript.js", "w") or die("Unable to open file!");
+	$javascriptFile = fopen("codeFiddlerJavascript.js", "w") or die("Unable to open file!");
 	$javascript = $_POST['textJavascriptString'];
 	//echo $javascript;
 	//$javascript = $_GET['javascriptString'];
@@ -19,7 +19,7 @@ ini_set('display_errors', 'on');
 	fwrite($javascriptFile, $javascript);
 	fclose($javascriptFile);
 
-	$htmlFile = fopen("jFiddleHtml.html", "w") or die("Unable to open file!");
+	$htmlFile = fopen("codeFiddlerHtml.html", "w") or die("Unable to open file!");
 	//$html = $_POST['htmlString'];
 	$html = $_POST['textHtmlString'];
 	//echo $html;
@@ -28,7 +28,7 @@ ini_set('display_errors', 'on');
 	fwrite($htmlFile, $html);
 	fclose($htmlFile);
 
-	$cssFile = fopen("jFiddleCss.css", "w") or die("Unable to open file!");
+	$cssFile = fopen("codeFiddlerCss.css", "w") or die("Unable to open file!");
 	//$css = $_POST['cssString'];
 	$css = $_POST['textCssString'];
 	//echo $css;
@@ -38,8 +38,8 @@ ini_set('display_errors', 'on');
 	fclose($cssFile);
 	
 	
-	$files = array('jFiddleJavascript.js','jFiddleHtml.html','jFiddleCss.css');
-	$zipname = 'jFiddleFiles.zip';
+	$files = array('codeFiddlerJavascript.js','codeFiddlerHtml.html','codeFiddlerCss.css');
+	$zipname = 'codeFiddlerFiles.zip';
 	$zip = new ZipArchive;
 	$zip->open($zipname, ZipArchive::CREATE);
 	foreach ($files as $file) {
