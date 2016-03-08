@@ -46,7 +46,7 @@ cssEditor.getSession().on('change', function(){
 
 
 function newProject(){
- 	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php';
+ 	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/codeFiddler/codingPage.php';
  	window.location.href = url;
  }
 
@@ -99,7 +99,7 @@ function saveStrings(){
 	    	commitId = result['commitId'];
 	    	console.log(result);
 
-	     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+	     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/codeFiddler/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 		 	window.location.href = url;
 
 	 	},
@@ -149,7 +149,7 @@ function forkBranch(){
 			    	commitId = result['commitId'];
 			    	console.log(result);
 
-			     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
+			     	url = 'http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/codeFiddler/codingPage.php?projectId=' + projectId + '&branchId=' + branchId + '&commitId=' + commitId;
 				 	window.location.href = url;
 
 			 	},
