@@ -68,3 +68,7 @@ body{
 .headerText{
 	float:left;
 }
+
+.buttonLinks{
+	padding-left:2px;
+}
