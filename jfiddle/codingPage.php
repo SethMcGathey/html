@@ -8,9 +8,9 @@
 	<form action='zipFiles.php' method="Post">
 
 		<div class="header">
-			<a href="javascript:void(0);" onclick="runCode();">Run </a>
-			<a href="javascript:void(0);" onclick="saveStrings();">Save </a>
-			<a href="javascript:void(0);" onclick="forkBranch();">Fork </a>
+			<p><a href="javascript:void(0);" onclick="runCode();">Run </a></p>
+			<p><a href="javascript:void(0);" onclick="saveStrings();">Save </a></p>
+			<p><a href="javascript:void(0);" onclick="forkBranch();">Fork </a></p>
 			<input type="submit" id="zipForm" value="Zip" />
 		</div>
 
