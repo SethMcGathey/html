@@ -6,7 +6,7 @@ body{
 	background-color:#DDDDDD;
 	height:385px;
 	overflow: scroll;
-	border:solid;
+	border-right:solid;
 	border-width: 1px;
 	border-color: black;
 	outline-width: 0;
