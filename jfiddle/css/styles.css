@@ -17,6 +17,7 @@ body{
 
 .titleDivs{
 	border-top: solid;
+	border-bottom: solid;
 	border-right: solid;
 	border-width: 1px;
 	border-color: black;
