@@ -36,7 +36,6 @@ body{
 .header{
 	background-color:white;
 	width:100%;
-	color:#8DB1C8;
 }
 #myFrame{
 	height:100%;
@@ -62,5 +61,5 @@ body{
 #zipForm{
 	border:none;
 	background-color: white;
-	color:#8DB1C8;
+	color:#2F79B9;
 }
