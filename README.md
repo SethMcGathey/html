@@ -5,6 +5,6 @@ This repo was the original source of both the HobbyStore and the Code Fiddle rep
 <a href="https://github.com/SethMcGathey/codeFiddle">Code Fiddle Repo</a><br>
 <a href="http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/codeFiddle/CodePage.php">Live Code Fiddle</a><br>
 
-The Hobby Store is under construction right now and so any and all layouts and code is likely to change.<br>
+The Hobby Store is under construction right now and so layouts and code are not clean.<br>
 <a href="https://github.com/SethMcGathey/HobbyStore">Hobby Store Repo</a><br>
 <a href="http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/HobbyStore/index.php">Live Hobby Store</a>
